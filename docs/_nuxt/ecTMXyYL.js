@@ -1,1 +1,0 @@
-const o="https://podcast.reworkflow.com/",s="https://resource.reworkflow.com/shelves/public-knowledgebase",e={LINKEDIN:1,RESOURCE:2,SLATE_COMMUNITY:3,PRESENTATIONS_PUBLICATIONS:4,EMAIL:5};export{e as C,o as P,s as R};

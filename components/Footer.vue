@@ -40,16 +40,16 @@
                     <div class="md:col-span-3 col-span-12">
                         <ul class="footer-link-list !mt-6 md:!mt-0 md:block flex items-center justify-between">
                             <li>
-                                <a class="footer-link" href="#">home</a>
+                                <NuxtLink class="footer-link" to="/">home</NuxtLink>
                             </li>
                             <li>
-                                <a class="footer-link" href="#about">about</a>
+                                <NuxtLink class="footer-link" to="/our-team">our team</NuxtLink>
                             </li>
                             <li>
-                                <a class="footer-link" href="#service">services</a>
+                                <a class="footer-link" :href="RESOURCE_LINK">ReSource</a>
                             </li>
                             <li>
-                                <a class="footer-link" href="#faq">FAQs</a>
+                                <a class="footer-link" :href="PODCASE_LINN">Podcast</a>
                             </li>
                         </ul>
                     </div>

@@ -2,7 +2,7 @@
     <div class="py-12">
         <img src="/img/logo-bg.svg" alt="rew" class="bg-logo !top-1/2 !left-1/2 !transform -translate-x-1/2 !-translate-y-1/2 hidden md:block mt-[150px]">
 
-        <div class="flex items-center justify-center mb-12 heading">
+        <div data-aos="fade-down" class="flex items-center justify-center mb-12 heading">
             The
             <img src="/img/main-logo.svg" alt="ReWorkflow" width="231" height="30" class="mx-2 ps-1">
             Team
