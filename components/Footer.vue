@@ -49,7 +49,7 @@
                                 <a class="footer-link" :href="RESOURCE_LINK">ReSource</a>
                             </li>
                             <li>
-                                <a class="footer-link" :href="PODCASE_LINN">Podcast</a>
+                                <a class="footer-link" :href="PODCAST_LINK">Podcast</a>
                             </li>
                         </ul>
                     </div>

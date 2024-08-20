@@ -4,10 +4,11 @@
 
         <img src="/img/logo-bg.svg" alt="rew" class="bg-logo hidden md:block inset-0 !opacity-[0.05]">
 
-        <div class="flex items-center gap-4 mb-4 relative mt-1">
+        <div class="flex flex-col md:flex-row items-center gap-4 mb-4 relative mt-1">
             <img class="profile-img rounded" :src="bio.picture" />
             <div>
-                <div class="text-3xl rew-text-green font-bold tracking-wide"> {{ bio.name }}</div>
+                <div class="text-3xl rew-text-green font-bold tracking-wide text-center md:text-start"> {{ bio.name }}
+                </div>
                 <div class="rew-text-brown tracking-wider"> {{ bio.title }}</div>
             </div>
             <button @click="visible = false" class="absolute top-0 right-0">
@@ -17,19 +18,22 @@
 
         <div class="whitespace-pre-line" v-html="bio.content"></div>
 
-        <div class="flex items-center gap-x-4 mt-4 mb-7">
+        <div class="flex flex-col items-start md:flex-row md:items-center  gap-x-4 mt-4 mb-7">
             <div class="font-bold italic rew-text-brown text-lg">
                 Let's connect!
             </div>
-            <template v-for="item in bio.contact" :key="item.type">
-                <a v-if="item.link" :href="renderLink(item)" v-tooltip.top="{ value: renderTooltip(item), autoHide: false }"
-                    @click="handleCopy(item)" target="_blank" class="btn-connect">
-                    <IconLinkedIn v-if="item.type === CONTACT_TYPE.LINKEDIN" />
-                    <IconSlateCommunity v-if="item.type === CONTACT_TYPE.SLATE_COMMUNITY" />
-                    <IconReSource v-if="item.type === CONTACT_TYPE.RESOURCE" />
-                    <IconEmail v-if="item.type === CONTACT_TYPE.EMAIL" />
-                </a>
-            </template>
+            <div class="flex items-center gap-x-4 mt-2 md:mt-0">
+                <template v-for="item in bio.contact" :key="item.type">
+                    <a v-if="item.link" :href="renderLink(item)"
+                        v-tooltip.top="{ value: renderTooltip(item), autoHide: false }" @click="handleCopy(item)"
+                        target="_blank" class="btn-connect">
+                        <IconLinkedIn v-if="item.type === CONTACT_TYPE.LINKEDIN" />
+                        <IconSlateCommunity v-if="item.type === CONTACT_TYPE.SLATE_COMMUNITY" />
+                        <IconReSource v-if="item.type === CONTACT_TYPE.RESOURCE" />
+                        <IconEmail v-if="item.type === CONTACT_TYPE.EMAIL" />
+                    </a>
+                </template>
+            </div>
         </div>
     </Dialog>
 </template>
