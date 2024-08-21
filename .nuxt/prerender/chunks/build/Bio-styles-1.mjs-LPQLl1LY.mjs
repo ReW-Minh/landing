@@ -1,4 +1,0 @@
-const Bio_vue_vue_type_style_index_0_lang = ".bio-card .bio-picture{height:100%;-o-object-fit:cover;object-fit:cover;transition:all .2s ease-in-out;width:100%}.bio-card .hover{background-color:rgba(0,0,0,.5);inset:0;opacity:0;--p-icon-size:30px;--p-button-text-primary-color:#fff}.bio-card .hover,.bio-card .p-button-text{transition:all .1s linear}.bio-card .p-button-text:not(:disabled):hover{background-color:transparent;scale:1.2}.bio-card.card-hover:hover .hover{opacity:1}.bio-card.card-clickable{cursor:pointer;transition:all .2s ease-in-out}.bio-card.card-clickable:hover{box-shadow:0 7px 29px 0 hsla(240,5%,41%,.2);transform:translateY(-5px)}.bio-card.card-clickable:hover .bio-picture{transform:scale(1.05)}";
-
-export { Bio_vue_vue_type_style_index_0_lang as B };
-//# sourceMappingURL=Bio-styles-1.mjs-LPQLl1LY.mjs.map

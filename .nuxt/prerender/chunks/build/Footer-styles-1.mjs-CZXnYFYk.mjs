@@ -1,4 +1,0 @@
-const Footer_vue_vue_type_style_index_0_scoped_9b264598_lang = '.social-hover[data-v-9b264598]{position:relative}.social-hover[data-v-9b264598]:before{bottom:0;content:"";left:0;opacity:0;outline:2px solid #fff;outline-offset:0;position:absolute;right:0;top:0;transition:all .1s linear}.social-hover[data-v-9b264598]:hover:before{opacity:1;outline-offset:3px}.social-hover img[data-v-9b264598]{transition:all .1s linear}.social-hover:hover img[data-v-9b264598]{transform:scale(.8)}.social-hover.instagram[data-v-9b264598]:before{background:linear-gradient(45deg,#f09433,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888);border-radius:12px}.social-hover.linkedin[data-v-9b264598]:before{background:#0077b5;border-radius:6px}';
-
-export { Footer_vue_vue_type_style_index_0_scoped_9b264598_lang as F };
-//# sourceMappingURL=Footer-styles-1.mjs-CZXnYFYk.mjs.map

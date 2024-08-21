@@ -1,4 +1,0 @@
-const ContactPopup_vue_vue_type_style_index_1_lang = ":root{--p-message-success-background:var(--rew-primary-green);--p-message-success-border-color:var(--rew-primary-green);--p-message-success-color:#fff;--p-message-success-shadow:rgba(0,0,0,.3) 0px 19px 38px,rgba(0,0,0,.22) 0px 15px 12px;--p-message-error-background:var(--rew-active-brown);--p-message-error-border-color:var(--rew-active-brown);--p-message-error-color:#fff;--p-message-error-shadow:rgba(0,0,0,.3) 0px 19px 38px,rgba(0,0,0,.22) 0px 15px 12px}#contact-popup.p-dialog{border-radius:35px!important}#contact-popup.p-dialog .p-dialog-header{display:none!important}#contact-popup.p-dialog .p-dialog-content{padding:0!important}";
-
-export { ContactPopup_vue_vue_type_style_index_1_lang as C };
-//# sourceMappingURL=ContactPopup-styles-2.mjs-BD_IplEb.mjs.map
