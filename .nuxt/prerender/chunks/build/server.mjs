@@ -655,7 +655,7 @@ const _routes = [
     name: "our-team",
     path: "/our-team",
     meta: __nuxt_page_meta || {},
-    component: () => import('./our-team-xZiF6ZXk.mjs').then((m) => m.default || m)
+    component: () => import('./our-team-WKQPnVFI.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
