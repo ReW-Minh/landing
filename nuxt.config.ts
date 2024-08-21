@@ -1,11 +1,11 @@
 import Aura from '@primevue/themes/aura'
 
 export default defineNuxtConfig({
-  ssr: false,
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   modules: ['@primevue/nuxt-module', '@nuxtjs/tailwindcss', "nuxt-aos"],
   css: ['~/assets/scss/main.scss'],
+  nitro: { prerender: { failOnError: false, } },
   vue: {
     compilerOptions: {
       isCustomElement: tag => tag.startsWith('swiper-')
