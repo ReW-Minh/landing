@@ -1,8 +1,10 @@
 <template>
     <Card class="card-clickable bio-card w-full h-full overflow-hidden relative" @click="bio.visible = true">
         <template #header>
-            <div class="w-full" style="height: 280px">
-                <img alt="user picture" :src="bio.picture" class="bio-picture" />
+            <div class="w-full h-[280px] overflow-hidden">
+                <img @load="loading = false" alt="user picture" :src="bio.picture" class="bio-picture"
+                    :class="{ hidden: loading }" />
+                <Skeleton v-if="loading" height="280px" borderRadius="0px" />
             </div>
         </template>
         <template #title>{{ bio.name }}</template>
@@ -17,6 +19,8 @@
 
 <script setup>
 defineProps(['bio'])
+
+const loading = ref(true)
 </script>
 
 <style lang="scss">
