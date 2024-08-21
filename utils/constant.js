@@ -7,5 +7,6 @@ export const CONTACT_TYPE = {
     RESOURCE: 2,
     SLATE_COMMUNITY: 3,
     PRESENTATIONS_PUBLICATIONS: 4,
-    EMAIL: 5
+    EMAIL: 5,
+    GITHUB: 6
 }

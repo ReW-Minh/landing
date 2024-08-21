@@ -5,7 +5,7 @@
         <img src="/img/logo-bg.svg" alt="rew" class="bg-logo hidden md:block inset-0 !opacity-[0.05]">
 
         <div class="flex flex-col md:flex-row items-center gap-4 mb-4 relative mt-1">
-            <img class="profile-img rounded" :src="bio.picture" />
+            <img class="profile-img rounded shadow-lg" :src="bio.picture" />
             <div>
                 <div class="text-3xl rew-text-green font-bold tracking-wide text-center md:text-start"> {{ bio.name }}
                 </div>
@@ -30,6 +30,7 @@
                         <IconLinkedIn v-if="item.type === CONTACT_TYPE.LINKEDIN" />
                         <IconSlateCommunity v-if="item.type === CONTACT_TYPE.SLATE_COMMUNITY" />
                         <IconReSource v-if="item.type === CONTACT_TYPE.RESOURCE" />
+                        <IconGitHub v-if="item.type === CONTACT_TYPE.GITHUB" />
                         <IconEmail v-if="item.type === CONTACT_TYPE.EMAIL" />
                     </a>
                 </template>
@@ -58,6 +59,9 @@ const renderTooltip = data => {
             break
         case CONTACT_TYPE.EMAIL:
             str = data.link
+            break
+        case CONTACT_TYPE.GITHUB:
+            str = 'GitHub'
     }
 
     return str
@@ -131,6 +135,8 @@ const handleCopy = data => {
 }
 
 .btn-connect {
+    @apply shadow-md;
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -140,5 +146,6 @@ const handleCopy = data => {
     background-color: var(--rew-primary-green);
     border-color: transparent;
     padding: 8px;
+    color: white
 }
 </style>

@@ -88,6 +88,10 @@ const bios = ref([
                 link: ''
             },
             {
+                type: CONTACT_TYPE.GITHUB,
+                link: 'https://github.com/WyattBest'
+            },
+            {
                 type: CONTACT_TYPE.EMAIL,
                 link: 'wbest@reworkflow.com'
             },
