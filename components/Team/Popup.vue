@@ -4,14 +4,14 @@
 
         <img src="/img/logo-bg.svg" alt="rew" class="bg-logo hidden md:block inset-0 !opacity-[0.05]">
 
-        <div class="flex flex-col md:flex-row items-center gap-4 mb-4 relative mt-1">
+        <div class="flex flex-col md:flex-row items-center gap-4 mb-4 relative mt-1 overflow-hidden">
             <img class="profile-img rounded shadow-lg" :src="bio.picture" />
             <div>
                 <div class="text-3xl rew-text-green font-bold tracking-wide text-center md:text-start"> {{ bio.name }}
                 </div>
                 <div class="rew-text-brown tracking-wider"> {{ bio.title }}</div>
             </div>
-            <button @click="visible = false" class="absolute top-0 right-0">
+            <button @click="visible = false" class="absolute -top-[22px] -right-[22px] p-6">
                 <i class="pi pi-times" />
             </button>
         </div>

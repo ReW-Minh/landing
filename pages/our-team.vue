@@ -1,21 +1,25 @@
 <template>
-    <div class="py-12">
+    <BasePageContainer>
         <img src="/img/logo-bg.svg" alt="rew"
             class="bg-logo !top-1/2 !left-1/2 !transform -translate-x-1/2 !-translate-y-1/2 hidden md:block mt-[150px]">
 
-        <div data-aos="fade-down" class="flex items-center justify-center mb-12 heading">
-            The
-            <img src="/img/main-logo.svg" alt="ReWorkflow" width="231" height="30" class="mx-2 ps-1">
-            Team
-        </div>
-
-        <div class="container-fluid !max-w-[1000px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            <div v-for="(bio, index) in bios" :key="bio.id" data-aos="zoom-in-down" data-aos-offset="50"
-                :data-aos-delay="index * 50">
-                <TeamBio :bio />
+        <BasePageHeader>
+            <div class="flex items-baseline justify-center gap-2">
+                <span class="mr-0.5">The</span>
+                <img src="/img/main-logo.svg" alt="ReWorkflow" width="231" height="30">
+                <span>Team</span>
             </div>
-        </div>
-    </div>
+        </BasePageHeader>
+
+        <BasePageContent>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div v-for="(bio, index) in bios" :key="bio.id" data-aos="zoom-in-down" data-aos-offset="50"
+                    :data-aos-delay="index * 50">
+                    <TeamBio :bio />
+                </div>
+            </div>
+        </BasePageContent>
+    </BasePageContainer>
 </template>
 
 <script setup>
@@ -230,17 +234,9 @@ const bios = ref([
 ])
 </script>
 
-<style scoped>
-.heading {
-    font-size: 40px;
-    font-weight: 500;
-    color: var(--rew-primary-brown);
-}
-
+<style lang="scss" scoped>
 @media (max-width: 720px) {
     .heading {
-        font-size: 26px;
-
         img {
             width: 150px;
         }

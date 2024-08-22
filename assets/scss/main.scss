@@ -4,6 +4,7 @@
   --rew-secondary-green: #768471;
   --rew-active-brown: #8F4A2C;
   --rew-baby-grey: #C8CEC6;
+  --slate-color-blue: #00669E;
   --p-tooltip-max-width: 500px;
 }
 
@@ -17,7 +18,6 @@ body {
 }
 
 section {
-  overflow: hidden;
   position: relative;
 }
 
@@ -37,6 +37,10 @@ p {
   background: linear-gradient(260.65deg, #EBEDEA 10.43%, #FFFFFF 95.48%) !important;
 }
 
+.slate-text-blue {
+  color: var(--slate-color-blue)
+}
+
 .rew-box-shadow {
   box-shadow: 5px 5px 10px #A6AFA3;
 }
@@ -51,6 +55,14 @@ p {
 
 .rew-text-brown-secondary {
   color: #8F5E49;
+}
+
+.rew-bg-green {
+  background-color: var(--rew-primary-green)
+}
+
+.rew-bg-brown {
+  background-color: var(--rew-primary-brown)
 }
 
 .fs-24 {
@@ -79,7 +91,7 @@ p {
   border: none;
   white-space: nowrap;
   position: relative;
-  transition: all linear 0.1s;
+  transition: all linear .1s;
   overflow: hidden;
 }
 
@@ -749,4 +761,12 @@ a.footer-link:hover {
 .v-enter-from,
 .v-leave-to {
   opacity: 0;
+}
+
+.p-card-title {
+  color: var(--rew-primary-brown)
+}
+
+.p-card-subtitle {
+  color: var(--rew-secondary-green)
 }

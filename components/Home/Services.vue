@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-4" id="service">
+  <section class="pt-4 overflow-hidden" id="service">
     <img src="/img/logo-bg.svg" alt="rew" class="bg-logo block md:hidden">
     <h2 class="rew-text-brown section-title">
       <span class="rew-text-green">Slaters</span>
