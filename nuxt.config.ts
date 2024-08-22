@@ -5,7 +5,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@primevue/nuxt-module', '@nuxtjs/tailwindcss', "nuxt-aos"],
   css: ['~/assets/scss/main.scss'],
-  routeRules: { '/': {ssr: false} },
   vue: {
     compilerOptions: {
       isCustomElement: tag => tag.startsWith('swiper-')

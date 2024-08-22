@@ -9,7 +9,7 @@
                 Difference
             </span>
         </h2>
-        <div class="about-content relative mx-auto hidden md:block">
+        <div ref="rescaleContent" class="about-content relative mx-auto hidden md:block">
             <img src="/img/tree.svg" alt="rew tree" class="mx-auto block">
             <div v-for="item in blockItems" data-aos="zoom-in" class="about-block" :class="item.class">
                 <div class="about-block-title">{{ item.title }}</div>
@@ -29,10 +29,10 @@
 </template>
 
 <script setup>
-const calculateNewScale = () => {
-    const el = document.querySelector(".about-content")
+const rescaleContent = ref()
 
-    if (!el)
+const calculateNewScale = () => {
+    if (!rescaleContent.value)
         return
 
     let percentage = window.innerWidth / 1270
@@ -40,10 +40,10 @@ const calculateNewScale = () => {
     if (percentage > 1)
         percentage = 1
 
-    el.setAttribute("style", `-moz-transform: scale(${percentage}); -webkit-transform: scale(${percentage}); transform: scale(${percentage});`)
+    rescaleContent.value.setAttribute("style", `-moz-transform: scale(${percentage}); -webkit-transform: scale(${percentage}); transform: scale(${percentage});`)
 }
 
-window.addEventListener('resize', calculateNewScale)
+
 
 const blockItems = ref([
     {
@@ -68,7 +68,10 @@ const blockItems = ref([
     }
 ])
 
-onMounted(calculateNewScale)
+onMounted(() => {
+    calculateNewScale()
+    window.addEventListener('resize', calculateNewScale)
+})
 
 onUnmounted(() => {
     window.removeEventListener('resize', calculateNewScale)
