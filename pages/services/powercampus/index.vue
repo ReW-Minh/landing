@@ -11,7 +11,7 @@
             <template #subtitle>
                 With nearly 15 years of PowerCampus experience, the
                 <span class="rew-text-green rew-font">Re</span><span class="rew-text-brown rew-font">Workflow</span>
-                Team has what it takes to assist with all
+                team has what it takes to assist with all
                 your PowerCampus challenges.
             </template>
         </BasePageHeader>
