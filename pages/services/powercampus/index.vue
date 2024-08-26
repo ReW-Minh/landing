@@ -83,9 +83,9 @@
 </template>
 
 <script setup>
-
 definePageMeta({
-    title: 'ReWorkflow - PowerCampus'
+    title: 'ReWorkflow - PowerCampus',
+    middleware: ['hidden']
 })
 
 const resources = [
@@ -106,7 +106,8 @@ const resources = [
         type: CONTACT_TYPE.GITHUB,
         title: `PowerCampus 
                 <br /> 
-                Open-Source Code`
+                Open-Source Code`,
+        link: 'https://github.com/WyattBest?tab=repositories'
     }
 ]
 

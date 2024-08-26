@@ -55,7 +55,8 @@
 <script setup>
 definePageMeta({
     title: 'ReWorkflow - PowerCampus Version Upgrades',
-    hideCTA: true
+    hideCTA: true,
+    middleware: ['hidden']
 })
 
 const pricings = [

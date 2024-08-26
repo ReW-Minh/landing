@@ -1,5 +1,5 @@
 <template>
-    <Dialog v-model:visible="visible" modal :closable="false" id="contact-popup"
+    <Dialog v-model:visible="visible" modal :closable="false" :dismissableMask="true" id="contact-popup"
         :style="{ width: '100vw', maxWidth: '789px', margin: '0 20px' }">
         <div class="modal-content py-4 px-4 md:px-12">
             <div class="modal-header text-white justify-content-center border-bottom-0 pb-0">

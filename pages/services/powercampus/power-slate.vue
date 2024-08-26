@@ -12,7 +12,8 @@
                 <div data-aos="fade-right" data-aos-delay="50">
                     <span class="font-bold rew-text-green rew-font">Re</span><span class="font-bold rew-font">W</span>
                     CTO Wyatt Best, developed the first (and as far as we know, only) real-time integration between
-                    <span class="font-bold rew-text-green">PowerCampus</span> and <span class="font-bold slate-text-blue">Slate</span>.
+                    <span class="font-bold rew-text-green">PowerCampus</span> and <span
+                        class="font-bold slate-text-blue">Slate</span>.
                     This open-source integration bridges <span class="font-bold slate-text-blue">Slate</span> and <span
                         class="font-bold rew-text-green">PowerCampus</span> API's and extends
                     beyond the <span class="font-bold rew-text-green">PowerCampus</span> API with extensive SQL
@@ -24,7 +25,8 @@
                         Standard data coverage includes:
                     </div>
 
-                    <ul data-aos="fade-right" data-aos-delay="100" class="grid grid-cols-1 md:grid-cols-2 italic list-inside list-disc">
+                    <ul data-aos="fade-right" data-aos-delay="100"
+                        class="grid grid-cols-1 md:grid-cols-2 italic list-inside list-disc">
                         <li>Person</li>
                         <li>IPEDS Ethnicity</li>
                         <li>Scholarships</li>
@@ -41,9 +43,11 @@
                 </div>
 
                 <div data-aos="fade-right" data-aos-delay="150">
-                    <span class="font-bold rew-text-green">Power</span><span class="font-bold slate-text-blue">Slate</span> offers
+                    <span class="font-bold rew-text-green">Power</span><span
+                        class="font-bold slate-text-blue">Slate</span> offers
                     innovative techniques to save you time, like auto-updating a student's major based
-                    on changes in <span class="font-bold slate-text-blue">Slate</span> (with safeguards), auto-mapping new terms and
+                    on changes in <span class="font-bold slate-text-blue">Slate</span> (with safeguards), auto-mapping
+                    new terms and
                     programs, and much more.
                 </div>
             </section>
@@ -88,7 +92,8 @@
 <script setup>
 definePageMeta({
     title: 'ReWorkflow - PowerCampus Version Upgrades',
-    hideCTA: true
+    hideCTA: true,
+    middleware: ['hidden']
 })
 
 const pricings = [

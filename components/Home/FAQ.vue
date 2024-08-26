@@ -13,7 +13,7 @@
                 <div data-aos="fade-down" class="accordion accordion-flush" id="rew-faq">
                     <div v-for="item in faqs" class="accordion-item">
                         <h2 class="accordion-header" :id="item.btnid">
-                            <div class="accordion-button collapsed block  py-4 px-5" v-html="item.title" />
+                            <div class="accordion-button collapsed block shadow-md py-4 px-5" v-html="item.title" />
                         </h2>
                     </div>
                 </div>
