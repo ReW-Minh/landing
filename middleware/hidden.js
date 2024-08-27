@@ -1,1 +1,1 @@
-export default defineNuxtRouteMiddleware(() => navigateTo('/'))
+export default defineNuxtRouteMiddleware(() => {})
