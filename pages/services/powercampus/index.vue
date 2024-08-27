@@ -100,7 +100,8 @@ const resources = [
         type: CONTACT_TYPE.PRESENTATIONS_PUBLICATIONS,
         title: `PowerCampus 
                 <br /> 
-                Presentations`
+                Presentations`,
+        link: 'https://resource.reworkflow.com/search?term=%5BPresentations%3DPowerCampus%5D'
     },
     {
         type: CONTACT_TYPE.GITHUB,
