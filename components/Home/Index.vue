@@ -1,5 +1,5 @@
 <template>
-    <section class="pt-3 pb-12 overflow-hidden" id="home">
+    <section class="pt-3 pb-3 md:pb-12 overflow-hidden" id="home">
         <div class="container-fluid">
             <div class="grid grid-cols-12 gap-1">
                 <div class="lg:col-span-8 md:col-span-7 col-span-6">
