@@ -103,6 +103,10 @@ p {
   background: var(--rew-secondary-green)
 }
 
+.rew-main-btn.footer:hover {
+  background: var(--rew-primary-green)
+}
+
 .rew-main-btn:focus-visible {
   outline: none;
 }
@@ -531,7 +535,7 @@ a.footer-link:hover {
     font-size: 11px;
   }
 
-  .rew-main-btn {
+  .rew-main-btn:not(.footer) {
     font-size: 14px;
     padding: 9px 18px;
   }

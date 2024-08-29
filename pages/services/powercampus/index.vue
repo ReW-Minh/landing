@@ -83,8 +83,11 @@
 </template>
 
 <script setup>
-definePageMeta({
+useHead({
     title: 'ReWorkflow - PowerCampus',
+})
+
+definePageMeta({
     middleware: ['hidden']
 })
 

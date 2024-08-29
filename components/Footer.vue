@@ -1,67 +1,49 @@
 <template>
-    <section v-if="!useRoute().meta.hideCTA" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
-        class="sub-footer py-6 text-center text-uppercase overflow-hidden">
-        <div class="container-fluid">
-            <CallToAction size="lg" />
-        </div>
-    </section>
-
     <footer>
         <div class="container-fluid">
-            <div class="md:mx-0 mx-12 md:border-b">
-                <div class="grid grid-cols-12 mb-3">
-                    <div class="md:col-span-4 col-span-12">
-                        <div class="md:mx-0 mx-auto" style="max-width: 177px;">
-                            <div class="bg-white logo-container">
-                                <img src="/img/logo-min.svg" alt="rew" class="img-fluid">
-                            </div>
-                            <div class="hidden md:flex items-center justify-center mt-3">
-                                <a href="https://www.instagram.com/reworkflow/" target="_blank"
-                                    class="mx-2 social-hover instagram">
-                                    <img src="/img/instagram.svg" alt="instagram">
-                                </a>
-                                <a href="https://www.linkedin.com/company/reworkflow/about/" target="_blank"
-                                    class="mx-2 social-hover linkedin">
-                                    <img src="/img/linkedin.svg" alt="linkedin">
-                                </a>
-                            </div>
+            <div class="md:mx-0 mx-12">
+                <div class="flex flex-col md:flex-row items-center mb-3">
+                    <div class="flex gap-4">
+                        <div class="bg-white logo-container w-[120px] md:w-[177px]">
+                            <img src="/img/logo-min.svg" alt="rew" class="img-fluid">
+                        </div>
+                        <div class="block md:hidden w-[120px] md:w-[177px]">
+                            <img src="https://images.squarespace-cdn.com/content/v1/641f3e24b36a211ec50bf362/5e549dfc-174d-4a97-9be3-426891e4109e/SlatePreferredPartnerLevel_Silver.png"
+                                alt="Slate Silver Partner">
                         </div>
                     </div>
-                    <div class="md:col-span-3 col-span-12">
-                        <ul class="footer-link-list !mt-6 md:!mt-0 md:block flex items-center justify-between">
-                            <li>
-                                <NuxtLink class="footer-link" to="/">home</NuxtLink>
-                            </li>
-                            <li>
-                                <NuxtLink class="footer-link" to="/our-team">our team</NuxtLink>
-                            </li>
-                            <li>
-                                <a class="footer-link" :href="RESOURCE_LINK">ReSource</a>
-                            </li>
-                            <li>
-                                <a class="footer-link" :href="PODCAST_LINK">Podcast</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="md:col-span-3 col-span-12 text-center-sm">
-                        <div class="footer-link !mt-6 md:!mt-0 !mb-0 block">Contact Us</div>
-                        <a class="mail-link block underline" href="mailto:solutions@reworkflow.com">solutions@reworkflow.com</a>
-                    </div>
-                    <div class="col-span-12 md:hidden">
-                        <div class="flex items-center justify-center mt-12">
-                            <a href="https://www.instagram.com/reworkflow/" target="_blank" class="mx-2"
-                                style="max-width: 28px">
+
+                    <div class="grow space-y-5 mt-6 md:mt-0">
+                        <div class="flex justify-center">
+                            <CallToAction size="lg" :footer="true" />
+                        </div>
+                        <div class="flex items-center justify-center gap-3">
+                            <a href="https://www.instagram.com/reworkflow/" target="_blank"
+                                class="social-hover instagram">
                                 <img src="/img/instagram.svg" alt="instagram">
                             </a>
-                            <a href="https://www.linkedin.com/company/reworkflow/about/" target="_blank" class="mx-2"
-                                style="max-width: 28px">
+
+                            <a href="https://www.linkedin.com/company/reworkflow/about/" target="_blank"
+                                class="social-hover linkedin ms-1">
                                 <img src="/img/linkedin.svg" alt="linkedin">
                             </a>
+
+                            <a href="mailto:solutions@reworkflow.com" class="social-hover email">
+                                <IconEmailFill fill="white" height="46" width="46" />
+                            </a>
                         </div>
+                        <div class="text-white text-center">
+                            © 2024 ReWorkflow. All Rights Reserved
+                        </div>
+                    </div>
+
+                    <div class="hidden md:block w-[177px]">
+                        <img src="https://images.squarespace-cdn.com/content/v1/641f3e24b36a211ec50bf362/5e549dfc-174d-4a97-9be3-426891e4109e/SlatePreferredPartnerLevel_Silver.png"
+                            alt="Slate Silver Partner">
                     </div>
                 </div>
             </div>
-            <div class="md:mx-0 mx-12 text-end text-white mt-3 copyright">ReWorkflow, LLC. All Rights Reserved ©, 2024.</div>
+
         </div>
     </footer>
 </template>
@@ -69,49 +51,61 @@
 <script setup>
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .social-hover {
     position: relative;
-}
 
-.social-hover::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    outline: 2px solid white;
-    outline-offset: 0px;
-    opacity: 0;
-    transition: all linear .1s
-}
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        outline: 2px solid white;
+        outline-offset: 0px;
+        opacity: 0;
+        transition: all linear .1s
+    }
 
-.social-hover:hover::before {
-    opacity: 1;
-    outline-offset: 3px;
-}
+    &:hover {
+        &::before {
+            opacity: 1;
+            outline-offset: 3px;
+        }
 
-.social-hover img {
-    transition: all linear .1s
-}
+        img {
+            transform: scale(0.8)
+        }
 
-.social-hover:hover img {
-    transform: scale(0.8)
-}
+        svg {
+            transform: scale(0.9)
+        }
+    }
 
-.social-hover.instagram::before {
-    background: linear-gradient(45deg,
-            #f09433 0%,
-            #e6683c 25%,
-            #dc2743 50%,
-            #cc2366 75%,
-            #bc1888 100%);
-    border-radius: 12px;
-}
+    img,
+    svg {
+        transition: all linear .1s
+    }
 
-.social-hover.linkedin::before {
-    background: #0077B5;
-    border-radius: 6px;
+    &.instagram::before {
+        background: linear-gradient(45deg,
+                #f09433 0%,
+                #e6683c 25%,
+                #dc2743 50%,
+                #cc2366 75%,
+                #bc1888 100%);
+        border-radius: 12px;
+    }
+
+    &.linkedin::before {
+        background: #0077B5;
+        border-radius: 6px;
+    }
+
+    &.email::before {
+        background: var(--rew-primary-green);
+        border-radius: 8px;
+    }
 }
 </style>

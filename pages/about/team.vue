@@ -23,7 +23,7 @@
 </template>
 
 <script setup>
-definePageMeta({
+useHead({
     title: 'ReWorkflow - Our Team'
 })
 

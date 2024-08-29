@@ -61,8 +61,11 @@
 </template>
 
 <script setup>
-definePageMeta({
+useHead({
     title: 'ReWorkflow - PowerCampus Version Upgrades',
+})
+
+definePageMeta({
     hideCTA: true,
     middleware: ['hidden']
 })
