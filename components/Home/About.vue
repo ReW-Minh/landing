@@ -1,5 +1,5 @@
 <template>
-    <section class="pt-4 overflow-hidden" id="about">
+    <section class="pt-4 pb-12 pd:mb-0 overflow-hidden" id="about">
         <img src="/img/logo-bg.svg" alt="rew" class="bg-logo hidden md:block">
         <h2 class="rew-text-brown section-title block-w-arrow">
             <span class="bg-grey-pill shadow md:shadow-none">
