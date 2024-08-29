@@ -2,20 +2,29 @@
     <section class="pt-3 pb-6 overflow-hidden" id="home">
         <div class="container-fluid">
             <div class="grid grid-cols-12 gap-1">
-                <div class="lg:col-span-8 md:col-span-7 col-span-6">
+                <div class="lg:col-span-9 md:col-span-8 col-span-9">
                     <div class="flex flex-col h-full">
                         <div data-aos="fade-right" data-aos-duration="700" data-aos-delay="100"
-                            class="left-home-block position-relative mt-2 md:mt-12 relative">
-                            <h1 class="hero-title rew-text-green leading-tight">Slate Support and Staffing Solutions
-                                <span class="rew-text-brown">
-                                    without the <br>
-                                    Difficulties of <br class="hidden lg:block">
-                                </span>
-                                <span class="rew-font">Re</span>
+                            class="left-home-block position-relative mt-6 md:mt-12 relative">
+                            <h1 class="hero-title rew-text-green leading-tight">
+                                Slate Support and Staffing Solutions
+                                <span class="rew-text-brown">without the Difficulties of</span>
+                                <span class="rew-font ml-2">Re</span>
                                 <span class="rew-text-brown">Hiring</span>
                             </h1>
+                        </div>
+                        <div data-aos="fade-right" data-aos-duration="700" data-aos-delay="200"
+                            class="left-home-block flex items-center mt-2 md:mt-6">
+                            <span class="small-image rew-box-shadow rew-bg-gradient hidden lg:block">
+                                <img src="/img/hero-img-sm.webp" alt="rew small mainboard" class="img-fluid">
+                            </span>
+                            <div class="rew-text-brown text-[14px] md:text-[18px] lg:text-[24px] ml-0 lg:ml-6">
+                                We team up with higher education institutions to cultivate evergreen enrollment systems, operations, and processes.
+                            </div>
+                        </div>
+                        <div class="mt-4 md:mt-8">
                             <button @click="visible = true" title="Contact Us"
-                                class="rew-main-btn rew-box-shadow flex items-center relative bottom-0 right-0 mt-3 lg:!absolute lg:-right-3 lg:mt-0">
+                                class="rew-main-btn rew-box-shadow flex items-center">
                                 <span>Let's Get Started</span>
                                 <span class="md:ml-3 ml-1 flex">
                                     <svg class="button-arrow" width="34" height="28" viewBox="0 0 34 28" fill="none"
@@ -27,17 +36,7 @@
                                 </span>
                             </button>
                         </div>
-                        <div data-aos="fade-right" data-aos-duration="700" data-aos-delay="200"
-                            class="left-home-block flex items-center mt-4">
-                            <span class="small-image rew-box-shadow rew-bg-gradient hidden lg:block">
-                                <img src="/img/hero-img-sm.webp" alt="rew small mainboard" class="img-fluid">
-                            </span>
-                            <span class="rew-text-brown fs-24 fs-sm-10 lg:ml-6 ml-0 font-light">
-                                We team up with higher education institutions to cultivate evergreen enrollment systems,
-                                operations, and processes for their Slate CRM instances.
-                            </span>
-                        </div>
-                        <div data-aos="fade-right" data-aos-duration="700" data-aos-delay="400" data-aos-offset="-500"
+                        <!-- <div data-aos="fade-right" data-aos-duration="700" data-aos-delay="400" data-aos-offset="-500"
                             class="left-home-block my-auto">
                             <div class="grid grid-cols-12">
                                 <div class="col-span-12 lg:col-span-6">
@@ -80,10 +79,10 @@
                                     </a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
-                <div class="lg:col-span-4 md:col-span-5 col-span-6 flex items-center justify-end" data-aos="zoom-in"
+                <div class="lg:col-span-3 md:col-span-4 col-span-3 flex items-center justify-end" data-aos="zoom-in"
                     data-aos-duration="700">
                     <img class="img-fluid" src="/img/hero-img-lg.webp" alt="rew mainboard">
                 </div>

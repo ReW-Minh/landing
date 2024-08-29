@@ -1,27 +1,42 @@
 <template>
-    <Drawer v-model:visible="visible" header=" " position="right">
+    <Drawer v-model:visible="visible" header=" " position="right" class="mobile-menu-drawer">
         <div class="flex flex-col h-full overflow-hidden">
-            <div class="grow flex flex-col items-center justify-center">
-                <NuxtLink @click="visible = false" class="menu-link" to="/">
-                    Home
-                </NuxtLink>
-                <NuxtLink @click="visible = false" class="menu-link" to="/our-team">
-                    Our Team
-                </NuxtLink>
-                <a @click="visible = false" class="menu-link" :href="RESOURCE_LINK" target="_blank">
-                    ReSource
-                </a>
-                <a @click="visible = false" class="menu-link" :href="PODCAST_LINK" target="_blank">
-                    Podcast
-                </a>
+            <div class="grow mt-12">
+                <Accordion>
+                    <template v-for="item in NAVIGATION_MENU">
+                        <AccordionPanel v-if="item.items" :value="item.label">
+                            <AccordionHeader>
+                                {{ item.label }}
+                            </AccordionHeader>
+                            <AccordionContent>
+                                <NuxtLink class="block" @click="visible = false" v-for="sub in item.items"
+                                    :to="sub.route" :target="sub.isExternal ? '_blank' : '_self'">
+                                    {{ sub.label }}
+                                </NuxtLink>
+                            </AccordionContent>
+                        </AccordionPanel>
+                        <div v-else>
+                            <NuxtLink class="p-accordionheader border-bottom-pannel" @click="visible = false"
+                                :to="item.route" :target="item.isExternal ? '_blank' : '_self'">
+                                {{ item.label }}
+                            </NuxtLink>
+                        </div>
+                    </template>
+                </Accordion>
+                <div class="mt-12 flex items-center justify-center">
+                    <CallToAction />
+                </div>
             </div>
             <div class="menu-btm">
-                <div class="flex items-center justify-center mb-3 mx-5 overflow-hidden">
-                    <a href="https://www.instagram.com/reworkflow/" target="_blank" class="mx-2">
+                <div class="flex items-center justify-center mb-3 mx-5 gap-6 overflow-hidden">
+                    <a href="https://www.instagram.com/reworkflow/" target="_blank">
                         <img src="/img/instagram-green.svg" alt="instagram">
                     </a>
-                    <a href="https://www.linkedin.com/company/reworkflow/about/" class="mx-2">
+                    <a href="https://www.linkedin.com/company/reworkflow/about/">
                         <img src="/img/linkedin-green.svg" alt="linkedin">
+                    </a>
+                    <a href="mailto:solutions@reworkflow.com">
+                        <IconEmailFill fill="var(--rew-secondary-green)" height="31" width="31" />
                     </a>
                 </div>
                 <div>
@@ -30,7 +45,7 @@
             </div>
         </div>
     </Drawer>
-    <Button icon="pi pi-arrow-right" @click="visible = true" class="flex ml-auto md:hidden">
+    <Button icon="pi pi-arrow-right" @click="visible = true" class="flex ml-auto lg:hidden">
         <i class="pi pi-bars text-2xl" style="color: var(--rew-secondary-green)" />
     </Button>
 </template>
@@ -96,5 +111,66 @@ const visible = ref(false)
 .p-drawer {
     background-color: var(--rew-baby-grey) !important;
     border: none !important;
+}
+
+.mobile-menu-drawer {
+    * {
+        font-size: 20px
+    }
+
+    .p-accordionpanel,
+    .border-bottom-pannel {
+        border-bottom: 1px solid var(--rew-primary-brown);
+    }
+
+    .p-accordionpanel {
+        &:has(.router-link-active) {
+            .p-accordionheader {
+                color: var(--rew-primary-green);
+            }
+        }
+    }
+
+    .p-accordionheader {
+        padding: 24px;
+        background-color: transparent;
+        font-weight: 700;
+        color: var(--rew-primary-brown);
+        border-radius: 0;
+
+        &.router-link-active {
+            color: var(--rew-primary-green);
+        }
+    }
+
+    .p-accordionheader-toggle-icon {
+        color: var(--rew-primary-brown);
+    }
+
+    .p-accordioncontent-content {
+        background-color: transparent;
+
+        a {
+            color: var(--rew-primary-brown);
+            padding-bottom: 16px;
+            padding-left: 14px;
+
+            &.router-link-active {
+                color: var(--rew-primary-green);
+                font-weight: 600;
+            }
+        }
+    }
+
+    .p-drawer-close-button {
+        color: var(--rew-primary-brown) !important;
+        width: max-content;
+
+        &::before {
+            content: 'CLOSE';
+            margin-right: 12px;
+            font-size: 14px;
+        }
+    }
 }
 </style>

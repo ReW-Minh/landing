@@ -4,19 +4,16 @@
             <div class="md:mx-0 mx-12">
                 <div class="flex flex-col md:flex-row items-center mb-3">
                     <div class="flex gap-4">
-                        <div class="bg-white logo-container w-[120px] md:w-[177px]">
+                        <div class="bg-white logo-container w-[120px] md:w-[120px]">
                             <img src="/img/logo-min.svg" alt="rew" class="img-fluid">
                         </div>
-                        <div class="block md:hidden w-[120px] md:w-[177px]">
+                        <div class="block md:hidden w-[120px] md:w-[120px]">
                             <img src="https://images.squarespace-cdn.com/content/v1/641f3e24b36a211ec50bf362/5e549dfc-174d-4a97-9be3-426891e4109e/SlatePreferredPartnerLevel_Silver.png"
                                 alt="Slate Silver Partner">
                         </div>
                     </div>
 
                     <div class="grow space-y-5 mt-6 md:mt-0">
-                        <div class="flex justify-center">
-                            <CallToAction size="lg" :footer="true" />
-                        </div>
                         <div class="flex items-center justify-center gap-3">
                             <a href="https://www.instagram.com/reworkflow/" target="_blank"
                                 class="social-hover instagram">
@@ -37,7 +34,7 @@
                         </div>
                     </div>
 
-                    <div class="hidden md:block w-[177px]">
+                    <div class="hidden md:block w-[120px]">
                         <img src="https://images.squarespace-cdn.com/content/v1/641f3e24b36a211ec50bf362/5e549dfc-174d-4a97-9be3-426891e4109e/SlatePreferredPartnerLevel_Silver.png"
                             alt="Slate Silver Partner">
                     </div>

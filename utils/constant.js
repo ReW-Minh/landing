@@ -12,3 +12,51 @@ export const CONTACT_TYPE = {
     EMAIL: 5,
     GITHUB: 6
 }
+
+export const NAVIGATION_MENU = [
+    {
+        label: 'Services',
+        items: [
+            {
+                label: 'State',
+                route: '/services/slate'
+            },
+            {
+                label: 'PowerCampus',
+                route: '/services/powercampus'
+            }
+        ]
+    },
+    {
+        label: 'ReSource',
+        items: [
+            {
+                label: 'Slate',
+                route: 'https://resource.reworkflow.com/books/slate',
+                external: true
+            },
+            {
+                label: 'PowerCampus',
+                route: 'https://resource.reworkflow.com/books/powercampus',
+                external: true
+            }
+        ]
+    },
+    {
+        label: 'Podcast',
+        route: '/podcast'
+    },
+    {
+        label: 'About',
+        items: [
+            {
+                label: 'Our Team',
+                route: '/about/team'
+            },
+            {
+                label: 'Careers',
+                route: '/about/careers'
+            }
+        ]
+    },
+]

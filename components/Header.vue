@@ -5,73 +5,56 @@
         <img src="/img/main-logo.svg" alt="ReWorkflow" width="231" height="30">
       </NuxtLink>
 
-      <Menubar :model="items" class="ms-auto rew-header bg-transparent">
-        <template #item="{ item, props, hasSubmenu }">
-          <NuxtLink v-if="item.route" :to="item.route" class="p-menubar-item-link">
-            {{ item.label }}
-          </NuxtLink>
+      <Menubar class="!hidden" />
 
-          <a v-else v-ripple :href="item.url" :target="item.target" v-bind="props.action" target="_blank">
-            <span :class="item.icon" />
-            <span class="ml-2">{{ item.label }}</span>
-            <span v-if="hasSubmenu" class="pi pi-fw pi-angle-down ml-2" />
-          </a>
-        </template>
-      </Menubar>
+      <MobileMenu />
+
+      <div class="p-menubar p-component ms-auto rew-header bg-transparent hidden lg:flex" data-pc-name="menubar"
+        data-pc-section="root">
+        <ul class="p-menubar-root-list" data-pc-section="rootlist" role="menubar" tabindex="0">
+          <li v-for="item in NAVIGATION_MENU" :key="item.label" class="p-menubar-item" role="menuitem" aria-label="Services"
+            aria-expanded="false" aria-haspopup="menu" aria-level="1" aria-setsize="5" aria-posinset="1"
+            data-pc-section="item" data-p-active="false" data-p-focused="false">
+            <template v-if="item.items">
+              <div class="p-menubar-item-content" data-pc-section="itemcontent">
+                <a target="_blank" class="p-menubar-item-link" tabindex="-1" aria-hidden="true"
+                  data-pc-section="itemlink">
+                  <span class="ml-2">{{ item.label }}</span>
+                  <span class="pi pi-fw pi-angle-down ml-2"></span>
+                </a>
+              </div>
+              <ul class="p-menubar-submenu" data-pc-section="submenu" role="menu">
+                <li v-for="sub in item.items" :key="sub.label" class="p-menubar-item" role="menuitem" aria-label="State"
+                  aria-level="2" aria-setsize="2" aria-posinset="1" data-pc-section="item" data-p-active="false"
+                  data-p-focused="false">
+                  <div class="p-menubar-item-content" data-pc-section="itemcontent">
+                    <NuxtLink :to="sub.route" :target="sub.external ? '_blank' : '_self'" class="p-menubar-item-link">
+                      {{ sub.label }}
+                    </NuxtLink>
+                  </div>
+                </li>
+              </ul>
+            </template>
+
+            <template v-else>
+              <div class="p-menubar-item-content" data-pc-section="itemcontent">
+                <NuxtLink :to="item.route" :target="item.external ? '_blank' : '_self'" class="p-menubar-item-link">
+                  {{ item.label }}
+                </NuxtLink>
+              </div>
+            </template>
+          </li>
+
+          <li class="ms-3">
+            <CallToAction />
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 </template>
 
 <script setup>
-const items = ref([
-  {
-    label: 'Services',
-    items: [
-      {
-        label: 'State',
-        route: '/services/slate'
-      },
-      {
-        label: 'PowerCampus',
-        route: '/services/powercampus'
-      }
-    ]
-  },
-  {
-    label: 'ReSource',
-    items: [
-      {
-        label: 'Slate',
-        url: 'https://resource.reworkflow.com/books/slate'
-      },
-      {
-        label: 'PowerCampus',
-        url: 'https://resource.reworkflow.com/books/powercampus'
-      }
-    ]
-  },
-  {
-    label: 'Podcast',
-    route: '/podcast'
-  },
-  {
-    label: 'About',
-    items: [
-      {
-        label: 'Our Team',
-        route: '/about/team'
-      },
-      {
-        label: 'Careers',
-        route: '/about/careers'
-      }
-    ]
-  },
-  {
-    label: 'Contact',
-    route: '/contact'
-  },
-])
 </script>
 
 <style lang="scss">
@@ -111,6 +94,12 @@ header {
     .p-menubar-item-content {
       .p-menubar-item-link {
         gap: 0;
+      }
+    }
+
+    &:hover {
+      .p-menubar-submenu {
+        display: flex !important;
       }
     }
   }
