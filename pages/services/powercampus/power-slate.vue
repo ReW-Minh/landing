@@ -11,7 +11,8 @@
             <section class="space-y-8 text-lg rew-text-brown">
                 <div data-aos="fade-right" data-aos-delay="50">
                     <span class="font-bold rew-text-green rew-font">Re</span><span class="font-bold rew-font">W</span>
-                    CTO Wyatt Best, developed the first (and as far as we know, only) real-time integration between
+                    CTO <a class="font-bold underline profile-hover" role="button" @click="openProfile('Wyatt Best')">Wyatt Best</a>, developed the first (and as far as
+                    we know, only) real-time integration between
                     <span class="font-bold rew-text-green">PowerCampus</span> and <span
                         class="font-bold slate-text-blue">Slate</span>.
                     This open-source integration bridges <span class="font-bold slate-text-blue">Slate</span> and <span

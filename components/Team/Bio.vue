@@ -10,7 +10,6 @@
             <div class="max-line max-line-2 fs-7">
                 <div>{{ bio.title }}</div>
             </div>
-            <TeamPopup :bio v-model="bio.visible" />
         </template>
     </BaseCardItem>
 </template>

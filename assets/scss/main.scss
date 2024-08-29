@@ -773,3 +773,11 @@ a.footer-link:hover {
 .p-card-subtitle {
   color: var(--rew-secondary-green)
 }
+
+.profile-hover {
+  transition: all linear .2s;
+
+  &:hover {
+    color: var(--rew-primary-green)
+  }
+}

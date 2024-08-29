@@ -8,6 +8,10 @@
     <Footer />
 
     <ContactPopup />
+
+    <template v-for="bio in PROFILES" :key="bio.id">
+        <TeamPopup :bio v-model="bio.visible" />
+    </template>
 </template>
 
 <script setup>

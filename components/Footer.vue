@@ -2,7 +2,7 @@
     <footer>
         <div class="container-fluid">
             <div class="md:mx-0 mx-12">
-                <div class="flex flex-col md:flex-row items-center mb-3">
+                <div class="flex flex-col md:flex-row items-center">
                     <div class="flex gap-4">
                         <div class="bg-white logo-container w-[120px] md:w-[120px]">
                             <img src="/img/logo-min.svg" alt="rew" class="img-fluid">
