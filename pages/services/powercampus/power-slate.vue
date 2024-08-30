@@ -55,7 +55,7 @@
 
             <section>
                 <div class="mb-3 text-3xl font-semibold rew-text-brown">
-                    Pricing
+                    <span class="rew-text-brown">Flexible, transparent pricing for every</span> <span class="rew-text-green">PowerCampus School</span>
                 </div>
 
                 <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -71,8 +71,7 @@
                                         <div class="font-bold rew-text-green text-2xl">
                                             {{ item.range }}
                                         </div>
-                                        <div class="p-card-subtitle italic text-sm font-normal">
-                                            {{ item.content }}
+                                        <div v-html="item.content" class="p-card-subtitle italic text-sm font-normal">
                                         </div>
                                     </div>
                                 </div>
@@ -114,7 +113,7 @@ const pricings = [
     {
         title: 'PowerCampus Consulting',
         range: '$250 per hour',
-        content: 'You manage and we support.'
+        content: `Your database gardening enriched with ReW's expertise and support ensures strategic success! Take advantage of our partner discounts for hourly bundles and <span class="rew-text-green">Re</span>Hires.`
     }
 ]
 </script>

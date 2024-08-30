@@ -7,18 +7,15 @@
             PowerCampus Version Upgrades
 
             <template #subtitle>
-                If finding time to keep up with PowerCampus and Self-Service upgrades is challenging, consider our
-                comprehensive upgrade services. We can do virtually all of an upgrade for you, although we encourage
-                your staff to participate in testing. However, if you prefer to manage your own upgrades, we also offer
-                hourly rates to be on-call for any questions you may have along the way and troubleshooting challenges
-                you may encounter.
+                Finding it challenging to keep up with PowerCampus and Self-Service upgrades? Consider our comprehensive
+                upgrade services and tailored consulting services.
             </template>
         </BasePageHeader>
 
         <BasePageContent>
             <section>
                 <div class="mb-3 text-3xl font-semibold rew-text-brown">
-                    Pricing
+                    <span class="rew-text-brown">Flexible, transparent pricing for every</span> <span class="rew-text-green">PowerCampus School.</span>
                 </div>
                 <div class=" grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div v-for="(item, index) in pricings" :key="item.id" data-aos="zoom-in-down" data-aos-offset="50"
@@ -33,8 +30,7 @@
                                         <div class="font-bold rew-text-green text-2xl">
                                             {{ item.range }}
                                         </div>
-                                        <div class="p-card-subtitle italic text-sm font-normal">
-                                            {{ item.content }}
+                                        <div v-html="item.content" class="p-card-subtitle italic text-sm font-normal">
                                         </div>
                                     </div>
                                 </div>
@@ -66,12 +62,12 @@ const pricings = [
     {
         title: 'Comprehensive Upgrade',
         range: '$8,000 - $15,000',
-        content: 'Costs vary based on customizations and the condition of your database.'
+        content: 'Packages are designed for the customizations you choose and your local database specifications so that you only pay for what you need.'
     },
     {
         title: 'PowerCampus Consulting',
-        range: '$250-295/hr depending on volume',
-        content: 'You manage and we support.'
+        range: '$250 - $295 per hour',
+        content: `Your database gardening enriched with ReW's expertise and support ensures strategic success! Take advantage of our partner discounts for hourly bundles and <span class="rew-text-green">Re</span>Hires.`
     }
 ]
 </script>

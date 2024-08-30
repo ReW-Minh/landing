@@ -19,7 +19,7 @@
         <BasePageContent>
             <section>
                 <div class="mb-3 text-3xl font-semibold rew-text-brown">
-                    Free <span class="rew-text-green rew-font">Re</span>Sources
+                    Free <span class="rew-text-green rew-font">Re</span>Sources for PowerCampus
                 </div>
                 <div class=" grid grid-cols-1 md:grid-cols-3 gap-12">
                     <div v-for="(item, index) in resources" :key="item.id" data-aos="zoom-in-down" data-aos-offset="50"
@@ -72,10 +72,13 @@
                 <div class="mb-3 text-3xl font-semibold rew-text-brown">
                     Other
                 </div>
-                <div class="-mb-12 text-xl rew-text-brown">
+                <div class="text-xl rew-text-brown">
                     Need help with something else, like gap staffing, 1098-T compliance, or a specific challenge? We
                     would be
                     thrilled to help!
+                </div>
+                <div class="mt-6 flex justify-center">
+                    <CallToAction size="lg" />
                 </div>
             </section>
         </BasePageContent>
@@ -95,52 +98,42 @@ const resources = [
     {
         type: CONTACT_TYPE.RESOURCE,
         link: POWERCAMPUS_LINK,
-        title: `PowerCampus 
-                <br /> 
-                <span class="rew-text-green rew-font">Re</span>Source Articles`
+        title: `<span class="rew-text-green rew-font">Re</span>Source Articles`
     },
     {
         type: CONTACT_TYPE.PRESENTATIONS_PUBLICATIONS,
-        title: `PowerCampus 
-                <br /> 
-                Presentations`,
+        title: `Presentations`,
         link: 'https://resource.reworkflow.com/search?term=%5BPresentations%3DPowerCampus%5D'
     },
     {
         type: CONTACT_TYPE.GITHUB,
-        title: `PowerCampus 
-                <br /> 
-                Open-Source Code`,
+        title: `Open-Source Code`,
         link: 'https://github.com/WyattBest?tab=repositories'
     }
 ]
 
 const services = [
     {
-        route: '/services/powercampus/version-upgrades',
-        title: `PowerCampus 
-                <br /> 
-                Version
-                <br />
-                Upgrades`
-    },
-    {
         route: '/services/powercampus/power-slate',
-        title: `PowerCampus 
-                <br /> 
-                to Slate
+        title: `Slate
                 <br />
                 Intergration
                 <br />
                 (PowerSlate)`
     },
     {
+        route: '/services/powercampus/version-upgrades',
+        title: `Version
+                <br />
+                Upgrades`
+    },
+    {
         route: '/services/powercampus/powerfaids',
         title: `PowerFAIDS
-                <br /> 
-                to Slate
                 <br />
-                Intergration`
+                Intergration
+                <br />
+                Add-On`
     }
 ]
 
