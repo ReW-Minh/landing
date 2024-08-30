@@ -36,4 +36,5 @@ const handleClick = () => {
 
     visible.value = true
 }
+defineExpose({ handleClick })
 </script>

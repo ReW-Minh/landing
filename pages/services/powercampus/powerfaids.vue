@@ -31,7 +31,7 @@
                 <div class=" grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div v-for="(item, index) in pricings" :key="item.id" data-aos="zoom-in-down" data-aos-offset="50"
                         :data-aos-delay="index * 50">
-                        <BaseCardItem class="resource-card !cursor-default">
+                        <BaseCardItem :hoverEffect="false" class="resource-card !cursor-default">
                             <template #image>
                                 <div class="flex items-center m-6 h-full">
                                     <div class="font-bold rew-text-brown text-2xl space-y-2">
@@ -66,7 +66,6 @@ useHead({
 })
 
 definePageMeta({
-    hideCTA: true,
     middleware: ['hidden']
 })
 

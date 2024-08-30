@@ -18,7 +18,7 @@ export const NAVIGATION_MENU = [
         label: 'Services',
         items: [
             {
-                label: 'State',
+                label: 'Slate',
                 route: '/services/slate'
             },
             {

@@ -9,12 +9,12 @@
 
       <MobileMenu />
 
-      <div class="p-menubar p-component ms-auto rew-header !bg-transparent !border-none !hidden lg:!flex" data-pc-name="menubar"
-        data-pc-section="root">
+      <div class="p-menubar p-component ms-auto rew-header !bg-transparent !border-none !hidden lg:!flex"
+        data-pc-name="menubar" data-pc-section="root">
         <ul class="p-menubar-root-list" data-pc-section="rootlist" role="menubar" tabindex="0">
-          <li v-for="item in NAVIGATION_MENU" :key="item.label" class="p-menubar-item" role="menuitem" aria-label="Services"
-            aria-expanded="false" aria-haspopup="menu" aria-level="1" aria-setsize="5" aria-posinset="1"
-            data-pc-section="item" data-p-active="false" data-p-focused="false">
+          <li v-for="item in NAVIGATION_MENU" :key="item.label" class="p-menubar-item" role="menuitem"
+            aria-label="Services" aria-expanded="false" aria-haspopup="menu" aria-level="1" aria-setsize="5"
+            aria-posinset="1" data-pc-section="item" data-p-active="false" data-p-focused="false">
             <template v-if="item.items">
               <div class="p-menubar-item-content" data-pc-section="itemcontent">
                 <a target="_blank" class="p-menubar-item-link" tabindex="-1" aria-hidden="true"

@@ -1,5 +1,5 @@
 <template>
-    <Card class="card-clickable bio-card w-full h-full overflow-hidden relative">
+    <Card class="bio-card w-full h-full overflow-hidden relative" :class="{ 'card-clickable': hoverEffect }">
         <template #header>
             <div class="w-full h-[280px] overflow-hidden">
                 <slot name="image" />
@@ -14,7 +14,14 @@
     </Card>
 </template>
 
-<script setup></script>
+<script setup>
+defineProps({
+    hoverEffect: {
+        type: Boolean,
+        default: true
+    }
+})
+</script>
 
 <style lang="scss">
 .bio-card {

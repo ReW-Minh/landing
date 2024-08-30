@@ -1,5 +1,5 @@
 <template>
-    <div data-aos="fade-down" class="mb-6 md:mb-12 heading text-center">
+    <div data-aos="fade-down" class="!mb-6 md:!mb-12 heading text-center container-fluid">
         <slot />
 
         <div data-aos="fade-down" class="font-normal italic subtitle mx-4 opacity-90">
@@ -15,7 +15,7 @@
     color: var(--rew-primary-brown);
 
     .subtitle {
-        font-size: 18px;
+        font-size: 20px;
         color: var(--rew-secondary-green);
     }
 }
@@ -25,7 +25,7 @@
         font-size: 24px;
 
         .subtitle {
-            font-size: 14px;
+            font-size: 16px;
         }
     }
 }
