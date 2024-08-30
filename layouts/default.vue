@@ -9,12 +9,15 @@
 
     <ContactPopup />
 
-    <template v-for="bio in PROFILES" :key="bio.id">
+    <template v-for="bio in profiles" :key="bio.id">
         <TeamPopup :bio v-model="bio.visible" />
     </template>
 </template>
 
 <script setup>
+import { useProfiles } from '~/stores'
+
+const profiles = useProfiles()
 </script>
 
 <style scoped>

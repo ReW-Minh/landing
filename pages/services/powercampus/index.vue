@@ -49,7 +49,7 @@
                         :data-aos-delay="index * 50">
                         <BaseCardItem class="resource-card service" @click="navigateTo(item.route)">
                             <template #image>
-                                <div class="text-heading grid place-items-center text-center h-full font-bold text-white text-3xl"
+                                <div class="text-heading grid place-items-center text-center h-full font-bold text-white text-2xl"
                                     v-html="item.title"></div>
                             </template>
                             <template #title>

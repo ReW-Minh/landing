@@ -9,7 +9,7 @@
 
       <MobileMenu />
 
-      <div class="p-menubar p-component ms-auto rew-header bg-transparent hidden lg:flex" data-pc-name="menubar"
+      <div class="p-menubar p-component ms-auto rew-header !bg-transparent !border-none !hidden lg:!flex" data-pc-name="menubar"
         data-pc-section="root">
         <ul class="p-menubar-root-list" data-pc-section="rootlist" role="menubar" tabindex="0">
           <li v-for="item in NAVIGATION_MENU" :key="item.label" class="p-menubar-item" role="menuitem" aria-label="Services"

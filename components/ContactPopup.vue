@@ -37,8 +37,8 @@
                 </div>
                 <div class="grid grid-cols-3 gap-3">
                     <Button @click="clearData"
-                        class="col-span-1 btn form-btn form-btn-secondary font-bold h-10">Back</Button>
-                    <Button type="submit" :loading class="col-span-2 btn form-btn form-btn-primary font-bold h-10">
+                        class="col-span-1 btn form-btn form-btn-secondary font-bold h-10 !rounded-xl">Back</Button>
+                    <Button type="submit" :loading class="col-span-2 btn form-btn form-btn-primary font-bold h-10 !rounded-xl">
                         <i v-if="loading" class="pi pi-spin pi-spinner" />
                         Submit
                     </Button>
@@ -143,6 +143,16 @@ const sendEmail = async () => {
         .p-dialog-content {
             padding: 0 !important;
         }
+
+        .p-inputtext {
+            border: none !important
+        }
+
+        .p-inputgroupaddon {
+            border: none;
+            background: white;
+        }
+
     }
 }
 </style>

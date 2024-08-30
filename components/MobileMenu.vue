@@ -45,9 +45,8 @@
             </div>
         </div>
     </Drawer>
-    <Button icon="pi pi-arrow-right" @click="visible = true" class="flex ml-auto lg:hidden">
-        <i class="pi pi-bars text-2xl" style="color: var(--rew-secondary-green)" />
-    </Button>
+    <Button icon="pi pi-bars text-2xl" text @click="visible = true" class="flex ml-auto lg:!hidden"
+        style="color: var(--rew-primary-green) !important" />
 </template>
 
 <script setup>
@@ -124,18 +123,19 @@ const visible = ref(false)
     }
 
     .p-accordionpanel {
+
         &:has(.router-link-active) {
             .p-accordionheader {
-                color: var(--rew-primary-green);
+                color: var(--rew-primary-green) !important;
             }
         }
     }
 
     .p-accordionheader {
         padding: 24px;
-        background-color: transparent;
         font-weight: 700;
-        color: var(--rew-primary-brown);
+        color: var(--rew-primary-brown) !important;
+        background-color: transparent !important;
         border-radius: 0;
 
         &.router-link-active {
@@ -165,6 +165,7 @@ const visible = ref(false)
     .p-drawer-close-button {
         color: var(--rew-primary-brown) !important;
         width: max-content;
+        background-color: transparent !important;
 
         &::before {
             content: 'CLOSE';

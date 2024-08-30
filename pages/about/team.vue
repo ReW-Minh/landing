@@ -13,7 +13,7 @@
 
         <BasePageContent>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                <div v-for="(bio, index) in PROFILES" :key="bio.id" data-aos="zoom-in-down" data-aos-offset="50"
+                <div v-for="(bio, index) in profiles" :key="bio.id" data-aos="zoom-in-down" data-aos-offset="50"
                     :data-aos-delay="index * 50">
                     <TeamBio :bio />
                 </div>
@@ -23,9 +23,13 @@
 </template>
 
 <script setup>
+import { useProfiles } from '~/stores'
+
 useHead({
     title: 'ReWorkflow - Our Team'
 })
+
+const profiles = useProfiles()
 </script>
 
 <style lang="scss" scoped>
