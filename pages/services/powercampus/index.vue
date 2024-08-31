@@ -74,13 +74,12 @@
                 </div>
                 <div class="text-xl rew-text-brown">
                     Need help with something else, like gap staffing, 1098-T compliance, or a specific challenge? We
-                    would be
-                    thrilled to help!
+                    would be thrilled to help!
                 </div>
                 <div class="mt-6 flex justify-center">
                     <CallToAction size="lg" />
                 </div>
-            </section>
+            </section>``
         </BasePageContent>
     </BasePageContainer>
 </template>

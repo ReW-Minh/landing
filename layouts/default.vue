@@ -1,7 +1,7 @@
 <template>
     <Header />
 
-    <div class="mt">
+    <div class="mt min-h-[calc(100vh-270px)]">
         <slot />
     </div>
 

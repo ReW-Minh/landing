@@ -50,7 +50,7 @@
 
 <script setup>
 useHead({
-    title: 'ReWorkflow - PowerCampus Version Upgrades',
+    title: 'ReWorkflow - PowerCampus Version Upgrades', 
 })
 
 definePageMeta({
@@ -66,7 +66,7 @@ const pricings = [
     },
     {
         title: 'PowerCampus Consulting',
-        range: '$250 - $295 per hour',
+        range: '$250 per hour',
         content: `Your database gardening enriched with ReW's expertise and support ensures strategic success! Take advantage of our partner discounts for hourly bundles and <span class="rew-text-green">Re</span>Hires.`
     }
 ]

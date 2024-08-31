@@ -78,7 +78,7 @@ const pricings = [
     {
         title: 'PowerCampus Consulting',
         range: '$250 per hour',
-        content: 'You manage and we support.'
+        content: `Your database gardening enriched with ReW's expertise and support ensures strategic success! Take advantage of our partner discounts for hourly bundles and <span class="rew-text-green">Re</span>Hires.`
     }
 ]
 </script>
