@@ -14,8 +14,8 @@
 
         <BasePageContent>
             <section>
-                <div class="mb-3 text-3xl font-semibold rew-text-brown">
-                    <span class="rew-text-brown">Flexible, transparent pricing for every</span> <span class="rew-text-green">PowerCampus School.</span>
+                <div class="mb-3 text-3xl font-semibold rew-text-brown text-center">
+                    <span class="rew-text-brown">Flexible, transparent pricing for every</span> <span class="rew-text-green">PowerCampus School</span>
                 </div>
                 <div class=" grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div v-for="(item, index) in pricings" :key="item.id" data-aos="zoom-in-down" data-aos-offset="50"
@@ -66,8 +66,8 @@ const pricings = [
     },
     {
         title: 'PowerCampus Consulting',
-        range: '$250 per hour',
-        content: `Your database gardening enriched with ReW's expertise and support ensures strategic success! Take advantage of our partner discounts for hourly bundles and <span class="rew-text-green">Re</span>Hires.`
+        range: '"$220 - $295" per hour',
+        content: `Your database gardening enriched with <span class="rew-font"><span class="rew-text-green">Re</span>W</span>'s expertise and support ensures strategic success! Take advantage of our partner discounts for hourly bundles and <span class="rew-text-green">Re</span>Hires.`
     }
 ]
 </script>

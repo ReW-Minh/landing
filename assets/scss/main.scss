@@ -789,3 +789,15 @@ a.footer-link:hover {
 .p-card-subtitle {
   color: var(--rew-primary-brown) !important
 }
+
+.list-checkmark {
+  list-style: none;
+
+  li {
+    &::before {
+      content: '✓';
+      padding-right: 12px;
+      color: var(--rew-primary-green)
+    }
+  }
+}

@@ -1,8 +1,7 @@
 <template>
-    <button title="Contact us" class="rew-main-btn rew-box-shadow inline-flex items-center"
+    <button :title="label ?? 'Contact us'" class="rew-main-btn rew-box-shadow inline-flex items-center"
         :class="{ 'h-10 !text-base': size === 'md', 'footer': footer }" @click="handleClick">
-        <span v-if="label">{{ label }}</span>
-        <span v-else>Contact Us</span>
+        <span>{{ label ?? 'Contact Us' }}</span>
         <span class="md:ml-3 ml-1">
             <IconDoubleArrow />
         </span>

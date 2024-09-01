@@ -1,9 +1,9 @@
 import { useAdminAuth } from '~/stores'
 
-export const adminLogin = async ({ username, password }) => {
+export const adminLogin = async (body) => {
     const admin = useAdminAuth()
 
-    const res = await apiPost('login', { username, password })
+    const res = await apiPost('login', { body })
 
     if (!res?.success)
         return

@@ -1,5 +1,5 @@
 <template>
-    <div class="p-2 h-full sidebar">
+    <div class="h-full sidebar">
         <Menu class="h-full flex flex-col" :model="items">
             <template #start>
                 <NuxtLink class="m-4 pb-2 block relative logo" to="/">

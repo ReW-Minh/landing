@@ -6,7 +6,8 @@ export const apiGet = (url, options) => {
 
     return $fetch(url, {
         headers: {
-            Authorization: admin.value.logged ? `Bearer ${admin.value.token}` : '',
+            'Content-Type': 'application/json',
+            'Authorization': admin.value.logged ? `Bearer ${admin.value.token}` : '',
         },
         baseURL: useRuntimeConfig().public.baseURL,
         method: 'GET',
@@ -20,7 +21,8 @@ export const apiPost = (url, options) => {
 
     return $fetch(url, {
         headers: {
-            Authorization: admin.value.logged ? `Bearer ${admin.value.token}` : '',
+            'Content-Type': 'application/json',
+            'Authorization': admin.value.logged ? `Bearer ${admin.value.token}` : '',
         },
         baseURL: useRuntimeConfig().public.baseURL,
         method: 'POST',

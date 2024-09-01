@@ -30,6 +30,8 @@ useSeoMeta({
 }
 
 .rew-font {
+  @apply !not-italic;
+
   font-family: 'Ondo Medium', sans-serif !important;
   font-weight: 500 !important;
 }

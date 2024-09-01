@@ -15,10 +15,7 @@
                         </div>
                         <div data-aos="fade-right" data-aos-duration="700" data-aos-delay="200"
                             class="left-home-block flex items-center mt-2 md:mt-6">
-                            <span class="small-image rew-box-shadow rew-bg-gradient hidden lg:block">
-                                <img src="/img/hero-img-sm.webp" alt="rew small mainboard" class="img-fluid">
-                            </span>
-                            <div class="rew-text-brown text-[14px] md:text-[18px] lg:text-[24px] ml-0 lg:ml-6">
+                            <div class="rew-text-brown text-[14px] md:text-[20px] lg:text-[28px]">
                                 We team up with higher education institutions to cultivate evergreen enrollment systems, operations, and processes.
                             </div>
                         </div>

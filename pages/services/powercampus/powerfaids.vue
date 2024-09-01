@@ -16,7 +16,7 @@
                         class="font-bold rew-text-brown-secondary">PowerFAIDS</span> to
                     <span class="font-bold slate-text-blue">Slate</span>:
                 </div>
-                <ul data-aos="fade-right" data-aos-delay="100" class="italic list-inside list-disc">
+                <ul data-aos="fade-right" data-aos-delay="100" class="italic list-inside list-checkmark">
                     <li>Checklist (missing docs) to keep your applicants informed</li>
                     <li>Packaging Status to keep your counselors informed</li>
                     <li>Awards to keep your counselors informed</li>
@@ -24,8 +24,9 @@
             </section>
 
             <section>
-                <div class="mb-3 text-3xl font-semibold rew-text-brown">
-                    Pricing
+                <div class="mb-3 text-3xl font-semibold rew-text-brown text-center">
+                    <span class="rew-text-brown">Flexible, transparent pricing for every</span> <span
+                        class="rew-text-green">PowerCampus School</span>
                 </div>
 
                 <div class=" grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -41,8 +42,7 @@
                                         <div class="font-bold rew-text-green text-2xl">
                                             {{ item.range }}
                                         </div>
-                                        <div class="p-card-subtitle italic text-sm font-normal">
-                                            {{ item.content }}
+                                        <div v-html="item.content" class="p-card-subtitle italic text-sm font-normal">
                                         </div>
                                     </div>
                                 </div>
@@ -73,20 +73,12 @@ const pricings = [
     {
         title: 'PowerFAIDs Integration',
         range: '$2000',
-        content: 'Costs vary based on customizations and the condition of your database.',
+        content: '',
     },
     {
         title: 'PowerCampus Consulting',
-        range: '$250 per hour',
-        content: `Your database gardening enriched with ReW's expertise and support ensures strategic success! Take advantage of our partner discounts for hourly bundles and <span class="rew-text-green">Re</span>Hires.`
+       range: '"$220 - $295" per hour',
+        content: `Your database gardening enriched with <span class="rew-font"><span class="rew-text-green">Re</span>W</span>'s expertise and support ensures strategic success! Take advantage of our partner discounts for hourly bundles and <span class="rew-text-green">Re</span>Hires.`
     }
 ]
 </script>
-
-<style scoped lang="scss">
-.list-disc {
-    li::marker {
-        color: var(--rew-primary-green) !important
-    }
-}
-</style>
