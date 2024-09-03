@@ -73,11 +73,11 @@ const pricings = [
     {
         title: 'PowerFAIDs Integration',
         range: '$2000',
-        content: '',
+        content: 'Costs vary based on customizations and the condition of your database.',
     },
     {
         title: 'PowerCampus Consulting',
-       range: '"$220 - $295" per hour',
+       range: '$220 - $295 per hour',
         content: `Your database gardening enriched with <span class="rew-font"><span class="rew-text-green">Re</span>W</span>'s expertise and support ensures strategic success! Take advantage of our partner discounts for hourly bundles and <span class="rew-text-green">Re</span>Hires.`
     }
 ]

@@ -24,18 +24,21 @@
                 <div class=" grid grid-cols-1 md:grid-cols-3 gap-12">
                     <div v-for="(item, index) in resources" :key="item.id" data-aos="zoom-in-down" data-aos-offset="50"
                         :data-aos-delay="index * 50">
-                        <BaseCardItem class="resource-card" @click="openLink(item.link)">
-                            <template #image>
-                                <div class="resource-icon grid place-items-center h-full">
-                                    <IconReSource v-if="item.type === CONTACT_TYPE.RESOURCE" />
-                                    <IconPresentations v-if="item.type === CONTACT_TYPE.PRESENTATIONS_PUBLICATIONS" />
-                                    <IconGitHub v-if="item.type === CONTACT_TYPE.GITHUB" />
-                                </div>
-                            </template>
-                            <template #title>
-                                <div v-html="item.title"></div>
-                            </template>
-                        </BaseCardItem>
+                        <NuxtLink :to="item.link" target="_blank">
+                            <BaseCardItem class="resource-card">
+                                <template #image>
+                                    <div class="resource-icon grid place-items-center h-full">
+                                        <IconReSource v-if="item.type === CONTACT_TYPE.RESOURCE" />
+                                        <IconPresentations
+                                            v-if="item.type === CONTACT_TYPE.PRESENTATIONS_PUBLICATIONS" />
+                                        <IconGitHub v-if="item.type === CONTACT_TYPE.GITHUB" />
+                                    </div>
+                                </template>
+                                <template #title>
+                                    <div v-html="item.title"></div>
+                                </template>
+                            </BaseCardItem>
+                        </NuxtLink>
                     </div>
                 </div>
             </section>
@@ -47,23 +50,25 @@
                 <div class=" grid grid-cols-1 md:grid-cols-3 gap-12">
                     <div v-for="(item, index) in services" :key="item.id" data-aos="zoom-in-down" data-aos-offset="50"
                         :data-aos-delay="index * 50">
-                        <BaseCardItem class="resource-card service" @click="navigateTo(item.route)">
-                            <template #image>
-                                <div class="text-heading grid place-items-center text-center h-full font-bold text-white text-2xl"
-                                    v-html="item.title"></div>
-                            </template>
-                            <template #title>
-                                <div class="flex justify-center">
-                                    <button title="Learn more"
-                                        class="rew-main-btn rew-box-shadow inline-flex items-center h-10 !text-base">
-                                        <span>Learn more</span>
-                                        <span class="md:ml-3 ml-1">
-                                            <IconDoubleArrow />
-                                        </span>
-                                    </button>
-                                </div>
-                            </template>
-                        </BaseCardItem>
+                        <NuxtLink :to="item.route">
+                            <BaseCardItem class="resource-card service">
+                                <template #image>
+                                    <div class="text-heading grid place-items-center text-center h-full font-bold text-white text-2xl"
+                                        v-html="item.title"></div>
+                                </template>
+                                <template #title>
+                                    <div class="flex justify-center">
+                                        <button title="Learn more"
+                                            class="rew-main-btn rew-box-shadow inline-flex items-center h-10 !text-base">
+                                            <span>Learn more</span>
+                                            <span class="md:ml-3 ml-1">
+                                                <IconDoubleArrow />
+                                            </span>
+                                        </button>
+                                    </div>
+                                </template>
+                            </BaseCardItem>
+                        </NuxtLink>
                     </div>
                 </div>
             </section>
@@ -79,7 +84,7 @@
                 <div class="mt-6 flex justify-center">
                     <CallToAction size="lg" />
                 </div>
-            </section>``
+            </section>
         </BasePageContent>
     </BasePageContainer>
 </template>
@@ -135,13 +140,6 @@ const services = [
                 Add-On`
     }
 ]
-
-const openLink = link => {
-    if (!link)
-        return
-
-    window.open(link, '_blank').focus()
-}
 </script>
 
 <style scoped lang="scss">

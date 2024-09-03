@@ -4,8 +4,9 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   modules: ['@primevue/nuxt-module', '@nuxtjs/tailwindcss', 'nuxt-aos'],
-  css: ['~/assets/scss/main.scss'],
+  css: ['~/assets/scss/main.scss', '~/assets/scss/editor.scss'],
   ssr: false,
+  spaLoadingTemplate: true,
   vue: {
     compilerOptions: {
       isCustomElement: tag => tag.startsWith('swiper-')
@@ -33,7 +34,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      baseURL: 'https://mharew.pythonanywhere.com/',
+      baseURL: 'https://rew-admin.vercel.app/',
     },
   },
 })

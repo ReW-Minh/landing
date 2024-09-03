@@ -66,7 +66,7 @@ const pricings = [
     },
     {
         title: 'PowerCampus Consulting',
-        range: '"$220 - $295" per hour',
+        range: '$220 - $295 per hour',
         content: `Your database gardening enriched with <span class="rew-font"><span class="rew-text-green">Re</span>W</span>'s expertise and support ensures strategic success! Take advantage of our partner discounts for hourly bundles and <span class="rew-text-green">Re</span>Hires.`
     }
 ]

@@ -22,3 +22,9 @@ export const checkAdminLoggedIn = () => {
     if (!admin.value.logged)
         navigateTo('/admin/login')
 }
+
+export const formatDate = timestamp => {
+    const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' }
+
+    return new Date(timestamp * 1000).toLocaleDateString("en-US", options)
+}

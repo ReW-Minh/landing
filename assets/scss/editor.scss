@@ -1,0 +1,978 @@
+.editor {
+    // Variables
+    //
+    // Variables should follow the `$component-state-property-size` formula for
+    // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+    // Color system
+
+    // scss-docs-start gray-color-variables
+    $white: #fff !default;
+    $gray-100: #f8f9fa !default;
+    $gray-200: #e9ecef !default;
+    $gray-300: #dee2e6 !default;
+    $gray-400: #ced4da !default;
+    $gray-500: #adb5bd !default;
+    $gray-600: #6c757d !default;
+    $gray-700: #495057 !default;
+    $gray-800: #343a40 !default;
+    $gray-900: #212529 !default;
+    $black: #000 !default;
+    // scss-docs-end gray-color-variables
+
+    // fusv-disable
+    // scss-docs-start gray-colors-map
+    $grays: (
+        "100": $gray-100,
+        "200": $gray-200,
+        "300": $gray-300,
+        "400": $gray-400,
+        "500": $gray-500,
+        "600": $gray-600,
+        "700": $gray-700,
+        "800": $gray-800,
+        "900": $gray-900) !default;
+    // scss-docs-end gray-colors-map
+    // fusv-enable
+
+    // scss-docs-start color-variables
+    $blue: #0d6efd !default;
+    $indigo: #6610f2 !default;
+    $purple: #6f42c1 !default;
+    $pink: #d63384 !default;
+    $red: #dc3545 !default;
+    $orange: #fd7e14 !default;
+    $yellow: #ffc107 !default;
+    $green: #198754 !default;
+    $teal: #20c997 !default;
+    $cyan: #0dcaf0 !default;
+    // scss-docs-end color-variables
+
+    // scss-docs-start colors-map
+    $colors: (
+        "blue": $blue,
+        "indigo": $indigo,
+        "purple": $purple,
+        "pink": $pink,
+        "red": $red,
+        "orange": $orange,
+        "yellow": $yellow,
+        "green": $green,
+        "teal": $teal,
+        "cyan": $cyan,
+        "black": $black,
+        "white": $white,
+        "gray": $gray-600,
+        "gray-dark": $gray-800) !default;
+    // scss-docs-end colors-map
+
+    // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.2 are 3, 4.5 and 7.
+    // See https://www.w3.org/TR/WCAG/#contrast-minimum
+    $min-contrast-ratio: 4.5 !default;
+
+    // Customize the light and dark text colors for use in our color contrast function.
+    $color-contrast-dark: $black !default;
+    $color-contrast-light: $white !default;
+
+    // fusv-disable
+    $blue-100: tint-color($blue, 80%) !default;
+    $blue-200: tint-color($blue, 60%) !default;
+    $blue-300: tint-color($blue, 40%) !default;
+    $blue-400: tint-color($blue, 20%) !default;
+    $blue-500: $blue !default;
+    $blue-600: shade-color($blue, 20%) !default;
+    $blue-700: shade-color($blue, 40%) !default;
+    $blue-800: shade-color($blue, 60%) !default;
+    $blue-900: shade-color($blue, 80%) !default;
+
+    $indigo-100: tint-color($indigo, 80%) !default;
+    $indigo-200: tint-color($indigo, 60%) !default;
+    $indigo-300: tint-color($indigo, 40%) !default;
+    $indigo-400: tint-color($indigo, 20%) !default;
+    $indigo-500: $indigo !default;
+    $indigo-600: shade-color($indigo, 20%) !default;
+    $indigo-700: shade-color($indigo, 40%) !default;
+    $indigo-800: shade-color($indigo, 60%) !default;
+    $indigo-900: shade-color($indigo, 80%) !default;
+
+    $purple-100: tint-color($purple, 80%) !default;
+    $purple-200: tint-color($purple, 60%) !default;
+    $purple-300: tint-color($purple, 40%) !default;
+    $purple-400: tint-color($purple, 20%) !default;
+    $purple-500: $purple !default;
+    $purple-600: shade-color($purple, 20%) !default;
+    $purple-700: shade-color($purple, 40%) !default;
+    $purple-800: shade-color($purple, 60%) !default;
+    $purple-900: shade-color($purple, 80%) !default;
+
+    $pink-100: tint-color($pink, 80%) !default;
+    $pink-200: tint-color($pink, 60%) !default;
+    $pink-300: tint-color($pink, 40%) !default;
+    $pink-400: tint-color($pink, 20%) !default;
+    $pink-500: $pink !default;
+    $pink-600: shade-color($pink, 20%) !default;
+    $pink-700: shade-color($pink, 40%) !default;
+    $pink-800: shade-color($pink, 60%) !default;
+    $pink-900: shade-color($pink, 80%) !default;
+
+    $red-100: tint-color($red, 80%) !default;
+    $red-200: tint-color($red, 60%) !default;
+    $red-300: tint-color($red, 40%) !default;
+    $red-400: tint-color($red, 20%) !default;
+    $red-500: $red !default;
+    $red-600: shade-color($red, 20%) !default;
+    $red-700: shade-color($red, 40%) !default;
+    $red-800: shade-color($red, 60%) !default;
+    $red-900: shade-color($red, 80%) !default;
+
+    $orange-100: tint-color($orange, 80%) !default;
+    $orange-200: tint-color($orange, 60%) !default;
+    $orange-300: tint-color($orange, 40%) !default;
+    $orange-400: tint-color($orange, 20%) !default;
+    $orange-500: $orange !default;
+    $orange-600: shade-color($orange, 20%) !default;
+    $orange-700: shade-color($orange, 40%) !default;
+    $orange-800: shade-color($orange, 60%) !default;
+    $orange-900: shade-color($orange, 80%) !default;
+
+    $yellow-100: tint-color($yellow, 80%) !default;
+    $yellow-200: tint-color($yellow, 60%) !default;
+    $yellow-300: tint-color($yellow, 40%) !default;
+    $yellow-400: tint-color($yellow, 20%) !default;
+    $yellow-500: $yellow !default;
+    $yellow-600: shade-color($yellow, 20%) !default;
+    $yellow-700: shade-color($yellow, 40%) !default;
+    $yellow-800: shade-color($yellow, 60%) !default;
+    $yellow-900: shade-color($yellow, 80%) !default;
+
+    $green-100: tint-color($green, 80%) !default;
+    $green-200: tint-color($green, 60%) !default;
+    $green-300: tint-color($green, 40%) !default;
+    $green-400: tint-color($green, 20%) !default;
+    $green-500: $green !default;
+    $green-600: shade-color($green, 20%) !default;
+    $green-700: shade-color($green, 40%) !default;
+    $green-800: shade-color($green, 60%) !default;
+    $green-900: shade-color($green, 80%) !default;
+
+    $teal-100: tint-color($teal, 80%) !default;
+    $teal-200: tint-color($teal, 60%) !default;
+    $teal-300: tint-color($teal, 40%) !default;
+    $teal-400: tint-color($teal, 20%) !default;
+    $teal-500: $teal !default;
+    $teal-600: shade-color($teal, 20%) !default;
+    $teal-700: shade-color($teal, 40%) !default;
+    $teal-800: shade-color($teal, 60%) !default;
+    $teal-900: shade-color($teal, 80%) !default;
+
+    $cyan-100: tint-color($cyan, 80%) !default;
+    $cyan-200: tint-color($cyan, 60%) !default;
+    $cyan-300: tint-color($cyan, 40%) !default;
+    $cyan-400: tint-color($cyan, 20%) !default;
+    $cyan-500: $cyan !default;
+    $cyan-600: shade-color($cyan, 20%) !default;
+    $cyan-700: shade-color($cyan, 40%) !default;
+    $cyan-800: shade-color($cyan, 60%) !default;
+    $cyan-900: shade-color($cyan, 80%) !default;
+
+    $blues: (
+        "blue-100": $blue-100,
+        "blue-200": $blue-200,
+        "blue-300": $blue-300,
+        "blue-400": $blue-400,
+        "blue-500": $blue-500,
+        "blue-600": $blue-600,
+        "blue-700": $blue-700,
+        "blue-800": $blue-800,
+        "blue-900": $blue-900) !default;
+
+    $indigos: (
+        "indigo-100": $indigo-100,
+        "indigo-200": $indigo-200,
+        "indigo-300": $indigo-300,
+        "indigo-400": $indigo-400,
+        "indigo-500": $indigo-500,
+        "indigo-600": $indigo-600,
+        "indigo-700": $indigo-700,
+        "indigo-800": $indigo-800,
+        "indigo-900": $indigo-900) !default;
+
+    $purples: (
+        "purple-100": $purple-100,
+        "purple-200": $purple-200,
+        "purple-300": $purple-300,
+        "purple-400": $purple-400,
+        "purple-500": $purple-500,
+        "purple-600": $purple-600,
+        "purple-700": $purple-700,
+        "purple-800": $purple-800,
+        "purple-900": $purple-900) !default;
+
+    $pinks: (
+        "pink-100": $pink-100,
+        "pink-200": $pink-200,
+        "pink-300": $pink-300,
+        "pink-400": $pink-400,
+        "pink-500": $pink-500,
+        "pink-600": $pink-600,
+        "pink-700": $pink-700,
+        "pink-800": $pink-800,
+        "pink-900": $pink-900) !default;
+
+    $reds: (
+        "red-100": $red-100,
+        "red-200": $red-200,
+        "red-300": $red-300,
+        "red-400": $red-400,
+        "red-500": $red-500,
+        "red-600": $red-600,
+        "red-700": $red-700,
+        "red-800": $red-800,
+        "red-900": $red-900) !default;
+
+    $oranges: (
+        "orange-100": $orange-100,
+        "orange-200": $orange-200,
+        "orange-300": $orange-300,
+        "orange-400": $orange-400,
+        "orange-500": $orange-500,
+        "orange-600": $orange-600,
+        "orange-700": $orange-700,
+        "orange-800": $orange-800,
+        "orange-900": $orange-900) !default;
+
+    $yellows: (
+        "yellow-100": $yellow-100,
+        "yellow-200": $yellow-200,
+        "yellow-300": $yellow-300,
+        "yellow-400": $yellow-400,
+        "yellow-500": $yellow-500,
+        "yellow-600": $yellow-600,
+        "yellow-700": $yellow-700,
+        "yellow-800": $yellow-800,
+        "yellow-900": $yellow-900) !default;
+
+    $greens: (
+        "green-100": $green-100,
+        "green-200": $green-200,
+        "green-300": $green-300,
+        "green-400": $green-400,
+        "green-500": $green-500,
+        "green-600": $green-600,
+        "green-700": $green-700,
+        "green-800": $green-800,
+        "green-900": $green-900) !default;
+
+    $teals: (
+        "teal-100": $teal-100,
+        "teal-200": $teal-200,
+        "teal-300": $teal-300,
+        "teal-400": $teal-400,
+        "teal-500": $teal-500,
+        "teal-600": $teal-600,
+        "teal-700": $teal-700,
+        "teal-800": $teal-800,
+        "teal-900": $teal-900) !default;
+
+    $cyans: (
+        "cyan-100": $cyan-100,
+        "cyan-200": $cyan-200,
+        "cyan-300": $cyan-300,
+        "cyan-400": $cyan-400,
+        "cyan-500": $cyan-500,
+        "cyan-600": $cyan-600,
+        "cyan-700": $cyan-700,
+        "cyan-800": $cyan-800,
+        "cyan-900": $cyan-900) !default;
+    // fusv-enable
+
+    // scss-docs-start theme-color-variables
+    $primary: $blue !default;
+    $secondary: $gray-600 !default;
+    $success: $green !default;
+    $info: $cyan !default;
+    $warning: $yellow !default;
+    $danger: $red !default;
+    $light: $gray-100 !default;
+    $dark: $gray-900 !default;
+    // scss-docs-end theme-color-variables
+
+    // scss-docs-start theme-colors-map
+    $theme-colors: (
+        "primary": $primary,
+        "secondary": $secondary,
+        "success": $success,
+        "info": $info,
+        "warning": $warning,
+        "danger": $danger,
+        "light": $light,
+        "dark": $dark) !default;
+    // scss-docs-end theme-colors-map
+
+    // scss-docs-start theme-text-variables
+    $primary-text-emphasis: shade-color($primary, 60%) !default;
+    $secondary-text-emphasis: shade-color($secondary, 60%) !default;
+    $success-text-emphasis: shade-color($success, 60%) !default;
+    $info-text-emphasis: shade-color($info, 60%) !default;
+    $warning-text-emphasis: shade-color($warning, 60%) !default;
+    $danger-text-emphasis: shade-color($danger, 60%) !default;
+    $light-text-emphasis: $gray-700 !default;
+    $dark-text-emphasis: $gray-700 !default;
+    // scss-docs-end theme-text-variables
+
+    // scss-docs-start theme-bg-subtle-variables
+    $primary-bg-subtle: tint-color($primary, 80%) !default;
+    $secondary-bg-subtle: tint-color($secondary, 80%) !default;
+    $success-bg-subtle: tint-color($success, 80%) !default;
+    $info-bg-subtle: tint-color($info, 80%) !default;
+    $warning-bg-subtle: tint-color($warning, 80%) !default;
+    $danger-bg-subtle: tint-color($danger, 80%) !default;
+    $light-bg-subtle: mix($gray-100, $white) !default;
+    $dark-bg-subtle: $gray-400 !default;
+    // scss-docs-end theme-bg-subtle-variables
+
+    // scss-docs-start theme-border-subtle-variables
+    $primary-border-subtle: tint-color($primary, 60%) !default;
+    $secondary-border-subtle: tint-color($secondary, 60%) !default;
+    $success-border-subtle: tint-color($success, 60%) !default;
+    $info-border-subtle: tint-color($info, 60%) !default;
+    $warning-border-subtle: tint-color($warning, 60%) !default;
+    $danger-border-subtle: tint-color($danger, 60%) !default;
+    $light-border-subtle: $gray-200 !default;
+    $dark-border-subtle: $gray-500 !default;
+    // scss-docs-end theme-border-subtle-variables
+
+    // Characters which are escaped by the escape-svg function
+    $escaped-characters: (
+        ("<", "%3c"),
+        (">", "%3e"),
+        ("#", "%23"),
+        ("(", "%28"),
+        (")", "%29"),
+        ) !default;
+
+    // Options
+    //
+    // Quickly modify global styling by enabling or disabling optional features.
+
+    $enable-caret: true !default;
+    $enable-rounded: true !default;
+    $enable-shadows: false !default;
+    $enable-gradients: false !default;
+    $enable-transitions: true !default;
+    $enable-reduced-motion: true !default;
+    $enable-smooth-scroll: true !default;
+    $enable-grid-classes: true !default;
+    $enable-container-classes: true !default;
+    $enable-cssgrid: false !default;
+    $enable-button-pointers: true !default;
+    $enable-rfs: true !default;
+    $enable-validation-icons: true !default;
+    $enable-negative-margins: false !default;
+    $enable-deprecation-messages: true !default;
+    $enable-important-utilities: true !default;
+
+    $enable-dark-mode: true !default;
+    $color-mode-type: data !default; // `data` or `media-query`
+
+    // Prefix for :root CSS variables
+
+    $variable-prefix: bs- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
+    $prefix: $variable-prefix !default;
+
+    // Gradient
+    //
+    // The gradient which is added to components if `$enable-gradients` is `true`
+    // This gradient is also added to elements with `.bg-gradient`
+    // scss-docs-start variable-gradient
+    $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
+    // scss-docs-end variable-gradient
+
+    // Spacing
+    //
+    // Control the default styling of most Bootstrap elements by modifying these
+    // variables. Mostly focused on spacing.
+    // You can add more entries to the $spacers map, should you need more variation.
+
+    // scss-docs-start spacer-variables-maps
+    $spacer: 1rem !default;
+    $spacers: (
+        0: 0,
+        1: $spacer * .25,
+        2: $spacer * .5,
+        3: $spacer,
+        4: $spacer * 1.5,
+        5: $spacer * 3,
+        ) !default;
+    // scss-docs-end spacer-variables-maps
+
+    // Position
+    //
+    // Define the edge positioning anchors of the position utilities.
+
+    // scss-docs-start position-map
+    $position-values: (
+        0: 0,
+        50: 50%,
+        100: 100%) !default;
+    // scss-docs-end position-map
+
+    // Body
+    //
+    // Settings for the `<body>` element.
+
+    /*
+Reboot
+Normalization of HTML elements, manually forked from Normalize.css to remove styles targeting irrelevant browsers while applying new styles.
+Normalize is licensed MIT. https://github.com/necolas/normalize.css
+* Bootstrap v4.0.0-beta (https://getbootstrap.com)
+ * Copyright 2011-2017 The Bootstrap Authors
+ * Copyright 2011-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+*/
+    /*
+Document
+1. Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.
+2. Change the default font family in all browsers.
+3. Correct the line height in all browsers.
+4. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.
+5. Setting @viewport causes scrollbars to overlap content in IE11 and Edge, so we force a non-overlapping, non-auto-hiding scrollbar to counteract.
+6. Change the default tap highlight to be completely transparent in iOS.
+*/
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        /* 1 */
+    }
+
+    html {
+        font-family: sans-serif;
+        /* 2 */
+        line-height: 1.15;
+        /* 3 */
+        -webkit-text-size-adjust: 100%;
+        /* 4 */
+        -ms-text-size-adjust: 100%;
+        /* 4 */
+        -ms-overflow-style: scrollbar;
+        /* 5 */
+        -webkit-tap-highlight-color: transparent;
+        /* 6 */
+    }
+
+    /* IE10+ doesn't honor `<meta name="viewport">` in some cases. */
+    @-ms-viewport {
+        width: device-width;
+    }
+
+    /* stylelint-disable selector-list-comma-newline-after
+Shim for "new" HTML5 structural elements to display correctly (IE10, older browsers) */
+    article,
+    aside,
+    dialog,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    main,
+    nav,
+    section {
+        display: block;
+    }
+
+    /*
+Body
+1. Remove the margin in all browsers.
+2. As a best practice, apply a default `background-color`.
+3. Set an explicit initial text-align value so that we can later use the `inherit` value on things like `<th>` elements.
+*/
+    body {
+        margin: 0;
+        /* 1 */
+        font-family: -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            Roboto,
+            "Helvetica Neue",
+            Arial,
+            sans-serif,
+            "Apple Color Emoji",
+            "Segoe UI Emoji",
+            "Segoe UI Symbol";
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: 1.5;
+        color: #212529;
+        text-align: left;
+        /* 3 */
+        background-color: #fff;
+        /* 2 */
+    }
+
+    /*
+Suppress the focus outline on elements that cannot be accessed via keyboard.
+This prevents an unwanted focus outline from appearing around elements that might still respond to pointer events.
+Credit: https://github.com/suitcss/base
+*/
+    [tabindex="-1"]:focus {
+        outline: none !important;
+    }
+
+    /* 
+Content grouping
+1. Add the correct box sizing in Firefox.
+2. Show the overflow in Edge and IE.
+*/
+    hr {
+        box-sizing: content-box;
+        /* 1 */
+        height: 0;
+        /* 1 */
+        overflow: visible;
+        /* 2 */
+    }
+
+    /* 
+Typography
+*/
+    /* 
+Remove top margins from headings
+By default, `<h1>`-`<h6>` all receive top and bottom margins. We nuke the top margin for easier control within type scales as it avoids margin collapsing.
+*/
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 0;
+        margin-bottom: .5rem;
+    }
+
+    /*
+Reset margins on paragraphs
+Similarly, the top margin on `<p>`s get reset. However, we also reset the bottom margin to use `rem` units instead of `em`.
+*/
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    /*
+Abbreviations
+1. Remove the bottom border in Firefox 39-.
+2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+3. Add explicit cursor to indicate changed behavior.
+4. Duplicate behavior to the data-* attribute for our tooltip plugin
+*/
+    abbr[title],
+    abbr[data-original-title] {
+        /* 4 */
+        text-decoration: underline;
+        /* 2 */
+        -webkit-text-decoration: underline dotted;
+        /* 2 */
+        text-decoration: underline dotted;
+        /* 2 */
+        cursor: help;
+        /* 3 */
+        border-bottom: 0;
+        /* 1 */
+    }
+
+    address {
+        margin-bottom: 1rem;
+        font-style: normal;
+        line-height: inherit;
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    ol,
+    ul,
+    dl {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        padding-left: 2rem;
+    }
+
+    ol ol,
+    ul ul,
+    ol ul,
+    ul ol {
+        margin-bottom: 0;
+    }
+
+    dt {
+        font-weight: bold;
+    }
+
+    dd {
+        margin-bottom: .5rem;
+        margin-left: 0;
+        /* Undo browser default */
+    }
+
+    blockquote {
+        margin: 0 0 1rem;
+    }
+
+    dfn {
+        font-style: italic;
+        /* Add the correct font style in Android 4.3- */
+    }
+
+    b,
+    strong {
+        font-weight: bolder;
+        /* Add the correct font weight in Chrome, Edge, and Safari */
+    }
+
+    small {
+        font-size: 80%;
+        /* Add the correct font size in all browsers */
+    }
+
+    sub,
+    sup {
+        position: relative;
+        font-size: 75%;
+        line-height: 0;
+        vertical-align: baseline;
+    }
+
+    sub {
+        bottom: -.25em;
+    }
+
+    sup {
+        top: -.5em;
+    }
+
+    /*
+Links
+*/
+    a {
+        color: var(--rew-primary-green);
+        text-decoration: none;
+        background-color: transparent;
+        /* Remove the gray background on active links in IE 10. */
+        -webkit-text-decoration-skip: objects;
+        /* Remove gaps in links underline in iOS 8+ and Safari 8+. */
+    }
+
+    a:hover {
+        color: var(--rew-primary-brown);
+        text-decoration: underline;
+    }
+
+    /*
+And undo these styles for placeholder links/named anchors (without href) which have not been made explicitly keyboard-focusable (without tabindex). It would be more straightforward to just use a[href] in previous block, but that causes specificity issues in many other styles that are too complex to fix.
+See https://github.com/twbs/bootstrap/issues/19402
+*/
+    a:not([href]):not([tabindex]) {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    a:not([href]):not([tabindex]):focus,
+    a:not([href]):not([tabindex]):hover {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    a:not([href]):not([tabindex]):focus {
+        outline: 0;
+    }
+
+    /*
+Code
+*/
+    pre,
+    code,
+    kbd,
+    samp {
+        font-family: monospace,
+            monospace;
+        /* Correct the inheritance and scaling of font size in all browsers. */
+        font-size: 1em;
+        /* Correct the odd `em` font sizing in all browsers. */
+    }
+
+    pre {
+        /* Remove browser default top margin */
+        margin-top: 0;
+        /* Reset browser default of `1em` to use `rem`s */
+        margin-bottom: 1rem;
+        /* Don't allow content to break outside */
+        overflow: auto;
+        /* We have @viewport set which causes scrollbars to overlap content in IE11 and Edge, so we force a non-overlapping, non-auto-hiding scrollbar to counteract. */
+        -ms-overflow-style: scrollbar;
+    }
+
+    /*
+Figures
+*/
+    figure {
+        /* Apply a consistent margin strategy (matches our type styles). */
+        margin: 0 0 1rem;
+    }
+
+    /*
+Images and content
+*/
+    img {
+        vertical-align: middle;
+        border-style: none;
+        /* Remove the border on images inside links in IE 10-. */
+    }
+
+    svg:not(:root) {
+        overflow: hidden;
+        /* Hide the overflow in IE */
+    }
+
+    /*
+Avoid 300ms click delay on touch devices that support the `touch-action` CSS property.
+In particular, unlike most other browsers, IE11+Edge on Windows 10 on touch devices and IE Mobile 10-11 DON'T remove the click delay when `<meta name="viewport" content="width=device-width">` is present. However, they DO support removing the click delay via `touch-action: manipulation`.
+See:
+* https://getbootstrap.com/docs/4.0/content/reboot/#click-delay-optimization-for-touch
+* https://caniuse.com/#feat=css-touch-action
+*  https://patrickhlauke.github.io/touch/tests/results/#suppressing-300ms-delay
+*/
+    a,
+    area,
+    button,
+    [role="button"],
+    input:not([type=range]),
+    label,
+    select,
+    summary,
+    textarea {
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    }
+
+    /*
+Tables
+*/
+    table {
+        border-collapse: collapse;
+        /* Prevent double borders */
+    }
+
+    caption {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        color: #868e96;
+        text-align: left;
+        caption-side: bottom;
+    }
+
+    th {
+        /* Matches default `<td>` alignment by inheriting from the `<body>`, or the closest parent with a set `text-align`. */
+        text-align: inherit;
+    }
+
+    /*
+Forms
+*/
+    label {
+        /* Allow labels to use `margin` for spacing. */
+        display: inline-block;
+        margin-bottom: .5rem;
+    }
+
+    /*
+Remove the default `border-radius` that macOS Chrome adds.
+Details at https://github.com/twbs/bootstrap/issues/24093
+*/
+    button {
+        border-radius: 0;
+    }
+
+    /*
+Work around a Firefox/IE bug where the transparent `button` background results in a loss of the default `button` focus styles.
+Credit: https://github.com/suitcss/base/
+*/
+    button:focus {
+        outline: 1px dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+    }
+
+    input,
+    button,
+    select,
+    optgroup,
+    textarea {
+        margin: 0;
+        /* Remove the margin in Firefox and Safari */
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+    }
+
+    button,
+    input {
+        overflow: visible;
+        /* Show the overflow in Edge */
+    }
+
+    button,
+    select {
+        text-transform: none;
+        /* Remove the inheritance of text transform in Firefox */
+    }
+
+    /*
+1. Prevent a WebKit bug where (2) destroys native `audio` and `video` controls in Android 4.
+2. Correct the inability to style clickable types in iOS and Safari.
+*/
+    button,
+    html [type="button"],
+    [type="reset"],
+    [type="submit"] {
+        -webkit-appearance: button;
+    }
+
+    /*
+Remove inner border and padding from Firefox, but don't restore the outline like Normalize.
+*/
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+        padding: 0;
+        border-style: none;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        box-sizing: border-box;
+        /* 1. Add the correct box sizing in IE 10- */
+        padding: 0;
+        /* 2. Remove the padding in IE 10- */
+    }
+
+    input[type="date"],
+    input[type="time"],
+    input[type="datetime-local"],
+    input[type="month"] {
+        /* 
+  Remove the default appearance of temporal inputs to avoid a Mobile Safari bug where setting a custom line-height prevents text from being vertically centered within the input.
+  
+  See https://bugs.webkit.org/show_bug.cgi?id=139848
+  and https://github.com/twbs/bootstrap/issues/11266
+  */
+        -webkit-appearance: listbox;
+    }
+
+    textarea {
+        overflow: auto;
+        /* Remove the default vertical scrollbar in IE. */
+        /* Textareas should really only resize vertically so they don't break their (horizontal) containers. */
+        resize: vertical;
+    }
+
+    fieldset {
+        /* 
+  Browsers set a default `min-width: min-content;` on fieldsets, unlike e.g. `<div>`s, which have `min-width: 0;` by default. So we reset that to ensure fieldsets behave more like a standard block element.
+  
+  See https://github.com/twbs/bootstrap/issues/12359
+  and https://html.spec.whatwg.org/multipage/#the-fieldset-and-legend-elements  
+  */
+        min-width: 0;
+        /* Reset the default outline behavior of fieldsets so they don't affect page layout. */
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+
+    /*
+1. Correct the text wrapping in Edge and IE.
+2. Correct the color inheritance from `fieldset` elements in IE.
+*/
+    legend {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        /* 1 */
+        padding: 0;
+        margin-bottom: .5rem;
+        font-size: 1.5rem;
+        line-height: inherit;
+        color: inherit;
+        /* 2 */
+        white-space: normal;
+        /* 1 */
+    }
+
+    progress {
+        vertical-align: baseline;
+        /* Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+    }
+
+    /* 
+Correct the cursor style of increment and decrement buttons in Chrome.
+*/
+    [type="number"]::-webkit-inner-spin-button,
+    [type="number"]::-webkit-outer-spin-button {
+        height: auto;
+    }
+
+    [type="search"] {
+        /* 
+  This overrides the extra rounded corners on search inputs in iOS so that our `.form-control` class can properly style them. Note that this cannot simply be added to `.form-control` as it's not specific enough. 
+  
+  For details, see https://github.com/twbs/bootstrap/issues/11586.
+  */
+        outline-offset: -2px;
+        -webkit-appearance: none;
+    }
+
+    /*
+Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+*/
+    [type="search"]::-webkit-search-cancel-button,
+    [type="search"]::-webkit-search-decoration {
+        -webkit-appearance: none;
+    }
+
+    /*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+    ::-webkit-file-upload-button {
+        font: inherit;
+        -webkit-appearance: button;
+    }
+
+    /*
+Correct element displays
+*/
+    output {
+        display: inline-block;
+    }
+
+    summary {
+        display: list-item;
+        /* Add the correct display in all browsers */
+    }
+
+    template {
+        display: none;
+        /* Add the correct display in IE */
+    }
+
+    /* 
+Always hide an element with the `hidden` HTML attribute (from PureCSS).
+Needed for proper display in IE 10-.
+*/
+    [hidden] {
+        display: none !important;
+    }
+}

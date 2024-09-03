@@ -1,7 +1,7 @@
 <template>
     <Card class="bio-card w-full h-full overflow-hidden relative" :class="{ 'card-clickable': hoverEffect }">
         <template #header>
-            <div class="w-full h-[280px] overflow-hidden">
+            <div class="w-full overflow-hidden" :class="squareImage ? 'aspect-square' : 'h-[280px]'">
                 <slot name="image" />
             </div>
         </template>
@@ -19,6 +19,10 @@ defineProps({
     hoverEffect: {
         type: Boolean,
         default: true
+    },
+    squareImage: {
+        type: Boolean,
+        default: false
     }
 })
 </script>

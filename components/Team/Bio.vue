@@ -1,5 +1,5 @@
 <template>
-    <BaseCardItem @click="bio.visible = true">
+    <BaseCardItem @click="bio.visible = true" squareImage>
         <template #image>
             <img @load="loading = false" alt="user picture" :src="bio.picture" class="bio-picture"
                 :class="{ hidden: loading }" />
