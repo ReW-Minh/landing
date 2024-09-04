@@ -1,8 +1,10 @@
 <template>
     <div style="background: var(--rew-primary-green)" class="py-4 text-white">
         <BasePageContent>
-            <div>
-                <NuxtLink to="/podcast" class="mb-3 inline-flex items-center pe-1 rounded-lg border border-transparent hover:border-white transition-all">
+            <div class="relative z-10">
+                <img src="/img/logo-bg-white.png" class="absolute opacity-5 z-0 h-[175px] -right-[52px] top-1/2 -translate-y-1/2 -rotate-45"  alt="background" />
+                <NuxtLink to="/podcast"
+                    class="mb-3 inline-flex items-center pe-1 rounded-lg border border-transparent hover:border-white transition-all">
                     <i class="pi pi-angle-left"></i>
                     All episodes
                 </NuxtLink>
@@ -32,16 +34,22 @@
                 </div>
             </div>
 
-            <div v-html="detail?.content" class="editor text-lg"></div>
+            <div class="relative">
+                <div v-html="detail?.content" class="editor text-lg"></div>
+                <img src="/img/logo-bg.svg" alt="rew"
+                    class="bg-logo !top-1/2 !left-1/2 !transform -translate-x-1/2 !-translate-y-1/2 !opacity-5">
+            </div>
         </BasePageContent>
     </BasePageContainer>
 </template>
 
 <script setup>
+const res = await getPodcastEpisodeDetail(useRoute().params.slug)
+
+if (!res)
+    navigateTo('/error')
+
 const detail = useState('podcastEpisodeDetail')
-
-await getPodcastEpisodeDetail(useRoute().params.id)
-
 const frameCover = ref()
 const frameWidth = ref('0px')
 

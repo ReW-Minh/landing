@@ -16,11 +16,13 @@
                         <div data-aos="fade-right" data-aos-duration="700" data-aos-delay="200"
                             class="left-home-block flex items-center mt-2 md:mt-6">
                             <div class="rew-text-brown text-[14px] md:text-[20px] lg:text-[28px]">
-                                We team up with higher education institutions to cultivate evergreen enrollment systems, operations, and processes.
+                                We team up with higher education institutions to cultivate evergreen enrollment systems,
+                                operations, and processes.
                             </div>
                         </div>
                         <div class="mt-4 md:mt-8">
-                            <button @click="visible = true" title="Contact Us"
+                            <button data-aos="fade-right" data-aos-duration="700" data-aos-delay="300"
+                                @click="visible = true" title="Contact Us"
                                 class="rew-main-btn rew-box-shadow flex items-center">
                                 <span>Let's Get Started</span>
                                 <span class="md:ml-3 ml-1 flex">

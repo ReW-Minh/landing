@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-    title: 'ReWorkflow - Page under construction'
+    title: 'ReWorkflow - Page not found'
 })
 </script>
 
@@ -9,8 +9,12 @@ useHead({
         <img src="/img/logo-bg.svg" alt="rew"
             class="bg-logo !top-1/2 !left-1/2 !transform -translate-x-1/2 !-translate-y-1/2 !opacity-5">
         <div class="flex flex-col items-center">
-            <h1 class="text-uppercase text-center px-3">Under construction</h1>
-            <p class="text-center">page nearly ready</p>
+            <div class="space-y-4">
+                <img src="/img/main-logo.svg" alt="ReWorkflow" width="231" height="30" />
+                <h1 class="text-uppercase text-center px-3">404</h1>
+                <p class="text-center text-lg">page not found</p>
+            </div>
+
             <button class="rew-main-btn rew-box-shadow inline-flex items-center mt-10" @click="navigateTo('/')">
                 Back to homepage
             </button>
@@ -28,17 +32,11 @@ useHead({
 
 h1 {
     color: var(--rew-primary-green);
-    font-size: 60px;
+    font-size: 100px;
 }
 
 p {
     color: var(--rew-secondary-green);
     letter-spacing: 5.5px;
-}
-
-@media (max-width: 510px) {
-    h1 {
-        font-size: 11.7vw;
-    }
 }
 </style>

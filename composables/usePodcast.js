@@ -12,11 +12,10 @@ export const getPodcastEpisodes = async () => {
     podcastEpisodes.value = res.data
 }
 
-export const getPodcastEpisodeDetail = async id => {
-    const res = await apiGet('/readPodcastEpisode', { query: { id } })
+export const getPodcastEpisodeDetail = async permalink => {
+    const res = await apiGet('/readPodcastEpisode', { query: { permalink } })
 
-    if (!res?.success)
-        return
-
-    podcastEpisodeDetail.value = res.data
+    podcastEpisodeDetail.value = res?.data
+    
+    return res?.success
 }
