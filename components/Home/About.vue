@@ -50,7 +50,7 @@ const blockItems = ref([
     {
         class: 'block-1 block-w-arrow',
         title: 'Putting Down Roots',
-        content: 'Whether serving temporary Slater coverage or as an ongoing Slate Captain, ReW’s sustainable solutions remain the same. Our work stands the test of time.'
+        content: 'Whether providing temporary Slater coverage or serving as a long-term Slate Captain, ReW’s sustainable solutions stand the test of time.'
     },
     {
         class: 'block-2 block-w-arrow',
