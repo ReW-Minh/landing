@@ -34,7 +34,7 @@
             </div>
         </div>
 
-        <div class="relative">
+        <div class="relative pb-12">
             <div v-html="detail?.content" class="editor text-lg"></div>
             <img src="/img/logo-bg.svg" alt="rew"
                 class="bg-logo !top-1/2 !left-1/2 !transform -translate-x-1/2 !-translate-y-1/2 !opacity-5">
@@ -58,8 +58,9 @@ const calculateFrameWidth = () => {
     if (parentWidth > 950)
         return
 
-    frameWidth.value = `${parentWidth + 151}px`
+    const coverSize = window.innerWidth <= 330 ? 103 : 151
 
+    frameWidth.value = `${parentWidth + coverSize}px`
 }
 
 onMounted(() => {
