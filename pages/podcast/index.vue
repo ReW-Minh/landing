@@ -89,30 +89,38 @@
                     </li>
                 </ul>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-                <div v-for="(item, index) in podcastEpisodes" :key="item.id" data-aos="zoom-in-down"
-                    data-aos-offset="50" :data-aos-delay="index * 50">
-                    <NuxtLink :to="`/podcast/${item.permalink}`">
-                        <BaseCardItem squareImage>
-                            <template #image>
-                                <img :src="item.logo" :alt="item.title" />
-                            </template>
 
-                            <template #title>
-                                <div class="line-clamp-1">
-                                    {{ item.title }}
-                                </div>
-                            </template>
+            <div v-if="loading" class="flex items-center">
+                <ProgressSpinner />
+            </div>
 
-                            <template #subtitle>
-                                <div class="opacity-60">
-                                    <i>{{ formatDate(item.publish_time) }}</i>
+            <div v-else>
+                <div data-aos="fade-right" class="mb-3 text-3xl font-semibold rew-text-brown">Episodes</div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                    <div v-for="(item, index) in podcastEpisodes" :key="item.id" data-aos="zoom-in-down"
+                        data-aos-offset="50" :data-aos-delay="index * 50">
+                        <NuxtLink :to="`/podcast/${item.permalink}`">
+                            <BaseCardItem squareImage>
+                                <template #image>
+                                    <img :src="item.logo" :alt="item.title" />
+                                </template>
 
-                                    <div class="line-clamp-2 mt-2" v-html="item.content"></div>
-                                </div>
-                            </template>
-                        </BaseCardItem>
-                    </NuxtLink>
+                                <template #title>
+                                    <div class="line-clamp-1">
+                                        {{ item.title }}
+                                    </div>
+                                </template>
+
+                                <template #subtitle>
+                                    <div class="opacity-60">
+                                        <i>{{ formatDate(item.publish_time) }}</i>
+
+                                        <div class="line-clamp-2 mt-2" v-html="item.content"></div>
+                                    </div>
+                                </template>
+                            </BaseCardItem>
+                        </NuxtLink>
+                    </div>
                 </div>
             </div>
         </BasePageContent>
@@ -133,7 +141,7 @@ const getData = async () => {
     loading.value = false
 }
 
-await getData()
+getData()
 </script>
 
 <style lang="scss" scoped>

@@ -794,10 +794,21 @@ a.footer-link:hover {
   list-style: none;
 
   li {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
     &::before {
-      content: '✓';
-      padding-right: 12px;
-      color: var(--rew-primary-green)
+      content: url(/img/sproute.svg);
+      width: 20px;
+      height: 20px;
     }
   }
+}
+
+.p-progressspinner {
+  --p-progressspinner-color-1: var(--rew-primary-green);
+  --p-progressspinner-color-2: var(--rew-primary-green);
+  --p-progressspinner-color-3: var(--rew-primary-green);
+  --p-progressspinner-color-4: var(--rew-primary-green);
 }
