@@ -93,6 +93,7 @@ p {
   position: relative;
   transition: all linear .1s;
   overflow: hidden;
+  transition: all linear .1s !important
 }
 
 .rew-main-btn:active {
