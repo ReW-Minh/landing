@@ -123,6 +123,38 @@
                     </div>
                 </div>
             </div>
+
+            <div>
+                <div data-aos="fade-right" class="mb-3 text-3xl font-semibold rew-text-brown">
+                    What Guests and Listeners Are Saying
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <div v-for="(item, index) in testimonials" :key="item.id" data-aos="zoom-in-down"
+                        data-aos-offset="50" :data-aos-delay="index * 50">
+                        <BaseCardItem :hoverEffect="false" no-image>
+                            <template #image>
+                                <div class="flex items-center m-6 h-full">
+                                    <div v-if="item.message" class="font-bold rew-text-brown text-2xl !italic">
+                                            "{{ item.message }}"
+                                    </div>
+                                </div>
+                            </template>
+                            <template #title>
+                                <div class="font-bold rew-text-green text-xl">
+                                            {{ item.name }}
+                                        </div>
+                                <div class="p-card-subtitle italic text-sm font-normal">
+                                    {{ item.title }}
+                                </div>
+                                <div class="p-card-subtitle italic text-sm font-normal">
+                                    {{ item.school }}
+                                </div>
+                            </template>
+                        </BaseCardItem>
+                    </div>
+                </div>
+            </div>
         </BasePageContent>
     </BasePageContainer>
 </template>
@@ -142,6 +174,27 @@ const getData = async () => {
 }
 
 getData()
+
+const testimonials = [
+    {
+        message: 'Megan makes her guests comfortable and confident while recording their episode. She’s a knowledgeable and generous host.',
+        name: 'Jasmine Solomon',
+        title: 'Senior Associate Director, Systems Operations',
+        school: 'New York University'
+    },
+    {
+        message: '',
+        name: '',
+        title: '',
+        school: ''
+    },
+    {
+        message: '',
+        name: '',
+        title: '',
+        school: ''
+    }
+]
 </script>
 
 <style lang="scss" scoped>
