@@ -8,11 +8,11 @@
         <h1 class="rew-font rew-text-brown text-3xl text-center">
             The <span class="rew-text-green">Re</span>Workflow Podcast
         </h1>
-        <h2 class="rew-text-brown text-center max-w-[800px] mx-auto italic">
+        <h2 class="rew-text-brown text-center max-w-[800px] mx-auto italic !mb-4">
             A podcast for all about Technolutions Slate CRM and the adventures of Slaters who build on it. Stay tuned for new episodes each month with host Megan Story. 
         </h2>
 
-        <DataTable :value="podcastEpisodes" scrollable scrollHeight="calc(100vh - 180px)" removableSort rowHover
+        <DataTable :value="podcastEpisodes?.episodes" scrollable scrollHeight="calc(100vh - 180px)" removableSort rowHover
             stripedRows :loading="loadingTable">
             <template v-for="col of columns" :key="col.field">
                 <Column :field="col.field" :header="col.header" :sortable="col.sortable">

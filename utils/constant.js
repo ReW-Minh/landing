@@ -60,3 +60,5 @@ export const NAVIGATION_MENU = [
         ]
     },
 ]
+
+export const PODCAST_EP_PAGE_LIMIT = 8

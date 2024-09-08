@@ -35,6 +35,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       baseURL: 'https://rew-admin.vercel.app/',
+      // baseURL: 'http://127.0.0.1:5000/',
     },
   },
 })

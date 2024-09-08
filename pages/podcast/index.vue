@@ -90,14 +90,13 @@
                 </ul>
             </div>
 
-            <div v-if="loading" class="flex items-center">
-                <ProgressSpinner />
-            </div>
 
-            <div v-else>
-                <div data-aos="fade-right" class="mb-3 text-3xl font-semibold rew-text-brown">Episodes</div>
+            <div>
+                <div data-aos="fade-right" class="mb-3 text-3xl font-semibold rew-text-brown scroll-mt-10" id="epTitle">
+                    Episodes
+                </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-                    <div v-for="(item, index) in podcastEpisodes" :key="item.id" data-aos="zoom-in-down"
+                    <div v-for="(item, index) in podcastEpisodes?.episodes" :key="item.id" data-aos="zoom-in-down"
                         data-aos-offset="50" :data-aos-delay="index * 50">
                         <NuxtLink :to="`/podcast/${item.permalink}`">
                             <BaseCardItem squareImage>
@@ -124,6 +123,8 @@
                 </div>
             </div>
 
+            <Paginator :rows="PODCAST_EP_PAGE_LIMIT" :totalRecords="podcastEpisodes?.total" @page="handlePage" />
+
             <div>
                 <div data-aos="fade-right" class="mb-3 text-3xl font-semibold rew-text-brown">
                     What Guests and Listeners Are Saying
@@ -136,14 +137,14 @@
                             <template #image>
                                 <div class="flex items-center m-6 h-full">
                                     <div v-if="item.message" class="font-bold rew-text-brown text-2xl !italic">
-                                            "{{ item.message }}"
+                                        "{{ item.message }}"
                                     </div>
                                 </div>
                             </template>
                             <template #title>
                                 <div class="font-bold rew-text-green text-xl">
-                                            {{ item.name }}
-                                        </div>
+                                    {{ item.name }}
+                                </div>
                                 <div class="p-card-subtitle italic text-sm font-normal">
                                     {{ item.title }}
                                 </div>
@@ -160,24 +161,35 @@
 </template>
 
 <script setup>
+import { nextTick } from 'vue'
+
 useHead({
     title: 'ReWorkflow - Podcast'
 })
 
+clearNuxtState(['podcastEpisodes'])
+
 const podcastEpisodes = useState('podcastEpisodes')
 
-const loading = ref(false)
-const getData = async () => {
-    loading.value = true
-    await getPodcastEpisodes()
-    loading.value = false
+const page = ref(1)
+const getData = async page => {
+    useLoadingIndicator().start()
+    await getPodcastEpisodes(page)
+    useLoadingIndicator().finish()
 }
 
-getData()
+await getData(page.value)
+
+const handlePage = async data => {
+    await getData(data.page + 1)
+    nextTick(() => {
+        document.querySelector('#epTitle').scrollIntoView({ block: 'start' })
+    })
+}
 
 const testimonials = [
     {
-        message: 'Megan makes her guests comfortable and confident while recording their episode. She’s a knowledgeable and generous host.',
+        message: `Megan makes her guests comfortable and confident while recording their episode. She’s a knowledgeable and generous host.`,
         name: 'Jasmine Solomon',
         title: 'Senior Associate Director, Systems Operations',
         school: 'New York University'
