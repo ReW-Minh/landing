@@ -198,7 +198,7 @@ export const useProfiles = () => useState('Profiles', () => [
             },
             {
                 type: CONTACT_TYPE.EMAIL,
-                link: 'pmckay@reworkflow.com'
+                link: 'ibest@reworkflow.com'
             },
         ],
         visible: false

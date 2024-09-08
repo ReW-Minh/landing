@@ -5,7 +5,13 @@
   --rew-active-brown: #8F4A2C;
   --rew-baby-grey: #C8CEC6;
   --slate-color-blue: #00669E;
-  --p-tooltip-max-width: 500px;
+  --p-tooltip-max-width: 500px !important;
+  --p-paginator-background: transparent !important;
+  --p-paginator-nav-button-selected-background: var(--rew-primary-green) !important;
+  --p-paginator-nav-button-selected-color: white !important;
+  --p-paginator-nav-button-color: var(--rew-primary-brown) !important;
+  --p-paginator-nav-button-hover-background: var(--rew-baby-grey) !important;
+  --p-paginator-nav-button-hover-color: var(--rew-primary-brown) !important;
 }
 
 html {
