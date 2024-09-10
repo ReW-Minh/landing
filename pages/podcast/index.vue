@@ -133,16 +133,13 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     <div v-for="(item, index) in testimonials" :key="item.id" data-aos="zoom-in-down"
                         data-aos-offset="50" :data-aos-delay="index * 50">
-                        <BaseCardItem :hoverEffect="false" no-image>
-                            <template #image>
-                                <div class="flex items-center m-6 h-full">
-                                    <div v-if="item.message" class="font-bold rew-text-brown text-2xl !italic">
+                        <div>
+                                <div class="flex items-center mt-6 mb-4">
+                                    <div v-if="item.message" class="font-semibold rew-text-green text-2xl !italic">
                                         "{{ item.message }}"
                                     </div>
                                 </div>
-                            </template>
-                            <template #title>
-                                <div class="font-bold rew-text-green text-xl">
+                                <div class="font-bold rew-text-brown text-xl">
                                     {{ item.name }}
                                 </div>
                                 <div class="p-card-subtitle italic text-sm font-normal">
@@ -151,8 +148,7 @@
                                 <div class="p-card-subtitle italic text-sm font-normal">
                                     {{ item.school }}
                                 </div>
-                            </template>
-                        </BaseCardItem>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -195,17 +191,16 @@ const testimonials = [
         school: 'New York University'
     },
     {
-        message: '',
-        name: '',
-        title: '',
-        school: ''
+        message: `Megan makes her guests comfortable and confident while recording their episode. She’s a knowledgeable and generous host.`,
+        name: 'Jasmine Solomon',
+        title: 'Senior Associate Director, Systems Operations',
+        school: 'New York University'
+    },{
+        message: `Megan makes her guests comfortable and confident while recording their episode. She’s a knowledgeable and generous host.`,
+        name: 'Jasmine Solomon',
+        title: 'Senior Associate Director, Systems Operations',
+        school: 'New York University'
     },
-    {
-        message: '',
-        name: '',
-        title: '',
-        school: ''
-    }
 ]
 </script>
 
