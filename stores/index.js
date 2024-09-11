@@ -182,15 +182,15 @@ export const useProfiles = () => useState('Profiles', () => [
         contact: [
             {
                 type: CONTACT_TYPE.LINKEDIN,
-                link: 'https://www.linkedin.com/in/peter-mckay-a6083217/'
+                link: ''
             },
             {
                 type: CONTACT_TYPE.RESOURCE,
-                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3Apeter-mckay%7D+%7Btype%3Apage%7D'
+                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3Aisaac-best%7D+%7Btype%3Apage%7D'
             },
             {
                 type: CONTACT_TYPE.SLATE_COMMUNITY,
-                link: 'https://community.technolutions.net/member/kFAC0J3piL'
+                link: 'https://community.technolutions.net/member/fR4dCoPQr7'
             },
             {
                 type: CONTACT_TYPE.PRESENTATIONS_PUBLICATIONS,
