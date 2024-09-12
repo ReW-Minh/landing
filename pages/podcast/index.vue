@@ -191,15 +191,15 @@ const testimonials = [
         school: 'New York University'
     },
     {
-        message: `Megan makes her guests comfortable and confident while recording their episode. She’s a knowledgeable and generous host.`,
-        name: 'Jasmine Solomon',
-        title: 'Senior Associate Director, Systems Operations',
-        school: 'New York University'
+        message: `I have learned a lot from listening to the ReWorkflow podcast, but perhaps nothing more surprising than the fact that host Megan Story is a self-professed introvert. The conversation in the podcast seems effortless with a wide variety of guests and topics from the Slate Community. Megan is a natural at this!`,
+        name: 'Eric Hoffpauir',
+        title: 'CRM Specialist',
+        school: 'Kansas State University Undergraduate Admission'
     },{
-        message: `Megan makes her guests comfortable and confident while recording their episode. She’s a knowledgeable and generous host.`,
-        name: 'Jasmine Solomon',
-        title: 'Senior Associate Director, Systems Operations',
-        school: 'New York University'
+        message: ``,
+        name: '',
+        title: '',
+        school: ''
     },
 ]
 </script>
