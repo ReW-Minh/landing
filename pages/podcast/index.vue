@@ -135,9 +135,7 @@
                         data-aos-offset="50" :data-aos-delay="index * 50">
                         <div>
                                 <div class="flex items-center mt-6 mb-4">
-                                    <div v-if="item.message" class="font-semibold rew-text-green text-2xl !italic">
-                                        "{{ item.message }}"
-                                    </div>
+                                    <div v-if="item.message" class="font-semibold rew-text-green text-2xl !italic" v-html="item.message"></div>
                                 </div>
                                 <div class="font-bold rew-text-brown text-xl">
                                     {{ item.name }}
@@ -174,7 +172,7 @@ const getData = async page => {
     useLoadingIndicator().finish()
 }
 
-await getData(page.value)
+getData(page.value)
 
 const handlePage = async data => {
     await getData(data.page + 1)
@@ -185,21 +183,22 @@ const handlePage = async data => {
 
 const testimonials = [
     {
-        message: `Megan makes her guests comfortable and confident while recording their episode. She’s a knowledgeable and generous host.`,
+        message: `"Megan makes her guests comfortable and confident while recording their episode. She’s a knowledgeable and generous host."`,
         name: 'Jasmine Solomon',
         title: 'Senior Associate Director, Systems Operations',
         school: 'New York University'
     },
     {
-        message: `I have learned a lot from listening to the ReWorkflow podcast, but perhaps nothing more surprising than the fact that host Megan Story is a self-professed introvert. The conversation in the podcast seems effortless with a wide variety of guests and topics from the Slate Community. Megan is a natural at this!`,
+        message: `"I have learned a lot from listening to the <span class="rew-font">Re<span class="rew-text-brown">Workflow</span></span> podcast, but perhaps nothing more surprising than the fact that host Megan Story is a self-professed introvert. The conversation in the podcast seems effortless with a wide variety of guests and topics from the Slate Community. Megan is a natural at this!"`,
         name: 'Eric Hoffpauir',
         title: 'CRM Specialist',
         school: 'Kansas State University Undergraduate Admission'
-    },{
-        message: ``,
-        name: '',
-        title: '',
-        school: ''
+    },
+    {
+        message: `"The <span class="rew-font">Re<span class="rew-text-brown">Workflow</span></span> Podcast offers a fantastic opportunity to explore diverse topics with various members of the Slate Community. From Jon Cherry's interactive presentation at the latest Summit to Matt Schieren's insights gleaned from years of Slate Community involvement, the podcast provides a wealth of knowledge and experiences!"`,
+        name: 'Paul Turchan',
+        title: 'Director of Community Support',
+        school: 'Technolutions'
     },
 ]
 </script>
