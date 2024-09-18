@@ -9,7 +9,7 @@
             The <span class="rew-text-green">Re</span>Workflow Podcast
         </h1>
         <h2 class="rew-text-brown text-center max-w-[800px] mx-auto italic !mb-4">
-            A podcast for all about Technolutions Slate CRM and the adventures of Slaters who build on it. Stay tuned for new episodes each month with host Megan Story. 
+            An engaging deep dive into Slate through the lens of the annual Slate Summit. New episodes released the second Tuesday of each month.
         </h2>
 
         <DataTable :value="podcastEpisodes?.episodes" scrollable scrollHeight="calc(100vh - 180px)" removableSort rowHover

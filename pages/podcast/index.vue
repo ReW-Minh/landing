@@ -14,80 +14,43 @@
             </div>
 
             <template #subtitle>
-                A podcast for all about Technolutions Slate CRM and the adventures of Slaters who build on it. Stay
-                tuned for new episodes each month with host Megan Story.
+                An engaging deep dive into Slate through the lens of the annual Slate Summit. New episodes released the second Tuesday of each month.
             </template>
         </BasePageHeader>
 
 
         <BasePageContent :maxWidth="1488">
             <div>
-                <p data-aos="zoom-in" class="text-lg text-center mb-2 rew-text-brown font-semibold">Listen on:</p>
+                <p data-aos="zoom-in" class="text-lg text-center mb-2" style="color: var(--rew-secondary-green)">Click on an episode to listen here. Also, available to stream on:</p>
                 <ul class="flex items-center justify-center gap-4 flex-wrap cc-podcast-apps list-unstyled podcast-app">
                     <li data-aos="zoom-in" data-aos-delay="50" class="mb-2">
-                        <a href="https://podcasts.apple.com/us/podcast/the-reworkflow-podcast-road-to-slate-summit/id1722159600"
+                        <a class="btn-connect" href="https://podcasts.apple.com/us/podcast/the-reworkflow-podcast-road-to-slate-summit/id1722159600"
                             target="_blank" rel="noreferrer noopener" v-tooltip.top="'Apple Podcasts'"
                             aria-label="Apple Podcasts">
-                            <img class="rounded-full w-11 shadow-lg Apple Podcasts"
-                                src="https://pbcdn1.podbean.com/fs1/site/images/admin5/apple-podcast.png"
-                                alt="Apple Podcasts">
-                        </a>
-                    </li>
-                    <li data-aos="zoom-in" data-aos-delay="100" class="mb-2">
-                        <a href="https://r4j68.app.goo.gl/?link=https%3A%2F%2Fpodcast.reworkflow.com%3Faction%3DopenPodcast%26podcastId%3Dpbblog17744163%26podcastIdTag%3Dkjbx3&amp;dfl=https%3A%2F%2Fpodcast.reworkflow.com&amp;utm_campaign=pb_web&amp;utm_source=podbean_web&amp;utm_medium=dlink&amp;imv=670&amp;amv=530&amp;isi=973361050&amp;ibi=com.podbean.app.podcast&amp;ipbi=com.podbean.app.podcast&amp;apn=com.podbean.app.podcast"
-                            target="_blank" rel="noreferrer noopener" v-tooltip.top="'Podbean App'"
-                            aria-label="Podbean App">
-                            <img class="rounded-full w-11 shadow-lg Podbean App"
-                                src="https://pbcdn1.podbean.com/fs1/site/images/admin5/podbean-app.png"
-                                alt="Podbean App">
+                            <IconApplePodcast />
                         </a>
                     </li>
                     <li data-aos="zoom-in" data-aos-delay="150" class="mb-2">
-                        <a href="https://open.spotify.com/show/4b40iBygXiZax2cMFWZRjG" target="_blank"
+                        <a class="btn-connect" href="https://open.spotify.com/show/4b40iBygXiZax2cMFWZRjG" target="_blank"
                             rel="noreferrer noopener" v-tooltip.top="'Spotify'" aria-label="Spotify">
-                            <img class="rounded-full w-11 shadow-lg Spotify"
-                                src="https://pbcdn1.podbean.com/fs1/site/images/admin5/spotify.png" alt="Spotify">
+                            <IconSpotify />
                         </a>
                     </li>
                     <li data-aos="zoom-in" data-aos-delay="200" class="mb-2">
-                        <a href="https://music.amazon.com/podcasts/6439f399-ee81-46f4-aa9f-51e4d77d7cfb" target="_blank"
+                        <a class="btn-connect" href="https://music.amazon.com/podcasts/6439f399-ee81-46f4-aa9f-51e4d77d7cfb" target="_blank"
                             rel="noreferrer noopener" v-tooltip.top="'Amazon Music'" aria-label="Amazon Music">
-                            <img class="rounded-full w-11 shadow-lg Amazon Music"
-                                src="https://pbcdn1.podbean.com/fs1/site/images/admin5/AmazonMusic.png"
-                                alt="Amazon Music">
+                           <IconAmazonMusic />
                         </a>
                     </li>
-                    <li data-aos="zoom-in" data-aos-delay="250" class="mb-2">
-                        <a href="https://iheart.com/podcast/136793112" target="_blank" rel="noreferrer noopener"
-                            v-tooltip.top="'iHeartRadio'" aria-label="iHeartRadio">
-                            <img class="rounded-full w-11 shadow-lg iHeartRadio"
-                                src="https://pbcdn1.podbean.com/fs1/site/images/admin5/iHeartRadio.png"
-                                alt="iHeartRadio">
-                        </a>
-                    </li>
-                    <li data-aos="zoom-in" data-aos-delay="300" class="mb-2">
-                        <a href="https://player.fm/series/3540191" target="_blank" rel="noreferrer noopener"
-                            v-tooltip.top="'PlayerFM'" aria-label="PlayerFM">
-                            <img class="rounded-full w-11 shadow-lg PlayerFM"
-                                src="https://pbcdn1.podbean.com/fs1/site/images/admin5/PlayerFM.png" alt="PlayerFM">
-                        </a>
-                    </li>
-                    <li data-aos="zoom-in" data-aos-delay="350" class="mb-2">
-                        <a target="_blank" rel="noreferrer noopener"
-                            v-tooltip.top="'Search the podcast title on Samsung Podcast app.'"
-                            aria-label="Search the podcast title on Samsung Podcast app.">
-                            <img class="rounded-full w-11 shadow-lg Samsung"
-                                src="https://pbcdn1.podbean.com/fs1/site/images/admin5/Samsung.png" alt="Samsung">
-                        </a>
-                    </li>
-                    <li data-aos="zoom-in" data-aos-delay="400" class="mb-2">
-                        <a href="https://www.boomplaymusic.com/podcasts/86463" target="_blank" rel="noreferrer noopener"
-                            v-tooltip.top="'BoomPlay'" aria-label="BoomPlay">
-                            <img class="rounded-full w-11 shadow-lg BoomPlay"
-                                src="https://pbcdn1.podbean.com/fs1/site/images/admin5/BoomPlay.png" alt="BoomPlay">
+                    <li data-aos="zoom-in" data-aos-delay="100" class="mb-2">
+                        <a class="btn-connect" href="https://r4j68.app.goo.gl/?link=https%3A%2F%2Fpodcast.reworkflow.com%3Faction%3DopenPodcast%26podcastId%3Dpbblog17744163%26podcastIdTag%3Dkjbx3&amp;dfl=https%3A%2F%2Fpodcast.reworkflow.com&amp;utm_campaign=pb_web&amp;utm_source=podbean_web&amp;utm_medium=dlink&amp;imv=670&amp;amv=530&amp;isi=973361050&amp;ibi=com.podbean.app.podcast&amp;ipbi=com.podbean.app.podcast&amp;apn=com.podbean.app.podcast"
+                            target="_blank" rel="noreferrer noopener" v-tooltip.top="'Podbean App'"
+                            aria-label="Podbean App">
+                            <IconPodbean />
                         </a>
                     </li>
                 </ul>
+                <p data-aos="zoom-in" class="text-lg text-center mb-2" style="color: var(--rew-secondary-green)">or search "ReWorkflow" wherever you get your podcasts</p>
             </div>
 
 
@@ -172,7 +135,9 @@ const getData = async page => {
     useLoadingIndicator().finish()
 }
 
-getData(page.value)
+onMounted(() => {
+    getData(page.value)
+})
 
 const handlePage = async data => {
     await getData(data.page + 1)
