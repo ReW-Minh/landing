@@ -50,7 +50,7 @@
                         </a>
                     </li>
                 </ul>
-                <p data-aos="zoom-in" class="text-lg text-center mb-2" style="color: var(--rew-secondary-green)">or search "ReWorkflow" wherever you get your podcasts.</p>
+                <p data-aos="zoom-in" class="text-lg text-center mb-2" style="color: var(--rew-secondary-green)">or search "<span class="rew-font rew-text-green">Re<span class="rew-text-brown">Workflow</span></span>" wherever you get your podcasts.</p>
             </div>
 
 
