@@ -135,7 +135,7 @@ const getData = async page => {
     useLoadingIndicator().finish()
 }
 
-onMounted(() => {
+onNuxtReady(() => {
     getData(page.value)
 })
 
