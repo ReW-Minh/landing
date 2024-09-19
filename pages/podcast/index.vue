@@ -135,9 +135,7 @@ const getData = async page => {
     useLoadingIndicator().finish()
 }
 
-onNuxtReady(() => {
-    getData(page.value)
-})
+await getData(page.value)
 
 const handlePage = async data => {
     await getData(data.page + 1)

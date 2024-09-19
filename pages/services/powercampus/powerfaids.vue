@@ -73,7 +73,7 @@ const pricings = [
     {
         title: 'PowerFAIDs Integration',
         range: '$2000',
-        content: 'Costs vary based on customizations and the condition of your database.',
+        content: 'Cost can vary depending on customizations, current version, and target version.',
     },
     {
         title: 'PowerCampus Consulting',

@@ -110,7 +110,7 @@ const pricings = [
     {
         title: 'Comprehensive Implementation',
         range: '$15,000 - $20,000',
-        content: 'We can have your Slate-PowerCampus bridge ready for new student registration in as little as eight weeks'
+        content: 'We can have your Slate-PowerCampus bridge ready for new student registration in as little as eight weeks.'
     },
     {
         title: 'PowerCampus Consulting',
