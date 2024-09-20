@@ -10,7 +10,8 @@ export const CONTACT_TYPE = {
     SLATE_COMMUNITY: 3,
     PRESENTATIONS_PUBLICATIONS: 4,
     EMAIL: 5,
-    GITHUB: 6
+    GITHUB: 6,
+    PODCAST: 7
 }
 
 export const NAVIGATION_MENU = [

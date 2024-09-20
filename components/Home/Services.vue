@@ -1,10 +1,10 @@
 <template>
   <section class="pt-4 overflow-hidden" id="service">
     <img src="/img/logo-bg.svg" alt="rew" class="bg-logo block md:hidden">
-    <h2 class="rew-text-brown section-title">
+    <!-- <h2 class="rew-text-brown section-title">
       <span class="rew-text-green">Slaters</span>
       at your Service
-    </h2>
+    </h2> -->
     <div class="max-w-[960px] mx-auto hidden md:block px-4">
       <div class="grid grid-cols-2 gap-10">
         <div v-for="item, index in slaterRoles" class="my-n3">

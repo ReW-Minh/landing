@@ -1,12 +1,11 @@
 <template>
     <section class="pt-4 overflow-hidden" id="faq">
         <div class="container-fluid">
-            <img src="/img/logo-bg.svg" alt="rew" class="bg-logo">
-            <h2 class="rew-text-brown section-title">
+            <h2 class="rew-text-brown section-title !text-[30px]">
                 <span class="rew-text-green">Frequently asked</span>
                 questions
             </h2>
-            <h4 class="text-center section-sub-title !mb-3 lg:!mb-12">
+            <h4 class="text-center section-sub-title !mb-3 lg:!mb-12 !text-[20px]">
                 In a quandary of not knowing what you don’t know about Slate? You’re not alone! Here are some of the questions that we help Slate schools answer:
             </h4>
             <div class="faq-content mx-auto">
@@ -18,6 +17,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="p-4 text-center">
+            <CallToAction size="lg"/>
         </div>
     </section>
 </template>
