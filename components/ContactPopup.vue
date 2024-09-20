@@ -38,7 +38,8 @@
                 <div class="grid grid-cols-3 gap-3">
                     <Button @click="clearData"
                         class="col-span-1 btn form-btn form-btn-secondary font-bold h-10 !rounded-xl">Back</Button>
-                    <Button type="submit" :loading class="col-span-2 btn form-btn form-btn-primary font-bold h-10 !rounded-xl">
+                    <Button type="submit" :loading
+                        class="col-span-2 btn form-btn form-btn-primary font-bold h-10 !rounded-xl">
                         <i v-if="loading" class="pi pi-spin pi-spinner" />
                         Submit
                     </Button>
