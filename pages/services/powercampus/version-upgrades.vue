@@ -62,7 +62,7 @@ const pricings = [
     {
         title: 'Comprehensive Upgrade',
         range: '$8,000 - $12,000',
-        content: 'Packages are designed for the customizations you choose and your local database specifications so that you only pay for what you need.'
+        content: 'Cost can vary depending on customizations, current version, and target version.'
     },
     {
         title: 'PowerCampus Consulting',
