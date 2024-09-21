@@ -121,7 +121,7 @@ const services = [
         route: '/services/powercampus/power-slate',
         title: `Slate
                 <br />
-                Intergration
+                Integration
                 <br />
                 (PowerSlate)`
     },
@@ -135,7 +135,7 @@ const services = [
         route: '/services/powercampus/powerfaids',
         title: `PowerFAIDS
                 <br />
-                Intergration
+                Integration
                 <br />
                 Add-On`
     }

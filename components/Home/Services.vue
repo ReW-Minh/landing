@@ -72,7 +72,7 @@ const slaterRoles = ref([
     imgSrc: role04Url,
     imgSrcMobile: role04MobileUrl,
     title: 'ReInforcing',
-    content: 'Looking for Slate-skilled seasonal readers and/or application processors? In need of temporary coverage for a key Slater going on leave? Unexpected turnover putting you in a bind? Call on ReW to bridge the gap.'
+    content: 'Looking for Slate-skilled seasonal readers and/or application  processors? In need of temporary coverage for a key Slater going on  leave? Need to train up your in-house talent? Call on ReW to bridge the gap.'
   },
 ])
 

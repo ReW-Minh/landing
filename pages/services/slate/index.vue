@@ -55,7 +55,7 @@
 
 <script setup>
 useHead({
-    title: 'ReWorkflow - PowerCampus',
+    title: 'ReWorkflow - Slate',
 })
 
 definePageMeta({
@@ -66,7 +66,7 @@ const resources = [
     {
         type: CONTACT_TYPE.RESOURCE,
         title: `<span class="rew-text-green rew-font">Re</span>Source Articles`,
-        link: POWERCAMPUS_LINK,
+        link: SLATE_LINK,
     },
     {
         type: CONTACT_TYPE.PRESENTATIONS_PUBLICATIONS,
@@ -85,7 +85,7 @@ const services = [
         route: '/services/powercampus/power-slate',
         title: `Slate
                 <br />
-                Intergration
+                Integration
                 <br />
                 (PowerSlate)`
     },
@@ -99,7 +99,7 @@ const services = [
         route: '/services/powercampus/powerfaids',
         title: `PowerFAIDS
                 <br />
-                Intergration
+                Integration
                 <br />
                 Add-On`
     }

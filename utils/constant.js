@@ -4,6 +4,8 @@ export const RESOURCE_LINK = 'https://resource.reworkflow.com/shelves/public-kno
 
 export const POWERCAMPUS_LINK = 'https://resource.reworkflow.com/books/powercampus'
 
+export const SLATE_LINK = 'https://resource.reworkflow.com/books/slate'
+
 export const CONTACT_TYPE = {
     LINKEDIN: 1,
     RESOURCE: 2,
