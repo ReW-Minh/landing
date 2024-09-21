@@ -66,7 +66,7 @@ const slaterRoles = ref([
     imgSrc: role03Url,
     imgSrcMobile: role03MobileUrl,
     title: 'Operationalizing',
-    content: 'Troubleshooting, routine maintenance, querying, data integrity, you name it! ReW’s operations specialists take on daily tasks so that your team is free to focus on student-facing priorities.'
+    content: 'Troubleshooting, routine maintenance, querying, reporting, data integrity, you name it! ReW’s operations specialists take on daily tasks so that your team is free to focus on student-facing priorities.'
   },
   {
     imgSrc: role04Url,
