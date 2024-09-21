@@ -5,7 +5,7 @@
                 <span class="rew-text-green">Frequently asked</span>
                 questions
             </h2>
-            <h4 class="text-center section-sub-title !mb-3 lg:!mb-12 !text-[20px]">
+            <h4 class="text-center section-sub-title !mb-3 lg:!mb-12 !text-[20px] !font-normal" style="color: var(--rew-primary-brown)">
                 In a quandary of not knowing what you don’t know about Slate? You’re not alone! Here are some of the questions that we help Slate schools answer:
             </h4>
             <div class="faq-content mx-auto">
@@ -34,7 +34,7 @@ const faqs = ref([
     {
         id: 'faq2',
         btnid: 'faqbtn2',
-        title: 'Our Admission Office is overwhelmed by a NeverEnding Story of internal Slate requests from campus stakeholders. How can we optimize our in-house Slate Support and get ahead?',
+        title: 'Our admission office is overwhelmed by a NeverEnding Story of internal Slate requests from campus stakeholders. How can we optimize our in-house Slate Support and get ahead?',
     },
     {
         id: 'faq3',
@@ -50,6 +50,11 @@ const faqs = ref([
         id: 'faq5',
         btnid: 'faqbtn5',
         title: 'We are hiring for a Slate position, but we continue to have failed searches. What more can we do?',
+    },
+    {
+        id: 'faq6',
+        btnid: 'faqbtn6',
+        title: 'Our Slate reports and other systems of record are not playing nicely. How can find and keep the data truth?'
     }
 ]) 
 </script>
