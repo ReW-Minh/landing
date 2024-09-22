@@ -5,8 +5,12 @@
                 <span class="rew-text-green">Frequently asked</span>
                 questions
             </h2>
-            <h4 class="text-center section-sub-title !mb-3 lg:!mb-12 !text-[20px] !font-normal" style="color: var(--rew-primary-brown)">
-                In a quandary of not knowing what you don’t know about Slate? You’re not alone! Here are some of the questions that we help Slate schools answer:
+            <h4 class="text-center section-sub-title !mb-3 lg:!mb-12 !text-[20px] !font-normal"
+                style="color: var(--rew-primary-brown)">
+                In a quandary of not knowing what you don’t know about Slate? You’re not alone! 
+                <br>
+                Here are some of the
+                questions that we help Slate schools answer:
             </h4>
             <div class="faq-content mx-auto">
                 <div data-aos="fade-down" class="accordion accordion-flush" id="rew-faq">
@@ -19,7 +23,7 @@
             </div>
         </div>
         <div class="p-4 text-center">
-            <CallToAction size="lg"/>
+            <CallToAction size="lg" />
         </div>
     </section>
 </template>
@@ -49,12 +53,12 @@ const faqs = ref([
     {
         id: 'faq5',
         btnid: 'faqbtn5',
-        title: 'We are hiring for a Slate position, but we continue to have failed searches. What more can we do?',
+        title: 'Our Slate reports and other systems of record are not synching. How to uncover and maintain a shared source of data truth?'
     },
     {
         id: 'faq6',
         btnid: 'faqbtn6',
-        title: 'Our Slate reports and other systems of record are not playing nicely. How can find and keep the data truth?'
+        title: 'We are hiring for a Slate position, but we continue to have failed searches. What more can we do?',
     }
 ]) 
 </script>
