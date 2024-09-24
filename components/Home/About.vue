@@ -1,7 +1,7 @@
 <template>
     <section class="pt-4 pb-12 pd:mb-0 overflow-hidden" id="about">
         <img src="/img/logo-bg.svg" alt="rew" class="bg-logo hidden md:block">
-        <h2 data-aos="zoom-in-down" data-aos-duration="700" data-aos-delay="400"
+        <h2 data-aos="zoom-in-down" data-aos-duration="700"
             class="rew-text-brown section-title block-w-arrow">
             <span class="bg-grey-pill shadow md:shadow-none">
                 The

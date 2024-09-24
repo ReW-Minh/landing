@@ -15,8 +15,7 @@
                     Free <span class="rew-text-green rew-font">Re</span>Sources
                 </div>
                 <div class=" grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div v-for="(item, index) in resources" :key="item.id" data-aos="zoom-in-down" data-aos-offset="50"
-                        :data-aos-delay="index * 50">
+                    <div v-for="(item, index) in resources" :key="item.id">
                         <NuxtLink :to="item.link" :target="item.type === CONTACT_TYPE.PODCAST ? '_self' : '_blank'">
                             <BaseCardItem class="resource-card">
                                 <template #image>
@@ -44,9 +43,6 @@
             </section>
 
             <section>
-                <!-- <div class="mb-3 text-3xl font-semibold rew-text-brown">
-                    Other
-                </div> -->
                 <HomeFAQ />
             </section>
         </BasePageContent>

@@ -1,14 +1,10 @@
 <template>
   <section class="pt-4 overflow-hidden" id="service">
     <img src="/img/logo-bg.svg" alt="rew" class="bg-logo block md:hidden">
-    <!-- <h2 class="rew-text-brown section-title">
-      <span class="rew-text-green">Slaters</span>
-      at your Service
-    </h2> -->
     <div class="max-w-[960px] mx-auto hidden md:block px-4">
       <div class="grid grid-cols-2 gap-10">
         <div v-for="item, index in slaterRoles" class="my-n3">
-          <div data-aos="zoom-out" :data-aos-delay="index * 100" class="card">
+          <div class="card">
             <div class="card-img">
               <img :src="item.imgSrc" :alt="item.title" class="mx-auto">
             </div>
@@ -18,7 +14,7 @@
         </div>
       </div>
     </div>
-    <div data-aos="fade-left" class="block md:hidden">
+    <div class="block md:hidden">
       <swiper-container slides-per-view="1.4" centered-slides="true" space-between="7">
         <swiper-slide v-for="item in slaterRoles">
           <div class="card">

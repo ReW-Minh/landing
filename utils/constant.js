@@ -50,17 +50,18 @@ export const NAVIGATION_MENU = [
         route: '/podcast'
     },
     {
-        label: 'About',
-        items: [
-            {
-                label: 'Our Team',
-                route: '/about/team'
-            },
-            {
-                label: 'Careers',
-                route: '/about/careers'
-            }
-        ]
+        label: 'Our Team',
+        route: '/about/team'
+        // items: [
+        //     {
+        //         label: 'Our Team',
+        //         route: '/about/team'
+        //     },
+        // {
+        //     label: 'Careers',
+        //     route: '/about/careers'
+        // }
+        // ]
     },
 ]
 

@@ -22,8 +22,7 @@
                     Free <span class="rew-text-green rew-font">Re</span>Sources for PowerCampus
                 </div>
                 <div class=" grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div v-for="(item, index) in resources" :key="item.id" data-aos="zoom-in-down" data-aos-offset="50"
-                        :data-aos-delay="index * 50">
+                    <div v-for="(item, index) in resources" :key="item.id">
                         <NuxtLink :to="item.link" target="_blank">
                             <BaseCardItem class="resource-card">
                                 <template #image>
@@ -48,8 +47,7 @@
                     Services
                 </div>
                 <div class=" grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div v-for="(item, index) in services" :key="item.id" data-aos="zoom-in-down" data-aos-offset="50"
-                        :data-aos-delay="index * 50">
+                    <div v-for="(item, index) in services" :key="item.id">
                         <NuxtLink :to="item.route">
                             <BaseCardItem class="resource-card service">
                                 <template #image>

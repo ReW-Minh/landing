@@ -3,13 +3,21 @@
         <img src="/img/logo-bg.svg" alt="rew"
             class="bg-logo !top-1/2 !left-1/2 !transform -translate-x-1/2 !-translate-y-1/2 hidden md:block mt-[150px] !opacity-5">
 
+        <BasePageContent>
+            <NuxtLink to="/services/powercampus"
+                class="mb-3 inline-flex items-center pe-1 rounded-lg border border-transparent hover:border-black transition-all">
+                <i class="pi pi-angle-left"></i>
+                PowerCampus
+            </NuxtLink>
+        </BasePageContent>
+
         <BasePageHeader>
             PowerCampus to Slate Integration (PowerSlate)
         </BasePageHeader>
 
         <BasePageContent>
             <section class="space-y-8 text-lg rew-text-brown">
-                <div data-aos="fade-right" data-aos-delay="50">
+                <div>
                     <span class="font-bold rew-text-green rew-font">Re</span><span class="font-bold rew-font">W</span>
                     CTO <a class="font-bold underline profile-hover" role="button"
                         @click="openProfile('Wyatt Best')">Wyatt Best</a>, developed the first (and as far as
@@ -23,12 +31,11 @@
                 </div>
 
                 <div>
-                    <div data-aos="fade-right" data-aos-delay="100" class="font-bold italic">
+                    <div class="font-bold italic">
                         Standard data coverage includes:
                     </div>
 
-                    <ul data-aos="fade-right" data-aos-delay="100"
-                        class="grid grid-cols-1 md:grid-cols-2 italic list-inside list-checkmark">
+                    <ul class="grid grid-cols-1 md:grid-cols-2 italic list-inside list-checkmark">
                         <li>Person</li>
                         <li>IPEDS Ethnicity</li>
                         <li>Scholarships</li>
@@ -44,7 +51,7 @@
                     </ul>
                 </div>
 
-                <div data-aos="fade-right" data-aos-delay="150">
+                <div>
                     <span class="font-bold rew-text-green">Power</span><span
                         class="font-bold slate-text-blue">Slate</span> offers
                     innovative techniques to save you time, like auto-updating a student's major based
@@ -61,8 +68,7 @@
                 </div>
 
                 <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                    <div v-for="(item, index) in pricings" :key="item.id" data-aos="zoom-in-down" data-aos-offset="50"
-                        :data-aos-delay="index * 50">
+                    <div v-for="(item, index) in pricings" :key="item.id">
                         <BaseCardItem :hoverEffect="false" class="resource-card">
                             <template #image>
                                 <div class="flex items-center m-6 h-full">

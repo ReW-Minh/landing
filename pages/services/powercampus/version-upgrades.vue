@@ -3,6 +3,14 @@
         <img src="/img/logo-bg.svg" alt="rew"
             class="bg-logo !top-1/2 !left-1/2 !transform -translate-x-1/2 !-translate-y-1/2 hidden md:block mt-[150px]">
 
+        <BasePageContent>
+            <NuxtLink to="/services/powercampus"
+                class="mb-3 inline-flex items-center pe-1 rounded-lg border border-transparent hover:border-black transition-all">
+                <i class="pi pi-angle-left"></i>
+                PowerCampus
+            </NuxtLink>
+        </BasePageContent>
+
         <BasePageHeader>
             PowerCampus Version Upgrades
 
@@ -15,11 +23,11 @@
         <BasePageContent>
             <section>
                 <div class="mb-3 text-3xl font-semibold rew-text-brown text-center">
-                    <span class="rew-text-brown">Flexible, transparent pricing for every</span> <span class="rew-text-green">PowerCampus School</span>
+                    <span class="rew-text-brown">Flexible, transparent pricing for every</span> <span
+                        class="rew-text-green">PowerCampus School</span>
                 </div>
                 <div class=" grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <div v-for="(item, index) in pricings" :key="item.id" data-aos="zoom-in-down" data-aos-offset="50"
-                        :data-aos-delay="index * 50">
+                    <div v-for="(item, index) in pricings" :key="item.id">
                         <BaseCardItem :hoverEffect="false" class="resource-card !cursor-default">
                             <template #image>
                                 <div class="flex items-center m-6 h-full">
@@ -50,7 +58,7 @@
 
 <script setup>
 useHead({
-    title: 'ReWorkflow - PowerCampus Version Upgrades', 
+    title: 'ReWorkflow - PowerCampus Version Upgrades',
 })
 
 definePageMeta({

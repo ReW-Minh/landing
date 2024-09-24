@@ -13,8 +13,7 @@
 
         <BasePageContent>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                <div v-for="(bio, index) in profiles" :key="bio.id" data-aos="zoom-in-down" data-aos-offset="50"
-                    :data-aos-delay="index * 50">
+                <div v-for="(bio, index) in profiles" :key="bio.id">
                     <TeamBio :bio />
                 </div>
             </div>
