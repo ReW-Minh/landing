@@ -69,7 +69,7 @@
 
 <script setup>
 useHead({
-    title: 'ReWorkflow - PowerCampus Version Upgrades',
+    title: 'ReWorkflow - PowerFAIDS',
 })
 
 definePageMeta({
