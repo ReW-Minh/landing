@@ -21,6 +21,10 @@ export const NAVIGATION_MENU = [
         label: 'Services',
         items: [
             {
+                label: 'How We Work',
+                route: '/services/how-we-work'
+            },
+            {
                 label: 'Slate',
                 route: '/services/slate'
             },

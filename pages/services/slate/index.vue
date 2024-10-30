@@ -15,7 +15,7 @@
                     Free <span class="rew-text-green rew-font">Re</span>Sources
                 </div>
                 <div class=" grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div v-for="(item, index) in resources" :key="item.id">
+                    <div v-for="item in resources" :key="item.id">
                         <NuxtLink :to="item.link" :target="item.type === CONTACT_TYPE.PODCAST ? '_self' : '_blank'">
                             <BaseCardItem class="resource-card">
                                 <template #image>

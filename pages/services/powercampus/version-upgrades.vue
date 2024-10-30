@@ -27,8 +27,8 @@
                         class="rew-text-green">PowerCampus School</span>
                 </div>
                 <div class=" grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <div v-for="(item, index) in pricings" :key="item.id">
-                        <BaseCardItem :hoverEffect="false" class="resource-card !cursor-default">
+                    <div v-for="item in pricings" :key="item.id">
+                        <BaseCardItem :hoverEffect="false" class="resource-card !cursor-default !bg-white/50 !backdrop-blur-sm">
                             <template #image>
                                 <div class="flex items-center m-6 h-full">
                                     <div class="font-bold rew-text-brown text-2xl space-y-2">

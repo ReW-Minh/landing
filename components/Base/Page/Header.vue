@@ -2,7 +2,7 @@
     <div class="!mb-6 md:!mb-12 heading text-center container-fluid">
         <slot />
 
-        <div class="font-normal italic subtitle mx-4 opacity-90">
+        <div class="font-normal italic subtitle opacity-90">
             <slot name="subtitle" />
         </div>
     </div>

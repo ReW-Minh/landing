@@ -802,13 +802,15 @@ a.footer-link:hover {
 
   li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 4px;
 
     &::before {
       content: url(/img/sproute.svg);
       width: 20px;
       height: 20px;
+      margin-top: 2px;
+      flex-shrink: 0;
     }
   }
 }
@@ -819,3 +821,4 @@ a.footer-link:hover {
   --p-progressspinner-color-3: var(--rew-primary-green);
   --p-progressspinner-color-4: var(--rew-primary-green);
 }
+
