@@ -50,25 +50,25 @@ const slaterRoles = ref([
     imgSrc: role01Url,
     imgSrcMobile: role01MobileUrl,
     title: 'Captaining',
-    content: 'Team up with our Slate subject matter experts to have embedded project management, cycle prep, and strategic advisement at the ready.'
+    content: 'Team up with our Slate subject matter experts for embedded project management, cycle prep, and strategic advisement.'
   },
   {
     imgSrc: role02Url,
     imgSrcMobile: role02MobileUrl,
     title: 'Engineering',
-    content: 'Let’s dream big together for implementing next-level Slate enhancements from portals and dashboards to workflow automations and system integrations.'
+    content: 'Let’s achieve big together for implementing next-level Slate enhancements – from portals and dashboards to workflow automations and system integrations.'
   },
   {
     imgSrc: role03Url,
     imgSrcMobile: role03MobileUrl,
     title: 'Operationalizing',
-    content: 'Troubleshooting, routine maintenance, querying, reporting, data integrity, you name it! ReW’s operations specialists take on daily tasks so that your team is free to focus on student-facing priorities.'
+    content: 'Troubleshooting, routine maintenance, querying, reporting, data integrity – you name it! ReW’s operations specialists take on daily tasks so that your team is free to focus on student-facing priorities.'
   },
   {
     imgSrc: role04Url,
     imgSrcMobile: role04MobileUrl,
     title: 'ReInforcing',
-    content: 'Looking for Slate-skilled seasonal readers and/or application  processors? In need of temporary coverage for a key Slater going on  leave? Need to train up your in-house talent? Call on ReW to bridge the gap.'
+    content: 'Looking for Slate-skilled, seasonal application readers or processors? Coverage for a key Slater going on leave? Need to train up your in-house talent? Call on ReW to bridge the gap.'
   },
 ])
 
