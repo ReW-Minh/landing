@@ -8,15 +8,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Base/CardItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Base/CardItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Services.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Services.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/services/how-we-work/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/services/how-we-work/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/services/powercampus/power-slate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/services/powercampus/power-slate.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/services/powercampus/powerfaids.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/services/powercampus/powerfaids.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/services/powercampus/version-upgrades.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/services/powercampus/version-upgrades.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/services/slate/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/services/slate/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +114,7 @@
       <updated>1730300032299</updated>
       <workItem from="1730300033394" duration="7231000" />
       <workItem from="1730340451505" duration="205000" />
-      <workItem from="1730340663608" duration="2875000" />
+      <workItem from="1730340663608" duration="4280000" />
     </task>
     <servers />
   </component>
