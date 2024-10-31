@@ -1,17 +1,19 @@
 <template>
-    <Header />
+  <Header/>
 
-    <div class="mt min-h-[calc(100vh-270px)]">
-        <slot />
-    </div>
+  <div class="mt min-h-[calc(100vh-270px)]">
+    <slot/>
+  </div>
 
-    <Footer />
+  <Footer/>
 
-    <ContactPopup />
+  <ScrollTop icon="pi pi-angle-double-up" />
 
-    <template v-for="bio in profiles" :key="bio.id">
-        <TeamPopup :bio v-model="bio.visible" />
-    </template>
+  <ContactPopup/>
+
+  <template v-for="bio in profiles" :key="bio.id">
+    <TeamPopup :bio v-model="bio.visible"/>
+  </template>
 </template>
 
 <script setup>
@@ -22,12 +24,12 @@ const profiles = useProfiles()
 
 <style scoped>
 .mt {
-    margin-top: 109px
+  margin-top: 109px
 }
 
 @media (max-width: 767px) {
-    .mt {
-        margin-top: 60px
-    }
+  .mt {
+    margin-top: 60px
+  }
 }
 </style>

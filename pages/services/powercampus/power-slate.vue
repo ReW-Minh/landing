@@ -69,7 +69,7 @@
 
                 <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     <div v-for="item in pricings" :key="item.id">
-                        <BaseCardItem :hoverEffect="false" class="resource-card !bg-white/50 !backdrop-blur-sm">
+                        <BaseCardItem :hoverEffect="false" class="resource-card !bg-white/30 !backdrop-blur-sm">
                             <template #image>
                                 <div class="flex items-center m-6 h-full">
                                     <div class="font-bold rew-text-brown text-2xl space-y-2">

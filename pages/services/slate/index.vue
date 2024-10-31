@@ -42,8 +42,8 @@
         <!--<HomeServices />-->
         <div class=" grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
-            <BaseCardItem :hoverEffect="false" customHeight="380px"
-                          class="resource-card !cursor-default !bg-white/50 !backdrop-blur-sm">
+            <BaseCardItem :hoverEffect="false" :customHeight="true"
+                          class="resource-card !cursor-default !bg-white/30 !backdrop-blur-sm">
               <template #image>
                 <div class="flex items-center m-6 h-full">
                   <div class="font-bold rew-text-brown text-2xl space-y-2">
@@ -71,8 +71,8 @@
           </div>
 
           <div>
-            <BaseCardItem :hoverEffect="false" customHeight="380px"
-                          class="resource-card !cursor-default !bg-white/50 !backdrop-blur-sm">
+            <BaseCardItem :hoverEffect="false" :customHeight="true"
+                          class="resource-card !cursor-default !bg-white/30 !backdrop-blur-sm">
               <template #image>
                 <div class="flex items-center m-6 h-full">
                   <div class="font-bold rew-text-brown text-2xl space-y-2">
@@ -114,7 +114,7 @@
 
         <div class="flex justify-center mt-8">
 
-          <div class="border rounded-full shadow !bg-white/50 !backdrop-blur-sm hover:!shadow-md transition-all">
+          <div class="border rounded-full shadow !bg-white/30 !backdrop-blur-sm hover:!shadow-md transition-all">
             <RouterLink
                 class="text-3xl font-semibold text-gradient-animation block px-6 py-2"
                 to="/services/how-we-work">
@@ -151,31 +151,6 @@ const resources = [
     type: CONTACT_TYPE.PODCAST,
     title: `Podcast`,
     link: '/podcast'
-  }
-]
-
-const services = [
-  {
-    route: '/services/powercampus/power-slate',
-    title: `Slate
-                <br />
-                Integration
-                <br />
-                (PowerSlate)`
-  },
-  {
-    route: '/services/powercampus/version-upgrades',
-    title: `Version
-                <br />
-                Upgrades`
-  },
-  {
-    route: '/services/powercampus/powerfaids',
-    title: `PowerFAIDS
-                <br />
-                Integration
-                <br />
-                Add-On`
   }
 ]
 </script>

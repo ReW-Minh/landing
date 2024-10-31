@@ -17,7 +17,7 @@
 
     <BasePageContent>
       <section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div class="border rounded-xl p-4 shadow bg-white/50 backdrop-blur-sm" v-for="(item, index) in steps">
+        <div class="border rounded-xl p-4 shadow bg-white/30 backdrop-blur-sm" v-for="(item, index) in steps">
           <div class="btn-connect mb-4 !rounded-full">
             <IconSearch v-if="item.icon === 'search'" />
             <IconPartner v-if="item.icon === 'partner'" />
@@ -31,7 +31,7 @@
         </div>
       </section>
 
-      <section class="border rounded-xl p-4 shadow bg-white/50 backdrop-blur-sm">
+      <section class="border rounded-xl p-4 shadow bg-white/30 backdrop-blur-sm">
         <div class="mb-3 text-4xl font-semibold rew-text-brown text-center">
           The <span class="rew-font"><span class="rew-text-green">Re</span>W</span> Difference
         </div>

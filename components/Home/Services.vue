@@ -1,10 +1,10 @@
 <template>
-  <section class="pt-4 overflow-hidden" id="service">
-    <img src="/img/logo-bg.svg" alt="rew" class="bg-logo block md:hidden">
+  <section class="pt-4 md:pb-10 pb-6 overflow-hidden" id="service">
+    <img src="/img/logo-bg.svg" alt="rew" class="bg-logo hidden md:block">
     <div class="max-w-[960px] mx-auto hidden md:block px-4">
       <div class="grid grid-cols-2 gap-10">
-        <div v-for="item, index in slaterRoles" class="my-n3">
-          <div class="card">
+        <div v-for="item in slaterRoles" class="border rounded-xl bg-white/30 backdrop-blur-sm shadow">
+          <div class="card !my-6 !mx-4">
             <div class="card-img">
               <img :src="item.imgSrc" :alt="item.title" class="mx-auto">
             </div>
@@ -79,14 +79,3 @@ const decorateText = str => {
   return str.replaceAll(/ReW/g, `<span class="rew-font"><span class="rew-text-green">Re</span>W</span>`)
 }
 </script>
-
-<style scoped>
-.section-title {
-  text-transform: unset;
-}
-
-.my-n3 {
-  margin-top: -30px;
-  margin-bottom: -30px;
-}
-</style>

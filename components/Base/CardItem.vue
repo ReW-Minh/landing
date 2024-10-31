@@ -25,14 +25,14 @@ const props = defineProps({
     default: false
   },
   customHeight: {
-    type: String,
-    default: ''
+    type: Boolean,
+    default: false
   }
 })
 
 const imageHeight = computed(() => {
   if (props.customHeight) {
-    return `h-[${props.customHeight}]`
+    return 'h-[384px]'
   }
 
   return props.squareImage ? 'aspect-square' : 'h-[280px]'
