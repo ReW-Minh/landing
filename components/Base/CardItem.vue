@@ -80,7 +80,7 @@ const imageHeight = computed(() => {
 
     &:hover {
       transform: translateY(-5px);
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 
       .bio-picture {
         transform: scale(1.05)

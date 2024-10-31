@@ -28,8 +28,8 @@
                   aria-level="2" aria-setsize="2" aria-posinset="1" data-pc-section="item" data-p-active="false"
                   data-p-focused="false">
                   <div class="p-menubar-item-content" data-pc-section="itemcontent">
-                    <NuxtLink :to="sub.route" :target="sub.external ? '_blank' : '_self'" class="p-menubar-item-link">
-                      {{ sub.label }}
+                    <NuxtLink :to="sub.route" :target="sub.external ? '_blank' : '_self'" class="p-menubar-item-link new-tab-hover">
+                      {{ sub.label }} <IconExternal v-if="sub.external" />
                     </NuxtLink>
                   </div>
                 </li>
@@ -38,8 +38,8 @@
 
             <template v-else>
               <div class="p-menubar-item-content" data-pc-section="itemcontent">
-                <NuxtLink :to="item.route" :target="item.external ? '_blank' : '_self'" class="p-menubar-item-link">
-                  {{ item.label }}
+                <NuxtLink :to="item.route" :target="item.external ? '_blank' : '_self'" class="p-menubar-item-link new-tab-hover">
+                  {{ item.label }} <IconExternal v-if="item.external" />
                 </NuxtLink>
               </div>
             </template>

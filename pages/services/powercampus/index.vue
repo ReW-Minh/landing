@@ -24,7 +24,7 @@
                 <div class=" grid grid-cols-1 md:grid-cols-3 gap-12">
                     <div v-for="(item, index) in resources" :key="item.id">
                         <NuxtLink :to="item.link" target="_blank">
-                            <BaseCardItem class="resource-card">
+                            <BaseCardItem class="resource-card new-tab-hover">
                                 <template #image>
                                     <div class="resource-icon grid place-items-center h-full">
                                         <IconReSource v-if="item.type === CONTACT_TYPE.RESOURCE" />
@@ -34,7 +34,10 @@
                                     </div>
                                 </template>
                                 <template #title>
-                                    <div v-html="item.title"></div>
+                                    <div class="flex items-center">
+                                      <div v-html="item.title"></div>
+                                      <IconExternal />
+                                    </div>
                                 </template>
                             </BaseCardItem>
                         </NuxtLink>

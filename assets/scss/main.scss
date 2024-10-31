@@ -97,9 +97,8 @@ p {
   border: none;
   white-space: nowrap;
   position: relative;
-  transition: all linear .1s;
+  transition: all linear .1s !important;
   overflow: hidden;
-  transition: all linear .1s !important
 }
 
 .rew-main-btn:active {
@@ -594,7 +593,7 @@ a.footer-link:hover {
   }
 
   .me-sm-0 {
-    margin-right: 0px !important;
+    margin-right: 0 !important;
   }
 
   .about-block {
@@ -641,7 +640,7 @@ a.footer-link:hover {
 
   .card {
     background: linear-gradient(186.1deg, #EBEDEA 14.48%, #FFFFFF 86.13%);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     padding: 20px;
     width: 264px;
@@ -765,7 +764,7 @@ a.footer-link:hover {
 
 .v-enter-active,
 .v-leave-active {
-  transition: opacity .2ss ease-in-out;
+  transition: opacity .2s ease-in-out;
 }
 
 .v-enter-from,
@@ -825,5 +824,21 @@ a.footer-link:hover {
 .p-scrolltop {
   border: 1px solid white !important;
   background-color: var(--rew-active-brown) !important;
+}
+
+.new-tab-hover {
+  .new-tab {
+    opacity: 0;
+    transition: all linear .1s;
+    width: 16px;
+    height: 16px;
+    padding-left: 4px;
+  }
+
+  &:hover {
+    .new-tab {
+      opacity: 1;
+    }
+  }
 }
 
