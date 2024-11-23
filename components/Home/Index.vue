@@ -5,7 +5,7 @@
         <div class="lg:col-span-9 md:col-span-8 col-span-12">
           <div class="flex flex-col h-full justify-center relative">
             <img src="/img/logo-bg.svg" alt="rew"
-                 class="bg-logo -left-[24px] !top-1/2 !transform !-translate-y-1/2 !opacity-5 hidden md:block">
+                 class="bg-logo -left-[24px] !top-1/2 !transform !-translate-y-1/2 !opacity-5 invisible md:visible">
 
             <div data-aos="fade-right" data-aos-duration="700"
                  class="left-home-block position-relative mt-6 md:mt-12 relative">
@@ -27,7 +27,7 @@
           </div>
         </div>
 
-        <div class="lg:col-span-3 md:col-span-4 hidden md:flex items-center justify-end" data-aos="zoom-in"
+        <div class="lg:col-span-3 md:col-span-4 invisible md:visible items-center justify-end" data-aos="zoom-in"
              data-aos-duration="700">
           <img class="img-fluid" src="/img/hero-img-lg.webp" alt="rew main board">
         </div>

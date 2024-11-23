@@ -2,7 +2,7 @@
     <Dialog v-model:visible="visible" modal style="width: 100%; max-width: 850px; margin: 0 12px; border: none"
         :closable="false" :header="' '" class="view-bio" @hide="visible = false" :dismissableMask="true">
 
-        <img src="/img/logo-bg.svg" alt="rew" class="bg-logo hidden md:block inset-0 !opacity-[0.05]">
+        <img src="/img/logo-bg.svg" alt="rew" class="bg-logo invisible md:visible inset-0 !opacity-[0.05]">
 
         <div class="flex flex-col md:flex-row items-center gap-4 mb-4 relative mt-1 overflow-hidden">
             <img class="profile-img rounded shadow-lg" :src="bio.picture" />

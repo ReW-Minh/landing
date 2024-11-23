@@ -34,7 +34,7 @@
                         </div>
                     </div>
 
-                    <div class="hidden md:block w-[120px]">
+                    <div class="invisible md:visible w-[120px]">
                         <img src="https://images.squarespace-cdn.com/content/v1/641f3e24b36a211ec50bf362/ed429e0b-776e-4d90-83ec-0857a083ab6e/SlatePreferredPartnerLevel_Gold.png?format=500w"
                             alt="Slate Gold Partner">
                     </div>

@@ -81,7 +81,9 @@ header {
   }
 
   .router-link-active {
-    color: var(--rew-active-brown);
+    &:not(.rew-main-btn) {
+      color: var(--rew-active-brown);
+    }
   }
 
   .p-menubar-submenu {
