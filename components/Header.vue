@@ -46,7 +46,7 @@
           </li>
 
           <li class="ms-3">
-            <CallToAction />
+            <CallToAction label="Contact" />
           </li>
         </ul>
       </div>

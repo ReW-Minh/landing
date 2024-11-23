@@ -20,10 +20,10 @@ export const NAVIGATION_MENU = [
     {
         label: 'Services',
         items: [
-            {
-                label: 'How We Work',
-                route: '/services/how-we-work'
-            },
+            // {
+            //     label: 'How We Work',
+            //     route: '/services/how-we-work'
+            // },
             {
                 label: 'Slate',
                 route: '/services/slate'
@@ -35,7 +35,11 @@ export const NAVIGATION_MENU = [
         ]
     },
     {
-        label: 'ReSource',
+      label: 'Pricing',
+      route: '/pricing'
+    },
+    {
+        label: 'ReSources',
         items: [
             {
                 label: 'Slate',
@@ -46,12 +50,12 @@ export const NAVIGATION_MENU = [
                 label: 'PowerCampus',
                 route: 'https://resource.reworkflow.com/books/powercampus',
                 external: true
-            }
+            },
+            {
+                label: 'Podcast',
+                route: '/podcast'
+            },
         ]
-    },
-    {
-        label: 'Podcast',
-        route: '/podcast'
     },
     {
         label: 'Our Team',

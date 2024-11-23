@@ -1,9 +1,12 @@
 <template>
   <section class="pt-3 pb-6 md:overflow-hidden overflow-visible" id="home">
     <div class="container-fluid">
-      <div class="grid grid-cols-12 gap-1">
+      <div class="grid grid-cols-12 gap-3">
         <div class="lg:col-span-9 md:col-span-8 col-span-12">
-          <div class="flex flex-col h-full">
+          <div class="flex flex-col h-full justify-center relative">
+            <img src="/img/logo-bg.svg" alt="rew"
+                 class="bg-logo -left-[24px] !top-1/2 !transform !-translate-y-1/2 !opacity-5 hidden md:block">
+
             <div data-aos="fade-right" data-aos-duration="700"
                  class="left-home-block position-relative mt-6 md:mt-12 relative">
               <h1 class="hero-title rew-text-green leading-tight">
@@ -13,40 +16,29 @@
                 <span class="rew-text-brown">Hiring</span>
               </h1>
             </div>
+
             <div data-aos="fade-right" data-aos-duration="700"
-                 class="left-home-block flex items-center mt-2 md:mt-6">
+                 class="left-home-block flex items-center lg:mt-10 md:mt-6 mt-2">
               <div class="rew-text-brown text-[18px] md:text-[20px] lg:text-[28px]">
                 We team up with higher education institutions to cultivate evergreen enrollment systems,
                 operations, and processes.
               </div>
             </div>
-            <div data-aos="fade-right" data-aos-duration="700" class="mt-4 md:mt-8">
-              <button @click="visible = true"
-                      title="Contact Us" class="rew-main-btn rew-box-shadow flex items-center">
-                <span>Let's Get Started</span>
-                <span class="md:ml-3 ml-1 flex">
-                  <svg class="button-arrow" width="34" height="28" viewBox="0 0 34 28" fill="none"
-                       xmlns="http://www.w3.org/2000/svg">
-                       <path
-                           d="M4.16671 27.75L0.958374 24.5417L11.4427 14L0.958374 3.45833L4.16671 0.25L17.9167 14L4.16671 27.75ZM19.2917 27.75L16.0834 24.5417L26.5677 14L16.0834 3.45833L19.2917 0.25L33.0417 14L19.2917 27.75Z"
-                           fill="white"/>
-                  </svg>
-                </span>
-              </button>
-            </div>
           </div>
         </div>
+
         <div class="lg:col-span-3 md:col-span-4 hidden md:flex items-center justify-end" data-aos="zoom-in"
              data-aos-duration="700">
           <img class="img-fluid" src="/img/hero-img-lg.webp" alt="rew main board">
         </div>
 
-        <img class="absolute h-[calc(100dvh-360px)] md:hidden left-1/2 -translate-x-1/2 -z-10 opacity-20" src="/img/hero-img-lg.webp" alt="rew main board">
+        <img class="absolute h-[calc(100dvh-360px)] md:hidden left-1/2 -translate-x-1/2 -z-10 opacity-20"
+             src="/img/hero-img-lg.webp" alt="rew main board">
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
-const visible = useState('visible')
+
 </script>
