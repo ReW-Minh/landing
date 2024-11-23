@@ -63,7 +63,6 @@ useHead({
 
 definePageMeta({
     hideCTA: true,
-    middleware: ['hidden']
 })
 
 const pricings = [

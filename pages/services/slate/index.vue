@@ -135,10 +135,6 @@ useHead({
   title: 'ReWorkflow - Slate',
 })
 
-definePageMeta({
-  middleware: ['hidden']
-})
-
 const resources = [
   {
     type: CONTACT_TYPE.RESOURCE,

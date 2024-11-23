@@ -72,10 +72,6 @@ useHead({
     title: 'ReWorkflow - PowerFAIDS',
 })
 
-definePageMeta({
-    middleware: ['hidden']
-})
-
 const pricings = [
     {
         title: 'PowerFAIDs Integration',

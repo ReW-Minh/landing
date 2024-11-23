@@ -95,10 +95,6 @@ useHead({
     title: 'ReWorkflow - PowerCampus',
 })
 
-definePageMeta({
-    middleware: ['hidden']
-})
-
 const resources = [
     {
         type: CONTACT_TYPE.RESOURCE,

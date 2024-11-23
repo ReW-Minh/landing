@@ -54,10 +54,6 @@ useHead({
   title: 'ReWorkflow - How We Work',
 })
 
-definePageMeta({
-  middleware: ['hidden']
-})
-
 const steps = [
   {
     icon: 'search',

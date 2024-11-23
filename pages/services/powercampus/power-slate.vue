@@ -102,10 +102,6 @@ useHead({
     title: 'ReWorkflow - PowerSlate',
 })
 
-definePageMeta({
-    middleware: ['hidden']
-})
-
 const pricings = [
     {
         title: 'Open-Source Code',
