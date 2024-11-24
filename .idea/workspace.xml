@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Services.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Services.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/services/slate/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/services/slate/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +119,7 @@
       <workItem from="1731038824682" duration="5000" />
       <workItem from="1732367992085" duration="1863000" />
       <workItem from="1732454756486" duration="449000" />
-      <workItem from="1732456312728" duration="449000" />
+      <workItem from="1732456312728" duration="1030000" />
     </task>
     <servers />
   </component>

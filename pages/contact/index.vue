@@ -9,15 +9,14 @@
       </template>
 
       <template #subtitle>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis, ex quis blandit ultricies, odio neque
-        sollicitudin arcu, a finibus nibh leo finibus odio. Aenean ullamcorper convallis euismod. Nam ac nibh sit amet
-        purus faucibus lobortis eget in turpis. Praesent.
+        <div>Speak to a <span class="rew-font rew-text-brown"><span class="rew-text-green">Re</span>Workflow</span> Slate Technician today!</div>
+        <div>No sales dances and no obligations.  </div>
       </template>
     </BasePageHeader>
 
     <BasePageContent>
       <section class="border rounded-xl p-4 shadow bg-white/30 backdrop-blur-sm text-center">
-        <a href="tel:00000000000" class="rew-text-green rew-font text-xl">(000) 000-0000</a>
+        <a href="tel:2085469221" class="rew-text-green rew-font text-xl">208-546-9221</a>
       </section>
       <section class="border rounded-xl p-4 shadow bg-white/30 backdrop-blur-sm">
         <div id="form_bb62dd62-0117-4840-9cb8-28b8f99b4211">
