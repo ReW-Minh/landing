@@ -638,30 +638,11 @@ a.footer-link:hover {
     padding-bottom: 9px;
   }
 
-  .card {
-    background: linear-gradient(186.1deg, #EBEDEA 14.48%, #FFFFFF 86.13%);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    padding: 20px;
-    width: 264px;
-    height: 410px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .card-title {
-    font-size: 18px
-  }
-
-  .card-img {
-    img {
-      height: 150px;
-      margin-bottom: 15px;
-    }
+    font-size: 18px;
   }
 
   .card-content {
-    color: var(--rew-primary-green);
     font-size: 14px;
   }
 
@@ -755,7 +736,7 @@ a.footer-link:hover {
 }
 
 .p-tooltip-top .p-tooltip-arrow {
-  margin-left: calc(-1* var(--p-tooltip-gutter));
+  margin-left: calc(-1 * var(--p-tooltip-gutter));
   border-width: var(--p-tooltip-gutter) var(--p-tooltip-gutter) 0 var(--p-tooltip-gutter) !important;
   border-color: transparent !important;
   border-top-color: var(--rew-primary-green) !important;
