@@ -19,34 +19,6 @@
         <BasePageContent>
             <section>
                 <div class="mb-3 text-3xl font-semibold rew-text-brown">
-                    Free <span class="rew-text-green rew-font">Re</span>Sources for PowerCampus
-                </div>
-                <div class=" grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div v-for="(item, index) in resources" :key="item.id">
-                        <NuxtLink :to="item.link" target="_blank">
-                            <BaseCardItem class="resource-card new-tab-hover">
-                                <template #image>
-                                    <div class="resource-icon grid place-items-center h-full">
-                                        <IconReSource v-if="item.type === CONTACT_TYPE.RESOURCE" />
-                                        <IconPresentations
-                                            v-if="item.type === CONTACT_TYPE.PRESENTATIONS_PUBLICATIONS" />
-                                        <IconGitHub v-if="item.type === CONTACT_TYPE.GITHUB" />
-                                    </div>
-                                </template>
-                                <template #title>
-                                    <div class="flex items-center">
-                                      <div v-html="item.title"></div>
-                                      <IconExternal />
-                                    </div>
-                                </template>
-                            </BaseCardItem>
-                        </NuxtLink>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <div class="mb-3 text-3xl font-semibold rew-text-brown">
                     Services
                 </div>
                 <div class=" grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -81,9 +53,6 @@
                 <div class="text-xl rew-text-brown">
                     Need help with something else, like gap staffing, 1098-T compliance, or a specific challenge? We
                     would be thrilled to help!
-                </div>
-                <div class="mt-6 flex justify-center">
-                    <CallToAction size="lg" />
                 </div>
             </section>
         </BasePageContent>

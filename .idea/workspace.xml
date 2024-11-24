@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Icon/Phone.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MobileMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/MobileMenu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/services/powercampus/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/services/powercampus/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/services/powercampus/power-slate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/services/powercampus/power-slate.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/services/powercampus/version-upgrades.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/services/powercampus/version-upgrades.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +119,7 @@
       <workItem from="1731034689008" duration="2308000" />
       <workItem from="1731038824682" duration="5000" />
       <workItem from="1732367992085" duration="1863000" />
-      <workItem from="1732454756486" duration="141000" />
+      <workItem from="1732454756486" duration="449000" />
     </task>
     <servers />
   </component>

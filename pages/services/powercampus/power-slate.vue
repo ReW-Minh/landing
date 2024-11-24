@@ -67,7 +67,7 @@
                         class="rew-text-green">PowerCampus School</span>
                 </div>
 
-                <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class=" grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div v-for="item in pricings" :key="item.id">
                         <BaseCardItem :hoverEffect="false" class="resource-card !bg-white/30 !backdrop-blur-sm">
                             <template #image>
@@ -84,11 +84,6 @@
                                     </div>
                                 </div>
                             </template>
-                            <template #title>
-                                <div class="flex justify-center">
-                                    <CallToAction :label="item.link && 'GitHub'" :link="item.link" />
-                                </div>
-                            </template>
                         </BaseCardItem>
                     </div>
                 </div>
@@ -103,12 +98,6 @@ useHead({
 })
 
 const pricings = [
-    {
-        title: 'Open-Source Code',
-        range: 'Free',
-        content: 'All PowerCampus enthusiasts are invited to download and contribute to the publicly shared code base.',
-        link: 'https://github.com/WyattBest/PowerSlate',
-    },
     {
         title: 'Comprehensive Implementation',
         range: '$15,000 - $20,000',

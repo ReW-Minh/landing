@@ -43,11 +43,6 @@
                                     </div>
                                 </div>
                             </template>
-                            <template #title>
-                                <div class="flex justify-center">
-                                    <CallToAction />
-                                </div>
-                            </template>
                         </BaseCardItem>
                     </div>
                 </div>
