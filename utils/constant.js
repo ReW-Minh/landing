@@ -39,7 +39,7 @@ export const NAVIGATION_MENU = [
       route: '/pricing'
     },
     {
-        label: 'ReSources',
+        label: 'Resources',
         items: [
             {
                 label: 'Slate',
