@@ -9,8 +9,10 @@
       </template>
 
       <template #subtitle>
-        <div>Speak to a <span class="rew-font rew-text-brown"><span class="rew-text-green">Re</span>Workflow</span> Slate Technician today!</div>
-        <div>No sales dances and no obligations.  </div>
+        <div>Speak to a <span class="rew-font rew-text-brown"><span class="rew-text-green">Re</span>Workflow</span>
+          Slate Technician today!
+        </div>
+        <div>No sales dances and no obligations.</div>
       </template>
     </BasePageHeader>
 
@@ -35,12 +37,22 @@
 </template>
 
 <script setup>
+const slateFormScriptId = 'slateFormScriptId'
+
 onMounted(() => {
   const script = document.createElement('script')
-  script.setAttribute('src', 'https://go.reworkflow.com/register/?id=bb62dd62-0117-4840-9cb8-28b8f99b4211&output=embed&div=form_bb62dd62-0117-4840-9cb8-28b8f99b4211')
+  script.id = slateFormScriptId
+  script.async = 1
+  script.src = 'https://go.reworkflow.com/register/?id=bb62dd62-0117-4840-9cb8-28b8f99b4211&output=embed&div=form_bb62dd62-0117-4840-9cb8-28b8f99b4211'
   document.head.appendChild(script)
 })
 
+onBeforeUnmount(() => {
+  const script = document.getElementById(slateFormScriptId)
+
+  if (script)
+    script.parentNode.removeChild(script)
+})
 </script>
 
 <style scoped lang="scss">

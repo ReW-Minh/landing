@@ -26,6 +26,12 @@
         <div class="mt-12 flex items-center justify-center">
           <CallToAction/>
         </div>
+        <div class="w-full flex items-center justify-center mt-10">
+          <a href="tel:2085469221" class="social-hover phone">
+            <IconPhone class="!w-[20px] !h-[20px]" fill="var(--rew-primary-brown)"/>
+          </a>
+          <span class="rew-font rew-text-brown ms-3 text-xl">208-546-9221</span>
+        </div>
       </div>
       <div class="menu-btm">
         <div class="flex items-center justify-center mb-3 mx-5 gap-6 overflow-hidden">
@@ -37,9 +43,6 @@
           </a>
           <a href="mailto:solutions@reworkflow.com">
             <IconEmailFill fill="var(--rew-secondary-green)" height="31" width="31"/>
-          </a>
-          <a href="tel:2085469221">
-            <IconPhone fill="var(--rew-secondary-green)" height="31" width="31"/>
           </a>
         </div>
         <div>

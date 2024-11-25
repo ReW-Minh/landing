@@ -105,15 +105,6 @@ const sendEmail = async () => {
         loading.value = false
     }
 }
-
-onMounted(() => {
-    const script = document.createElement('script')
-    script.async = 1
-    script.src = 'https://rwf.test.technolutions.net/register/?id=bb62dd62-0117-4840-9cb8-28b8f99b4211&output=embed&div=form_bb62dd62-0117-4840-9cb8-28b8f99b4211' + ((location.search.length > 1) ? '&' + location.search.substring(1) : '')
-
-    const s = document.getElementsByTagName('script')[0]
-    s.parentNode.insertBefore(script, s)
-})
 </script>
 
 <style scoped lang="scss">
