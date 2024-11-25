@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/contact.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ContactPopup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContactPopup.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Icon/Phone.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Icon/Phone.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/contact/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,6 +122,7 @@
       <workItem from="1732456312728" duration="1030000" />
       <workItem from="1732500638323" duration="5000" />
       <workItem from="1732520653731" duration="3680000" />
+      <workItem from="1732546761643" duration="3649000" />
     </task>
     <servers />
   </component>
