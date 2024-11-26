@@ -3,10 +3,16 @@
     <img src="/img/logo-bg.svg" alt="rew"
          class="bg-logo !top-1/2 !left-1/2 !transform -translate-x-1/2 !-translate-y-1/2 invisible md:visible mt-[150px]">
 
+    <BasePageHeader>Contact</BasePageHeader>
+
     <div class="max-w-[1280px] m-auto px-5">
       <div class="grid grid-cols gap-x-12 gap-y-2 grid-cols-5">
-        <div class="col-span-5 md:col-span-3 order-last md:order-first">
-          <section class="border rounded-xl p-4 shadow bg-white/30 backdrop-blur-sm">
+        <div class="col-span-5 md:col-span-3 order-last md:order-first mt-5 md:mt-0">
+          <div class="font-semibold text-[22px] md:text-[30px] rew-text-brown text-center md:text-left">
+            Write Us
+          </div>
+
+          <section class="border rounded-xl p-4 shadow bg-white/30 backdrop-blur-sm mt-1 md:mt-5">
             <div id="form_bb62dd62-0117-4840-9cb8-28b8f99b4211">
               <div class="grid place-items-center">
                 <svg class="logo" width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 95.44">
@@ -20,25 +26,23 @@
         </div>
 
         <div class="col-span-5 md:col-span-2 order-first md:order-last space-y-1 md:space-y-5">
-          <div class="font-semibold text-[24px] md:text-[30px] rew-text-brown text-center md:text-left">
-            Contact
+          <div class="font-semibold text-[22px] md:text-[30px] rew-text-brown text-center md:text-left">
+            Call Us
           </div>
 
-          <div class="font-normal text-[16px] md:text-[18px] rew-text-brown">
-            <div class="text-center md:text-left">Speak to a <span class="rew-font rew-text-brown"><span
-                class="rew-text-green">Re</span>Workflow</span>
-              Slate Technician today!
+          <section class="border rounded-xl p-4 shadow bg-white/30 backdrop-blur-sm mt-1 md:mt-5">
+            <div class="font-normal text-[16px] md:text-[18px] rew-text-brown text-center md:text-left">
+              We'd love to hear your challenges! Call us for a quick, informed opinion.
             </div>
-            <div class="text-center md:text-left">No sales dances and no obligations.</div>
-          </div>
 
-          <div
-              class="flex items-center justify-center md:justify-start gap-4 rew-text-green rew-font text-[24px] md:text-[30px]">
-            <a href="tel:2085469221">
-              <IconPhone width="24" height="24" fill="var(--rew-primary-green)"/>
-            </a>
-            208-546-9221
-          </div>
+            <div
+                class="flex items-center justify-center md:justify-start gap-4 rew-text-green rew-font text-[24px] md:text-[30px]">
+              <a href="tel:2085469221">
+                <IconPhone width="24" height="24" fill="var(--rew-primary-green)"/>
+              </a>
+              208-546-9221
+            </div>
+          </section>
         </div>
       </div>
     </div>

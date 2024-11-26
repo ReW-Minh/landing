@@ -10,10 +10,23 @@
     </BasePageHeader>
 
     <BasePageContent>
+      <section class="grid grid-cols-5 gap-x-4 -mb-8">
+        <div class="rew-text-brown md:col-span-3 col-span-5 text-[20px] md:text-[26px] font-bold flex items-center">
+          <div class="text-center md:text-left">
+          We can help with a vast range of Slate challenges. All <span class="rew-font"><span
+              class="rew-text-green">Re</span>W</span> services follow our simple, flexible pricing model.
+          </div>
+        </div>
+
+        <div class="col-span-2 hidden md:block">
+          <img src="/img/role01.svg" alt="slate_services" class="w-full"/>
+        </div>
+      </section>
+
       <HomeServices/>
 
       <section>
-        <ul class="flex flex-wrap gap-x-4 w-full justify-center text-xl font-semibold rew-text-brown list-inside list-checkmark">
+        <ul class="flex flex-wrap gap-x-8 gap-y-3 md:gap-y-0 w-full justify-center text-xl font-semibold rew-text-brown text-center">
           <li>Rapid Onboarding</li>
           <li>Unrestricted Support</li>
           <li>Transparency</li>

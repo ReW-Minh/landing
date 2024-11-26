@@ -9,14 +9,147 @@
       </template>
 
       <template #subtitle>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis, ex quis blandit ultricies, odio neque
-        sollicitudin arcu, a finibus nibh leo finibus odio. Aenean ullamcorper convallis euismod. Nam ac nibh sit amet
-        purus faucibus lobortis eget in turpis. Praesent.
+        Flexible, Cost-Effective Options
       </template>
     </BasePageHeader>
 
     <BasePageContent>
+      <section>
+        <div class="mb-3 text-3xl font-semibold rew-text-brown">
+          Flexible, Cost-Effective Options
+        </div>
+        <div class=" grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div>
+            <BaseCardItem :hoverEffect="false" class="resource-card !cursor-default !bg-white/30 !backdrop-blur-sm">
+              <template #image>
+                <div class="flex items-center m-6 h-full">
+                  <div class="font-bold rew-text-brown text-2xl space-y-2">
+                    <div>
+                      Pay As You Go
+                    </div>
+                    <div class="font-bold rew-text-green text-2xl">
+                      $295<span class="rew-text-brown">/hour</span>
+                    </div>
+                    <div class="p-card-subtitle italic text-sm font-normal">
+                      Post-pay monthly only for what you need.
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </BaseCardItem>
+          </div>
 
+          <div>
+            <BaseCardItem :hoverEffect="false" class="resource-card !cursor-default !bg-white/30 !backdrop-blur-sm">
+              <template #image>
+                <div class="flex items-center m-6 h-full">
+                  <div class="font-bold rew-text-brown text-2xl space-y-2">
+                    <div>
+                      Prepay & Save
+                    </div>
+                    <div class="font-bold rew-text-green text-2xl">
+                      <div>
+                        20 hrs: <span class="rew-text-brown">$295/hour</span>
+                      </div>
+                      <div>
+                        40 hrs: <span class="rew-text-brown">$235/hour</span>
+                      </div>
+                    </div>
+                    <div class="p-card-subtitle italic text-sm font-normal">
+                      Discounts for purchasing time blocks in advance.
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </BaseCardItem>
+          </div>
+
+          <div>
+            <BaseCardItem :hoverEffect="false" class="resource-card !cursor-default !bg-white/30 !backdrop-blur-sm">
+              <template #image>
+                <div class="flex items-center m-6 h-full">
+                  <div class="font-bold rew-text-brown text-2xl space-y-2">
+                    <div>
+                      Custom Solutions
+                    </div>
+
+                    <div class="p-card-subtitle italic text-sm font-normal">
+                      Contact us for a tailored quote that fits your institution’s goals and unlock preferential rates.
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </BaseCardItem>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="mb-3 text-3xl font-semibold rew-text-brown">
+          Recently Delivered Slate Support Examples
+        </div>
+        <div class=" grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div v-for="item in examples" :key="item.price">
+            <BaseCardItem :hoverEffect="false" class="resource-card !cursor-default !bg-white/30 !backdrop-blur-sm">
+              <template #image>
+                <div class="flex items-center m-6 h-full">
+                  <div class="font-bold rew-text-brown text-xl space-y-2">
+                    <div>
+                      {{ item.title }}
+                    </div>
+                    <div class="font-bold rew-text-green text-xl">
+                      ${{ item.price }}
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </BaseCardItem>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="mb-3 text-3xl font-semibold rew-text-brown">
+          How We Work
+        </div>
+
+        <ul class="italic list-inside list-checkmark space-y-2">
+          <li>We collaborate with you for planning and estimation.</li>
+          <li>Meet with us or email us as often as you like.</li>
+          <li>Time tracked by the second. No rounding.</li>
+          <li>Admin Dashboard for high-level overview of your package usage.</li>
+          <li>Slate Support Dashboard for detailed ticket/task statuses, project management, and time tracking.</li>
+        </ul>
+      </section>
     </BasePageContent>
   </BasePageContainer>
 </template>
+
+<script setup>
+const examples = [
+  {
+    title: 'Student Success Portal: Student requests help, staff match with qualified student tutors',
+    price: '15,930'
+  },
+  {
+    title: 'Undergraduate Housing Workflow: staff match compatible roommates and notify students',
+    price: '14,340'
+  },
+  {
+    title: 'Slate-Banner Financial Aid Integration: Show CFP-compliant aid letter in Slate and notify students of changes',
+    price: '9,900'
+  },
+  {
+    title: 'Six months of Slate Support with new Slate Captain onboarding and training',
+    price: '55,042'
+  },
+  {
+    title: 'Slate Permissions/Security: Express audit and training',
+    price: '2,000'
+  },
+  {
+    title: 'Slate Admissions Application: Express implementation ',
+    price: '14,478'
+  }
+]
+</script>

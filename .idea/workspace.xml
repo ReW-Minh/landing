@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CallToAction.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/CallToAction.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Services.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Services.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/contact/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pricing/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pricing/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/services/slate/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/services/slate/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/constant.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/constant.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +129,8 @@
       <workItem from="1732500638323" duration="5000" />
       <workItem from="1732520653731" duration="3680000" />
       <workItem from="1732546761643" duration="3649000" />
+      <workItem from="1732587004730" duration="274000" />
+      <workItem from="1732597774281" duration="3863000" />
     </task>
     <servers />
   </component>

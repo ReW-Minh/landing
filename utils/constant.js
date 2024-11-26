@@ -39,7 +39,7 @@ export const NAVIGATION_MENU = [
       route: '/pricing'
     },
     {
-        label: 'Resources',
+        label: 'ReSources',
         items: [
             {
                 label: 'Slate',
@@ -50,12 +50,12 @@ export const NAVIGATION_MENU = [
                 label: 'PowerCampus',
                 route: 'https://resource.reworkflow.com/books/powercampus',
                 external: true
-            },
-            {
-                label: 'Podcast',
-                route: '/podcast'
-            },
+            }
         ]
+    },
+    {
+        label: 'Podcast',
+        route: '/podcast'
     },
     {
         label: 'Our Team',

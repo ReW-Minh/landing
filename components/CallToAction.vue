@@ -1,10 +1,8 @@
 <template>
-  <NuxtLink :to="link ?? '/contact'" :target="link ? '_blank' : '_self'" :title="label ?? 'Contact us'" class="rew-main-btn rew-box-shadow inline-flex items-center"
+  <NuxtLink :to="link ?? '/contact'" :target="link ? '_blank' : '_self'" :title="label ?? 'Contact us'"
+            class="rew-main-btn rew-box-shadow inline-flex items-center"
             :class="{ 'h-10 !text-base': size === 'md', 'footer': footer }">
     <span>{{ label ?? 'Contact' }}</span>
-    <span class="md:ml-3 ml-1">
-            <IconDoubleArrow/>
-        </span>
   </NuxtLink>
 </template>
 

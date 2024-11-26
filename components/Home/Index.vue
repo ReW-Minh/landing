@@ -10,7 +10,7 @@
             <div data-aos="fade-right" data-aos-duration="700"
                  class="left-home-block position-relative mt-6 md:mt-12 relative">
               <h1 class="hero-title rew-text-green leading-tight">
-                Technical Support and Staffing Solutions
+                Slate Support and Staffing Solutions
                 <span class="rew-text-brown">without the Difficulties of</span>
                 <span class="rew-font ml-[5px] md:ml-[10px] lg:ml-[15px]">Re</span>
                 <span class="rew-text-brown">Hiring</span>
@@ -20,8 +20,8 @@
             <div data-aos="fade-right" data-aos-duration="700"
                  class="left-home-block flex items-center lg:mt-10 md:mt-6 mt-2">
               <div class="rew-text-brown text-[18px] md:text-[20px] lg:text-[28px]">
-                We team up with higher education institutions to cultivate evergreen enrollment systems,
-                operations, and processes.
+                We offer flexibly structured services that fit seamlessly with your institution’s needs. Our lean team
+                of experts provides quick, high-quality results for all Slate issues and implementation projects.
               </div>
             </div>
           </div>
