@@ -11,9 +11,6 @@
                  class="left-home-block position-relative mt-6 md:mt-12 relative">
               <h1 class="hero-title rew-text-green leading-tight">
                 Slate Support and Staffing Solutions
-                <span class="rew-text-brown">without the Difficulties of</span>
-                <span class="rew-font ml-[5px] md:ml-[10px] lg:ml-[15px]">Re</span>
-                <span class="rew-text-brown">Hiring</span>
               </h1>
             </div>
 
