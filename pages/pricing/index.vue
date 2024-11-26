@@ -45,7 +45,7 @@
                     </div>
                     <div class="font-bold rew-text-green text-2xl">
                       <div>
-                        20 hrs: <span class="rew-text-brown">$295/hour</span>
+                        20 hrs: <span class="rew-text-brown">$265/hour</span>
                       </div>
                       <div>
                         40 hrs: <span class="rew-text-brown">$235/hour</span>
@@ -91,7 +91,7 @@
                 <div class="flex items-center m-6 h-full">
                   <div class="font-bold rew-text-brown text-xl space-y-2">
                     <div>
-                      {{ item.title }}
+                      {{ item.title }} <span class="font-normal">{{ item.content }}</span>
                     </div>
                     <div class="font-bold rew-text-green text-xl">
                       ${{ item.price }}
@@ -109,12 +109,14 @@
           How We Work
         </div>
 
-        <ul class="italic list-inside list-checkmark space-y-2">
-          <li>We collaborate with you for planning and estimation.</li>
-          <li>Meet with us or email us as often as you like.</li>
-          <li>Time tracked by the second. No rounding.</li>
-          <li>Admin Dashboard for high-level overview of your package usage.</li>
-          <li>Slate Support Dashboard for detailed ticket/task statuses, project management, and time tracking.</li>
+        <ul class="text-[20px] list-inside list-checkmark space-y-2">
+          <li>We collaborate with you to plan priorities and estimations.</li>
+
+          <li>Unlimited ticket requests and meetings (mutual availability).</li>
+
+          <li>Time tracked by the second, with no rounding up.</li>
+
+          <li>Slate Support Dashboard for detailed task status updates and project management.</li>
         </ul>
       </section>
     </BasePageContent>
@@ -124,15 +126,18 @@
 <script setup>
 const examples = [
   {
-    title: 'Student Success Portal: Student requests help, staff match with qualified student tutors',
+    title: 'Student Success Portal:',
+    content: 'Student requests help, staff match with qualified student tutors',
     price: '15,930'
   },
   {
-    title: 'Undergraduate Housing Workflow: staff match compatible roommates and notify students',
+    title: 'Undergraduate Housing Workflow:',
+    content: 'Staff match compatible roommates and notify students',
     price: '14,340'
   },
   {
-    title: 'Slate-Banner Financial Aid Integration: Show CFP-compliant aid letter in Slate and notify students of changes',
+    title: 'Slate-Banner Financial Aid Integration:',
+    content: 'Show CFP-compliant aid letter in Slate and notify students of changes',
     price: '9,900'
   },
   {
@@ -140,11 +145,11 @@ const examples = [
     price: '55,042'
   },
   {
-    title: 'Slate Permissions/Security: Express audit and training',
+    title: 'Slate Security Permissions Express Audit and Training',
     price: '2,000'
   },
   {
-    title: 'Slate Admissions Application: Express implementation ',
+    title: 'Slate Admissions Application Express Implementation',
     price: '14,478'
   }
 ]
