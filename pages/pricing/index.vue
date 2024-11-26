@@ -145,11 +145,11 @@ const examples = [
     price: '55,042'
   },
   {
-    title: 'Slate Security Permissions Express Audit and Training',
+    title: 'Slate security permissions express audit and training',
     price: '2,000'
   },
   {
-    title: 'Slate Admissions Application Express Implementation',
+    title: 'Slate admissions application express implementation',
     price: '14,478'
   }
 ]
