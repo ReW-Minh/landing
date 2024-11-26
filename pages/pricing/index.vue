@@ -7,18 +7,14 @@
       <template #default>
         Pricing
       </template>
-
-      <template #subtitle>
-        Flexible, Cost-Effective Options
-      </template>
     </BasePageHeader>
 
     <BasePageContent>
       <section>
-        <div class="mb-3 text-3xl font-semibold rew-text-brown">
+        <div class="mb-3 text-2xl md:text-3xl font-semibold rew-text-brown">
           Flexible, Cost-Effective Options
         </div>
-        <div class=" grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div>
             <BaseCardItem :hoverEffect="false" class="resource-card !cursor-default !bg-white/30 !backdrop-blur-sm">
               <template #image>
@@ -30,7 +26,7 @@
                     <div class="font-bold rew-text-green text-2xl">
                       $295<span class="rew-text-brown">/hour</span>
                     </div>
-                    <div class="p-card-subtitle italic text-sm font-normal">
+                    <div class="p-card-subtitle italic text-[18px] leading-6 font-normal">
                       Post-pay monthly only for what you need.
                     </div>
                   </div>
@@ -55,7 +51,7 @@
                         40 hrs: <span class="rew-text-brown">$235/hour</span>
                       </div>
                     </div>
-                    <div class="p-card-subtitle italic text-sm font-normal">
+                    <div class="p-card-subtitle italic text-[18px] leading-6 font-normal">
                       Discounts for purchasing time blocks in advance.
                     </div>
                   </div>
@@ -73,7 +69,7 @@
                       Custom Solutions
                     </div>
 
-                    <div class="p-card-subtitle italic text-sm font-normal">
+                    <div class="p-card-subtitle italic text-[18px] leading-6 font-normal">
                       Contact us for a tailored quote that fits your institution’s goals and unlock preferential rates.
                     </div>
                   </div>
@@ -85,10 +81,10 @@
       </section>
 
       <section>
-        <div class="mb-3 text-3xl font-semibold rew-text-brown">
+        <div class="mb-3 text-2xl md:text-3xl font-semibold rew-text-brown">
           Recently Delivered Slate Support Examples
         </div>
-        <div class=" grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div v-for="item in examples" :key="item.price">
             <BaseCardItem :hoverEffect="false" class="resource-card !cursor-default !bg-white/30 !backdrop-blur-sm">
               <template #image>
@@ -109,7 +105,7 @@
       </section>
 
       <section>
-        <div class="mb-3 text-3xl font-semibold rew-text-brown">
+        <div class="mb-3 text-2xl md:text-3xl font-semibold rew-text-brown">
           How We Work
         </div>
 
@@ -153,3 +149,22 @@ const examples = [
   }
 ]
 </script>
+
+<style scoped lang="scss">
+:deep() {
+  .h-\[280px\] {
+    height: 210px !important;
+    overflow: visible !important;
+  }
+
+  .p-card-body {
+    padding: 4px !important;
+  }
+
+  @media (max-width: 767px) {
+    .h-\[280px\] {
+      height: 190px !important;
+    }
+  }
+}
+</style>

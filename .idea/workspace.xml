@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/components/Home/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pricing/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pricing/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +47,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "production",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/minh/Developer/REWORKFLOW",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -125,6 +126,7 @@
       <workItem from="1732587004730" duration="274000" />
       <workItem from="1732597774281" duration="3863000" />
       <workItem from="1732602861270" duration="23000" />
+      <workItem from="1732604480753" duration="1071000" />
     </task>
     <servers />
   </component>
