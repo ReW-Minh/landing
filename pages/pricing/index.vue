@@ -109,7 +109,7 @@
           How We Work
         </div>
 
-        <ul class="text-[20px] list-inside list-checkmark space-y-2">
+        <ul class="text-[20px] list-inside list-checkmark space-y-2 rew-text-brown">
           <li>We collaborate with you to plan priorities and estimations.</li>
 
           <li>Unlimited ticket requests and meetings (mutual availability).</li>
