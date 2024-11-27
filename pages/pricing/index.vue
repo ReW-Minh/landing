@@ -112,9 +112,11 @@
         <ul class="text-[20px] list-inside list-checkmark space-y-2 rew-text-brown">
           <li>We collaborate with you to plan priorities and estimations.</li>
 
-          <li>Unlimited ticket requests and meetings (mutual availability).</li>
+          <li>Unlimited ticket requests and meetings.</li>
 
           <li>Time tracked by the second, with no rounding up.</li>
+
+          <li>Admin Dashboard for high-level overview of your package usage.</li>
 
           <li>Slate Support Dashboard for detailed task status updates and project management.</li>
         </ul>
