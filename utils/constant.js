@@ -31,6 +31,10 @@ export const NAVIGATION_MENU = [
             {
                 label: 'PowerCampus',
                 route: '/services/powercampus'
+            },
+            {
+                label: 'Dynamic Forms',
+                route: '/services/dynamic-forms'
             }
         ]
     },

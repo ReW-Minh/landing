@@ -32,8 +32,8 @@ const slaterRoles = ref([
       <ul class="list-checkmark">
         <li>Build Incredible Things</li>
         <li>Portals</li>
-        <li>Customizations</li>
-        <li>Data Retention Policies</li>
+        <li>Integrations</li>
+        <li>Custom Datasets</li>
       </ul>
     `
   },

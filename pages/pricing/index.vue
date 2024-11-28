@@ -52,7 +52,7 @@
                       </div>
                     </div>
                     <div class="p-card-subtitle italic text-[18px] leading-6 font-normal">
-                      Discounts for purchasing time blocks in advance.
+                      Discounts for purchasing blocks of time in advance.
                     </div>
                   </div>
                 </div>
