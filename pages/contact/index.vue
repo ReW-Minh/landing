@@ -49,4 +49,11 @@ onMounted(() => {
 
   newParent.append(...oldParent.childNodes)
 })
+
+onBeforeUnmount(() => {
+  const newParent = document.getElementById('formDestination')
+  const oldParent = document.getElementById('formLoad')
+
+  oldParent.append(...newParent.childNodes)
+})
 </script>
