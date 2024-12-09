@@ -70,7 +70,7 @@
                     </div>
 
                     <div class="p-card-subtitle italic text-[18px] leading-6 font-normal">
-                      Contact us for a tailored quote that fits your institution’s goals and unlock preferential rates.
+                      <RouterLink to="/contact" class="underline font-bold">Contact us</RouterLink> for a tailored quote
                     </div>
                   </div>
                 </div>
@@ -110,15 +110,35 @@
         </div>
 
         <ul class="text-[20px] list-inside list-checkmark space-y-2 rew-text-brown">
-          <li>We collaborate with you to plan priorities and estimations.</li>
+          <li>
+            <div>
+              <strong>Strategic-Minded Technicians:</strong> Partner with us to set priorities and scopes of work that meet your institutional goals.
+            </div>
+          </li>
 
-          <li>Unlimited ticket requests and meetings.</li>
+          <li>
+            <div>
+              <strong>Unrestricted Support:</strong> Enjoy unlimited tickets and flexibly scheduled team meetings for boundless collaborations and professional development.
+            </div>
+          </li>
 
-          <li>Time tracked by the second, with no rounding up.</li>
+          <li>
+            <div>
+              <strong>Lifetime Availability:</strong> Pre-purchase discounted hours that never expire, giving you ultimate control over your service plan.
+            </div>
+          </li>
 
-          <li>Admin Dashboard for high-level overview of your package usage.</li>
+          <li>
+            <div>
+              <strong>Precise, Transparent Billing:</strong> Benefit from second-by-second time tracking to ensure you only pay for what you use with no rounding.
+            </div>
+          </li>
 
-          <li>Slate Support Dashboard for detailed task status updates and project management.</li>
+          <li>
+            <div>
+              <strong>Stay Informed:</strong> Access our Admin Dashboards for detailed updates on package usage, task progress, and project management.
+            </div>
+          </li>
         </ul>
       </section>
     </BasePageContent>

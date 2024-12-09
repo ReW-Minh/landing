@@ -17,9 +17,9 @@
 
     <BasePageContent>
       <section class="text-xl rew-text-brown">
-        Dynamic Forms allows non-technical users to build decent interactive, multi-page forms and processing
-        workflows. Its real strength lies in its extremely flexible API connectors. It can integrate with nearly any
-        database (think SIS) and REST API as well as specific products like Google Sheets. It also supports mixed
+        Dynamic Forms allows non-technical users to build interactive, multi-page forms and processing workflows.
+        Its strength lies in its extremely flexible API connectors, which integrate with nearly any database
+        (think SIS), REST API's, and specific products like Google Sheets. It also supports mixed
         authentication, allowing both external and internal users to submit forms.
       </section>
 

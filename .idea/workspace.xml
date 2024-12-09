@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="" />
+    <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/plausibe/opt-out/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pricing/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pricing/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/services/dynamic-forms/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/services/dynamic-forms/index.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +72,12 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.generate">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -86,8 +100,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.generate" />
+        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -128,7 +142,14 @@
       <workItem from="1732611116500" duration="546000" />
       <workItem from="1732683996874" duration="1569000" />
       <workItem from="1732716510799" duration="1424000" />
-      <workItem from="1732770492276" duration="1875000" />
+      <workItem from="1732770492276" duration="2566000" />
+      <workItem from="1732781585870" duration="5000" />
+      <workItem from="1732889802970" duration="366000" />
+      <workItem from="1732891950736" duration="1226000" />
+      <workItem from="1733466033871" duration="1830000" />
+      <workItem from="1733494254409" duration="124000" />
+      <workItem from="1733580100519" duration="62000" />
+      <workItem from="1733754947939" duration="1375000" />
     </task>
     <servers />
   </component>
