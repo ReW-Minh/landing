@@ -1,0 +1,117 @@
+<template>
+  <Dialog v-model:visible="visible" modal :header="`${action} Blog`" class="p-dialog-maximized">
+
+    <label class="flex flex-col mb-4">
+        <span class="font-semibold">
+          Title
+        </span>
+      <InputText v-model="data.title.value" :invalid="data.title.error" class="flex-auto" autocomplete="off"/>
+    </label>
+
+    <div class="grid grid-cols-2 mb-4 gap-4">
+      <label class="flex flex-col">
+        <span class="font-semibold">
+          Author name
+        </span>
+        <InputText v-model="data.author.value" :invalid="data.author.error" class="flex-auto" autocomplete="off"/>
+      </label>
+
+      <label class="flex flex-col">
+        <span class="font-semibold">
+          Permalink
+        </span>
+        <InputText v-model="data.route.value" :invalid="data.route.error" class="flex-auto" autocomplete="off"/>
+      </label>
+    </div>
+
+    <div class="mb-4">
+      <span class="font-semibold">
+        Content
+      </span>
+      <Editor v-model="data.content.value" :class="{invalid: data.content.error}" editorStyle="height: calc(100vh - 390px)"/>
+    </div>
+
+    <div class="flex justify-end gap-2">
+      <Button type="button" label="Cancel" severity="secondary" @click="visible = false"></Button>
+      <Button type="button" label="Save" @click="saveChanges"></Button>
+    </div>
+  </Dialog>
+</template>
+
+<script setup>
+import { addBlog } from "~/composables/useBlog.js";
+
+defineProps(['action'])
+
+const visible = defineModel(false)
+
+const data = reactive({
+  title: {
+    value: '',
+    error: false
+  },
+  route: {
+    value: '',
+    error: false
+  },
+  author: {
+    value: '',
+    error: false
+  },
+  content: {
+    value: '',
+    error: false
+  }
+})
+
+const validateData = () => {
+  let flag = true
+
+  for (const key in data) {
+    data[key].error = !data[key].value
+
+    if (data[key].error) flag = false
+  }
+
+  return flag
+}
+
+const saveChanges = async () => {
+  if (!validateData())
+    return
+
+  const payload = {}
+
+  for (const key in data) {
+    payload[key] = data[key].value
+  }
+
+  const res = await addBlog(payload)
+
+  console.log(res)
+}
+</script>
+
+<style scoped lang="scss">
+:deep {
+  .p-editor {
+    &.invalid {
+      .p-editor-toolbar {
+        &.ql-snow {
+          border-top-color: var(--p-inputtext-invalid-border-color);
+          border-right-color: var(--p-inputtext-invalid-border-color);
+          border-left-color: var(--p-inputtext-invalid-border-color);
+        }
+      }
+
+      .p-editor-content {
+        &.ql-snow {
+          border-bottom-color: var(--p-inputtext-invalid-border-color);
+          border-right-color: var(--p-inputtext-invalid-border-color);
+          border-left-color: var(--p-inputtext-invalid-border-color);
+        }
+      }
+    }
+  }
+}
+</style>

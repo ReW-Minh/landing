@@ -112,31 +112,37 @@
         <ul class="text-[20px] list-inside list-checkmark space-y-2 rew-text-brown">
           <li>
             <div>
-              <strong>Strategic-Minded Technicians:</strong> Partner with us to set priorities and scopes of work that meet your institutional goals.
+              <strong>Stay Informed:</strong> Admin dashboards provide detailed time, task, and project management insights.
             </div>
           </li>
 
           <li>
             <div>
-              <strong>Unrestricted Support:</strong> Enjoy unlimited tickets and flexibly scheduled team meetings for boundless collaborations and professional development.
+              <strong>Flexible Support:</strong> Enjoy unlimited tickets and adaptable meetings schedules.
             </div>
           </li>
 
           <li>
             <div>
-              <strong>Lifetime Availability:</strong> Pre-purchase discounted hours that never expire, giving you ultimate control over your service plan.
+              <strong>Lifetime Availability:</strong> Pre-purchase discounted hours that never expire.
             </div>
           </li>
 
           <li>
             <div>
-              <strong>Precise, Transparent Billing:</strong> Benefit from second-by-second time tracking to ensure you only pay for what you use with no rounding.
+              <strong>Transparent Billing:</strong> Benefit from precise time tracking with no rounding.
             </div>
           </li>
 
           <li>
             <div>
-              <strong>Stay Informed:</strong> Access our Admin Dashboards for detailed updates on package usage, task progress, and project management.
+              <strong>Strategic Partner:</strong> Experts in setting timelines and priorities for sustainable solutions that meet your goals.
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <strong>Training & Documentation:</strong> Collaborative learning to enhance your team's Slate skills and institutional knowledge.
             </div>
           </li>
         </ul>

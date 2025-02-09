@@ -1,9 +1,9 @@
 import { useProfiles, useAdminAuth } from '~/stores'
 
 export const openProfile = name => {
-    const porfiles = useProfiles()
+    const profiles = useProfiles()
 
-    const profile = porfiles.value.find(p => p.name === name)
+    const profile = profiles.value.find(p => p.name === name)
 
     profile.visible = true
 }

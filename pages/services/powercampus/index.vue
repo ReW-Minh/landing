@@ -22,7 +22,7 @@
                     Services
                 </div>
                 <div class=" grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div v-for="(item, index) in services" :key="item.id">
+                    <div v-for="item in services" :key="item.id">
                         <NuxtLink :to="item.route">
                             <BaseCardItem class="resource-card service">
                                 <template #image>

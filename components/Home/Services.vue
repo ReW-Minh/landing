@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-const slaterRoles = ref([
+const slaterRoles = [
   {
     title: 'Captaining',
     content: `
@@ -59,7 +59,7 @@ const slaterRoles = ref([
       </ul>
     `
   },
-])
+]
 
 const decorateText = str => {
   if (!str)

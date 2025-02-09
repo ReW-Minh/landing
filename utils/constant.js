@@ -45,6 +45,7 @@ export const NAVIGATION_MENU = [
     {
         label: 'ReSources',
         items: [
+
             {
                 label: 'Slate',
                 route: 'https://resource.reworkflow.com/books/slate',
@@ -54,6 +55,10 @@ export const NAVIGATION_MENU = [
                 label: 'PowerCampus',
                 route: 'https://resource.reworkflow.com/books/powercampus',
                 external: true
+            },
+            {
+                label: 'Our Trusted Partners',
+                route: '/resources/trusted-partners',
             }
         ]
     },
@@ -78,3 +83,5 @@ export const NAVIGATION_MENU = [
 ]
 
 export const PODCAST_EP_PAGE_LIMIT = 8
+
+export const BLOG_PAGE_LIMIT = 10

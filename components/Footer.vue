@@ -38,7 +38,7 @@
               </div>
             </div>
             <div class="text-white text-center">
-              © 2024 ReWorkflow. All Rights Reserved
+              © {{ new Date().getFullYear() }} ReWorkflow. All Rights Reserved
             </div>
           </div>
 

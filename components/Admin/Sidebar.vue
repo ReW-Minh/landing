@@ -2,7 +2,7 @@
     <div class="h-full sidebar">
         <Menu class="h-full flex flex-col" :model="items">
             <template #start>
-                <NuxtLink class="m-4 pb-2 block relative logo" to="/">
+                <NuxtLink class="m-4 mb-6 pb-2 block relative logo" to="/">
                     <img src="/img/main-logo.svg" alt="ReWorkflow" class="img-fluid">
 
                     <span class="absolute">Admin</span>
@@ -26,7 +26,8 @@
 
 <script setup>
 const items = ref([
-    { label: 'Podcast', icon: 'pi pi-microphone', route: '/admin/podcast' },
+  { label: 'Podcast', icon: 'pi pi-microphone', route: '/admin/podcast' },
+  { label: 'Blog', icon: 'pi pi-pen-to-square', route: '/admin/blog' },
 ])
 
 const handleLogout = () => {
@@ -57,7 +58,6 @@ const handleLogout = () => {
 
         span {
             font-size: .75vw;
-            bottom: -10px;
             right: 0
         }
     }
