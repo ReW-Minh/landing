@@ -5,29 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Admin/Blog/AddEdit.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composables/useBlog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/admin/blog.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/resources/trusted-partners.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/resources/trusted-partners/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/slate-partners.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/kanahoma.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Admin/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Admin/Sidebar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Services.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Services.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/admin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/admin.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/admin/podcast.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/admin/podcast.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/pricing/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pricing/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/services/powercampus/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/services/powercampus/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/constant.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/constant.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/resources/trusted-partners/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/resources/trusted-partners/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +47,7 @@
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;production&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/minh/Developer/REWORKFLOW/composables&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -184,7 +163,8 @@
       <workItem from="1738912451062" duration="16000" />
       <workItem from="1738940138906" duration="4502000" />
       <workItem from="1739075515436" duration="840000" />
-      <workItem from="1739110600871" duration="3662000" />
+      <workItem from="1739110600871" duration="4704000" />
+      <workItem from="1739157155312" duration="354000" />
     </task>
     <servers />
   </component>

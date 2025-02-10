@@ -14,10 +14,21 @@
     </BasePageHeader>
 
     <BasePageContent>
+      <section class="text-xl rew-text-brown">
+        <span class="rew-font"><span class="rew-text-green">Re</span>Workflow</span> stays lean, affordable, and
+        innovative because we do not try to be everything to everyone. Meanwhile,
+        colleges and universities often ask us for assistance with areas that extend beyond our Slater focus. That’s
+        where our Trusted Partners come in. Each has been vetted through firsthand project collaborations or strong
+        endorsements from respected higher ed leaders. Click “Learn More” to connect with them directly.
+      </section>
+
       <section>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10">
-          <div v-for="item in partners"
-               class="border rounded-xl bg-white/30 backdrop-blur-sm shadow h-unset md:h-[310px]">
+        <div class="grid grid-cols-1 md:grid-cols-6 gap-5 md:gap-10">
+          <div v-for="(item, index) in partners"
+               class="border rounded-xl bg-white/30 backdrop-blur-sm shadow h-unset md:h-[310px] col-span-6" :class="{
+                  'md:col-span-2': index < 3,
+                  'md:col-span-3': index >= 3
+               }">
             <div class="card !m-0 !p-6 text-center h-full flex flex-col items-center justify-between gap-6 md:gap-0">
               <div class="h-[85px] grid place-items-center">
                 <img :src="item.logo" :alt="item.content" class="mx-auto w-[200px]">
@@ -35,14 +46,6 @@
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="text-xl rew-text-brown">
-        <span class="rew-font"><span class="rew-text-green">Re</span>Workflow</span> stays lean, affordable, and
-        innovative because we do not try to be everything to everyone. Meanwhile,
-        colleges and universities often ask us for assistance with areas that extend beyond our Slater focus. That’s
-        where our Trusted Partners come in. Each has been vetted through firsthand project collaborations or strong
-        endorsements from respected higher ed leaders. Click “Learn More” to connect with them directly.
       </section>
 
       <section>
@@ -74,11 +77,11 @@ const partners = [
     content: 'Interim Leadership, Executive Coaching, Strategic Consulting',
     url: 'https://www.jmpartnersolutions.com/'
   },
-  {
-    logo: '/img/kanahoma.svg',
-    content: 'Branding/Creative, Market Research, Performance Marketing',
-    url: 'https://kanahoma.com/'
-  },
+  // {
+  //   logo: '/img/kanahoma.svg',
+  //   content: 'Branding/Creative, Market Research, Performance Marketing',
+  //   url: 'https://kanahoma.com/'
+  // },
   {
     logo: 'https://images.squarespace-cdn.com/content/v1/665c86cf630c061cb7714cde/adde83da-5235-4241-8a18-64c91448b157/Koehler_Primary_BLK.png?format=1500w',
     content: 'Enrollment Management/Student Retention, Staff Development, Strategic Assessment',
