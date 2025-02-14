@@ -1,8 +1,7 @@
 <template>
   <div class="space-y-3">
     <div class="flex justify-end">
-      <Button label="Sync Podbean Data" @click="handelSyncData" :loading
-              :style="{ backgroundColor: 'var(--rew-primary-green)' }"/>
+      <Button label="Sync Podbean Data" @click="handelSyncData" :loading/>
     </div>
 
     <h1 class="rew-font rew-text-brown text-3xl text-center">

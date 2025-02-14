@@ -8,6 +8,10 @@ export const getAllBlogs = async page => {
         return
 
     blogs.value = res.data
+
+    blogs.value.blogs?.forEach((item, index) => {
+        item.index = index + 1 + (page - 1) * BLOG_PAGE_LIMIT
+    })
 }
 
 export const getPublishedBlogs = async page => {

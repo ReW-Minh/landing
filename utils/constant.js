@@ -82,6 +82,11 @@ export const NAVIGATION_MENU = [
     },
 ]
 
+export const ACTION = {
+    ADD: 1,
+    EDIT: 2,
+}
+
 export const PODCAST_EP_PAGE_LIMIT = 8
 
 export const BLOG_PAGE_LIMIT = 10

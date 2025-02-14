@@ -12,6 +12,7 @@
   --p-paginator-nav-button-color: var(--rew-primary-brown) !important;
   --p-paginator-nav-button-hover-background: var(--rew-baby-grey) !important;
   --p-paginator-nav-button-hover-color: var(--rew-primary-brown) !important;
+  --p-tooltip-background: var(--rew-primary-green) !important;
 }
 
 html {
@@ -842,7 +843,7 @@ a.footer-link:hover {
 
 @keyframes textShine {
   0% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
   }
   100% {
     background-position: 100% 50%;

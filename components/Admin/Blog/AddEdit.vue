@@ -1,6 +1,5 @@
 <template>
-  <Dialog v-model:visible="visible" modal :header="`${action} Blog`" class="p-dialog-maximized">
-
+  <Dialog v-model:visible="visible" modal :header="`${action} Blog`" class="p-dialog-maximized" loading>
     <label class="flex flex-col mb-4">
         <span class="font-semibold">
           Title
@@ -33,15 +32,17 @@
 
     <div class="flex justify-end gap-2">
       <Button type="button" label="Cancel" severity="secondary" @click="visible = false"></Button>
-      <Button type="button" label="Save" @click="saveChanges"></Button>
+      <Button type="button" label="Save" @click="saveChanges" :loading></Button>
     </div>
   </Dialog>
 </template>
 
 <script setup>
-import { addBlog } from "~/composables/useBlog.js";
+const props = defineProps(['action', 'blogData'])
 
-defineProps(['action'])
+const emit = defineEmits(['reload'])
+
+const toast = useToast()
 
 const visible = defineModel(false)
 
@@ -61,8 +62,28 @@ const data = reactive({
   content: {
     value: '',
     error: false
+  },
+  id: {
+    value: null
   }
 })
+
+watch(visible, () => {
+  if (!visible)
+    return
+
+  if (props.action === ACTION.EDIT)
+    bindData(props.blogData)
+})
+
+const bindData = blogData => {
+  if (!blogData)
+    return
+
+  for (const key in data) {
+    data[key].value = props.blogData[key]
+  }
+}
 
 const validateData = () => {
   let flag = true
@@ -76,9 +97,12 @@ const validateData = () => {
   return flag
 }
 
+const loading = useState('loading')
 const saveChanges = async () => {
-  if (!validateData())
+  if (!validateData()) {
+    toast.add(getErrorToast('You have not filled in the required fields'))
     return
+  }
 
   const payload = {}
 
@@ -86,9 +110,20 @@ const saveChanges = async () => {
     payload[key] = data[key].value
   }
 
-  const res = await addBlog(payload)
+  const func = props.action === ACTION.ADD ? addBlog : updateBlog
 
-  console.log(res)
+  loading.value = true
+  const res = await func(payload)
+  loading.value = false
+
+  if (!res?.success) {
+    toast.add(getErrorToast(res?.message || 'Unknown error. Please try again'))
+    return
+  }
+
+  toast.add(getSuccessToast(`Blog ${props.action === ACTION.ADD ? 'added' : 'edited'} successfully.`))
+  visible.value = false
+  emit('reload')
 }
 </script>
 

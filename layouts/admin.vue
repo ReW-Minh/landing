@@ -7,10 +7,14 @@
             <slot />
         </div>
     </div>
+
+  <AppLoading v-if="loading"></AppLoading>
 </template>
 
 <script setup>
 checkAdminLoggedIn()
+
+const loading = useState('loading')
 </script>
 
 <style scoped lang="scss">

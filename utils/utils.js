@@ -16,7 +16,6 @@ export const checkAdminLoggedIn = () => {
     if (token) {
         admin.value.logged = true
         admin.value.token = token
-        navigateTo('/admin')
     }
 
     if (!admin.value.logged)
@@ -24,7 +23,14 @@ export const checkAdminLoggedIn = () => {
 }
 
 export const formatDate = timestamp => {
+    if (timestamp === null || timestamp === undefined)
+        return ''
+
     const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' }
 
     return new Date(timestamp * 1000).toLocaleDateString("en-US", options)
 }
+
+export const getErrorToast = detail => ({severity: 'error', summary: 'Error', detail, life: 3000})
+
+export const getSuccessToast = detail => ({severity: 'success', summary: 'Success', detail, life: 3000})

@@ -16,10 +16,10 @@
     <BasePageContent>
       <section class="text-xl rew-text-brown">
         <span class="rew-font"><span class="rew-text-green">Re</span>Workflow</span> stays lean, affordable, and
-        innovative because we do not try to be everything to everyone. Meanwhile,
-        colleges and universities often ask us for assistance with areas that extend beyond our Slater focus. That’s
-        where our Trusted Partners come in. Each has been vetted through firsthand project collaborations or strong
-        endorsements from respected higher ed leaders. Click “Learn More” to connect with them directly.
+        innovative because we do not try to be everything to everyone. Meanwhile, colleges and universities often ask us
+        for assistance with areas that extend beyond our focus systems and operations. That’s where our Trusted Partners
+        come in. Each has been vetted through firsthand project collaborations or strong endorsements from our network.
+        Click “Learn More” to connect with them directly.
       </section>
 
       <section>
@@ -47,16 +47,6 @@
           </div>
         </div>
       </section>
-
-      <section>
-        <div class="mb-3 text-3xl text-center font-semibold rew-text-brown">
-          Interested in becoming a Trusted Partner? Let's connect!
-        </div>
-
-        <div class="border rounded-xl p-4 shadow bg-white/30 backdrop-blur-sm mt-1 md:mt-5" id="formPartnerDestination">
-
-        </div>
-      </section>
     </BasePageContent>
   </BasePageContainer>
 </template>
@@ -77,14 +67,9 @@ const partners = [
     content: 'Interim Leadership, Executive Coaching, Strategic Consulting',
     url: 'https://www.jmpartnersolutions.com/'
   },
-  // {
-  //   logo: '/img/kanahoma.svg',
-  //   content: 'Branding/Creative, Market Research, Performance Marketing',
-  //   url: 'https://kanahoma.com/'
-  // },
   {
     logo: 'https://images.squarespace-cdn.com/content/v1/665c86cf630c061cb7714cde/adde83da-5235-4241-8a18-64c91448b157/Koehler_Primary_BLK.png?format=1500w',
-    content: 'Enrollment Management/Student Retention, Staff Development, Strategic Assessment',
+    content: 'Enrollment Management/Retention, Leadership Coaching, Staff Development, Strategic Assessment',
     url: 'https://www.koehlerconsulting.net/'
   },
   {
@@ -98,18 +83,4 @@ const partners = [
     url: 'https://solidan.net/'
   },
 ]
-
-onMounted(() => {
-  const newParent = document.getElementById('formPartnerDestination')
-  const oldParent = document.getElementById('formPartnerLoad')
-
-  newParent.append(...oldParent.childNodes)
-})
-
-onBeforeUnmount(() => {
-  const newParent = document.getElementById('formPartnerDestination')
-  const oldParent = document.getElementById('formPartnerLoad')
-
-  oldParent.append(...newParent.childNodes)
-})
 </script>

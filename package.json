@@ -11,11 +11,11 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
-    "@primevue/themes": "^4.0.4",
+    "@primevue/themes": "^4.2.5",
     "nuxt": "^3.12.4",
     "nuxt-aos": "^1.2.5",
     "primeicons": "^7.0.0",
-    "primevue": "^4.0.4",
+    "primevue": "^4.2.5",
     "quill": "^2.0.3",
     "swiper": "^9.3.1",
     "tailwindcss-primeui": "^0.3.4"
