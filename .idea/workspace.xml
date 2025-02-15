@@ -5,31 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/types/types.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composables/useAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/composables/useAuth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composables/useData.js" beforeDir="false" afterPath="$PROJECT_DIR$/composables/useData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about/team.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about/team.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/podcast/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/podcast/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/pricing/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pricing/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/resources/trusted-partners/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/resources/trusted-partners/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/services/dynamic-forms.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/services/dynamic-forms.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/services/dynamic-forms/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/services/dynamic-forms/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/services/how-we-work/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/services/how-we-work/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/services/powercampus/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/services/powercampus/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/services/powercampus/power-slate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/services/powercampus/power-slate.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/services/powercampus/powerfaids.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/services/powercampus/powerfaids.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/services/powercampus/version-upgrades.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/services/powercampus/version-upgrades.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/services/slate/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/services/slate/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/slate-partners.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/slate-partners.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/toast.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/toast.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/tooltip.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stores/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/stores/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/constant.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/constant.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/types.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +184,8 @@
       <workItem from="1739441698026" duration="485000" />
       <workItem from="1739505169700" duration="2398000" />
       <workItem from="1739516836458" duration="8876000" />
-      <workItem from="1739589766160" duration="648000" />
+      <workItem from="1739589766160" duration="1418000" />
+      <workItem from="1739616650274" duration="367000" />
     </task>
     <servers />
   </component>

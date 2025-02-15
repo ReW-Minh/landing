@@ -55,7 +55,7 @@ useHead({
 
 const partners = [
   {
-    logo: 'https://substackcdn.com/image/fetch/w_264,c_limit,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6507b0df-b36a-48c7-965d-403083dc9bfb_1280x1280.png',
+    logo: '/img/David Dysart The Innovation Forge Leatherbound Workmark Logo.png',
     content: 'Engagement Scoring, Predictive Modeling, Adaptive Enrollment Management',
     url: 'https://dysartisanalinnovations.substack.com/'
   },
@@ -71,7 +71,7 @@ const partners = [
   },
   {
     logo: 'https://images.squarespace-cdn.com/content/v1/665c86cf630c061cb7714cde/adde83da-5235-4241-8a18-64c91448b157/Koehler_Primary_BLK.png?format=1500w',
-    content: 'Enrollment Management/Retention, Leadership Coaching, Staff Development, Strategic Assessment',
+    content: 'Leadership Coaching, Staff Development, Strategic Assessment',
     url: 'https://www.koehlerconsulting.net/'
   },
   {

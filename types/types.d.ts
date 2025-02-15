@@ -16,5 +16,5 @@ export interface IProfile {
 
 export interface IAdminAuth {
     logged: boolean;
-    token: string;
+    token: string | null;
 }
