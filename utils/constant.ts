@@ -6,24 +6,20 @@ export const POWERCAMPUS_LINK = 'https://resource.reworkflow.com/books/powercamp
 
 export const SLATE_LINK = 'https://resource.reworkflow.com/books/slate'
 
-export const CONTACT_TYPE = {
-    LINKEDIN: 1,
-    RESOURCE: 2,
-    SLATE_COMMUNITY: 3,
-    PRESENTATIONS_PUBLICATIONS: 4,
-    EMAIL: 5,
-    GITHUB: 6,
-    PODCAST: 7
+export enum CONTACT_TYPE {
+    LINKEDIN = 1,
+    RESOURCE = 2,
+    SLATE_COMMUNITY = 3,
+    PRESENTATIONS_PUBLICATIONS = 4,
+    EMAIL = 5,
+    GITHUB = 6,
+    PODCAST = 7
 }
 
 export const NAVIGATION_MENU = [
     {
         label: 'Services',
         items: [
-            // {
-            //     label: 'How We Work',
-            //     route: '/services/how-we-work'
-            // },
             {
                 label: 'Slate',
                 route: '/services/slate'
@@ -39,8 +35,8 @@ export const NAVIGATION_MENU = [
         ]
     },
     {
-      label: 'Pricing',
-      route: '/pricing'
+        label: 'Pricing',
+        route: '/pricing'
     },
     {
         label: 'ReSources',
@@ -58,7 +54,7 @@ export const NAVIGATION_MENU = [
             },
             {
                 label: 'Our Trusted Partners',
-                route: '/resources/trusted-partners',
+                route: '/resources/trusted-partners'
             }
         ]
     },
@@ -69,22 +65,12 @@ export const NAVIGATION_MENU = [
     {
         label: 'Our Team',
         route: '/about/team'
-        // items: [
-        //     {
-        //         label: 'Our Team',
-        //         route: '/about/team'
-        //     },
-        // {
-        //     label: 'Careers',
-        //     route: '/about/careers'
-        // }
-        // ]
-    },
+    }
 ]
 
 export const ACTION = {
     ADD: 1,
-    EDIT: 2,
+    EDIT: 2
 }
 
 export const PODCAST_EP_PAGE_LIMIT = 8

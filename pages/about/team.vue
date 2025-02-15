@@ -22,7 +22,7 @@
 </template>
 
 <script setup>
-import { useProfiles } from '~/stores'
+import { useProfiles } from '~/stores/index.js'
 
 useHead({
     title: 'ReWorkflow - Our Team'

@@ -47,28 +47,10 @@
   </BasePageContainer>
 </template>
 
-<script setup>
+<script setup lang="ts">
 useHead({
   title: 'ReWorkflow - Slate',
 })
-
-const resources = [
-  {
-    type: CONTACT_TYPE.RESOURCE,
-    title: `<span class="rew-text-green rew-font">Re</span>Source Articles`,
-    link: SLATE_LINK,
-  },
-  {
-    type: CONTACT_TYPE.PRESENTATIONS_PUBLICATIONS,
-    title: `Presentations`,
-    link: 'https://resource.reworkflow.com/search?term=%5BPresentations%3DSlate%5D'
-  },
-  {
-    type: CONTACT_TYPE.PODCAST,
-    title: `Podcast`,
-    link: '/podcast'
-  }
-]
 </script>
 
 <style scoped lang="scss">

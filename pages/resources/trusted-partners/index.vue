@@ -24,17 +24,14 @@
 
       <section>
         <div class="grid grid-cols-1 md:grid-cols-6 gap-5 md:gap-10">
-          <div v-for="(item, index) in partners"
-               class="border rounded-xl bg-white/30 backdrop-blur-sm shadow h-unset md:h-[310px] col-span-6" :class="{
-                  'md:col-span-2': index < 3,
-                  'md:col-span-3': index >= 3
-               }">
+          <div v-for="item in partners"
+               class="border rounded-xl bg-white/30 backdrop-blur-sm shadow h-unset md:h-[330px] col-span-6 md:col-span-2">
             <div class="card !m-0 !p-6 text-center h-full flex flex-col items-center justify-between gap-6 md:gap-0">
-              <div class="h-[85px] grid place-items-center">
-                <img :src="item.logo" :alt="item.content" class="mx-auto w-[200px]">
+              <div class="h-[90px] grid place-items-center">
+                <img :src="item.logo" :alt="item.content" class="mx-auto max-h-[90px] rounded">
               </div>
 
-              <div>{{ item.content }}</div>
+              <div class="pb-3">{{ item.content }}</div>
 
               <a :href="item.url" target="_blank" title="Learn more"
                  class="rew-main-btn rew-box-shadow inline-flex items-center h-10 !text-base">
@@ -51,12 +48,17 @@
   </BasePageContainer>
 </template>
 
-<script setup>
+<script setup lang="ts">
 useHead({
   title: 'ReWorkflow - Trusted Partners',
 })
 
 const partners = [
+  {
+    logo: 'https://substackcdn.com/image/fetch/w_264,c_limit,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6507b0df-b36a-48c7-965d-403083dc9bfb_1280x1280.png',
+    content: 'Engagement Scoring, Predictive Modeling, Adaptive Enrollment Management',
+    url: 'https://dysartisanalinnovations.substack.com/'
+  },
   {
     logo: 'https://lirp.cdn-website.com/028e158a/dms3rep/multi/opt/Get-FA-Solutions-Logo-1920w.png',
     content: 'Financial Aid Consulting, Processing, Staffing',

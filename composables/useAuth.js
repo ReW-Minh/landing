@@ -1,4 +1,4 @@
-import { useAdminAuth } from '~/stores'
+import { useAdminAuth } from '~/stores/index.js'
 
 export const adminLogin = async (body) => {
     const admin = useAdminAuth()

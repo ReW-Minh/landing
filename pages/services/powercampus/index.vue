@@ -22,7 +22,7 @@
                     Services
                 </div>
                 <div class=" grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div v-for="item in services" :key="item.id">
+                    <div v-for="item in services" :key="item.route">
                         <NuxtLink :to="item.route">
                             <BaseCardItem class="resource-card service">
                                 <template #image>
@@ -59,28 +59,10 @@
     </BasePageContainer>
 </template>
 
-<script setup>
+<script setup lang="ts">
 useHead({
     title: 'ReWorkflow - PowerCampus',
 })
-
-const resources = [
-    {
-        type: CONTACT_TYPE.RESOURCE,
-        link: POWERCAMPUS_LINK,
-        title: `<span class="rew-text-green rew-font">Re</span>Source Articles`
-    },
-    {
-        type: CONTACT_TYPE.PRESENTATIONS_PUBLICATIONS,
-        title: `Presentations`,
-        link: 'https://resource.reworkflow.com/search?term=%5BPresentations%3DPowerCampus%5D'
-    },
-    {
-        type: CONTACT_TYPE.GITHUB,
-        title: `Open-Source Code`,
-        link: 'https://github.com/WyattBest?tab=repositories'
-    }
-]
 
 const services = [
     {

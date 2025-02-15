@@ -151,7 +151,7 @@
   </BasePageContainer>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const examples = [
   {
     title: 'Student Success Portal:',

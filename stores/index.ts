@@ -1,5 +1,6 @@
+import type { IAdminAuth, IProfile } from '~/types/types';
 
-export const useProfiles = () => useState('Profiles', () => [
+export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
     {
         content: `I'm all about puzzles. Most definitely of the jigsaw kind (picture proofs upon request 🧩😄), but also those that take us down rabbit holes for improved office efficiencies and technical difficulties troubleshooting. To a greater extent, each phase of the project management process is energizing from ideation to iteration with research, testing, and evaluation being where I particularly thrive. In particular, learning about colleagues’ operational needs, orchestrating a solution, and then our growing excitement together as light bulb moments spur our next collaborations.
     
@@ -205,7 +206,7 @@ export const useProfiles = () => useState('Profiles', () => [
     }
 ])
 
-export const useAdminAuth = () => useState('AdminAuth', () => ({
+export const useAdminAuth = () => useState<IAdminAuth>('AdminAuth', () => ({
     logged: false,
     token: null
 }))

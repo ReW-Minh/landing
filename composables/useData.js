@@ -1,4 +1,4 @@
-import { useAdminAuth } from '~/stores'
+import { useAdminAuth } from '~/stores/index.js'
 
 export const apiGet = (url, options) => {
 

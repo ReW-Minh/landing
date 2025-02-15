@@ -8,7 +8,7 @@
   <Toast />
 </template>
 
-<script setup>
+<script setup lang="ts">
 import 'primeicons/primeicons.css'
 
 useHead({

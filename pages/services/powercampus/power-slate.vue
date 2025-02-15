@@ -92,7 +92,7 @@
     </BasePageContainer>
 </template>
 
-<script setup>
+<script setup lang="ts">
 useHead({
     title: 'ReWorkflow - PowerSlate',
 })

@@ -126,7 +126,7 @@
     </BasePageContainer>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { nextTick } from 'vue'
 
 useHead({
@@ -148,7 +148,7 @@ await getData(page.value)
 
 const handlePage = async data => {
     await getData(data.page + 1)
-    nextTick(() => {
+    await nextTick(() => {
         document.querySelector('#epTitle').scrollIntoView({ block: 'start' })
     })
 }

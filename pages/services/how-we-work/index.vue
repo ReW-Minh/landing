@@ -49,7 +49,7 @@
   </BasePageContainer>
 </template>
 
-<script setup lang="jsx">
+<script setup lang="tsx">
 useHead({
   title: 'ReWorkflow - How We Work',
 })
