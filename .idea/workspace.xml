@@ -6,41 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Admin/Blog/AddEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Admin/Blog/AddEdit.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Admin/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Admin/Sidebar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Base/CardItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Base/CardItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Base/Page/Content.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Base/Page/Content.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CallToAction.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/CallToAction.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ComingSoon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/ComingSoon.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ContactPopup.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/About.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/About.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/FAQ.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/FAQ.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Services.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Services.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MobileMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/MobileMenu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Team/Bio.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Team/Bio.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Team/Popup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Team/Popup.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composables/useAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/composables/useAuth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composables/useBlog.js" beforeDir="false" afterPath="$PROJECT_DIR$/composables/useBlog.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composables/useData.js" beforeDir="false" afterPath="$PROJECT_DIR$/composables/useData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composables/usePodcast.js" beforeDir="false" afterPath="$PROJECT_DIR$/composables/usePodcast.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/admin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/admin.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about/team.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about/team.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/admin/blog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/admin/blog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/admin/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/admin/login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/admin/podcast.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/admin/podcast.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contact/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/plausibe/opt-out/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/plausibe/opt-out/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/podcast/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/podcast/[slug].vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/podcast/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/podcast/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/slate-partners.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/slate-partners.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/types.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +29,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -76,30 +46,30 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/minh/Developer/REWORKFLOW/composables&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;npm.generate.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Merging main",
+    "last_opened_file_path": "/Users/minh/Developer/REWORKFLOW/composables",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "npm.dev.executor": "Run",
+    "npm.generate.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Composition API Component&quot;
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/composables" />
