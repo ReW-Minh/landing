@@ -93,6 +93,10 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="npm.dev" />
+      <item itemvalue="npm.generate" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="npm.generate" />
