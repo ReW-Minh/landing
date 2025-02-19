@@ -50,7 +50,9 @@
     </template>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import type { IPodcastDetail } from '~/types/types';
+
 const loading = ref(false)
 const getData = async () => {
     loading.value = true
@@ -63,7 +65,7 @@ const getData = async () => {
 
 
 
-const detail = useState('podcastEpisodeDetail')
+const detail = useState<IPodcastDetail>('podcastEpisodeDetail')
 const frameCover = ref()
 const frameWidth = ref('0px')
 

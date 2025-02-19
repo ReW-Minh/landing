@@ -29,7 +29,7 @@
     </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const rescaleContent = ref()
 
 const calculateNewScale = () => {

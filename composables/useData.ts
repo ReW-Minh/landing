@@ -1,6 +1,7 @@
 import { useAdminAuth } from '~/stores/index.js'
+import type { IBaseResponse } from '~/types/types';
 
-export const apiGet = (url, options) => {
+export const apiGet = (url: string, options?: any): Promise<IBaseResponse<any>> => {
 
     const admin = useAdminAuth()
 
@@ -15,7 +16,7 @@ export const apiGet = (url, options) => {
     })
 }
 
-export const apiPost = (url, options) => {
+export const apiPost = (url: string, options?: any): Promise<IBaseResponse<any>> => {
 
     const admin = useAdminAuth()
 

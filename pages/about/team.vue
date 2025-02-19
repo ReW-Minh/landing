@@ -13,7 +13,7 @@
 
         <BasePageContent>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                <div v-for="(bio, index) in profiles" :key="bio.id">
+                <div v-for="bio in profiles" :key="bio.id">
                     <TeamBio :bio />
                 </div>
             </div>
@@ -21,7 +21,7 @@
     </BasePageContainer>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { useProfiles } from '~/stores/index.js'
 
 useHead({

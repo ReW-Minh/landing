@@ -39,7 +39,9 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import type { IPodcastPaging } from '~/types/types';
+
 definePageMeta({
   layout: 'admin'
 })
@@ -53,20 +55,15 @@ const handelSyncData = async () => {
   loading.value = false
 
   if (!res?.success)
-    return toast.add({
-      severity: 'error',
-      summary: 'Error',
-      detail: 'Something went wrong, please try again later.',
-      life: 3000
-    })
+    return toast.add(getErrorToast('Something went wrong, please try again later.'))
 
 
-  toast.add({ severity: 'success', summary: 'Success', detail: 'Data has been synced successfully.', life: 3000 })
+  toast.add(getSuccessToast('Data has been synced successfully.'))
 
   await getData()
 }
 
-const podcastEpisodes = useState('podcastEpisodes')
+const podcastEpisodes = useState<IPodcastPaging>('podcastEpisodes')
 
 const columns = [
   { field: 'episode_number', header: 'Episode number' },

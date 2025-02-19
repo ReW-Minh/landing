@@ -55,7 +55,7 @@
           style="color: var(--rew-primary-green) !important"/>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const visible = ref(false)
 </script>
 

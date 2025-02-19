@@ -42,18 +42,20 @@
 
 </template>
 
-<script setup>
+<script setup lang="ts">
 onMounted(() => {
   const newParent = document.getElementById('formDestination')
   const oldParent = document.getElementById('formLoad')
 
-  newParent.append(...oldParent.childNodes)
+  if (newParent && oldParent)
+    newParent.append(...oldParent.childNodes)
 })
 
 onBeforeUnmount(() => {
   const newParent = document.getElementById('formDestination')
   const oldParent = document.getElementById('formLoad')
 
-  oldParent.append(...newParent.childNodes)
+  if (newParent && oldParent)
+    oldParent.append(...newParent.childNodes)
 })
 </script>

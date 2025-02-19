@@ -14,7 +14,7 @@
   </Card>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const props = defineProps({
   hoverEffect: {
     type: Boolean,

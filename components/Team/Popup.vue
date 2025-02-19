@@ -39,7 +39,7 @@
     </Dialog>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const props = defineProps(['bio'])
 
 const visible = defineModel()

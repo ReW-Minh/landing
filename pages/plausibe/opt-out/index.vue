@@ -10,28 +10,23 @@
 
     <div class="my-4 text-xl mb-12">
       You currently
-      <span class="text-green-600 font-bold hidden" id="plausible_yes">are</span>
-      <span class="text-red-600 font-bold hidden" id="plausible_not">are not</span>
+      <span class="text-green-600 font-bold hidden" v-if="plausibleIgnore">are</span>
+      <span class="text-red-600 font-bold hidden" v-else>are not</span>
       excluding your visits.
     </div>
     <a role="button" class="rew-main-btn"
-       id="plausible_button" @click="toggleExclusion">Exclude my visits</a>
+       id="plausible_button" @click="toggleExclusion">{{ btnText }}</a>
   </div>
 </template>
 
-<script setup>
-const checkState = () => {
-  const exclusionState = window.localStorage.plausible_ignore === "true"
+<script setup lang="ts">
+const btnText = ref('Exclude my visits')
+const plausibleIgnore = ref(false)
 
-  if (exclusionState) {
-    document.getElementById("plausible_not").classList.add('hidden')
-    document.getElementById("plausible_yes").classList.remove('hidden')
-    document.getElementById("plausible_button").innerHTML = 'Stop excluding my visits'
-  } else {
-    document.getElementById("plausible_yes").classList.add('hidden')
-    document.getElementById("plausible_not").classList.remove('hidden')
-    document.getElementById("plausible_button").innerHTML = 'Exclude my visits'
-  }
+const checkState = () => {
+  plausibleIgnore.value = window.localStorage.plausible_ignore === "true"
+
+  btnText.value = plausibleIgnore.value ? 'Stop excluding my visits' : 'Exclude my visits'
 }
 
 onMounted(checkState)
@@ -41,14 +36,10 @@ const toggleExclusion = () => {
 
   if (exclusionState) {
     delete window.localStorage.plausible_ignore
-    document.getElementById("plausible_yes").classList.add('hidden')
-    document.getElementById("plausible_not").classList.remove('hidden')
-    document.getElementById("plausible_button").innerHTML = 'Exclude my visits'
   } else {
     window.localStorage.plausible_ignore = "true"
-    document.getElementById("plausible_not").classList.add('hidden')
-    document.getElementById("plausible_yes").classList.remove('hidden')
-    document.getElementById("plausible_button").innerHTML = 'Stop excluding my visits'
   }
+
+  checkState()
 }
 </script>

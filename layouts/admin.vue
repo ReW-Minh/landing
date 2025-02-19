@@ -11,7 +11,7 @@
   <AppLoading v-if="loading"></AppLoading>
 </template>
 
-<script setup>
+<script setup lang="ts">
 checkAdminLoggedIn()
 
 const loading = useState('loading')

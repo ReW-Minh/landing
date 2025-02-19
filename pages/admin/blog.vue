@@ -12,7 +12,7 @@
                stripedRows :loading="loadingTable" lazy paginator :rows="BLOG_PAGE_LIMIT" :totalRecords="blogs?.total"
                @page="onPage($event)">
       <template v-for="col of columns" :key="col.field">
-        <Column :field="col.field" :header="col.header" :sortable="col.sortable">
+        <Column :field="col.field" :header="col.header">
           <template #body="slotProps">
             <div class="line-clamp-2">
               <span v-if="col.isTime">
@@ -53,7 +53,9 @@
   <ConfirmDialog/>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import type { IBlogDetail, IBlogPaging } from '~/types/types';
+
 definePageMeta({
   layout: 'admin'
 })
@@ -69,13 +71,13 @@ const openAddBlog = async () => {
   visible.value = true
 }
 
-const openEditBlog = async data => {
+const openEditBlog = async (data: IBlogDetail) => {
   action.value = ACTION.EDIT
   visible.value = true
   blogData.value = data
 }
 
-const blogs = useState('blogs')
+const blogs = useState<IBlogPaging>('blogs')
 
 const columns = [
   { field: 'index', header: 'No.', isIndex: true },
@@ -93,7 +95,7 @@ const confirm = useConfirm()
 
 const toast = useToast()
 
-const confirmDelete = id => {
+const confirmDelete = (id: number) => {
   confirm.require({
     message: 'Are you sure you want to delete this blog?',
     header: 'Confirmation',
@@ -111,7 +113,7 @@ const confirmDelete = id => {
   })
 }
 
-const handleDelete = async id => {
+const handleDelete = async (id: number) => {
   loading.value = true
   const res = await deleteBlog({ id })
   loading.value = false
@@ -125,7 +127,7 @@ const handleDelete = async id => {
   await getData(1)
 }
 
-const confirmPublish = id => {
+const confirmPublish = (id: number) => {
   confirm.require({
     message: 'Are you sure you want to publish this blog?',
     header: 'Confirmation',
@@ -143,7 +145,7 @@ const confirmPublish = id => {
   })
 }
 
-const handlePublish = async id => {
+const handlePublish = async (id: number) => {
   loading.value = true
   const res = await publishBlog({ id })
   loading.value = false
@@ -159,13 +161,13 @@ const handlePublish = async id => {
 
 const loadingTable = ref(false)
 
-const getData = async (page) => {
+const getData = async (page: number) => {
   loadingTable.value = true
   await getAllBlogs(page)
   loadingTable.value = false
 }
 
-const onPage = ({ page }) => {
+const onPage = ({ page }: {page: number}) => {
   getData(page + 1)
 }
 

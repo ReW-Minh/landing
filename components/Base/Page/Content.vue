@@ -4,7 +4,7 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const props = defineProps(['maxWidth'])
 
 const maxWidth = computed(() => `${props.maxWidth ?? 1000}px`)

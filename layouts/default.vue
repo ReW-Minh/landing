@@ -9,8 +9,6 @@
 
   <ScrollTop icon="pi pi-angle-double-up"/>
 
-  <ContactPopup/>
-
   <template v-for="bio in profiles" :key="bio.id">
     <TeamPopup :bio v-model="bio.visible"/>
   </template>
@@ -28,7 +26,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { useProfiles } from '~/stores/index.js'
 
 const profiles = useProfiles()

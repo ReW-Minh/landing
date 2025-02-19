@@ -37,7 +37,7 @@
   </Dialog>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const props = defineProps(['action', 'blogData'])
 
 const emit = defineEmits(['reload'])

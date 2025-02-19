@@ -4,7 +4,7 @@
             <Card style="width: 100%; max-width: 25rem; margin: 0 12px; overflow: hidden" class="shadow">
                 <template #header>
                     <div class="px-4 pt-4 pb-3">
-                        <img alt="logi" src="/img/main-logo.svg" class="img-fluid" />
+                        <img alt="reworkflow" src="/img/main-logo.svg" class="img-fluid" />
                     </div>
                 </template>
                 <template #title>
@@ -29,7 +29,7 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 definePageMeta({
     layout: 'empty'
 })

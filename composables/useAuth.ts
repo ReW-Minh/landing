@@ -1,6 +1,7 @@
 import { useAdminAuth } from '~/stores/index.js'
+import type { IAdminLogin } from '~/types/types';
 
-export const adminLogin = async (body) => {
+export const adminLogin = async (body: IAdminLogin) => {
     const admin = useAdminAuth()
 
     const res = await apiPost('login', { body })

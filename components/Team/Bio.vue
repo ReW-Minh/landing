@@ -14,7 +14,7 @@
     </BaseCardItem>
 </template>
 
-<script setup>
+<script setup lang="ts">
 defineProps(['bio'])
 
 const loading = ref(true)

@@ -13,7 +13,7 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const slaterRoles = [
   {
     title: 'Captaining',
