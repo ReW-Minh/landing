@@ -169,7 +169,7 @@ const examples = [
     price: '9,900'
   },
   {
-    title: 'Six months of Slate Support with new Slate Captain onboarding and training',
+    title: 'Six months of Slate Support coverage + new Slate Captain onboarding and training',
     price: '55,042'
   },
   {

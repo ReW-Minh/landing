@@ -17,9 +17,10 @@
       <section class="text-xl rew-text-brown">
         <span class="rew-font"><span class="rew-text-green">Re</span>Workflow</span> stays lean, affordable, and
         innovative because we do not try to be everything to everyone. Meanwhile, colleges and universities often ask us
-        for assistance with areas that extend beyond our focus systems and operations. That’s where our Trusted Partners
-        come in. Each has been vetted through firsthand project collaborations or strong endorsements from our network.
-        Click “Learn More” to connect with them directly.
+        for assistance with areas that extend beyond our focus on Slate support and staffing solutions. That’s where our
+        Trusted Partners come in. Each has been vetted through firsthand project collaborations or strong endorsements
+        from our network. We encourage you to connect with them directly (<span class="rew-font"><span
+          class="rew-text-green">Re</span>W</span> receives no commissions nor kickbacks).
       </section>
 
       <section>
@@ -50,7 +51,7 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'ReWorkflow - Trusted Partners',
+  title: 'ReWorkflow - Trusted Partners'
 })
 
 const partners = [
@@ -83,6 +84,6 @@ const partners = [
     logo: 'https://mlz9wgnyiyme.i.optimole.com/cb:iQxL.114c1/w:800/h:184/q:mauto/f:best/https://solidan.net/wp-content/uploads/2023/04/logo-solidan-alt.png',
     content: 'Custom App Development, PeopleSoft, Slate',
     url: 'https://solidan.net/'
-  },
+  }
 ]
 </script>
