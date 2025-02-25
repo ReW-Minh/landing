@@ -56,7 +56,7 @@ import type { IPodcastDetail } from '~/types/types';
 const loading = ref(false)
 const getData = async () => {
     loading.value = true
-    const res = await getPodcastEpisodeDetail(useRoute().params.slug)
+    const res = await getPodcastEpisodeDetail(useRoute().params.slug.toString())
     loading.value = false
 
     if (!res)

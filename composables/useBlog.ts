@@ -14,6 +14,8 @@ export const getAllBlogs = async (page: number) => {
     blogs.value.blogs?.forEach((item: IBlogDetail, index: number) => {
         item.index = index + 1 + (page - 1) * BLOG_PAGE_LIMIT
     })
+
+    return res
 }
 
 export const getPublishedBlogs = async (page: number) => {
@@ -23,6 +25,8 @@ export const getPublishedBlogs = async (page: number) => {
         return
 
     blogs.value = res.data
+
+    return res
 }
 
 export const getBlogDetail = async (route: string) => {
@@ -32,6 +36,8 @@ export const getBlogDetail = async (route: string) => {
         return
 
     blogDetail.value = res.data
+
+    return res
 }
 
 export const addBlog = (body: IBlogDetail) => apiPost('/blog/add', { body })

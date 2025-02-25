@@ -64,3 +64,26 @@ export interface IBlogPaging {
     total: number
 }
 
+export interface IBlogForm {
+    content: {
+        value: string;
+        error: boolean
+    };
+    author: {
+        value: string;
+        error: boolean
+    };
+    title: {
+        value: string;
+        error: boolean
+    };
+    id: {
+        value: string;
+        error: boolean
+    };
+    route: {
+        value: string;
+        error: boolean
+    };
+}
+

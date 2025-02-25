@@ -1,6 +1,6 @@
 <template>
   <Card class="bio-card w-full h-full overflow-hidden relative" :class="{ 'card-clickable': hoverEffect }">
-    <template #header>
+    <template #header v-if="withImage">
       <div class="w-full overflow-hidden" :class="imageHeight">
         <slot name="image"/>
       </div>
@@ -27,6 +27,10 @@ const props = defineProps({
   customHeight: {
     type: Boolean,
     default: false
+  },
+  withImage: {
+    type: Boolean,
+    default: true
   }
 })
 

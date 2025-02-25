@@ -1,5 +1,5 @@
 <template>
-  <Dialog v-model:visible="visible" modal :header="`${action} Blog`" class="p-dialog-maximized" loading>
+  <Dialog v-model:visible="visible" modal :header="`${action} ReView`" class="p-dialog-maximized" loading>
     <label class="flex flex-col mb-4">
         <span class="font-semibold">
           Title
@@ -27,7 +27,10 @@
       <span class="font-semibold">
         Content
       </span>
-      <Editor v-model="data.content.value" :class="{invalid: data.content.error}" editorStyle="height: calc(100vh - 390px)"/>
+      <div class="editor prose !max-w-[unset]">
+        <Editor v-model="data.content.value" :class="{invalid: data.content.error}"
+                editorStyle="height: calc(100vh - 390px)"/>
+      </div>
     </div>
 
     <div class="flex justify-end gap-2">
@@ -38,15 +41,17 @@
 </template>
 
 <script setup lang="ts">
+import type { IBlogDetail, IBlogForm } from '~/types/types';
+
 const props = defineProps(['action', 'blogData'])
 
 const emit = defineEmits(['reload'])
 
 const toast = useToast()
 
-const visible = defineModel(false)
+const visible = defineModel({ default: false })
 
-const data = reactive({
+const data = reactive<IBlogForm>({
   title: {
     value: '',
     error: false
@@ -64,7 +69,8 @@ const data = reactive({
     error: false
   },
   id: {
-    value: null
+    value: '',
+    error: false
   }
 })
 
@@ -74,14 +80,17 @@ watch(visible, () => {
 
   if (props.action === ACTION.EDIT)
     bindData(props.blogData)
+
+  if (props.action === ACTION.ADD)
+    resetForm()
 })
 
-const bindData = blogData => {
+const bindData = (blogData: IBlogDetail) => {
   if (!blogData)
     return
 
   for (const key in data) {
-    data[key].value = props.blogData[key]
+    data[key as keyof IBlogForm].value = props.blogData[key]
   }
 }
 
@@ -89,25 +98,37 @@ const validateData = () => {
   let flag = true
 
   for (const key in data) {
-    data[key].error = !data[key].value
+    if (key !== 'id') {
+      data[key as keyof IBlogForm].error = !data[key as keyof IBlogForm].value
 
-    if (data[key].error) flag = false
+      if (data[key as keyof IBlogForm].error)
+        flag = false
+    }
   }
 
   return flag
 }
 
-const loading = useState('loading')
+const loading = useState<boolean>('loading')
 const saveChanges = async () => {
   if (!validateData()) {
     toast.add(getErrorToast('You have not filled in the required fields'))
     return
   }
 
-  const payload = {}
+  const payload: IBlogDetail = {
+    content: '',
+    author: '',
+    title: '',
+    id: '',
+    index: 0,
+    route: '',
+    publish_time: 0,
+    created_time: 0
+  }
 
   for (const key in data) {
-    payload[key] = data[key].value
+    payload[key as keyof IBlogForm] = data[key as keyof IBlogForm].value
   }
 
   const func = props.action === ACTION.ADD ? addBlog : updateBlog
@@ -121,9 +142,16 @@ const saveChanges = async () => {
     return
   }
 
-  toast.add(getSuccessToast(`Blog ${props.action === ACTION.ADD ? 'added' : 'edited'} successfully.`))
+  toast.add(getSuccessToast(`ReView ${props.action === ACTION.ADD ? 'added' : 'edited'} successfully.`))
   visible.value = false
   emit('reload')
+}
+
+const resetForm = () => {
+  for (const key in data) {
+    data[key as keyof IBlogForm].error = false
+    data[key as keyof IBlogForm].value = ''
+  }
 }
 </script>
 
@@ -145,6 +173,12 @@ const saveChanges = async () => {
           border-right-color: var(--p-inputtext-invalid-border-color);
           border-left-color: var(--p-inputtext-invalid-border-color);
         }
+      }
+    }
+
+    .p-editor-toolbar {
+      .ql-image, .ql-clean {
+        display: none !important;
       }
     }
   }

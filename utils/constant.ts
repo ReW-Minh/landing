@@ -63,14 +63,18 @@ export const NAVIGATION_MENU = [
         route: '/podcast'
     },
     {
+        label: 'ReViews',
+        route: '/reviews'
+    },
+    {
         label: 'Our Team',
         route: '/about/team'
     }
 ]
 
 export const ACTION = {
-    ADD: 1,
-    EDIT: 2
+    ADD: 'Add',
+    EDIT: 'Edit'
 }
 
 export const PODCAST_EP_PAGE_LIMIT = 8

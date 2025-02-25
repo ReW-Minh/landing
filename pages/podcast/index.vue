@@ -84,7 +84,7 @@
 
                 <template #subtitle>
                   <div class="opacity-60">
-                    <i>{{ formatDate(item.publish_time) }}</i>
+                    {{ formatDate(item.publish_time) }}
 
                     <div class="line-clamp-2 mt-2" v-html="item.content"></div>
                   </div>

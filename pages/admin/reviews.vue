@@ -1,11 +1,11 @@
 <template>
   <div class="space-y-3">
     <div class="flex justify-end">
-      <Button label="Add Blog" @click="openAddBlog"/>
+      <Button label="Add ReView" @click="openAddBlog"/>
     </div>
 
     <h1 class="rew-font rew-text-brown text-3xl text-center">
-      The <span class="rew-text-green">Re</span>Views
+      <span class="rew-text-green">Re</span>Views
     </h1>
 
     <DataTable :value="blogs?.blogs" scrollable scrollHeight="calc(100vh - 120px)" removableSort rowHover
@@ -48,7 +48,7 @@
     </DataTable>
   </div>
 
-  <AdminBlogAddEdit v-model="visible" :action :blogData @reload="getData"/>
+  <AdminBlogAddEdit v-model="visible" :action :blogData @reload="() => getData(currentPage)"/>
 
   <ConfirmDialog/>
 </template>
@@ -97,7 +97,7 @@ const toast = useToast()
 
 const confirmDelete = (id: number) => {
   confirm.require({
-    message: 'Are you sure you want to delete this blog?',
+    message: 'Are you sure you want to delete this ReView?',
     header: 'Confirmation',
     rejectProps: {
       label: 'Cancel',
@@ -123,13 +123,13 @@ const handleDelete = async (id: number) => {
     return
   }
 
-  toast.add(getSuccessToast('Blog deleted successfully.'))
+  toast.add(getSuccessToast('ReView deleted successfully.'))
   await getData(1)
 }
 
 const confirmPublish = (id: number) => {
   confirm.require({
-    message: 'Are you sure you want to publish this blog?',
+    message: 'Are you sure you want to publish this ReView?',
     header: 'Confirmation',
     rejectProps: {
       label: 'Cancel',
@@ -155,16 +155,25 @@ const handlePublish = async (id: number) => {
     return
   }
 
-  toast.add(getSuccessToast('Blog published successfully.'))
+  toast.add(getSuccessToast('ReView published successfully.'))
   await getData(1)
 }
+
+const currentPage = ref(1)
 
 const loadingTable = ref(false)
 
 const getData = async (page: number) => {
   loadingTable.value = true
-  await getAllBlogs(page)
+  const res = await getAllBlogs(page)
   loadingTable.value = false
+
+  if (!res?.success) {
+    toast.add(getErrorToast(res?.message || 'Unknown error. Please try again'))
+    return
+  }
+
+  currentPage.value = page
 }
 
 const onPage = ({ page }: {page: number}) => {
