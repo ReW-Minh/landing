@@ -20,7 +20,7 @@
               </span>
 
               <div v-else-if="col.isAction" class="flex items-center gap-x-2 action">
-                <button v-tooltip.bottom="'View'">
+                <button v-tooltip.bottom="'Preview function will be implemented later'" disabled>
                   <i class="pi pi-eye"></i>
                 </button>
 
