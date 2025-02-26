@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/reviews/[slug].vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/reviews/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/editor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/editor.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Admin/Blog/AddEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Admin/Blog/AddEdit.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Admin/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Admin/Sidebar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Base/CardItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Base/CardItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composables/useBlog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/composables/useBlog.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/admin/blog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/admin/reviews.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/podcast/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/podcast/[slug].vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/podcast/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/podcast/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/types.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/constant.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/constant.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -218,7 +206,9 @@
       <workItem from="1740411261329" duration="4735000" />
       <workItem from="1740449438056" duration="19000" />
       <workItem from="1740478282619" duration="1226000" />
-      <workItem from="1740498792314" duration="3258000" />
+      <workItem from="1740498792314" duration="3546000" />
+      <workItem from="1740536134227" duration="26000" />
+      <workItem from="1740536453484" duration="3240000" />
     </task>
     <servers />
   </component>

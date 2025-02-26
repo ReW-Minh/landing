@@ -177,7 +177,7 @@ const resetForm = () => {
     }
 
     .p-editor-toolbar {
-      .ql-image, .ql-clean {
+      .ql-image, .ql-clean, .ql-font {
         display: none !important;
       }
     }

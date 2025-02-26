@@ -1072,6 +1072,10 @@ Needed for proper display in IE 10-.
     color: #777
   }
 
+  .ql-editor li[data-list=bullet]:before {
+    display: none;
+  }
+
   .ql-editor li[data-list=bullet] > .ql-ui:before {
     content: '\2022'
   }
