@@ -79,7 +79,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
     
                 Upon moving to the US, I worked in admissions and admissions operations at Oklahoma City University and Columbia University. The experience working with prospective students front-end from my recruitment days has helped me tremendously when I moved to a more back-end roles, working with systems and processes to help student's application process more seamless. There are still a lot of questions: How to automatically load the student's enrollment history from their resume to their application in Slate? How to better communicate the official transcript submission instruction? The list goes on. These questions are the foundation of ReWorkflow. Jon & I started this adventure to help support institutions with streamlining their admissions and operations processes so the admission team can spend more time interacting with their students. Our ReWers work everyday towards building a more sustainable and evergreen system for teammate schools.`,
         id: 5,
-        name: "Binh Roward",
+        name: "Binh Rowand",
         picture: 'https://live.staticflickr.com/65535/53939365953_b2618988b9.jpg',
         title: "Chief Operating Officer",
         contact: [

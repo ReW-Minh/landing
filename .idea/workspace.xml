@@ -6,7 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/admin/reviews.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/admin/reviews.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/editor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/editor.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Admin/Blog/AddEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Admin/Blog/AddEdit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/reviews/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/reviews/[slug].vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/reviews/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/reviews/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stores/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/stores/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/constant.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/constant.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +122,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-WS-243.24978.60" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
       </set>
     </attachedChunks>
   </component>
@@ -206,7 +215,13 @@
       <workItem from="1740498792314" duration="3546000" />
       <workItem from="1740536134227" duration="26000" />
       <workItem from="1740536453484" duration="3240000" />
-      <workItem from="1740580722736" duration="42000" />
+      <workItem from="1740580722736" duration="76000" />
+      <workItem from="1741876030871" duration="258000" />
+      <workItem from="1742221416091" duration="4202000" />
+      <workItem from="1742394424172" duration="9111000" />
+      <workItem from="1742435171699" duration="20000" />
+      <workItem from="1742483011231" duration="2612000" />
+      <workItem from="1742487568934" duration="212000" />
     </task>
     <servers />
   </component>

@@ -1,10 +1,10 @@
 <template>
-  <BasePageContainer >
+  <BasePageContainer>
     <img src="/img/logo-bg.svg" alt="rew"
          class="bg-logo !top-1/2 !left-1/2 !transform -translate-x-1/2 !-translate-y-1/2 invisible md:visible mt-[150px] !opacity-5">
-    
+
     <BasePageHeader>
-        <span class="rew-font"><span class="rew-text-green">Re</span>Views</span>
+      <span class="rew-font"><span class="rew-text-green">Re</span>Views</span>
 
       <template #subtitle>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus eget lorem et facilisis. Nullam dapibus
@@ -22,8 +22,8 @@
       </section>
 
       <div class="grid grid-cols-5 gap-6">
-        <div class="grid grid-cols-1 gap-6 col-span-4 h-max">
-          <div v-for="item in blogs?.blogs" :key="item.id" class="h-max max-h-[214px]">
+        <div class="grid grid-cols-1 gap-6 col-span-6 lg:col-span-4 h-max">
+          <div v-for="item in computedBlogs" :key="item.id" class="h-max max-h-[214px]">
             <NuxtLink :to="`/reviews/${item.route}`">
               <BaseCardItem :withImage="false">
                 <template #title>
@@ -38,7 +38,7 @@
                       {{ formatDate(item.publish_time) }} - by <strong>{{ item.author }}</strong>
                     </span>
 
-                    <div class="line-clamp-4 mt-2" v-html="item.content"></div>
+                    <div class="line-clamp-4 mt-2 max-h-[96px] overflow-hidden" v-html="item.content"></div>
                   </div>
                 </template>
               </BaseCardItem>
@@ -46,8 +46,8 @@
           </div>
         </div>
 
-        <div class="col-span-1">
-          <div class="border rounded-xl p-4 shadow bg-white/30 backdrop-blur-sm" >
+        <div class="col-span-6 lg:col-span-1">
+          <div class="border rounded-xl p-4 shadow bg-white/30 backdrop-blur-sm">
             <div class="text-2xl mb-2 font-semibold rew-text-brown">Write Us</div>
             <div id="formDestination"></div>
           </div>
@@ -104,4 +104,9 @@ onBeforeUnmount(() => {
   if (newParent && oldParent)
     oldParent.append(...newParent.childNodes)
 })
+
+const computedBlogs = computed(() => blogs.value?.blogs.map(item => ({
+  ...item,
+  content: item.content.replace(/<figure[^>]*>\s*<img[^>]*>.*?<\/figure>/g, '')
+})))
 </script>

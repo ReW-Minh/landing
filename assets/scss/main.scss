@@ -442,6 +442,17 @@ a.footer-link:hover {
   }
 }
 
+.toolbar .btn {
+  border-radius: 5px;
+  font-size: unset;
+  border: unset !important;
+  cursor: pointer !important;
+}
+
+#editor-resizer .toolbar .group .input-wrapper {
+  border: none !important;
+}
+
 .form-btn-secondary {
   color: var(--rew-active-brown) !important;
   background: #fff !important;

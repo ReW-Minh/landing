@@ -62,10 +62,10 @@ export const NAVIGATION_MENU = [
         label: 'Podcast',
         route: '/podcast'
     },
-    {
-        label: 'ReViews',
-        route: '/reviews'
-    },
+    // {
+    //     label: 'ReViews',
+    //     route: '/reviews'
+    // },
     {
         label: 'Our Team',
         route: '/about/team'

@@ -27,9 +27,8 @@
       <span class="font-semibold">
         Content
       </span>
-      <div class="editor prose !max-w-[unset]">
-        <Editor v-model="data.content.value" :class="{invalid: data.content.error}"
-                editorStyle="height: calc(100vh - 390px)"/>
+      <div class="editor !max-w-[unset]">
+        <ckeditor v-if="editor" v-model="data.content.value" :editor :config/>
       </div>
     </div>
 
@@ -40,8 +39,8 @@
   </Dialog>
 </template>
 
-<script setup lang="ts">
-import type { IBlogDetail, IBlogForm } from '~/types/types';
+<script setup>
+import { Ckeditor, useCKEditorCloud } from '@ckeditor/ckeditor5-vue'
 
 const props = defineProps(['action', 'blogData'])
 
@@ -51,7 +50,115 @@ const toast = useToast()
 
 const visible = defineModel({ default: false })
 
-const data = reactive<IBlogForm>({
+const cloud = useCKEditorCloud({
+  version: '44.3.0',
+  premium: false
+})
+
+const editor = computed(() => {
+  if (!cloud.data.value)
+    return null
+
+  return cloud.data.value.CKEditor.ClassicEditor
+})
+
+const config = computed(() => {
+  if (!cloud.data.value)
+    return null
+
+  const {
+    Essentials,
+    Paragraph,
+    Bold,
+    Italic,
+    List,
+    Strikethrough,
+    Superscript,
+    Font,
+    Subscript,
+    Code,
+    Link,
+    BlockQuote,
+    CodeBlock,
+    Alignment,
+    Heading,
+    Indent,
+    Image,
+    ImageResizeEditing,
+    ImageResizeHandles,
+    ImageToolbar,
+    ImageCaption,
+    ImageStyle,
+    ImageResize,
+    LinkImage,
+    ImageInsert,
+    ImageInsertViaUrl,
+    Base64UploadAdapter
+  } = cloud.data.value.CKEditor;
+
+  const plugins = [
+    Essentials,
+    Paragraph,
+    Bold,
+    Italic,
+    List,
+    Strikethrough,
+    Superscript,
+    Font,
+    Subscript,
+    Code,
+    Link,
+    BlockQuote,
+    CodeBlock,
+    Alignment,
+    Heading,
+    Indent,
+    Image,
+    ImageResizeEditing,
+    ImageResizeHandles,
+    ImageToolbar,
+    ImageCaption,
+    ImageStyle,
+    ImageResize,
+    LinkImage,
+    ImageInsert,
+    ImageInsertViaUrl,
+    Base64UploadAdapter
+  ]
+
+  return {
+    licenseKey: 'eyJhbGciOiJFUzI1NiJ9.eyJleHAiOjE3NzM5NjQ3OTksImp0aSI6IjA0NWYzN2IxLTgyMTgtNDg2OC05NTA0LTE4NjM3ZjQ4NzUwYyIsInVzYWdlRW5kcG9pbnQiOiJodHRwczovL3Byb3h5LWV2ZW50LmNrZWRpdG9yLmNvbSIsImRpc3RyaWJ1dGlvbkNoYW5uZWwiOlsiY2xvdWQiLCJkcnVwYWwiXSwiZmVhdHVyZXMiOlsiRFJVUCJdLCJ2YyI6IjhiODczZjdiIn0.P78OAebw-5OqB7yYxR0RLOvflCVw468YjCKud1jwVCm-GNRnDuYyxPcigpalw43rl_EaZTTyi9mkGUipcjVhzQ',
+    plugins,
+    toolbar: {
+      items: [
+        'undo', 'redo',
+        '|',
+        'heading',
+        '|',
+        'fontsize', 'fontColor', 'fontBackgroundColor',
+        '|',
+        'bold', 'italic', 'strikethrough', 'subscript', 'superscript', 'code',
+        '|',
+        'link', 'insertImage', 'blockQuote', 'codeBlock',
+        '|',
+        'alignment',
+        '|',
+        'bulletedList', 'numberedList', 'indent'
+      ],
+      shouldNotGroupWhenFull: true
+    },
+    image: {
+      toolbar: [
+        'toggleImageCaption',
+        'imageTextAlternative',
+        '|',
+        'linkImage'
+      ]
+    },
+  }
+})
+
+const data = reactive({
   title: {
     value: '',
     error: false
@@ -85,12 +192,12 @@ watch(visible, () => {
     resetForm()
 })
 
-const bindData = (blogData: IBlogDetail) => {
+const bindData = (blogData) => {
   if (!blogData)
     return
 
   for (const key in data) {
-    data[key as keyof IBlogForm].value = props.blogData[key]
+    data[key].value = props.blogData[key]
   }
 }
 
@@ -99,9 +206,9 @@ const validateData = () => {
 
   for (const key in data) {
     if (key !== 'id') {
-      data[key as keyof IBlogForm].error = !data[key as keyof IBlogForm].value
+      data[key].error = !data[key].value
 
-      if (data[key as keyof IBlogForm].error)
+      if (data[key].error)
         flag = false
     }
   }
@@ -109,14 +216,14 @@ const validateData = () => {
   return flag
 }
 
-const loading = useState<boolean>('loading')
+const loading = useState('loading')
 const saveChanges = async () => {
   if (!validateData()) {
     toast.add(getErrorToast('You have not filled in the required fields'))
     return
   }
 
-  const payload: IBlogDetail = {
+  const payload = {
     content: '',
     author: '',
     title: '',
@@ -128,7 +235,7 @@ const saveChanges = async () => {
   }
 
   for (const key in data) {
-    payload[key as keyof IBlogForm] = data[key as keyof IBlogForm].value
+    payload[key] = data[key].value
   }
 
   const func = props.action === ACTION.ADD ? addBlog : updateBlog
@@ -142,45 +249,21 @@ const saveChanges = async () => {
     return
   }
 
-  toast.add(getSuccessToast(`ReView ${props.action === ACTION.ADD ? 'added' : 'edited'} successfully.`))
+  toast.add(getSuccessToast(`ReView ${ props.action === ACTION.ADD ? 'added' : 'edited' } successfully.`))
   visible.value = false
   emit('reload')
 }
 
 const resetForm = () => {
   for (const key in data) {
-    data[key as keyof IBlogForm].error = false
-    data[key as keyof IBlogForm].value = ''
+    data[key].error = false
+    data[key].value = ''
   }
 }
 </script>
 
-<style scoped lang="scss">
-:deep {
-  .p-editor {
-    &.invalid {
-      .p-editor-toolbar {
-        &.ql-snow {
-          border-top-color: var(--p-inputtext-invalid-border-color);
-          border-right-color: var(--p-inputtext-invalid-border-color);
-          border-left-color: var(--p-inputtext-invalid-border-color);
-        }
-      }
-
-      .p-editor-content {
-        &.ql-snow {
-          border-bottom-color: var(--p-inputtext-invalid-border-color);
-          border-right-color: var(--p-inputtext-invalid-border-color);
-          border-left-color: var(--p-inputtext-invalid-border-color);
-        }
-      }
-    }
-
-    .p-editor-toolbar {
-      .ql-image, .ql-clean, .ql-font {
-        display: none !important;
-      }
-    }
-  }
+<style lang="scss">
+.ck.ck-balloon-panel.ck-balloon-panel_visible {
+  z-index: 9999999999 !important;
 }
 </style>

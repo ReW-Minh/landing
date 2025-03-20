@@ -33,10 +33,8 @@
     </div>
     <BasePageContent>
       <div class="relative py-8">
-        <div class="editor fe prose !max-w-[unset]" >
-          <div class="ql-snow">
-            <div class="ql-editor !p-0" v-html="detail?.content"></div>
-          </div>
+        <div class="ck-content">
+          <div v-html="detail?.content"></div>
         </div>
         <img src="/img/logo-bg.svg" alt="rew"
              class="bg-logo !top-1/2 !left-1/2 !transform -translate-x-1/2 !-translate-y-1/2 !opacity-5">
