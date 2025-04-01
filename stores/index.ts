@@ -31,7 +31,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
             {
                 type: CONTACT_TYPE.EMAIL,
                 link: 'jrowand@reworkflow.com'
-            },
+            }
         ],
         visible: false
     },
@@ -70,7 +70,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
             {
                 type: CONTACT_TYPE.EMAIL,
                 link: 'wbest@reworkflow.com'
-            },
+            }
         ],
         visible: false
     },
@@ -102,39 +102,31 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
             {
                 type: CONTACT_TYPE.EMAIL,
                 link: 'browand@reworkflow.com'
-            },
+            }
         ],
         visible: false
     },
     {
-        content: `Megan Story joined ReWorkflow in August 2022 with 10 years of experience in higher education, including 4 years as a Slate Captain for graduate admissions at the University of California, Irvine. At ReWorkflow, Megan leverages her extensive background to support clients, drawing from her experience managing a Slate instance with 1,400 users and over 20,000 applications annually. During her tenure at UCI, she successfully developed drip campaigns, generated detailed reports, and created comprehensive documentation. Megan is a dedicated member of the Slate user community with highlights including presenting at the Slate Summit in 2022 and 2024 and serving on the leadership team for the Graduate Slate Community User Group.
-    
-                Megan hosts The ReWorkflow Podcast and in her free time is a frequent guest on a podcast about strategy board games.`,
+        content: `Is there anything more fulfilling than improving the lives of those around you? A passion of mine is helping others, whether it be volunteering in the community through programs like Big Brothers Big Sisters, chaperoning service trips around the globe, or using my professional Slate expertise to make better the work experiences of my colleagues and fellow Slate users. I have been in the world of Slate since 2013 when I was among the implementation team at The University of Scranton. From there I became Slate Captain in 2016 where I touched upon all aspects of Slate, working diligently to create an easy user experience for both prospective students as well as internal staff.  True to my passion, I have kept an active presence in the Slate Community forums and was selected by Technolutions as an inaugural Slate Community Ambassador in 2021.  I also co-moderate both the PA Slate Users Group (since 2014) and the national Slate Slack Users Group (since 2021).  I currently work full-time as a Slate Captain for Lynn University.
+
+                 My husband and I live in beautiful Northeastern Pennsylvania with our spunky German Shepherd, Nala. We enjoy the great outdoors, recreational sports, and all manner of travel and exploration. We are also open to adventure suggestions so feel free to pass them my way!`,
         id: 4,
-        name: "Megan Story",
-        picture: 'https://live.staticflickr.com/65535/53939568465_74c51baf15.jpg',
-        title: "Director of Slate Systems & Operations",
+        name: "Kelly Connor Lewis",
+        picture: 'https://drscdn.500px.org/photo/1111235573/q%3D80_m%3D600/v2?sig=7b3e3b1ff22b76cc69b203e685648bf335af8cf75f0b54a043b8aa11026b7fe1',
+        title: "Senior Slate Strategist",
         contact: [
             {
                 type: CONTACT_TYPE.LINKEDIN,
-                link: 'https://www.linkedin.com/in/mpstory/'
-            },
-            {
-                type: CONTACT_TYPE.RESOURCE,
-                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3Amegan-story%7D+%7Btype%3Apage%7D'
+                link: 'https://www.linkedin.com/in/kelly-lewis6'
             },
             {
                 type: CONTACT_TYPE.SLATE_COMMUNITY,
-                link: 'https://community.technolutions.net/member/dVj6MFzD6r'
-            },
-            {
-                type: CONTACT_TYPE.PRESENTATIONS_PUBLICATIONS,
-                link: ''
+                link: 'https://community.technolutions.net/member/5mLhZiwoZW'
             },
             {
                 type: CONTACT_TYPE.EMAIL,
-                link: 'mstory@reworkflow.com'
-            },
+                link: 'klewis@reworkflow.com'
+            }
         ],
         visible: false
     },
@@ -168,7 +160,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
             {
                 type: CONTACT_TYPE.EMAIL,
                 link: 'pmckay@reworkflow.com'
-            },
+            }
         ],
         visible: false
     },
@@ -200,7 +192,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
             {
                 type: CONTACT_TYPE.EMAIL,
                 link: 'ibest@reworkflow.com'
-            },
+            }
         ],
         visible: false
     }
