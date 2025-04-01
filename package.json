@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.11.0",
+    "@primevue/forms": "^4.3.3",
     "@primevue/themes": "^4.2.5",
     "nuxt": "^3.12.4",
     "nuxt-aos": "^1.2.5",

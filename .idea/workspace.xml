@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/pricing/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pricing/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/resources/trusted-partners/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/resources/trusted-partners/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stores/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/stores/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +81,7 @@
       <recent name="$PROJECT_DIR$/components" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.generate">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -106,8 +108,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.generate" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.generate" />
       </list>
     </recent_temporary>
   </component>
