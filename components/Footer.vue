@@ -44,7 +44,7 @@
 
           <div class="invisible md:visible w-[120px]">
             <img
-                src="https://images.squarespace-cdn.com/content/v1/641f3e24b36a211ec50bf362/ed429e0b-776e-4d90-83ec-0857a083ab6e/SlatePreferredPartnerLevel_Gold.png?format=500w"
+                src="https://reworkflow.com/static/slate_gold.png"
                 alt="Slate Gold Partner">
           </div>
         </div>

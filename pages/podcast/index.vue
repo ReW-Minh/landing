@@ -14,17 +14,18 @@
       </div>
 
       <template #subtitle>
-        An engaging deep dive into Slate through the lens of the annual Slate Summit. New episodes released the
-        second Tuesday of each month.
+        Slate Strategy Sessions is a podcast powered by ReWorkflow for education professionals who lead or support Slate
+        CRM teams. Each episode offers real-world insights, peer conversations, and practical advice for getting the
+        most out of Slate. Whether you’re shaping big-picture changes or solving technical puzzles, tune in to learn,
+        grow, and connect.
       </template>
     </BasePageHeader>
 
 
     <BasePageContent :maxWidth="1488">
       <div>
-        <p class="text-lg text-center mb-2" style="color: var(--rew-secondary-green)">Click on an episode to
-          listen
-          here. Also, available to stream on:</p>
+        <p class="text-lg text-center mb-2" style="color: var(--rew-secondary-green)">Select an episode to listen here
+          with streams also available on:</p>
         <ul class="flex items-center justify-center gap-4 flex-wrap cc-podcast-apps list-unstyled podcast-app">
           <li class="mb-2">
             <a class="btn-connect"

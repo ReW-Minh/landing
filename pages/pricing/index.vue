@@ -45,10 +45,10 @@
                     </div>
                     <div class="font-bold rew-text-green text-2xl">
                       <div>
-                        20 hrs: <span class="rew-text-brown">$265/hour</span>
+                        20 hrs: <span class="rew-text-brown">$270/hour</span>
                       </div>
                       <div>
-                        40 hrs: <span class="rew-text-brown">$235/hour</span>
+                        40 hrs: <span class="rew-text-brown">$249/hour</span>
                       </div>
                     </div>
                     <div class="p-card-subtitle italic text-[18px] leading-6 font-normal">

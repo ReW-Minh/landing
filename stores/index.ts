@@ -112,7 +112,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                  My husband and I live in beautiful Northeastern Pennsylvania with our spunky German Shepherd, Nala. We enjoy the great outdoors, recreational sports, and all manner of travel and exploration. We are also open to adventure suggestions so feel free to pass them my way!`,
         id: 4,
         name: "Kelly Connor Lewis",
-        picture: 'https://drscdn.500px.org/photo/1111235573/q%3D80_m%3D600/v2?sig=7b3e3b1ff22b76cc69b203e685648bf335af8cf75f0b54a043b8aa11026b7fe1',
+        picture: 'https://reworkflow.com/static/klewis.jpg',
         title: "Senior Slate Strategist",
         contact: [
             {
