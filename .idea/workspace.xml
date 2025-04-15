@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/podcast/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/podcast/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/pricing/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pricing/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stores/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/stores/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,6 +224,7 @@
       <workItem from="1744336824520" duration="13000" />
       <workItem from="1744340304388" duration="910000" />
       <workItem from="1744452756366" duration="211000" />
+      <workItem from="1744728757573" duration="133000" />
     </task>
     <servers />
   </component>
@@ -256,17 +253,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app.vue</url>
-          <line>24</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

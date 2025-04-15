@@ -159,14 +159,14 @@ const handlePage = async (data: PageState) => {
 const testimonials = [
   {
     id: 1,
-    message: `"Megan makes her guests comfortable and confident while recording their episode. She’s a knowledgeable and generous host."`,
-    name: 'Jasmine Solomon',
-    title: 'Senior Associate Director, Systems Operations',
-    school: 'New York University'
+    message: `"The <span class="rew-font">Re<span class="rew-text-brown">Workflow</span></span> Podcast stands out to me because they're always talking about something that's germane to what I'm doing. I really enjoy hearing from other Slaters and always manage to take away one or two actionable ideas. One thing I've been pleased to see is the expanded show notes which make it easy to dive deeper into things referenced in the conversation."`,
+    name: 'Sarah Kotlinski',
+    title: 'Director of Enrollment Systems and Analytics',
+    school: 'Gettysburg College'
   },
   {
     id: 2,
-    message: `"I have learned a lot from listening to the <span class="rew-font">Re<span class="rew-text-brown">Workflow</span></span> podcast, but perhaps nothing more surprising than the fact that host Megan Story is a self-professed introvert. The conversation in the podcast seems effortless with a wide variety of guests and topics from the Slate Community. Megan is a natural at this!"`,
+    message: `"I have learned a lot from listening to the <span class="rew-font">Re<span class="rew-text-brown">Workflow</span></span> Podcast, but perhaps nothing more surprising than the fact that host Megan Story is a self-professed introvert. The conversation in the podcast seems effortless with a wide variety of guests and topics from the Slate Community. Megan is a natural at this!"`,
     name: 'Eric Hoffpauir',
     title: 'CRM Specialist',
     school: 'Kansas State University Undergraduate Admission'
