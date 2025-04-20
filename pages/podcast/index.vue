@@ -14,17 +14,18 @@
       </div>
 
       <template #subtitle>
-        An engaging deep dive into Slate through the lens of the annual Slate Summit. New episodes released the
-        second Tuesday of each month.
+        Slate Strategy Sessions is a podcast powered by ReWorkflow for education professionals who lead or support Slate
+        CRM teams. Each episode offers real-world insights, peer conversations, and practical advice for getting the
+        most out of Slate. Whether you’re shaping big-picture changes or solving technical puzzles, tune in to learn,
+        grow, and connect.
       </template>
     </BasePageHeader>
 
 
     <BasePageContent :maxWidth="1488">
       <div>
-        <p class="text-lg text-center mb-2" style="color: var(--rew-secondary-green)">Click on an episode to
-          listen
-          here. Also, available to stream on:</p>
+        <p class="text-lg text-center mb-2" style="color: var(--rew-secondary-green)">Select an episode to listen here
+          with streams also available on:</p>
         <ul class="flex items-center justify-center gap-4 flex-wrap cc-podcast-apps list-unstyled podcast-app">
           <li class="mb-2">
             <a class="btn-connect"
@@ -158,14 +159,14 @@ const handlePage = async (data: PageState) => {
 const testimonials = [
   {
     id: 1,
-    message: `"Megan makes her guests comfortable and confident while recording their episode. She’s a knowledgeable and generous host."`,
-    name: 'Jasmine Solomon',
-    title: 'Senior Associate Director, Systems Operations',
-    school: 'New York University'
+    message: `"The <span class="rew-font">Re<span class="rew-text-brown">Workflow</span></span> Podcast stands out to me because they're always talking about something that's germane to what I'm doing. I really enjoy hearing from other Slaters and always manage to take away one or two actionable ideas. One thing I've been pleased to see is the expanded show notes which make it easy to dive deeper into things referenced in the conversation."`,
+    name: 'Sarah Kotlinski',
+    title: 'Director of Enrollment Systems and Analytics',
+    school: 'Gettysburg College'
   },
   {
     id: 2,
-    message: `"I have learned a lot from listening to the <span class="rew-font">Re<span class="rew-text-brown">Workflow</span></span> podcast, but perhaps nothing more surprising than the fact that host Megan Story is a self-professed introvert. The conversation in the podcast seems effortless with a wide variety of guests and topics from the Slate Community. Megan is a natural at this!"`,
+    message: `"I have learned a lot from listening to the <span class="rew-font">Re<span class="rew-text-brown">Workflow</span></span> Podcast, but perhaps nothing more surprising than the fact that host Megan Story is a self-professed introvert. The conversation in the podcast seems effortless with a wide variety of guests and topics from the Slate Community. Megan is a natural at this!"`,
     name: 'Eric Hoffpauir',
     title: 'CRM Specialist',
     school: 'Kansas State University Undergraduate Admission'

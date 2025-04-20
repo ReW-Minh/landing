@@ -17,13 +17,14 @@
             <div data-aos="fade-right" data-aos-duration="700"
                  class="left-home-block flex items-center lg:mt-10 md:mt-6 mt-2">
               <div class="rew-text-brown text-[18px] md:text-[20px] lg:text-[28px]">
-                We offer flexibly structured services that fit seamlessly with your institution’s needs. Our lean team
-                of experts provides quick, high-quality results for all Slate issues and implementation projects.
+                We offer flexibly structured services that fit seamlessly with your institution’s needs. Whether it’s
+                ongoing help desk services or major implementations, our team of Slate experts delivers fast,
+                high-quality, and cost-effective results.
               </div>
             </div>
 
             <div class=" mt-4 md:mt-6 lg:mt-10">
-              <CallToAction label="Slate Services" link="/services/slate" size="lg" :internal="true" />
+              <CallToAction label="Slate Services" link="/services/slate" size="lg" :internal="true"/>
             </div>
           </div>
         </div>
