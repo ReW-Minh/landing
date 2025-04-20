@@ -58,7 +58,7 @@ const partners = [
   {
     logo: '/img/David Dysart The Innovation Forge Leatherbound Workmark Logo.png',
     content: 'Engagement Scoring, Predictive Modeling, Adaptive Enrollment Management',
-    url: 'https://dysartisanalinnovations.substack.com/'
+    url: 'https://dysartisaninnovations.carrd.co/'
   },
   {
     logo: 'https://lirp.cdn-website.com/028e158a/dms3rep/multi/opt/Get-FA-Solutions-Logo-1920w.png',
