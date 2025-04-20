@@ -16,17 +16,17 @@ useHead({
   meta: [
     { name: 'description', content: 'Slate Support Staffing and Solutions' }
   ],
-  script: [
-    {
-      'src': 'https://plausible.io/js/script.hash.outbound-links.js',
-      'data-domain': 'reworkflow.com',
-      'defer': true
-    },
-    {
-      'type': 'text/javascript',
-      'innerHTML': `window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }`
-    }
-  ]
+  // script: [
+  //   {
+  //     'src': 'https://plausible.io/js/script.hash.outbound-links.js',
+  //     'data-domain': 'reworkflow.com',
+  //     'defer': true
+  //   },
+  //   {
+  //     'type': 'text/javascript',
+  //     'innerHTML': `window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }`
+  //   }
+  // ]
 })
 
 useSeoMeta({
