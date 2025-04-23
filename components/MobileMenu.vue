@@ -26,18 +26,18 @@
         <div class="mt-12 flex items-center justify-center">
           <CallToAction/>
         </div>
-        <div class="w-full flex items-center justify-center mt-10">
+<!--        <div class="w-full flex items-center justify-center mt-10">
           <a href="tel:2085469221" class="social-hover phone">
-            <IconPhone class="!w-[20px] !h-[20px]" fill="var(--rew-primary-brown)"/>
+            <IconPhone class="!w-[20px] !h-[20px]" fill="var(&#45;&#45;rew-primary-brown)"/>
           </a>
           <span class="rew-font rew-text-brown ms-3 text-xl">208-546-9221</span>
-        </div>
+        </div>-->
       </div>
       <div class="menu-btm">
         <div class="flex items-center justify-center mb-3 mx-5 gap-6 overflow-hidden">
-          <a href="https://www.instagram.com/reworkflow/" target="_blank">
+<!--          <a href="https://www.instagram.com/reworkflow/" target="_blank">
             <img src="/img/instagram-green.svg" alt="instagram">
-          </a>
+          </a>-->
           <a href="https://www.linkedin.com/company/reworkflow/about/">
             <img src="/img/linkedin-green.svg" alt="linkedin">
           </a>

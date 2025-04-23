@@ -42,7 +42,9 @@
             </div>
 
             <div class="relative pb-12">
-                <div v-html="detail?.content" class="editor text-lg"></div>
+              <div class="ck-content">
+                <div v-html="detail?.content"></div>
+              </div>
                 <img src="/img/logo-bg.svg" alt="rew"
                     class="bg-logo !top-1/2 !left-1/2 !transform -translate-x-1/2 !-translate-y-1/2 !opacity-5">
             </div>
@@ -90,3 +92,12 @@ onMounted(async () => {
 
 window.removeEventListener('resize', calculateFrameWidth)
 </script>
+
+<style lang="scss" scoped>
+.ck-content {
+  * {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+  }
+}
+</style>

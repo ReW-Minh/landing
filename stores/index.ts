@@ -144,7 +144,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
         name: "Wyatt Best",
         order: 1,
         picture: 'https://live.staticflickr.com/65535/53939365973_8b39036dfb.jpg',
-        title: "Custom Solutions Analystt",
+        title: "Custom Solutions Analyst",
         contact: [
             {
                 type: CONTACT_TYPE.LINKEDIN,

@@ -16,10 +16,10 @@
 
           <div class="grow space-y-5 mt-6 md:mt-0">
             <div class="flex items-center justify-center gap-3 flex-wrap">
-              <a href="https://www.instagram.com/reworkflow/" target="_blank"
+<!--              <a href="https://www.instagram.com/reworkflow/" target="_blank"
                  class="social-hover instagram">
                 <img src="/img/instagram.svg" alt="instagram">
-              </a>
+              </a>-->
 
               <a href="https://www.linkedin.com/company/reworkflow/about/" target="_blank"
                  class="social-hover linkedin ms-1">
@@ -30,12 +30,12 @@
                 <IconEmailFill fill="white"/>
               </a>
 
-              <div class="w-full flex items-center justify-center mt-2">
+<!--              <div class="w-full flex items-center justify-center mt-2">
                 <a href="tel:2085469221" class="social-hover phone">
                   <IconPhone class="!w-[20px] !h-[20px]" fill="white"/>
                 </a>
                 <span class="rew-font text-white ms-3 text-xl">208-546-9221</span>
-              </div>
+              </div>-->
             </div>
             <div class="text-white text-center">
               © {{ new Date().getFullYear() }} ReWorkflow. All Rights Reserved
