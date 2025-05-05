@@ -77,11 +77,12 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
     
                 After implementing Slate at Lewis & Clark College, I joined the staff of Technolutions where I spent 6 years learning about Slate and helping clients find the resources they needed to be succesful. In addition to overseeing Support staff as the Assistant Director of Support, I was active in Community Conservations, Slate Labs, Launchpad, and resource creation for implementations through Cycle Prep. I directly supported dozens of Slate implementations, responded to over 2,500 Support Desk requests and even wrote a Dr Seuss-inspired ode to CJs called “Oh the Joins You Will Join!”
     
-                I am currently based in Milan, Italy meaning that ReWorklow is the only Preferred Partner with a physical presence on three continents! Over the next year, my goal is to travel to a dozen countries with my husband and our two kids (8 and 11). European travel suggestions welcomed at <a href="mailto:pmckay@reworkflow.com" target="_blank">pmckay@reworkflow.com<a/>!`,
+                My home base is Portland, Oregon although our family prioritizes travel. We were fortunate enough to spend an incredible year living in Italy and traveling the world, visiting 12 countries in 12 months! Suggestions for our next travel destination welcomed at <a href="mailto:pmckay@reworkflow.com" target="_blank">pmckay@reworkflow.com<a/>!`,
         id: 3,
         name: "Peter McKay",
         picture: 'https://live.staticflickr.com/65535/53938209747_2eaf3dced3.jpg',
         title: "Director of Client Support",
+        cert: 'https://reworkflow.com/static/slate_certified.png',
         contact: [
             {
                 type: CONTACT_TYPE.LINKEDIN,
