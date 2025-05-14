@@ -108,6 +108,40 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
         visible: false
     },
 
+    // TJ
+    {
+        content: `With over 13 years of experience in technical and leadership roles, I specialize in data analytics, student information systems, and strategic enrollment management within higher education. I’ve worked with institutions of all sizes and stages—from Tier 1 research universities and Ivy League campuses to schools just getting off the ground—and discovered that while challenges often look different on the surface, the core solutions are remarkably consistent. I bring a proven track record of using data to drive enrollment strategies, improve operational efficiency, and support institutional goals. With an agile, results-oriented approach, I effectively balance long-term strategic initiatives with day-to-day operations and team leadership, consistently delivering outcomes through cross-functional collaboration.
+    
+                Outside of work, I enjoy raising my daughter and our chocolate lab alongside my spouse, a meteorologist in the Navy. As a military family, we embrace the adventure of frequent moves and love exploring new places around the world together. I’m also an avid runner—many of my best solutions to complex system challenges tend to arrive somewhere between mile two and five.`,
+        id: 9,
+        name: "TJ Backofen",
+        picture: 'https://reworkflow.com/static/tj.jpg',
+        title: "Director of Custom Solutions",
+        contact: [
+            {
+                type: CONTACT_TYPE.LINKEDIN,
+                link: 'https://www.linkedin.com/in/backofentb/'
+            },
+            {
+                type: CONTACT_TYPE.RESOURCE,
+                link: ''
+            },
+            {
+                type: CONTACT_TYPE.SLATE_COMMUNITY,
+                link: 'https://community.technolutions.net/member/RLI9KSKH4D'
+            },
+            {
+                type: CONTACT_TYPE.PRESENTATIONS_PUBLICATIONS,
+                link: ''
+            },
+            {
+                type: CONTACT_TYPE.EMAIL,
+                link: 'tbackofen@reworkflow.com'
+            }
+        ],
+        visible: false
+    },
+
     // Kelly
     {
         content: `Is there anything more fulfilling than improving the lives of those around you? A passion of mine is helping others, whether it be volunteering in the community through programs like Big Brothers Big Sisters, chaperoning service trips around the globe, or using my professional Slate expertise to make better the work experiences of my colleagues and fellow Slate users. I have been in the world of Slate since 2013 when I was among the implementation team at The University of Scranton. From there I became Slate Captain in 2016 where I touched upon all aspects of Slate, working diligently to create an easy user experience for both prospective students as well as internal staff.  True to my passion, I have kept an active presence in the Slate Community forums and was selected by Technolutions as an inaugural Slate Community Ambassador in 2021.  I also co-moderate both the PA Slate Users Group (since 2014) and the national Slate Slack Users Group (since 2021).  I currently work full-time as a Slate Captain for Lynn University.

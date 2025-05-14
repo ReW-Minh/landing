@@ -44,7 +44,7 @@ export interface IPodcastDetail {
 }
 
 export interface IPodcastPaging {
-    episodes: IBlogDetail[];
+    episodes: IPodcastDetail[];
     total: number
 }
 
