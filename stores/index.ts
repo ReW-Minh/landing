@@ -142,6 +142,43 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
         visible: false
     },
 
+    // Josh
+    {
+        content: `Josh is a graduate of Indiana University of PA (BS + BA) and Shippensburg University (MBA) – but none of the degrees covered SQL, HTML, information system design, or communications plans - these were skills acquired in on-the-job training. Josh has dabbled in just about every Slate feature imaginable in his mission to help support schools and students in his time working in Slate and is always up for learning something new or finding a new innovative solution to a problem. Making Slate as user-friendly for all parties and with all integrated systems is one of his favorite challenges. He is eager to share what he knows, having presented at the national Slate Summit 3x, and serves on the PA Slate User Group Committee. Josh and his family live in wonderful south-central Pennsylvania.`,
+        id: 7,
+        name: "Josh Frankenfield",
+        order: 1,
+        picture: 'https://reworkflow.com/static/jf.jpg',
+        title: "Senior Slate Strategist",
+        contact: [
+            {
+                type: CONTACT_TYPE.LINKEDIN,
+                link: 'https://www.linkedin.com/in/joshua-frankenfield/'
+            },
+            {
+                type: CONTACT_TYPE.RESOURCE,
+                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3AJosh-frankenfield%7D+%7Btype%3Apage%7D'
+            },
+            {
+                type: CONTACT_TYPE.SLATE_COMMUNITY,
+                link: 'https://community.technolutions.net/member/5c22zsNxpPD'
+            },
+            {
+                type: CONTACT_TYPE.PRESENTATIONS_PUBLICATIONS,
+                link: ''
+            },
+            {
+                type: CONTACT_TYPE.GITHUB,
+                link: ''
+            },
+            {
+                type: CONTACT_TYPE.EMAIL,
+                link: 'jfrankenfield@reworkflow.com'
+            }
+        ],
+        visible: false
+    },
+
     // Kelly
     {
         content: `Is there anything more fulfilling than improving the lives of those around you? A passion of mine is helping others, whether it be volunteering in the community through programs like Big Brothers Big Sisters, chaperoning service trips around the globe, or using my professional Slate expertise to make better the work experiences of my colleagues and fellow Slate users. I have been in the world of Slate since 2013 when I was among the implementation team at The University of Scranton. From there I became Slate Captain in 2016 where I touched upon all aspects of Slate, working diligently to create an easy user experience for both prospective students as well as internal staff.  True to my passion, I have kept an active presence in the Slate Community forums and was selected by Technolutions as an inaugural Slate Community Ambassador in 2021.  I also co-moderate both the PA Slate Users Group (since 2014) and the national Slate Slack Users Group (since 2021).  I currently work full-time as a Slate Captain for Lynn University.
@@ -229,40 +266,6 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
             {
                 type: CONTACT_TYPE.EMAIL,
                 link: 'amanning@reworkflow.com '
-            }
-        ],
-        visible: false
-    },
-
-    // Isaac
-    {
-        content: `My name is Isaac Best and I am a Slate Specialist here at ReWorkflow. My background is in the world of IT and computer repair; after tinkering with computers and servers from childhood and providing friends and family with informal support, I eventually owned and ran a computer repair & support business for several years, gaining valuable customer service and troubleshooting skills in the process. I transitioned to Slate in the spring of 2023 and have been working with it since then. To date, I have the most experience in the areas of Cycle Prep, custom PDFs, the Reader/Workflows, Reports, and of course good ol' queries but I regularly assist clients with whatever Slate needs they bring to us.
-    
-                I am currently pursuing a Master's degree in theology. In my spare time, I love reading theology, history, and fiction and am a frequent contributor to the <a href="https://www.openstreetmap.org" rel="noopener noreferrer" target="_blank">OpenStreetMap project</a>. I also enjoy the occasional round of the <a href="https://www.openra.net/" rel="noopener noreferrer" target="_blank">OpenRA clone of C&amp;C Red Alert</a> with friends.`,
-        id: 7,
-        name: "Isaac Best",
-        picture: 'https://live.staticflickr.com/65535/53939365968_85e282db4f.jpg',
-        title: "Slate Specialist",
-        contact: [
-            {
-                type: CONTACT_TYPE.LINKEDIN,
-                link: ''
-            },
-            {
-                type: CONTACT_TYPE.RESOURCE,
-                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3Aisaac-best%7D+%7Btype%3Apage%7D'
-            },
-            {
-                type: CONTACT_TYPE.SLATE_COMMUNITY,
-                link: 'https://community.technolutions.net/member/fR4dCoPQr7'
-            },
-            {
-                type: CONTACT_TYPE.PRESENTATIONS_PUBLICATIONS,
-                link: ''
-            },
-            {
-                type: CONTACT_TYPE.EMAIL,
-                link: 'ibest@reworkflow.com'
             }
         ],
         visible: false
