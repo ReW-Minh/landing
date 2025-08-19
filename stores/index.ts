@@ -117,6 +117,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
         name: "TJ Backofen",
         picture: 'https://reworkflow.com/static/tj.jpg',
         title: "Director of Custom Solutions",
+        cert: 'https://reworkflow.com/static/slate_certified.png',
         contact: [
             {
                 type: CONTACT_TYPE.LINKEDIN,
@@ -124,7 +125,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
             },
             {
                 type: CONTACT_TYPE.RESOURCE,
-                link: ''
+                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3Atj-backofen%7D+%7Btype%3Apage%7D'
             },
             {
                 type: CONTACT_TYPE.SLATE_COMMUNITY,
@@ -161,7 +162,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
             },
             {
                 type: CONTACT_TYPE.SLATE_COMMUNITY,
-                link: 'https://community.technolutions.net/member/5c22zsNxpPD'
+                link: 'https://community.technolutions.net/member/5c22zsNxpP'
             },
             {
                 type: CONTACT_TYPE.PRESENTATIONS_PUBLICATIONS,
