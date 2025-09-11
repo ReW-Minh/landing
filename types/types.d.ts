@@ -1,4 +1,4 @@
-import type { CONTACT_TYPE } from '~/utils/constant';
+import { type CONTACT_TYPE, PROFILE_GROUP } from '~/utils/constant';
 
 export interface IBaseResponse<T> {
     data: T;
@@ -18,7 +18,8 @@ export interface IProfile {
     picture: string;
     title: string;
     visible: boolean;
-    contact: IProfileContact[]
+    contact: IProfileContact[],
+    group: PROFILE_GROUP
 }
 
 export interface IAdminAuth {

@@ -80,3 +80,9 @@ export const ACTION = {
 export const PODCAST_EP_PAGE_LIMIT = 8
 
 export const BLOG_PAGE_LIMIT = 10
+
+export enum PROFILE_GROUP {
+    CLIENT_SERVICES = 'Client Services',
+    CUSTOM_SOLUTIONS = 'Custom Solutions',
+    LEADERSHIP = 'Leadership & Operations'
+}

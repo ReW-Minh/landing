@@ -1,17 +1,20 @@
 <template>
-  <Card class="bio-card w-full h-full overflow-hidden relative" :class="{ 'card-clickable': hoverEffect }">
-    <template #header v-if="withImage">
-      <div class="w-full overflow-hidden" :class="imageHeight">
-        <slot name="image"/>
-      </div>
-    </template>
-    <template #title>
-      <slot name="title"/>
-    </template>
-    <template #subtitle>
-      <slot name="subtitle"/>
-    </template>
-  </Card>
+  <div class="relative">
+    <Card class="bio-card w-full h-full overflow-hidden relative" :class="{ 'card-clickable': hoverEffect }">
+      <template #header v-if="withImage">
+        <div class="w-full overflow-hidden" :class="imageHeight">
+          <slot name="image"/>
+        </div>
+      </template>
+      <template #title>
+        <slot name="title"/>
+      </template>
+      <template #subtitle>
+        <slot name="subtitle"/>
+      </template>
+    </Card>
+    <slot name="cert"></slot>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -83,7 +86,6 @@ const imageHeight = computed(() => {
     transition: all ease-in-out .2s;
 
     &:hover {
-      transform: translateY(-5px);
       box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 
       .bio-picture {

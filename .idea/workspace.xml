@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.sourcegraph/cody_settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.sourcegraph/cody_settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Admin/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Admin/Sidebar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Base/CardItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Base/CardItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Team/Bio.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Team/Bio.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about/team.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about/team.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stores/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/stores/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/types.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/constant.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/constant.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +70,7 @@
     &quot;RunOnceActivity.CodyProjectSettingsMigration&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.DeprecatedChatLlmMigration&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ToggleCodyToolWindowAfterMigration&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -130,7 +137,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-WS-251.25410.117" />
+        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-WS-252.25557.126" />
       </set>
     </attachedChunks>
   </component>
@@ -243,6 +250,17 @@
       <workItem from="1748232459723" duration="434000" />
       <workItem from="1748928371591" duration="187000" />
       <workItem from="1749049570657" duration="513000" />
+      <workItem from="1749106037587" duration="108000" />
+      <workItem from="1755580356015" duration="124000" />
+      <workItem from="1755583654898" duration="6000" />
+      <workItem from="1755704273016" duration="3343000" />
+      <workItem from="1755707654150" duration="44000" />
+      <workItem from="1756475025535" duration="135000" />
+      <workItem from="1756653418764" duration="55000" />
+      <workItem from="1756870562900" duration="8000" />
+      <workItem from="1757036812573" duration="4000" />
+      <workItem from="1757481115619" duration="254000" />
+      <workItem from="1757481649540" duration="59000" />
     </task>
     <servers />
   </component>
