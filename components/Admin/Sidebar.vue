@@ -27,7 +27,7 @@
 <script setup lang="ts">
 const items = ref([
   { label: 'Podcast', icon: 'pi pi-microphone', route: '/admin/podcast' },
-  { label: 'ReViews', icon: 'pi pi-pen-to-square', route: '/admin/reviews' },
+  // { label: 'ReViews', icon: 'pi pi-pen-to-square', route: '/admin/reviews' },
 ])
 
 const handleLogout = () => {

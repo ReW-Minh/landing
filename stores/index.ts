@@ -180,10 +180,40 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
         group: PROFILE_GROUP.CLIENT_SERVICES
     },
 
+    // Alice
+    {
+        content: `Alice Byrd is a two-time graduate of Gardner-Webb University with a BA in Communication Studies and an MBA. Alice has a variety of experience in Slate administration, implementation, and auditing. She enjoys working with clients to teach them about all of the great things that Slate can do and takes pride in helping teams find creative, efficient solutions. She and her family live in the beautiful mountains of Asheville, North Carolina.`,
+        id: 6,
+        name: "Alice Byrd",
+        order: 1,
+        picture: 'https://reworkflow.com/static/amanning.jpg',
+        title: "Slate Strategist",
+        contact: [
+            {
+                type: CONTACT_TYPE.LINKEDIN,
+                link: 'https://www.linkedin.com/in/alice-manning-mba-2b366b135/'
+            },
+            {
+                type: CONTACT_TYPE.RESOURCE,
+                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3AAlice-Bryd%7D+%7Btype%3Apage%7D'
+            },
+            {
+                type: CONTACT_TYPE.SLATE_COMMUNITY,
+                link: 'https://community.technolutions.net/member/SW8YKG8StE'
+            },
+            {
+                type: CONTACT_TYPE.EMAIL,
+                link: 'abyrd@reworkflow.com '
+            }
+        ],
+        visible: false,
+        group: PROFILE_GROUP.CLIENT_SERVICES
+    },
+
     // Josh
     {
         content: `Josh is a graduate of Indiana University of PA (BS + BA) and Shippensburg University (MBA) – but none of the degrees covered SQL, HTML, information system design, or communications plans - these were skills acquired in on-the-job training. Josh has dabbled in just about every Slate feature imaginable in his mission to help support schools and students in his time working in Slate and is always up for learning something new or finding a new innovative solution to a problem. Making Slate as user-friendly for all parties and with all integrated systems is one of his favorite challenges. He is eager to share what he knows, having presented at the national Slate Summit 3x, and serves on the PA Slate User Group Committee. Josh and his family live in wonderful south-central Pennsylvania.`,
-        id: 6,
+        id: 7,
         name: "Josh Frankenfield",
         order: 1,
         picture: 'https://reworkflow.com/static/jf.jpg',
@@ -212,36 +242,6 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
             {
                 type: CONTACT_TYPE.EMAIL,
                 link: 'jfrankenfield@reworkflow.com'
-            }
-        ],
-        visible: false,
-        group: PROFILE_GROUP.CLIENT_SERVICES
-    },
-
-    // Alice
-    {
-        content: `Alice Byrd is a two-time graduate of Gardner-Webb University with a BA in Communication Studies and an MBA. Alice has a variety of experience in Slate administration, implementation, and auditing. She enjoys working with clients to teach them about all of the great things that Slate can do and takes pride in helping teams find creative, efficient solutions. She and her family live in the beautiful mountains of Asheville, North Carolina.`,
-        id: 7,
-        name: "Alice Byrd",
-        order: 1,
-        picture: 'https://reworkflow.com/static/amanning.jpg',
-        title: "Slate Strategist",
-        contact: [
-            {
-                type: CONTACT_TYPE.LINKEDIN,
-                link: 'https://www.linkedin.com/in/alice-manning-mba-2b366b135/'
-            },
-            {
-                type: CONTACT_TYPE.RESOURCE,
-                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3AAlice-Bryd%7D+%7Btype%3Apage%7D'
-            },
-            {
-                type: CONTACT_TYPE.SLATE_COMMUNITY,
-                link: 'https://community.technolutions.net/member/SW8YKG8StE'
-            },
-            {
-                type: CONTACT_TYPE.EMAIL,
-                link: 'abyrd@reworkflow.com '
             }
         ],
         visible: false,

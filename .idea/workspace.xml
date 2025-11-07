@@ -5,19 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/Team/Layout.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Team/LayoutUpdated.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Admin/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Admin/Sidebar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Base/CardItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Base/CardItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Team/Bio.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Team/Bio.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/about/team.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about/team.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stores/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/stores/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/types.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/constant.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/constant.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +97,7 @@
       <recent name="$PROJECT_DIR$/components" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.generate">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -129,15 +124,15 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.generate" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.generate" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-WS-252.25557.126" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.27397.92" />
       </set>
     </attachedChunks>
   </component>
@@ -261,6 +256,7 @@
       <workItem from="1757036812573" duration="4000" />
       <workItem from="1757481115619" duration="254000" />
       <workItem from="1757481649540" duration="59000" />
+      <workItem from="1762526560640" duration="1578000" />
     </task>
     <servers />
   </component>
