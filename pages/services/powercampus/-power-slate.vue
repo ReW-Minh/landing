@@ -4,7 +4,7 @@
             class="bg-logo !top-1/2 !left-1/2 !transform -translate-x-1/2 !-translate-y-1/2 invisible md:visible mt-[150px] !opacity-5">
 
         <BasePageContent>
-            <NuxtLink to="/services/powercampus"
+            <NuxtLink to="/services/powercampus/-index"
                 class="mb-3 inline-flex items-center pe-1 rounded-lg border border-transparent hover:border-black transition-all">
                 <i class="pi pi-angle-left"></i>
                 PowerCampus

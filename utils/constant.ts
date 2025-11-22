@@ -19,20 +19,7 @@ export enum CONTACT_TYPE {
 export const NAVIGATION_MENU = [
     {
         label: 'Services',
-        items: [
-            {
-                label: 'Slate',
-                route: '/services/slate'
-            },
-            {
-                label: 'PowerCampus',
-                route: '/services/powercampus'
-            },
-            {
-                label: 'Dynamic Forms',
-                route: '/services/dynamic-forms'
-            }
-        ]
+        route: '/services'
     },
     {
         label: 'Pricing',

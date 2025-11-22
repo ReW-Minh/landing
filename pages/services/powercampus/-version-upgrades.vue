@@ -1,10 +1,10 @@
 <template>
     <BasePageContainer>
         <img src="/img/logo-bg.svg" alt="rew"
-            class="bg-logo !top-1/2 !left-1/2 !transform -translate-x-1/2 !-translate-y-1/2 invisible md:visible mt-[150px] !opacity-5">
+            class="bg-logo !top-1/2 !left-1/2 !transform -translate-x-1/2 !-translate-y-1/2 invisible md:visible mt-[150px]">
 
         <BasePageContent>
-            <NuxtLink to="/services/powercampus"
+            <NuxtLink to="/services/powercampus/-index"
                 class="mb-3 inline-flex items-center pe-1 rounded-lg border border-transparent hover:border-black transition-all">
                 <i class="pi pi-angle-left"></i>
                 PowerCampus
@@ -12,31 +12,20 @@
         </BasePageContent>
 
         <BasePageHeader>
-            PowerFAIDS
+            PowerCampus Version Upgrades
+
+            <template #subtitle>
+                Finding it challenging to keep up with PowerCampus and Self-Service upgrades? Consider our comprehensive
+                upgrade services and tailored consulting services.
+            </template>
         </BasePageHeader>
 
         <BasePageContent>
-            <section class="space-y-8 text-lg rew-text-brown">
-                <div>
-                    For schools using <span class="font-bold rew-text-green">PowerCampus</span> + <span
-                        class="font-bold rew-text-brown-secondary">PowerFAIDS</span>, we offer a one-way, add-on
-                    integration that transmits financial aid information from <span
-                        class="font-bold rew-text-brown-secondary">PowerFAIDS</span> to
-                    <span class="font-bold slate-text-blue">Slate</span>:
-                </div>
-                <ul class="italic list-inside list-checkmark">
-                    <li>Checklist (missing docs) to keep your applicants informed</li>
-                    <li>Packaging Status to keep your counselors informed</li>
-                    <li>Awards to keep your counselors informed</li>
-                </ul>
-            </section>
-
             <section>
                 <div class="mb-3 text-3xl font-semibold rew-text-brown text-center">
                     <span class="rew-text-brown">Flexible, transparent pricing for every</span> <span
                         class="rew-text-green">PowerCampus School</span>
                 </div>
-
                 <div class=" grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div v-for="item in pricings" :key="item.id">
                         <BaseCardItem :hoverEffect="false" class="resource-card !cursor-default !bg-white/30 !backdrop-blur-sm">
@@ -64,14 +53,18 @@
 
 <script setup lang="ts">
 useHead({
-    title: 'ReWorkflow - PowerFAIDS',
+    title: 'ReWorkflow - PowerCampus Version Upgrades',
+})
+
+definePageMeta({
+    hideCTA: true,
 })
 
 const pricings = [
     {
-        title: 'PowerFAIDs Integration',
-        range: '$2000',
-        content: 'Cost can vary depending on customizations, current version, and target version.',
+        title: 'Comprehensive Upgrade',
+        range: '$8,000 - $12,000',
+        content: 'Cost can vary depending on customizations, current version, and target version.'
     },
     {
         title: 'PowerCampus Consulting',
