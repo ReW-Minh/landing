@@ -74,44 +74,6 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
         group: PROFILE_GROUP.LEADERSHIP
     },
 
-    // Peter
-    {
-        content: `Although I can't say I had a childhood dream of becoming a higher education technology consultant, I first met Slate back in 2014 and I was hooked.
-    
-                After implementing Slate at Lewis & Clark College, I joined the staff of Technolutions where I spent 6 years learning about Slate and helping clients find the resources they needed to be succesful. In addition to overseeing Support staff as the Assistant Director of Support, I was active in Community Conservations, Slate Labs, Launchpad, and resource creation for implementations through Cycle Prep. I directly supported dozens of Slate implementations, responded to over 2,500 Support Desk requests and even wrote a Dr Seuss-inspired ode to CJs called “Oh the Joins You Will Join!”
-    
-                My home base is Portland, Oregon although our family prioritizes travel. We were fortunate enough to spend an incredible year living in Italy and traveling the world, visiting 12 countries in 12 months! Suggestions for our next travel destination welcomed at <a href="mailto:pmckay@reworkflow.com" target="_blank">pmckay@reworkflow.com<a/>!`,
-        id: 3,
-        name: "Peter McKay",
-        picture: 'https://live.staticflickr.com/65535/53938209747_2eaf3dced3.jpg',
-        title: "Director of Client Support",
-        cert: 'https://reworkflow.com/static/slate_certified.png',
-        contact: [
-            {
-                type: CONTACT_TYPE.LINKEDIN,
-                link: 'https://www.linkedin.com/in/peter-mckay-a6083217/'
-            },
-            {
-                type: CONTACT_TYPE.RESOURCE,
-                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3Apeter-mckay%7D+%7Btype%3Apage%7D'
-            },
-            {
-                type: CONTACT_TYPE.SLATE_COMMUNITY,
-                link: 'https://community.technolutions.net/member/kFAC0J3piL'
-            },
-            {
-                type: CONTACT_TYPE.PRESENTATIONS_PUBLICATIONS,
-                link: ''
-            },
-            {
-                type: CONTACT_TYPE.EMAIL,
-                link: 'pmckay@reworkflow.com'
-            }
-        ],
-        visible: false,
-        group: PROFILE_GROUP.CLIENT_SERVICES
-    },
-
     // TJ
     {
         content: `With over 13 years of experience in technical and leadership roles, I specialize in data analytics, student information systems, and strategic enrollment management within higher education. I’ve worked with institutions of all sizes and stages—from Tier 1 research universities and Ivy League campuses to schools just getting off the ground—and discovered that while challenges often look different on the surface, the core solutions are remarkably consistent. I bring a proven track record of using data to drive enrollment strategies, improve operational efficiency, and support institutional goals. With an agile, results-oriented approach, I effectively balance long-term strategic initiatives with day-to-day operations and team leadership, consistently delivering outcomes through cross-functional collaboration.
@@ -148,12 +110,42 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
         group: PROFILE_GROUP.CUSTOM_SOLUTIONS
     },
 
+    // Alice
+    {
+        content: `Alice Byrd is a two-time graduate of Gardner-Webb University with a BA in Communication Studies and an MBA. Alice has a variety of experience in Slate administration, implementation, and auditing. She enjoys working with clients to teach them about all of the great things that Slate can do and takes pride in helping teams find creative, efficient solutions. She and her family live in the beautiful mountains of Asheville, North Carolina.`,
+        id: 5,
+        name: "Alice Byrd",
+        order: 1,
+        picture: 'https://reworkflow.com/static/amanning.jpg',
+        title: "Senior Slate Strategist",
+        contact: [
+            {
+                type: CONTACT_TYPE.LINKEDIN,
+                link: 'https://www.linkedin.com/in/alice-manning-mba-2b366b135/'
+            },
+            {
+                type: CONTACT_TYPE.RESOURCE,
+                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3AAlice-Bryd%7D+%7Btype%3Apage%7D'
+            },
+            {
+                type: CONTACT_TYPE.SLATE_COMMUNITY,
+                link: 'https://community.technolutions.net/member/SW8YKG8StE'
+            },
+            {
+                type: CONTACT_TYPE.EMAIL,
+                link: 'abyrd@reworkflow.com '
+            }
+        ],
+        visible: false,
+        group: PROFILE_GROUP.CLIENT_SERVICES
+    },
+
     // Kelly
     {
         content: `Is there anything more fulfilling than improving the lives of those around you? A passion of mine is helping others, whether it be volunteering in the community through programs like Big Brothers Big Sisters, chaperoning service trips around the globe, or using my professional Slate expertise to make better the work experiences of my colleagues and fellow Slate users. I have been in the world of Slate since 2013 when I was among the implementation team at The University of Scranton. From there I became Slate Captain in 2016 where I touched upon all aspects of Slate, working diligently to create an easy user experience for both prospective students as well as internal staff.  True to my passion, I have kept an active presence in the Slate Community forums and was selected by Technolutions as an inaugural Slate Community Ambassador in 2021.  I also co-moderate both the PA Slate Users Group (since 2014) and the national Slate Slack Users Group (since 2021).  I currently work full-time as a Slate Captain for Lynn University.
 
                  My husband and I live in beautiful Northeastern Pennsylvania with our spunky German Shepherd, Nala. We enjoy the great outdoors, recreational sports, and all manner of travel and exploration. We are also open to adventure suggestions so feel free to pass them my way!`,
-        id: 5,
+        id: 6,
         name: "Kelly Connor Lewis",
         picture: 'https://reworkflow.com/static/klewis.jpg',
         title: "Senior Slate Strategist",
@@ -175,36 +167,6 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                 type: CONTACT_TYPE.EMAIL,
                 link: 'klewis@reworkflow.com'
             },
-        ],
-        visible: false,
-        group: PROFILE_GROUP.CLIENT_SERVICES
-    },
-
-    // Alice
-    {
-        content: `Alice Byrd is a two-time graduate of Gardner-Webb University with a BA in Communication Studies and an MBA. Alice has a variety of experience in Slate administration, implementation, and auditing. She enjoys working with clients to teach them about all of the great things that Slate can do and takes pride in helping teams find creative, efficient solutions. She and her family live in the beautiful mountains of Asheville, North Carolina.`,
-        id: 6,
-        name: "Alice Byrd",
-        order: 1,
-        picture: 'https://reworkflow.com/static/amanning.jpg',
-        title: "Slate Strategist",
-        contact: [
-            {
-                type: CONTACT_TYPE.LINKEDIN,
-                link: 'https://www.linkedin.com/in/alice-manning-mba-2b366b135/'
-            },
-            {
-                type: CONTACT_TYPE.RESOURCE,
-                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3AAlice-Bryd%7D+%7Btype%3Apage%7D'
-            },
-            {
-                type: CONTACT_TYPE.SLATE_COMMUNITY,
-                link: 'https://community.technolutions.net/member/SW8YKG8StE'
-            },
-            {
-                type: CONTACT_TYPE.EMAIL,
-                link: 'abyrd@reworkflow.com '
-            }
         ],
         visible: false,
         group: PROFILE_GROUP.CLIENT_SERVICES

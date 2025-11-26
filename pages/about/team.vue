@@ -12,8 +12,7 @@
     </BasePageHeader>
 
     <BasePageContent maxWidth="">
-      <TeamLayoutUpdated v-if="showNew" />
-      <TeamLayout v-else />
+      <TeamLayoutUpdated />
     </BasePageContent>
   </BasePageContainer>
 </template>
@@ -22,8 +21,6 @@
 useHead({
   title: 'ReWorkflow - Our Team'
 })
-
-const showNew = Date.now() >= Date.UTC(2025, 10, 8, 4 - 7)
 </script>
 
 <style lang="scss" scoped>
