@@ -24,7 +24,7 @@
             </div>
 
             <div class=" mt-4 md:mt-6 lg:mt-10">
-              <CallToAction label="Slate Services" link="/services/slate" size="lg" :internal="true"/>
+              <CallToAction label="Slate Services" link="/services" size="lg" :internal="true"/>
             </div>
           </div>
         </div>

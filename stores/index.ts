@@ -82,7 +82,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
         id: 4,
         name: "TJ Backofen",
         picture: 'https://reworkflow.com/static/tj.jpg',
-        title: "Director of Custom Solutions",
+        title: "Executive Director",
         cert: 'https://reworkflow.com/static/slate_certified.png',
         contact: [
             {
@@ -133,7 +133,39 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
             },
             {
                 type: CONTACT_TYPE.EMAIL,
-                link: 'abyrd@reworkflow.com '
+                link: 'abyrd@reworkflow.com'
+            }
+        ],
+        visible: false,
+        group: PROFILE_GROUP.CLIENT_SERVICES
+    },
+
+    // Ryan
+    {
+        content: `Like many in the world of Higher Ed, I fell into my first admissions job doing traditional front-facing work with students (I do not miss lunchroom visits or circular tables at college fairs). During the fall of 2013 while serving in one of these roles, I was introduced to a wonderful CRM platform called Slate by Technolutions. Over the course of my career, I've transitioned from being a "power user" within the system to most recently serving in various Director-level roles for a variety of institutions. I've had the privilege of supervising amazing teams responsible for the management of software systems (including several campuses with multi-instances of Slate), database integrations, and overall technical operations designed to streamline and optimize admission and enrollment functions across Enrollment Management. I'm very involved in the Slate community, whether it's serving as a User Group Leader or presenting as part of the Slate Summit experience. As a first-generation college student raised in a single-parent, low-income household in the foothills of Appalachia, I have a strong commitment to leveraging technology to improve the overall student experience, ensuring access to education, and enhancing student outcomes.
+        
+        I earned my Bachelor's degree from Miami University, and I later attended the University of Louisiana at Monroe (without visiting or ever stepping foot in Louisiana prior!) for grad school earning my MBA. I enjoy outdoor adventures, live music and festivals, exploring bourbon distilleries (and sharing recommendations), listening to podcasts, and indulging in movie-quote conversations. I live in Ohio with my wife, Rachel, and two children (6 and 2)`,
+        id: 6,
+        name: "Ryan Chapman",
+        order: 1,
+        picture: 'https://reworkflow.com/static/rchapman.jpg',
+        title: "Senior Slate Strategist",
+        contact: [
+            {
+                type: CONTACT_TYPE.LINKEDIN,
+                link: 'https://www.linkedin.com/in/ryrichapman/'
+            },
+            {
+                type: CONTACT_TYPE.RESOURCE,
+                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3Aryan-chapman%7D+%7Btype%3Apage%7D'
+            },
+            {
+                type: CONTACT_TYPE.SLATE_COMMUNITY,
+                link: 'https://community.technolutions.net/member/iC6d1W1t0J'
+            },
+            {
+                type: CONTACT_TYPE.EMAIL,
+                link: 'rchapman@reworkflow.com'
             }
         ],
         visible: false,
@@ -145,7 +177,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
         content: `Is there anything more fulfilling than improving the lives of those around you? A passion of mine is helping others, whether it be volunteering in the community through programs like Big Brothers Big Sisters, chaperoning service trips around the globe, or using my professional Slate expertise to make better the work experiences of my colleagues and fellow Slate users. I have been in the world of Slate since 2013 when I was among the implementation team at The University of Scranton. From there I became Slate Captain in 2016 where I touched upon all aspects of Slate, working diligently to create an easy user experience for both prospective students as well as internal staff.  True to my passion, I have kept an active presence in the Slate Community forums and was selected by Technolutions as an inaugural Slate Community Ambassador in 2021.  I also co-moderate both the PA Slate Users Group (since 2014) and the national Slate Slack Users Group (since 2021).  I currently work full-time as a Slate Captain for Lynn University.
 
                  My husband and I live in beautiful Northeastern Pennsylvania with our spunky German Shepherd, Nala. We enjoy the great outdoors, recreational sports, and all manner of travel and exploration. We are also open to adventure suggestions so feel free to pass them my way!`,
-        id: 6,
+        id: 7,
         name: "Kelly Connor Lewis",
         picture: 'https://reworkflow.com/static/klewis.jpg',
         title: "Senior Slate Strategist",
@@ -175,7 +207,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
     // Josh
     {
         content: `Josh is a graduate of Indiana University of PA (BS + BA) and Shippensburg University (MBA) – but none of the degrees covered SQL, HTML, information system design, or communications plans - these were skills acquired in on-the-job training. Josh has dabbled in just about every Slate feature imaginable in his mission to help support schools and students in his time working in Slate and is always up for learning something new or finding a new innovative solution to a problem. Making Slate as user-friendly for all parties and with all integrated systems is one of his favorite challenges. He is eager to share what he knows, having presented at the national Slate Summit 3x, and serves on the PA Slate User Group Committee. Josh and his family live in wonderful south-central Pennsylvania.`,
-        id: 7,
+        id: 8,
         name: "Josh Frankenfield",
         order: 1,
         picture: 'https://reworkflow.com/static/jf.jpg',
@@ -217,10 +249,10 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                   Before joining ReWorkflow, Bailey served as CRM Manager for the Graduate School at Texas A&M University, where he led initiatives to streamline data, communications, and application workflows. He began his career at Valdosta State University, supporting admissions and student success as the IT liaison for enrollment management.
 
                   Since first working in Slate in 2021, Bailey has focused on bridging the gap between technical solutions and enrollment strategy. At ReWorkflow, he is excited to apply this expertise to support partner institutions and advance innovative CRM solutions across the higher education community.`,
-        id: 8,
+        id: 9,
         name: "Bailey Raffield",
         picture: 'https://reworkflow.com/static/braffield.jpg',
-        title: "Custom Solutions Analyst",
+        title: "Slate Developer",
         contact: [
             {
                 type: CONTACT_TYPE.LINKEDIN,
@@ -250,7 +282,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                 In 2016, I got the chance to work with Slate, a truly fantastic product. I wrote and maintain an open-source, RESTful integration between Slate and PowerCampus used by at least five institutions. I have extensive experience other areas as well, including Dynamic Forms by NG Web Solutions (a terrific, little-known product), Campus Café (SIS), PowerFAIDS, AMAG Symmetry access control, Azure, VMWare, ShoreTel, etc. Your IT department will like working with ReWorkflow because we understand the demands on their time.
     
                 In our spare time, my wife and I are building a Carpenter Gothic/Victorian cottage and running a restaurant and cabaret for our children, cats, chickens, etc.`,
-        id: 9,
+        id: 10,
         name: "Wyatt Best",
         order: 1,
         picture: 'https://live.staticflickr.com/65535/53939365973_8b39036dfb.jpg',
@@ -290,7 +322,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
         content: `I'm a JavaScript/TypeScript software engineer with a passion for building clean, efficient, and scalable applications. Whether working on frontend interfaces or backend systems, I enjoy solving complex problems with elegant code and staying on top of the latest in web technologies. I’m always tinkering—whether it's optimizing a workflow, learning a new framework, or diving into side projects that blend creativity and code.
 
                   Outside of work, I’m a husband and proud dad to a curious and energetic daughter. My free time is usually spent behind a camera, building elaborate Lego creations, or geeking out over the latest in tech gear. I love projects that merge tech with play, and I’m always up for a deep dive into anything that sparks curiosity.`,
-        id: 10,
+        id: 11,
         name: "Minh Ha",
         picture: 'https://reworkflow.com/static/mha.jpg',
         title: "Software Engineer",
@@ -302,6 +334,31 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
             {
                 type: CONTACT_TYPE.EMAIL,
                 link: 'mha@reworkflow.com'
+            }
+        ],
+        visible: false,
+        group: PROFILE_GROUP.CUSTOM_SOLUTIONS
+    },
+
+    // Nhu
+    {
+        content: `I am Nhu, a multilingual researcher with over eight years of experience across media production, translation, and content development. My academic background includes an MA in Critical Theory & Cultural Studies from the University of Nottingham in UK, and a BA in Comparative Social & Cultural Studies from Ritsumeikan APU in Japan.
+
+                  After taking time away from my career, I’ve come back with a stronger appreciation for resilience and openness — to opportunities, to advice, and to growth. Although my background is in journalism and translation, but what really drives me now is the chance to learn, and contribute in new ways. At ReWorkflow, I’m excited to bring this mindset into my work, supporting projects with care, adaptability, and a collaborative spirit.
+                  
+                  Outside of work, I am a proud dog mom, a book lover, and an enthusiastic traveler. My other hobbies include doing aerial sports and baking up sweet goods for people around me.`,
+        id: 12,
+        name: "Nhu Nguyen",
+        picture: 'https://reworkflow.com/static/nnguyen.jpg',
+        title: "Admission Operations Specialist",
+        contact: [
+            {
+                type: CONTACT_TYPE.LINKEDIN,
+                link: 'https://www.linkedin.com/in/quynh-nhu-nguyen-ngoc-748b10369/'
+            },
+            {
+                type: CONTACT_TYPE.EMAIL,
+                link: 'nnguyen@reworkflow.com'
             }
         ],
         visible: false,

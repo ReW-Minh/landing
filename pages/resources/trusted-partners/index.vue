@@ -26,7 +26,7 @@
       <section>
         <div class="grid grid-cols-1 md:grid-cols-6 gap-5 md:gap-10">
           <div v-for="item in partners"
-               class="border rounded-xl bg-white/30 backdrop-blur-sm shadow h-unset md:h-[330px] col-span-6 md:col-span-2">
+               class="border rounded-2xl bg-white/30 backdrop-blur-sm shadow h-unset md:h-[330px] col-span-6 md:col-span-2">
             <div class="card !m-0 !p-6 text-center h-full flex flex-col items-center justify-between gap-6 md:gap-0">
               <div class="h-[90px] grid place-items-center">
                 <img :src="item.logo" :alt="item.content" class="mx-auto max-h-[90px] rounded">

@@ -87,13 +87,21 @@ header {
   }
 
   .p-menubar-submenu {
-    padding: 4px;
+    @apply rounded-xl p-2 mt-1;
+
+    .p-menubar-item {
+      .p-menubar-item-content {
+        @apply rounded-lg;
+      }
+    }
   }
 
   .p-menubar-item {
     font-weight: 700;
 
     .p-menubar-item-content {
+      @apply rounded-xl;
+
       .p-menubar-item-link {
         gap: 0;
       }

@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <Card class="bio-card w-full h-full overflow-hidden relative" :class="{ 'card-clickable': hoverEffect }">
+    <Card class="bio-card rounded-2xl w-full h-full overflow-hidden relative" :class="{ 'card-clickable': hoverEffect }">
       <template #header v-if="withImage">
         <div class="w-full overflow-hidden" :class="imageHeight">
           <slot name="image"/>
