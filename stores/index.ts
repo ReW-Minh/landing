@@ -35,8 +35,8 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                 link: 'jrowand@reworkflow.com'
             }
         ],
-        visible: false,
-        group: PROFILE_GROUP.LEADERSHIP
+        group: PROFILE_GROUP.LEADERSHIP,
+        clickUp: true
     },
 
     // Binh
@@ -70,7 +70,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                 link: 'browand@reworkflow.com'
             }
         ],
-        visible: false,
+        clickUp: true,
         group: PROFILE_GROUP.LEADERSHIP
     },
 
@@ -106,7 +106,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                 link: 'tbackofen@reworkflow.com'
             }
         ],
-        visible: false,
+        clickUp: true,
         group: PROFILE_GROUP.CUSTOM_SOLUTIONS
     },
 
@@ -136,7 +136,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                 link: 'abyrd@reworkflow.com'
             }
         ],
-        visible: false,
+        clickUp: true,
         group: PROFILE_GROUP.CLIENT_SERVICES
     },
 
@@ -168,7 +168,6 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                 link: 'rchapman@reworkflow.com'
             }
         ],
-        visible: false,
         group: PROFILE_GROUP.CLIENT_SERVICES
     },
 
@@ -200,7 +199,6 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                 link: 'klewis@reworkflow.com'
             },
         ],
-        visible: false,
         group: PROFILE_GROUP.CLIENT_SERVICES
     },
 
@@ -238,7 +236,6 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                 link: 'jfrankenfield@reworkflow.com'
             }
         ],
-        visible: false,
         group: PROFILE_GROUP.CLIENT_SERVICES
     },
 
@@ -271,7 +268,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                 link: 'braffield@reworkflow.com'
             }
         ],
-        visible: false,
+        clickUp: true,
         group: PROFILE_GROUP.CUSTOM_SOLUTIONS
     },
 
@@ -313,7 +310,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                 link: 'wbest@reworkflow.com'
             }
         ],
-        visible: false,
+        clickUp: true,
         group: PROFILE_GROUP.CUSTOM_SOLUTIONS
     },
 
@@ -336,7 +333,6 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                 link: 'mha@reworkflow.com'
             }
         ],
-        visible: false,
         group: PROFILE_GROUP.CUSTOM_SOLUTIONS
     },
 
@@ -361,7 +357,6 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                 link: 'nnguyen@reworkflow.com'
             }
         ],
-        visible: false,
         group: PROFILE_GROUP.CUSTOM_SOLUTIONS
     },
 ])

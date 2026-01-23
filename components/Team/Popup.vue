@@ -14,8 +14,11 @@
           {{ bio.title }}
         </div>
       </div>
-      <div class="md:ml-auto" v-if="bio.cert">
-        <img class="h-[170px] w-auto" :src="bio.cert" :alt="bio.title"/>
+      <div class="md:ml-auto flex items-center gap-4" v-if="bio.cert || bio.clickUp">
+        <img v-if="bio.cert" class="h-[100px] w-auto" :src="bio.cert" :alt="bio.title"/>
+        <template v-if="bio.clickUp">
+          <ClickUp width="100" height="100"/>
+        </template>
       </div>
       <button @click="visible = false" class="absolute -top-[22px] -right-[22px] p-6">
         <i class="pi pi-times"/>
@@ -46,6 +49,8 @@
 </template>
 
 <script setup>
+import ClickUp from '~/components/Icon/ClickUp.vue'
+
 defineProps(['bio'])
 
 const visible = defineModel()

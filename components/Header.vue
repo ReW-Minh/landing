@@ -87,7 +87,7 @@ header {
   }
 
   .p-menubar-submenu {
-    @apply rounded-xl p-2 mt-1;
+    @apply rounded-xl p-2 mt-0;
 
     .p-menubar-item {
       .p-menubar-item-content {
