@@ -16,7 +16,7 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'ReWorkflow | About',
+  title: 'ReWorkflow - About',
   meta: [
     {
       name: 'description',
