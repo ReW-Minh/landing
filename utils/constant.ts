@@ -54,8 +54,14 @@ export const NAVIGATION_MENU = [
          route: '/reviews'
      },*/
     {
-        label: 'Our Team',
-        route: '/about/team'
+        label: 'About',
+        route: '/about',
+        items: [
+            {
+                label: 'Our Team',
+                route: '/about#team'
+            }
+        ]
     }
 ]
 
