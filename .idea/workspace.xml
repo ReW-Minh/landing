@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="feat: update teams certificate">
+    <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="feat: new abou page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/About/Mission.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/About/Mission.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/About/TeamSection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/About/TeamSection.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/About/Values.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/About/Values.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Services.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Services.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stores/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/stores/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/types.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +280,7 @@
       <workItem from="1769178071214" duration="2315000" />
       <workItem from="1769237517798" duration="202000" />
       <workItem from="1769276581800" duration="139000" />
-      <workItem from="1771227084635" duration="4442000" />
+      <workItem from="1771227084635" duration="4696000" />
     </task>
     <task id="LOCAL-00001" summary="feat: update team members">
       <option name="closed" value="true" />
@@ -329,7 +322,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769180376509</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: new abou page">
+      <option name="closed" value="true" />
+      <created>1771231618169</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1771231618169</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,6 +374,19 @@
     <MESSAGE value="feat: update services" />
     <MESSAGE value="feat: update teams" />
     <MESSAGE value="feat: update teams certificate" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update teams certificate" />
+    <MESSAGE value="feat: new abou page" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: new abou page" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/pages/about/index.vue</url>
+          <line>22</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

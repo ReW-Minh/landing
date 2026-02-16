@@ -14,7 +14,7 @@
 
     <div class="values-accordion" data-aos="fade-up" data-aos-delay="100">
       <div class="mx-2 lg:mx-0">
-        <Accordion :value="expandedValues" multiple>
+        <Accordion :value="expandedValues">
           <AccordionPanel
               v-for="value in values"
               :key="value.id"
@@ -89,7 +89,7 @@ const values: Value[] = [
   }
 ]
 
-const expandedValues = ref<string[]>(['grow'])
+const expandedValues = ref<string>('grow')
 </script>
 
 <style lang="scss" scoped>
