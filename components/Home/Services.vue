@@ -3,7 +3,7 @@
     <div class="max-w-[960px] mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
         <div v-for="item in slaterRoles" class="border rounded-2xl bg-white/30 backdrop-blur-sm shadow">
-          <div class="card !my-6 !mx-4">
+          <div class="card !m-6">
             <div class="card-title nowrap !text-left" v-html="item.title"></div>
             <div class="card-content !text-left" v-html="decorateText(item.content)"></div>
           </div>

@@ -168,7 +168,8 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                 link: 'rchapman@reworkflow.com'
             }
         ],
-        group: PROFILE_GROUP.CLIENT_SERVICES
+        group: PROFILE_GROUP.CLIENT_SERVICES,
+        cert: 'https://reworkflow.com/static/slate_certified.png',
     },
 
     // Kelly
@@ -269,6 +270,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
             }
         ],
         clickUp: true,
+        cert: 'https://reworkflow.com/static/slate_certified.png',
         group: PROFILE_GROUP.CUSTOM_SOLUTIONS
     },
 

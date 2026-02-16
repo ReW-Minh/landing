@@ -1,7 +1,11 @@
 <template>
   <div class="team-section">
     <BasePageHeader>
-      <h2 id="team-heading">Your ReWorkflow Team</h2>
+      <div class="flex items-baseline justify-center gap-2">
+        <span class="mr-0.5">Your</span>
+        <img src="/img/main-logo.svg" alt="ReWorkflow" width="231" height="30">
+        <span>Team</span>
+      </div>
     </BasePageHeader>
 
     <BasePageContent maxWidth="">
@@ -12,15 +16,3 @@
 
 <script setup lang="ts">
 </script>
-
-<style lang="scss" scoped>
-.team-section {
-  padding: 3rem 0;
-}
-
-@media (max-width: 767px) {
-  .team-section {
-    padding: 2rem 0;
-  }
-}
-</style>
