@@ -5,7 +5,7 @@
     </section>
 
     <section id="values" aria-labelledby="values-heading">
-      <div class="text-center py-12">Values section placeholder</div>
+      <AboutValues />
     </section>
 
     <section id="team" aria-labelledby="team-heading">
