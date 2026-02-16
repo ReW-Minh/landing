@@ -6,7 +6,10 @@
           <template v-for="item in NAVIGATION_MENU">
             <AccordionPanel v-if="item.items" :value="item.label">
               <AccordionHeader>
-                {{ item.label }}
+                <NuxtLink v-if="item.route" :to="item.route" @click="visible = false" class="accordion-parent-link">
+                  {{ item.label }}
+                </NuxtLink>
+                <span v-else>{{ item.label }}</span>
               </AccordionHeader>
               <AccordionContent>
                 <NuxtLink class="block" @click="visible = false" v-for="sub in item.items"
@@ -146,6 +149,15 @@ const visible = ref(false)
 
     &.router-link-active {
       color: var(--rew-primary-green);
+    }
+
+    .accordion-parent-link {
+      color: inherit;
+      text-decoration: none;
+
+      &.router-link-active {
+        color: var(--rew-primary-green);
+      }
     }
   }
 
