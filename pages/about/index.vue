@@ -1,7 +1,7 @@
 <template>
   <BasePageContainer>
     <section id="mission" aria-labelledby="mission-heading">
-      <div class="text-center py-12">Mission section placeholder</div>
+      <AboutMission />
     </section>
 
     <section id="values" aria-labelledby="values-heading">
