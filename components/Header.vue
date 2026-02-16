@@ -17,7 +17,12 @@
             aria-posinset="1" data-pc-section="item" data-p-active="false" data-p-focused="false">
             <template v-if="item.items">
               <div class="p-menubar-item-content" data-pc-section="itemcontent">
-                <a target="_blank" class="p-menubar-item-link" tabindex="-1" aria-hidden="true"
+                <NuxtLink v-if="item.route" :to="item.route" class="p-menubar-item-link" tabindex="-1"
+                  data-pc-section="itemlink">
+                  <span class="ml-2">{{ item.label }}</span>
+                  <span class="pi pi-fw pi-angle-down ml-2"></span>
+                </NuxtLink>
+                <a v-else class="p-menubar-item-link" tabindex="-1" aria-hidden="true"
                   data-pc-section="itemlink">
                   <span class="ml-2">{{ item.label }}</span>
                   <span class="pi pi-fw pi-angle-down ml-2"></span>
