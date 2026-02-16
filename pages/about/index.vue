@@ -9,7 +9,7 @@
     </section>
 
     <section id="team" aria-labelledby="team-heading">
-      <div class="text-center py-12">Team section placeholder</div>
+      <AboutTeamSection />
     </section>
   </BasePageContainer>
 </template>
