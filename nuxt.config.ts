@@ -70,6 +70,11 @@ export default defineNuxtConfig({
   routeRules: {
     '/admin': { redirect: '/admin/podcast' },
   },
+  router: {
+    options: {
+      scrollBehaviorType: 'smooth'
+    }
+  },
   aos: {
     once: true
   },
