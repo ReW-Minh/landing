@@ -17,7 +17,15 @@
             aria-posinset="1" data-pc-section="item" data-p-active="false" data-p-focused="false">
             <template v-if="item.items">
               <div class="p-menubar-item-content" data-pc-section="itemcontent">
-                <NuxtLink v-if="item.route" :to="item.route" class="p-menubar-item-link" tabindex="-1"
+                <NuxtLink
+                  v-if="item.route"
+                  :to="item.route"
+                  class="p-menubar-item-link"
+                  :class="{
+                    'about-parent-active': item.route === '/about' && hasActiveAboutSection(),
+                    'about-parent-inactive': item.route === '/about' && isAboutPage && !hasActiveAboutSection()
+                  }"
+                  tabindex="-1"
                   data-pc-section="itemlink">
                   <span class="ml-2">{{ item.label }}</span>
                   <span class="pi pi-fw pi-angle-down ml-2"></span>
@@ -33,7 +41,14 @@
                   aria-level="2" aria-setsize="2" aria-posinset="1" data-pc-section="item" data-p-active="false"
                   data-p-focused="false">
                   <div class="p-menubar-item-content" data-pc-section="itemcontent">
-                    <NuxtLink :to="sub.route" :target="sub.external ? '_blank' : '_self'" class="p-menubar-item-link new-tab-hover">
+                    <NuxtLink
+                      :to="sub.route"
+                      :target="sub.external ? '_blank' : '_self'"
+                      class="p-menubar-item-link new-tab-hover"
+                      :class="{
+                        'scroll-active': isAboutHashRoute(sub.route) && isAboutSubItemActive(sub.route),
+                        'scroll-inactive': isAboutHashRoute(sub.route) && isAboutPage && !isAboutSubItemActive(sub.route)
+                      }">
                       {{ sub.label }} <IconExternal v-if="sub.external" />
                     </NuxtLink>
                   </div>
@@ -60,6 +75,17 @@
 </template>
 
 <script setup lang="ts">
+const { isActiveSection, isAboutPage, hasActiveAboutSection } = useActiveSection()
+
+// Check if a submenu item should be highlighted based on scroll position
+function isAboutSubItemActive(route: string): boolean {
+  return isActiveSection(route)
+}
+
+// Check if a menu item is an about hash route
+function isAboutHashRoute(route: string): boolean {
+  return route.startsWith('/about#')
+}
 </script>
 
 <style lang="scss">
@@ -81,14 +107,33 @@ header {
   --p-menubar-item-active-color: var(--rew-primary-brown);
   --p-menubar-item-color: var(--rew-primary-brown);
 
-  .p-menubar-item:has(.router-link-active)>.p-menubar-item-content {
+  // Standard router-link-active styling (for non-about pages)
+  .p-menubar-item:has(.router-link-active:not(.scroll-inactive):not(.about-parent-inactive))>.p-menubar-item-content {
     color: var(--rew-active-brown) !important;
   }
 
   .router-link-active {
-    &:not(.rew-main-btn) {
+    &:not(.rew-main-btn):not(.scroll-inactive):not(.about-parent-inactive) {
       color: var(--rew-active-brown);
     }
+  }
+
+  // Scroll-based active state for About submenu
+  .scroll-active {
+    color: var(--rew-active-brown) !important;
+  }
+
+  .scroll-inactive {
+    color: inherit !important;
+  }
+
+  // About parent link active state
+  .about-parent-active {
+    color: var(--rew-active-brown) !important;
+  }
+
+  .about-parent-inactive {
+    color: inherit !important;
   }
 
   .p-menubar-submenu {

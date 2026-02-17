@@ -6,14 +6,31 @@
           <template v-for="item in NAVIGATION_MENU">
             <AccordionPanel v-if="item.items" :value="item.label">
               <AccordionHeader>
-                <NuxtLink v-if="item.route" :to="item.route" @click="visible = false" class="accordion-parent-link">
+                <NuxtLink
+                  v-if="item.route"
+                  :to="item.route"
+                  @click="visible = false"
+                  class="accordion-parent-link"
+                  :class="{
+                    'about-parent-active': item.route === '/about' && hasActiveAboutSection(),
+                    'about-parent-inactive': item.route === '/about' && isAboutPage && !hasActiveAboutSection()
+                  }">
                   {{ item.label }}
                 </NuxtLink>
                 <span v-else>{{ item.label }}</span>
               </AccordionHeader>
               <AccordionContent>
-                <NuxtLink class="block" @click="visible = false" v-for="sub in item.items"
-                          :to="sub.route" :target="sub.isExternal ? '_blank' : '_self'">
+                <NuxtLink
+                  class="block"
+                  @click="visible = false"
+                  v-for="sub in item.items"
+                  :key="sub.label"
+                  :to="sub.route"
+                  :target="sub.isExternal ? '_blank' : '_self'"
+                  :class="{
+                    'scroll-active': isAboutHashRoute(sub.route) && isAboutSubItemActive(sub.route),
+                    'scroll-inactive': isAboutHashRoute(sub.route) && isAboutPage && !isAboutSubItemActive(sub.route)
+                  }">
                   {{ sub.label }}
                 </NuxtLink>
               </AccordionContent>
@@ -60,6 +77,18 @@
 
 <script setup lang="ts">
 const visible = ref(false)
+
+const { isActiveSection, isAboutPage, hasActiveAboutSection } = useActiveSection()
+
+// Check if a submenu item should be highlighted based on scroll position
+function isAboutSubItemActive(route: string): boolean {
+  return isActiveSection(route)
+}
+
+// Check if a menu item is an about hash route
+function isAboutHashRoute(route: string): boolean {
+  return route.startsWith('/about#')
+}
 </script>
 
 <style scoped lang="scss">
@@ -133,7 +162,14 @@ const visible = ref(false)
 
   .p-accordionpanel {
 
-    &:has(.router-link-active) {
+    &:has(.router-link-active:not(.scroll-inactive):not(.about-parent-inactive)) {
+      .p-accordionheader {
+        color: var(--rew-primary-green) !important;
+      }
+    }
+
+    // Scroll-based active parent
+    &:has(.scroll-active) {
       .p-accordionheader {
         color: var(--rew-primary-green) !important;
       }
@@ -147,7 +183,7 @@ const visible = ref(false)
     background-color: transparent !important;
     border-radius: 0;
 
-    &.router-link-active {
+    &.router-link-active:not(.about-parent-inactive) {
       color: var(--rew-primary-green);
     }
 
@@ -155,8 +191,16 @@ const visible = ref(false)
       color: inherit;
       text-decoration: none;
 
-      &.router-link-active {
+      &.router-link-active:not(.about-parent-inactive) {
         color: var(--rew-primary-green);
+      }
+
+      &.about-parent-active {
+        color: var(--rew-primary-green) !important;
+      }
+
+      &.about-parent-inactive {
+        color: inherit !important;
       }
     }
   }
@@ -173,9 +217,20 @@ const visible = ref(false)
       padding-bottom: 16px;
       padding-left: 14px;
 
-      &.router-link-active {
+      &.router-link-active:not(.scroll-inactive) {
         color: var(--rew-primary-green);
         font-weight: 600;
+      }
+
+      // Scroll-based active state for About submenu
+      &.scroll-active {
+        color: var(--rew-primary-green) !important;
+        font-weight: 600;
+      }
+
+      &.scroll-inactive {
+        color: var(--rew-primary-brown) !important;
+        font-weight: inherit;
       }
     }
   }

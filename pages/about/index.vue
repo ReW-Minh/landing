@@ -19,6 +19,8 @@
 </template>
 
 <script setup lang="ts">
+const { setupSectionObservers } = useActiveSection()
+
 useHead({
   title: 'ReWorkflow - About',
   meta: [
@@ -28,4 +30,20 @@ useHead({
     }
   ]
 })
+
+// Set up intersection observers for scroll-based navigation highlighting
+onMounted(() => {
+  setupSectionObservers(['mission', 'values', 'team'])
+})
 </script>
+
+<style>
+#mission, #team {
+  scroll-margin-top: 48px;
+}
+
+#values {
+  scroll-margin-top: 20px;
+}
+
+</style>

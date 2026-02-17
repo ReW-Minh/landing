@@ -1,5 +1,5 @@
 <template>
-  <div class="mission-section" data-aos="fade-up">
+  <div class="mission-section -mt-6 md:-mt-12" data-aos="fade-up">
     <div class="mission-bg-shape">
       <img src="/img/logo-bg.svg" alt="" aria-hidden="true" />
     </div>
@@ -10,7 +10,7 @@
         <span class="headline-line nowrap">Cultivated with Care.</span>
       </h1>
       <p class="mission-body">
-        We collaborate with education teams to replace reactive work with
+        We collaborate with Slate teams at education institutions to replace reactive work with
         clear, sustainable systems and operations that thrive in every season.
       </p>
     </div>

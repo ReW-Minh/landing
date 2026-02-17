@@ -4,9 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="feat: new abou page">
+    <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="feat: new about page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/About/Mission.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/About/Mission.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/About/ValueItem.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/components/About/Values.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/About/Values.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Icon/LeafGlobe.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Icon/Lightbulb.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Icon/OpenWindow.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Icon/RoutePath.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Icon/SharedGrowth.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MobileMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/MobileMenu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/constant.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/constant.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +28,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="157" />
+    <option name="cachedIndexableFilesCount" value="164" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -94,11 +108,11 @@
   }
 }</component>
   <component name="RecapSpentCounter">
-    <option name="endsOfQuotaMs" value="1771293636231" />
-    <option name="spentUsd" value="0.05922225" />
+    <option name="endsOfQuotaMs" value="1773885611204" />
+    <option name="spentUsd" value="0.00274355" />
   </component>
   <component name="RecapUselessUpdatesCounter">
-    <option name="suspendCountdown" value="3" />
+    <option name="suspendCountdown" value="0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -110,7 +124,7 @@
       <recent name="$PROJECT_DIR$/components" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.generate">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -137,8 +151,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.generate" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.generate" />
       </list>
     </recent_temporary>
   </component>
@@ -280,7 +294,8 @@
       <workItem from="1769178071214" duration="2315000" />
       <workItem from="1769237517798" duration="202000" />
       <workItem from="1769276581800" duration="139000" />
-      <workItem from="1771227084635" duration="4696000" />
+      <workItem from="1771227084635" duration="6383000" />
+      <workItem from="1771347745878" duration="5012000" />
     </task>
     <task id="LOCAL-00001" summary="feat: update team members">
       <option name="closed" value="true" />
@@ -330,7 +345,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771231618169</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: new about page">
+      <option name="closed" value="true" />
+      <created>1771231904004</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1771231904004</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,18 +398,7 @@
     <MESSAGE value="feat: update teams" />
     <MESSAGE value="feat: update teams certificate" />
     <MESSAGE value="feat: new abou page" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: new abou page" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/pages/about/index.vue</url>
-          <line>22</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="feat: new about page" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: new about page" />
   </component>
 </project>

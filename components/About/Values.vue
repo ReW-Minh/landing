@@ -8,7 +8,8 @@
       <p class="values-intro-title">Stewardship in Practice</p>
       <p class="values-intro-body">
         Healthy Slate environments are supported through intentional strategy,
-        disciplined execution, and responsible governance.
+        disciplined execution, and responsible governance. These principles shape how we partner with education
+        institutions to make disciplined decisions and build resilient solutions.
       </p>
     </div>
 
@@ -21,8 +22,8 @@
               :value="value.id"
           >
             <AccordionHeader>
-            <span class="value-icon" :style="{ backgroundColor: value.iconBg }">
-              <component :is="value.icon" />
+            <span class="value-icon">
+              <img :src="value.icon" :alt="value.title">
             </span>
               <span class="value-title">{{ value.title }}</span>
             </AccordionHeader>
@@ -37,12 +38,6 @@
 </template>
 
 <script setup lang="ts">
-import IconSharedGrowth from '~/components/Icon/SharedGrowth.vue'
-import IconLightbulb from '~/components/Icon/Lightbulb.vue'
-import IconOpenWindow from '~/components/Icon/OpenWindow.vue'
-import IconRoutePath from '~/components/Icon/RoutePath.vue'
-import IconLeafGlobe from '~/components/Icon/LeafGlobe.vue'
-
 interface Value {
   id: string
   title: string
@@ -55,37 +50,37 @@ const values: Value[] = [
   {
     id: 'grow',
     title: 'We Grow Together',
-    icon: IconSharedGrowth,
+    icon: `/img/values/seed.png`,
     iconBg: 'var(--rew-primary-green)',
-    content: `We approach every engagement as teaching and learning in action. Expanding our clients' institutional knowledge and advancing our collective professional development with the Slate community.`
+    content: `We approach every engagement as teaching and learning in action. Expanding your Slate team’s knowledge base and advancing our collective professional development alongside the Slate community.`
   },
   {
     id: 'service',
     title: 'We Deliver Inspiring Service',
-    icon: IconLightbulb,
+    icon: `/img/values/bell.png`,
     iconBg: 'var(--rew-primary-green)',
     content: 'We treat every request and project as an opportunity to light a spark. Providing solutions with clarity that create lightbulb moments, build confidence, and reveal new possibilities.'
   },
   {
     id: 'innovate',
     title: 'We Innovate in the Open',
-    icon: IconOpenWindow,
+    icon: `/img/values/book.png`,
     iconBg: 'var(--rew-primary-green)',
     content: 'We commit to transparency at every step, from pricing to processes to lessons learned. Accessible information enables sounder decisions, empowers effective collaboration, and leads to shared success.'
   },
   {
     id: 'strategy',
     title: 'We Develop Through Strategy',
-    icon: IconRoutePath,
+    icon: `/img/values/compass.png`,
     iconBg: 'var(--rew-primary-green)',
-    content: 'We approach our work as partners, not providers. Insight takes shape through open dialogue, careful listening, and trust built over time. This shared understanding allows institutions to move ahead with clarity and confidence, creating solutions that support their goals and long-term success.'
+    content: 'We approach every engagement with a clear strategic framework. Insights emerge through open dialogue, careful listening, and trust built over time. This shared understanding enables education institutions to move ahead with clarity and confidence, creating solutions aligned with their goals and long-term success.'
   },
   {
     id: 'responsible',
     title: 'We Build Responsibly',
-    icon: IconLeafGlobe,
+    icon: `/img/values/recycle.png`,
     iconBg: 'var(--rew-primary-green)',
-    content: 'We focus on sustainable solutions not only for our clients, but also in how we operate as a team and as a company. Prioritizing practices that improve efficiency, reduce waste, and keep both local and global impact in mind.'
+    content: 'We focus on sustainable solutions not only for our ducation institution partners, but also in how we operate as a team and as a company. Prioritizing practices that improve efficiency, reduce waste, and keep both local and global impact in mind.'
   }
 ]
 
@@ -232,11 +227,12 @@ const expandedValues = ref<string>('grow')
     height: 44px;
     border-radius: 12px;
     flex-shrink: 0;
+    overflow: hidden;
 
-    svg {
-      width: 24px;
-      height: 24px;
-      fill: white;
+    img {
+      width: 44px;
+      height: 44px;
+      object-fit: contain;
     }
   }
 

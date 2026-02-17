@@ -58,6 +58,14 @@ export const NAVIGATION_MENU = [
         route: '/about',
         items: [
             {
+                label: 'Mission',
+                route: '/about#mission'
+            },
+            {
+                label: 'Values',
+                route: '/about#values'
+            },
+            {
                 label: 'Our Team',
                 route: '/about#team'
             }

@@ -19,7 +19,6 @@
     "nuxt-aos": "^1.2.5",
     "primeicons": "^7.0.0",
     "primevue": "^4.3.1",
-    "swiper": "^11.2.4",
     "tailwindcss-primeui": "^0.5.1"
   },
   "devDependencies": {
