@@ -4,8 +4,8 @@
       <div class="md:mx-0 mx-12">
         <div class="flex flex-col md:flex-row items-center">
           <div class="flex gap-4">
-            <div class="bg-white logo-container h-[142px] aspect-square">
-              <img src="/img/logo-min.svg" alt="rew" class="img-fluid">
+            <div class="bg-white logo-container h-[142px] aspect-square overflow-hidden flex items-center justify-center">
+                <img src="/img/logo-5th.png" alt="rew" class="max-w-none w-[180px]">
             </div>
             <div class="block md:hidden w-[120px]">
               <img
