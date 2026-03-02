@@ -1,7 +1,7 @@
 <template>
   <div class="mission-section -mt-6 md:-mt-12" data-aos="fade-up">
     <div class="mission-bg-shape">
-      <img src="/img/logo-bg.svg" alt="" aria-hidden="true" />
+      <img src="/img/logo-bg.svg" alt="" aria-hidden="true"/>
     </div>
     <div class="mission-overlay"></div>
     <div class="mission-content">
@@ -10,8 +10,8 @@
         <span class="headline-line nowrap">Cultivated with Care.</span>
       </h1>
       <p class="mission-body">
-        We collaborate with Slate teams at education institutions to replace reactive work with
-        clear, sustainable systems and operations that thrive in every season.
+        We collaborate with education institutions to design and steward Slate ecosystems that replace reactive work
+        with sustainable operations that thrive in every season.
       </p>
     </div>
   </div>
@@ -55,9 +55,9 @@
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    135deg,
-    var(--rew-primary-green) 0%,
-    rgba(67, 49, 41, 0.3) 100%
+          135deg,
+          var(--rew-primary-green) 0%,
+          rgba(67, 49, 41, 0.3) 100%
   );
   pointer-events: none;
 }

@@ -5,8 +5,7 @@
     </BasePageHeader>
 
     <div class="values-intro" data-aos="fade-up">
-      <p class="values-intro-title">Stewardship in Practice</p>
-      <p class="values-intro-body">
+      <p class="values-intro-body -mt-4 md:-mt-10">
         Healthy Slate environments are supported through intentional strategy,
         disciplined execution, and responsible governance. These principles shape how we partner with education
         institutions to make disciplined decisions and build resilient solutions.
@@ -80,7 +79,7 @@ const values: Value[] = [
     title: 'We Build Responsibly',
     icon: `/img/values/recycle.png`,
     iconBg: 'var(--rew-primary-green)',
-    content: 'We focus on sustainable solutions not only for our ducation institution partners, but also in how we operate as a team and as a company. Prioritizing practices that improve efficiency, reduce waste, and keep both local and global impact in mind.'
+    content: 'We focus on sustainable solutions not only for our partner institutions, but also in how we operate as a team and as a company. Prioritizing practices that improve efficiency, reduce waste, and keep both local and global impact in mind.'
   }
 ]
 
