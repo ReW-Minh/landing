@@ -49,6 +49,10 @@ export const NAVIGATION_MENU = [
         label: 'Podcast',
         route: '/podcast'
     },
+    {
+        label: 'Slate Schools',
+        route: '/slate-schools'
+    },
     /* {
          label: 'ReViews',
          route: '/reviews'
