@@ -50,12 +50,12 @@ interface School {
 const schools: School[] = [
   { name: 'Boston University', initials: 'BU', color: '#4E6C3C' },
   { name: 'MIT', initials: 'MIT', color: '#00669E' },
-  { name: 'Stanford', initials: 'SFD', color: '#8F4A2C' },
+  { name: 'Stanford', initials: 'SU', color: '#8F4A2C' },
   { name: 'Yale', initials: 'Y', color: '#768471' },
   { name: 'Columbia', initials: 'CU', color: '#433129' },
   { name: 'Duke', initials: 'DU', color: '#4E6C3C' },
   { name: 'NYU', initials: 'NYU', color: '#00669E' },
-  { name: 'Brown', initials: 'BRN', color: '#8F4A2C' },
+  { name: 'Brown', initials: 'B', color: '#8F4A2C' },
   { name: 'Princeton', initials: 'PU', color: '#768471' },
   { name: 'Notre Dame', initials: 'ND', color: '#433129' },
 ]
