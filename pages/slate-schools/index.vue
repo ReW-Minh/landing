@@ -48,7 +48,7 @@ const schools: SchoolGroup[] = [
   }
 ]
 
-function initials(name: string): string {
+function getPersonInitials(name: string): string {
   return name.split(' ').map(p => p[0]).join('').toUpperCase().slice(0, 2)
 }
 </script>
@@ -76,21 +76,21 @@ function initials(name: string): string {
             {{ group.initials }}
           </div>
           <span class="font-bold text-base rew-text-brown">{{ group.school }}</span>
-          <div class="flex-1 border-t border-[#C8CEC6]"></div>
+          <div class="flex-1 border-t border-[var(--rew-baby-grey)]"></div>
         </div>
 
         <!-- Testimonial cards -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div
             v-for="testimonial in group.testimonials"
-            :key="testimonial.name"
+            :key="`${group.school}-${testimonial.name}`"
             class="bg-white/60 backdrop-blur-sm rounded-xl shadow flex overflow-hidden"
           >
             <!-- Left accent bar -->
             <div class="w-[5px] flex-shrink-0 bg-[var(--rew-primary-green)]"></div>
 
             <!-- Content -->
-            <div class="flex-1 p-[14px_14px_14px_12px]">
+            <div class="flex-1 p-[14px] pl-3">
               <p class="italic rew-text-brown leading-relaxed mb-3 text-sm">
                 "{{ testimonial.quote }}"
               </p>
@@ -101,7 +101,7 @@ function initials(name: string): string {
                   class="w-7 h-7 rounded-full flex items-center justify-center text-white text-[9px] font-black flex-shrink-0"
                   style="background: var(--rew-secondary-green)"
                 >
-                  {{ initials(testimonial.name) }}
+                  {{ getPersonInitials(testimonial.name) }}
                 </div>
                 <div>
                   <div class="font-bold text-xs rew-text-brown">{{ testimonial.name }}</div>
