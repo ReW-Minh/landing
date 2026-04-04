@@ -23,15 +23,15 @@
     <div class="ticker-wrap ticker-wrap--row2">
       <div class="ticker-track row2-track">
         <template v-for="n in 2" :key="n">
-          <div class="count-badge">
+          <div :key="`badge-${n}`" class="count-badge">
             <span class="num">60+</span> Slate Schools and Counting!
           </div>
-          <div class="divider"></div>
+          <div :key="`div-start-${n}`" class="divider"></div>
           <div v-for="school in schools" :key="`r2-${n}-${school.initials}`" class="logo-only" :style="!school.logo ? { background: school.color } : {}">
             <img v-if="school.logo" :src="school.logo" :alt="school.name" class="logo-img-lg" />
             <span v-else>{{ school.initials }}</span>
           </div>
-          <div class="divider"></div>
+          <div :key="`div-end-${n}`" class="divider"></div>
         </template>
       </div>
     </div>
@@ -50,13 +50,13 @@ interface School {
 const schools: School[] = [
   { name: 'Boston University', initials: 'BU', color: '#4E6C3C' },
   { name: 'MIT', initials: 'MIT', color: '#00669E' },
-  { name: 'Stanford', initials: 'SU', color: '#8F4A2C' },
-  { name: 'Yale', initials: 'YU', color: '#768471' },
+  { name: 'Stanford', initials: 'SFD', color: '#8F4A2C' },
+  { name: 'Yale', initials: 'Y', color: '#768471' },
   { name: 'Columbia', initials: 'CU', color: '#433129' },
   { name: 'Duke', initials: 'DU', color: '#4E6C3C' },
-  { name: 'NYU', initials: 'NY', color: '#00669E' },
-  { name: 'Brown', initials: 'BN', color: '#8F4A2C' },
-  { name: 'Princeton', initials: 'PR', color: '#768471' },
+  { name: 'NYU', initials: 'NYU', color: '#00669E' },
+  { name: 'Brown', initials: 'BRN', color: '#8F4A2C' },
+  { name: 'Princeton', initials: 'PU', color: '#768471' },
   { name: 'Notre Dame', initials: 'ND', color: '#433129' },
 ]
 </script>
@@ -232,8 +232,18 @@ const schools: School[] = [
 
 /* ── Accessibility: stop animation for users who prefer reduced motion ── */
 @media (prefers-reduced-motion: reduce) {
+  .ticker-wrap {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
   .ticker-track {
     animation: none;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 8px;
+    padding: 4px 0;
   }
+  .row1-track > *:nth-child(n + 11) { display: none; }
+  .row2-track > *:nth-child(n + 14) { display: none; }
 }
 </style>
