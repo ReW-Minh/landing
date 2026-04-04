@@ -10,6 +10,7 @@
 
 <script setup lang="ts">
 import 'primeicons/primeicons.css'
+import 'swiper/swiper.css';
 
 useHead({
   title: 'ReWorkflow',

@@ -9,7 +9,9 @@
       "Bash(npm run:*)",
       "Bash(git show:*)",
       "Bash(npm test:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(/Users/minh/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.7/skills/brainstorming/scripts/start-server.sh:*)",
+      "Bash(node:*)"
     ]
   }
 }

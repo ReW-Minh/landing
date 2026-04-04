@@ -2,13 +2,13 @@
   <div class="slate-logos">
 
     <!-- Row 1: static header + logo+name pill ticker -->
-    <div class="row1-header">
+    <div class="row1-header text-2xl">
       <span class="count">60+</span> Slate Schools and Counting!
     </div>
     <div class="ticker-wrap">
       <div class="ticker-track row1-track">
-        <template v-for="n in 2" :key="n">
-          <div v-for="school in schools" :key="`r1-${n}-${school.initials}`" class="pill">
+        <template v-for="n in 2">
+          <div v-for="school in schools" class="pill">
             <div v-if="!school.logo" class="logo-circle" :style="{ background: school.color }">
               {{ school.initials }}
             </div>
@@ -19,19 +19,21 @@
       </div>
     </div>
 
+    <div class="mt-20"></div>
+
     <!-- Row 2: logo-only ticker with inline "60+" badge -->
     <div class="ticker-wrap ticker-wrap--row2">
       <div class="ticker-track row2-track">
-        <template v-for="n in 2" :key="n">
-          <div :key="`badge-${n}`" class="count-badge">
+        <template v-for="n in 2">
+          <div class="count-badge">
             <span class="num">60+</span> Slate Schools and Counting!
           </div>
-          <div :key="`div-start-${n}`" class="divider"></div>
-          <div v-for="school in schools" :key="`r2-${n}-${school.initials}`" class="logo-only" :style="!school.logo ? { background: school.color } : {}">
+          <div class="divider"></div>
+          <div v-for="school in schools" class="logo-only" :style="!school.logo ? { background: school.color } : {}">
             <img v-if="school.logo" :src="school.logo" :alt="school.name" class="logo-img-lg" />
             <span v-else>{{ school.initials }}</span>
           </div>
-          <div :key="`div-end-${n}`" class="divider"></div>
+          <div class="divider"></div>
         </template>
       </div>
     </div>
@@ -48,16 +50,16 @@ interface School {
 }
 
 const schools: School[] = [
-  { name: 'Boston University', initials: 'BU', color: '#4E6C3C' },
-  { name: 'MIT', initials: 'MIT', color: '#00669E' },
-  { name: 'Stanford', initials: 'SU', color: '#8F4A2C' },
-  { name: 'Yale', initials: 'Y', color: '#768471' },
-  { name: 'Columbia', initials: 'CU', color: '#433129' },
-  { name: 'Duke', initials: 'DU', color: '#4E6C3C' },
-  { name: 'NYU', initials: 'NYU', color: '#00669E' },
-  { name: 'Brown', initials: 'B', color: '#8F4A2C' },
-  { name: 'Princeton', initials: 'PU', color: '#768471' },
-  { name: 'Notre Dame', initials: 'ND', color: '#433129' },
+  { name: 'University 1', initials: 'U1', color: '#4E6C3C' },
+  { name: 'University 2', initials: 'U2', color: '#00669E' },
+  { name: 'University 3', initials: 'U3', color: '#8F4A2C' },
+  { name: 'University 4', initials: 'U4', color: '#768471' },
+  { name: 'University 5', initials: 'U5', color: '#433129' },
+  { name: 'University 6', initials: 'U6', color: '#4E6C3C' },
+  { name: 'University 7', initials: 'U7', color: '#00669E' },
+  { name: 'University 8', initials: 'U8', color: '#8F4A2C' },
+  { name: 'University 9', initials: 'U9', color: '#768471' },
+  { name: 'University 10', initials: 'U10', color: '#433129' },
 ]
 </script>
 
@@ -70,7 +72,6 @@ const schools: School[] = [
 
 .row1-header {
   text-align: center;
-  font-size: 14px;
   font-weight: 700;
   color: #433129;
   letter-spacing: 0.02em;
@@ -78,7 +79,6 @@ const schools: School[] = [
 }
 .row1-header .count {
   color: #4E6C3C;
-  font-size: 17px;
 }
 
 /* ── Ticker wrapper (clips + fades edges) ── */
@@ -118,7 +118,7 @@ const schools: School[] = [
   background: white;
   border-radius: 40px;
   padding: 8px 18px 8px 8px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.09);
+  border: 1px solid rgba(0, 0, 0, 0.09);
   font-size: 12px;
   font-weight: 700;
   color: #433129;

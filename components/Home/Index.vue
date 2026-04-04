@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import SlateSchoolLogos from '~/components/Home/SlateSchoolLogos.vue'
+</script>
+
 <template>
   <section class="pt-5 md:pt-8 pb-6 md:overflow-hidden overflow-visible" id="home">
     <div class="container-fluid">
@@ -36,6 +40,9 @@
 
         <img class="absolute h-[calc(100dvh-360px)] md:hidden left-1/2 -translate-x-1/2 -z-10 opacity-20"
              src="/img/hero-img-lg.webp" alt="rew main board">
+
+
+        <SlateSchoolLogos class="col-span-12 w-full" />
       </div>
     </div>
   </section>

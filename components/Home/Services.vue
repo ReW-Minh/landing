@@ -61,7 +61,7 @@ const slaterRoles = [
   },
 ]
 
-const decorateText = str => {
+const decorateText = (str: string) => {
   if (!str)
     return
 

@@ -169,7 +169,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
             }
         ],
         group: PROFILE_GROUP.CLIENT_SERVICES,
-        cert: 'https://reworkflow.com/static/slate_certified.png',
+        cert: 'https://reworkflow.com/static/slate_certified.png'
     },
 
     // Kelly
@@ -198,7 +198,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
             {
                 type: CONTACT_TYPE.EMAIL,
                 link: 'klewis@reworkflow.com'
-            },
+            }
         ],
         group: PROFILE_GROUP.CLIENT_SERVICES
     },
@@ -240,6 +240,47 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
         group: PROFILE_GROUP.CLIENT_SERVICES
     },
 
+    // Destiny
+    {
+        content: `I didn’t set out to become a Slate expert. I fell into a “program coordinator” role and quickly realized there’s a niche group of people who end up loving Slate enough to make a career out of it. I’m one of them.
+
+I’m a classically trained soprano who originally planned to teach elementary music, but after one semester wrangling 4th graders, I pivoted to higher ed. I spent several years in student housing, both on and off campus, before making my way to Slate at Texas A&M University.
+
+I currently serve as Sr. Director of Enrollment Services and Student Success at a small private college in Tennessee, where I focus on Slate governance, system design, and building processes that support enrollment strategy and student success. I approach my work with a teacher’s mindset and enjoy helping others connect the dots and truly understand how Slate works.
+
+I live in College Station, Texas with my husband and youngest son. I’m a mom/bonus mom to five, meemaw to two (with one more on the way), and dog mom to many. When I’m not working, I’m running a household that rivals any system I’ve ever managed.
+
+`,
+        id: 9,
+        name: "Destiny Whitley-Matthews",
+        order: 1,
+        picture: 'https://reworkflow.com/static/dwmatthews.jpg',
+        title: "Slate Strategist",
+        contact: [
+            {
+                type: CONTACT_TYPE.LINKEDIN,
+                link: 'https://www.linkedin.com/in/destinywhitley/'
+            },
+            {
+                type: CONTACT_TYPE.SLATE_COMMUNITY,
+                link: 'https://community.technolutions.net/member/0A9hhKOdFG'
+            },
+            {
+                type: CONTACT_TYPE.PRESENTATIONS_PUBLICATIONS,
+                link: ''
+            },
+            {
+                type: CONTACT_TYPE.GITHUB,
+                link: ''
+            },
+            {
+                type: CONTACT_TYPE.EMAIL,
+                link: 'dwhitley@reworkflow.com'
+            }
+        ],
+        group: PROFILE_GROUP.CLIENT_SERVICES
+    },
+
     // Bailey
     {
         content: `Bailey brings nearly a decade of experience in higher education IT and CRM management to his role as Custom Solutions Analyst at ReWorkflow. Since 2016, he has worked at the intersection of technology and enrollment management, helping institutions optimize systems and processes that support student success.
@@ -247,7 +288,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                   Before joining ReWorkflow, Bailey served as CRM Manager for the Graduate School at Texas A&M University, where he led initiatives to streamline data, communications, and application workflows. He began his career at Valdosta State University, supporting admissions and student success as the IT liaison for enrollment management.
 
                   Since first working in Slate in 2021, Bailey has focused on bridging the gap between technical solutions and enrollment strategy. At ReWorkflow, he is excited to apply this expertise to support partner institutions and advance innovative CRM solutions across the higher education community.`,
-        id: 9,
+        id: 10,
         name: "Bailey Raffield",
         picture: 'https://reworkflow.com/static/braffield.jpg',
         title: "Slate Developer",
@@ -281,7 +322,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                 In 2016, I got the chance to work with Slate, a truly fantastic product. I wrote and maintain an open-source, RESTful integration between Slate and PowerCampus used by at least five institutions. I have extensive experience other areas as well, including Dynamic Forms by NG Web Solutions (a terrific, little-known product), Campus Café (SIS), PowerFAIDS, AMAG Symmetry access control, Azure, VMWare, ShoreTel, etc. Your IT department will like working with ReWorkflow because we understand the demands on their time.
     
                 In our spare time, my wife and I are building a Carpenter Gothic/Victorian cottage and running a restaurant and cabaret for our children, cats, chickens, etc.`,
-        id: 10,
+        id: 11,
         name: "Wyatt Best",
         order: 1,
         picture: 'https://live.staticflickr.com/65535/53939365973_8b39036dfb.jpg',
@@ -321,7 +362,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
         content: `I'm a JavaScript/TypeScript software engineer with a passion for building clean, efficient, and scalable applications. Whether working on frontend interfaces or backend systems, I enjoy solving complex problems with elegant code and staying on top of the latest in web technologies. I’m always tinkering—whether it's optimizing a workflow, learning a new framework, or diving into side projects that blend creativity and code.
 
                   Outside of work, I’m a husband and proud dad to a curious and energetic daughter. My free time is usually spent behind a camera, building elaborate Lego creations, or geeking out over the latest in tech gear. I love projects that merge tech with play, and I’m always up for a deep dive into anything that sparks curiosity.`,
-        id: 11,
+        id: 12,
         name: "Minh Ha",
         picture: 'https://reworkflow.com/static/mha.jpg',
         title: "Software Engineer",
@@ -345,7 +386,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                   After taking time away from my career, I’ve come back with a stronger appreciation for resilience and openness — to opportunities, to advice, and to growth. Although my background is in journalism and translation, but what really drives me now is the chance to learn, and contribute in new ways. At ReWorkflow, I’m excited to bring this mindset into my work, supporting projects with care, adaptability, and a collaborative spirit.
                   
                   Outside of work, I am a proud dog mom, a book lover, and an enthusiastic traveler. My other hobbies include doing aerial sports and baking up sweet goods for people around me.`,
-        id: 12,
+        id: 13,
         name: "Nhu Nguyen",
         picture: 'https://reworkflow.com/static/nnguyen.jpg',
         title: "Admission Operations Specialist",
@@ -360,7 +401,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
             }
         ],
         group: PROFILE_GROUP.CUSTOM_SOLUTIONS
-    },
+    }
 ])
 
 export const useAdminAuth = () => useState<IAdminAuth>('AdminAuth', () => ({

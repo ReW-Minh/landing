@@ -18,8 +18,8 @@ interface SchoolGroup {
 
 const schools: SchoolGroup[] = [
   {
-    school: 'Boston University',
-    initials: 'BU',
+    school: 'University 1',
+    initials: 'U1',
     color: '#4E6C3C',
     testimonials: [
       {
@@ -35,8 +35,8 @@ const schools: SchoolGroup[] = [
     ]
   },
   {
-    school: 'MIT',
-    initials: 'MIT',
+    school: 'University 2',
+    initials: 'U2',
     color: '#433129',
     testimonials: [
       {

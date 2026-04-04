@@ -62,11 +62,6 @@ export default defineNuxtConfig({
   css: ['~/assets/scss/main.scss', '~/assets/scss/editor.scss'],
   ssr: false,
   spaLoadingTemplate: true,
-  vue: {
-    compilerOptions: {
-      isCustomElement: tag => tag.startsWith('swiper-')
-    }
-  },
   routeRules: {
     '/admin': { redirect: '/admin/podcast' },
   },
