@@ -35,6 +35,7 @@ const schools: School[] = [
     name: 'Ouachita Baptist University',
     initials: 'OBU',
     color: '#4A2572',
+    // TODO: replace with real approved attribution
     testimonial: {
       quote: 'ReWorkflow has been an invaluable partner in optimizing our Slate environment. Their expertise and responsiveness have made a real difference in how our team operates.',
       person: 'Jane Smith',
@@ -45,6 +46,7 @@ const schools: School[] = [
     name: 'Teachers College, Columbia University',
     initials: 'TC',
     color: '#003DA5',
+    // TODO: replace with real approved attribution
     testimonial: {
       quote: 'Working with ReWorkflow has transformed how we use Slate. They understand higher ed operations deeply and deliver solutions that actually work for our team.',
       person: 'John Doe',
@@ -55,6 +57,7 @@ const schools: School[] = [
     name: 'Brown University',
     initials: 'BRN',
     color: '#4E3629',
+    // TODO: replace with real approved attribution
     testimonial: {
       quote: "The cycle prep support alone saved us weeks of work. ReWorkflow's team feels like a true extension of our staff — knowledgeable, reliable, and always a step ahead.",
       person: 'Sarah Lee',
@@ -65,6 +68,7 @@ const schools: School[] = [
     name: 'CUNY City Tech',
     initials: 'CCT',
     color: '#003478',
+    // TODO: replace with real approved attribution
     testimonial: {
       quote: "ReWorkflow's Slate expertise is unmatched. From complex integrations to day-to-day support, they deliver fast, high-quality results every time.",
       person: 'Michael Chen',
@@ -75,6 +79,7 @@ const schools: School[] = [
     name: 'Moore College of Art & Design',
     initials: 'MCA',
     color: '#006B6B',
+    // TODO: replace with real approved attribution
     testimonial: {
       quote: 'We trust ReWorkflow with our most critical Slate workflows. Their team is proactive, thorough, and genuinely invested in our success.',
       person: 'Emily Torres',
@@ -85,6 +90,7 @@ const schools: School[] = [
     name: 'University of Alabama in Huntsville',
     initials: 'UAH',
     color: '#003087',
+    // TODO: replace with real approved attribution
     testimonial: {
       quote: 'Highly recommend ReWorkflow to any institution looking to get more out of Slate. They are true partners who understand our goals, not just vendors.',
       person: 'David Park',
