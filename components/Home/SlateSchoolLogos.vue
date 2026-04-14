@@ -65,6 +65,7 @@
     <!-- Logo Strip -->
     <div
       class="logo-strip-wrap"
+      role="region"
       aria-label="Partner schools"
       @mouseenter="isHoveringLogos = true"
       @mouseleave="isHoveringLogos = false"
@@ -487,7 +488,8 @@ onUnmounted(() => {
     gap: 12px;
   }
   .logo-strip-tile:nth-child(n+4) {
-    display: none;
+    visibility: hidden;
+    pointer-events: none;
   }
   .strip-placeholder,
   .strip-img {
