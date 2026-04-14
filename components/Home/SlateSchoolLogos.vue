@@ -26,7 +26,7 @@
               class="logo-tile"
               :style="{ background: currentSchool().color }"
             >
-              {{ currentSchool().name }}
+              {{ currentSchool().initials }}
             </div>
           </div>
 
@@ -86,7 +86,7 @@
             class="strip-placeholder"
             :style="{ background: slot.school.color }"
           >
-            {{ slot.school.name }}
+            {{ slot.school.initials }}
           </div>
         </div>
       </div>
@@ -198,55 +198,6 @@ const schools: School[] = [
   { name: 'DePaul University',        initials: 'DPU', color: '#23417A' },
 ]
 
-// ── Logo strip ────────────────────────────────────────────────────────────
-
-let slotIdCounter = VISIBLE_LOGOS
-let nextSchoolIndex = VISIBLE_LOGOS
-const isHoveringLogos = ref(false)
-
-const logoSlots = ref<LogoSlot[]>(
-  schools.slice(0, VISIBLE_LOGOS).map((school, i) => ({
-    id: i,
-    school,
-    visible: true
-  }))
-)
-
-function advanceLogo() {
-  // Fade out the first slot
-  logoSlots.value[0].visible = false
-
-  setTimeout(() => {
-    // Remove faded-out slot from beginning
-    logoSlots.value.shift()
-
-    // Push new slot at end (invisible initially)
-    const newSchool = schools[nextSchoolIndex % schools.length]
-    nextSchoolIndex++
-    logoSlots.value.push({
-      id: slotIdCounter++,
-      school: newSchool,
-      visible: false
-    })
-
-    // Trigger fade-in on the new slot after one frame
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        logoSlots.value[VISIBLE_LOGOS - 1].visible = true
-      })
-    })
-  }, 380)
-}
-
-let logoTimer: ReturnType<typeof setInterval> | null = null
-
-function startLogoTimer() {
-  if (logoTimer) clearInterval(logoTimer)
-  logoTimer = setInterval(() => {
-    if (!isHoveringLogos.value) advanceLogo()
-  }, 3000)
-}
-
 // ── Testimonial carousel ──────────────────────────────────────────────────
 
 const testimonialSchools = schools.filter(s => s.testimonial)
@@ -273,6 +224,50 @@ function goToTestimonial(index: number) {
   startTestimonialTimer()
 }
 
+// ── Logo strip ────────────────────────────────────────────────────────────
+
+let slotIdCounter = VISIBLE_LOGOS
+let nextSchoolIndex = VISIBLE_LOGOS
+const isHoveringLogos = ref(false)
+
+const logoSlots = ref<LogoSlot[]>(
+  schools.slice(0, VISIBLE_LOGOS).map((school, i) => ({
+    id: i,
+    school,
+    visible: true
+  }))
+)
+
+function advanceLogo() {
+  logoSlots.value[0].visible = false
+  logoAdvanceTimeout = setTimeout(() => {
+    logoAdvanceTimeout = null
+    logoSlots.value.shift()
+    const newSchool = schools[nextSchoolIndex % schools.length]
+    nextSchoolIndex++
+    logoSlots.value.push({
+      id: slotIdCounter++,
+      school: newSchool,
+      visible: false
+    })
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        logoSlots.value[VISIBLE_LOGOS - 1].visible = true
+      })
+    })
+  }, 380)
+}
+
+let logoTimer: ReturnType<typeof setInterval> | null = null
+let logoAdvanceTimeout: ReturnType<typeof setTimeout> | null = null
+
+function startLogoTimer() {
+  if (logoTimer) clearInterval(logoTimer)
+  logoTimer = setInterval(() => {
+    if (!isHoveringLogos.value) advanceLogo()
+  }, 3000)
+}
+
 onMounted(() => {
   startTestimonialTimer()
   startLogoTimer()
@@ -281,6 +276,7 @@ onMounted(() => {
 onUnmounted(() => {
   if (testimonialTimer) clearInterval(testimonialTimer)
   if (logoTimer) clearInterval(logoTimer)
+  if (logoAdvanceTimeout) clearTimeout(logoAdvanceTimeout)
 })
 </script>
 
@@ -329,8 +325,8 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 11px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 900;
   color: white;
   text-align: center;
   padding: 0 8px;
@@ -442,8 +438,8 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 11px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 900;
   color: white;
   text-align: center;
   padding: 0 8px;
