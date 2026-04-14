@@ -65,6 +65,7 @@
     <!-- Logo Strip -->
     <div
       class="logo-strip-wrap"
+      aria-label="Partner schools"
       @mouseenter="isHoveringLogos = true"
       @mouseleave="isHoveringLogos = false"
     >
@@ -400,7 +401,8 @@ onUnmounted(() => {
   background: #C8CEC6;
   border: none;
   cursor: pointer;
-  padding: 0;
+  padding: 10px;
+  margin: -10px;
   transition: background 0.2s, transform 0.2s;
 }
 .dot.active {
@@ -460,5 +462,57 @@ onUnmounted(() => {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+/* ── Responsive ── */
+@media screen and (max-width: 767px) {
+  /* Testimonial card: stack logo above quote */
+  .testimonial-card {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .logo-tile,
+  .logo-img {
+    width: 100px;
+    height: 40px;
+    font-size: 10px;
+  }
+
+  /* Logo strip: show only 3 tiles on mobile */
+  .logo-strip-wrap {
+    mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
+  }
+  .logo-strip {
+    gap: 12px;
+  }
+  .logo-strip-tile:nth-child(n+4) {
+    display: none;
+  }
+  .strip-placeholder,
+  .strip-img {
+    width: 100px;
+    height: 40px;
+    font-size: 10px;
+  }
+}
+
+/* ── Accessibility: reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  /* Testimonial: disable auto-advance animation */
+  .progress-bar {
+    animation: none;
+    width: 100%;
+  }
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: none;
+  }
+
+  /* Logo strip: show static row, disable opacity transitions */
+  .logo-strip-tile {
+    transition: none;
+    opacity: 1 !important;
+  }
 }
 </style>
