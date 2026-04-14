@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="feat: add slate schools">
+    <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="fix: remove plausible on test env">
+      <change beforePath="$PROJECT_DIR$/.claude/settings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/settings.local.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/SlateSchoolLogos.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/SlateSchoolLogos.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="147" />
+    <option name="cachedIndexableFilesCount" value="407" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -295,7 +296,10 @@
       <workItem from="1775008872821" duration="203000" />
       <workItem from="1775210223259" duration="2478000" />
       <workItem from="1775212884147" duration="6000" />
-      <workItem from="1775313769057" duration="2875000" />
+      <workItem from="1775313769057" duration="2908000" />
+      <workItem from="1775441417676" duration="32000" />
+      <workItem from="1776140310056" duration="4801000" />
+      <workItem from="1776174933348" duration="1262000" />
     </task>
     <task id="LOCAL-00001" summary="feat: update team members">
       <option name="closed" value="true" />
@@ -385,7 +389,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775318385739</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix: remove plausible on test env">
+      <option name="closed" value="true" />
+      <created>1775318438231</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1775318438231</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,6 +447,7 @@
     <MESSAGE value="feat: update footer logo" />
     <MESSAGE value="feat: update about text" />
     <MESSAGE value="feat: add slate schools" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add slate schools" />
+    <MESSAGE value="fix: remove plausible on test env" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: remove plausible on test env" />
   </component>
 </project>

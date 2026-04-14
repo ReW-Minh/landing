@@ -11,35 +11,38 @@
       @mouseenter="isHoveringTestimonial = true"
       @mouseleave="isHoveringTestimonial = false"
     >
-      <Transition name="fade" mode="out-in">
-        <div class="testimonial-card" :key="testimonialIndex" aria-live="polite">
-          <!-- Logo tile (left on desktop, above on mobile) -->
-          <div class="card-logo">
-            <img
-              v-if="currentSchool().logo"
-              :src="currentSchool().logo"
-              :alt="currentSchool().name"
-              class="logo-img"
-            />
-            <div
-              v-else
-              class="logo-tile"
-              :style="{ background: currentSchool().color }"
-            >
-              {{ currentSchool().initials }}
+      <!-- Fixed-height wrapper prevents layout jumps when testimonial heights differ -->
+      <div class="testimonial-card-wrap">
+        <Transition name="fade" mode="out-in">
+          <div class="testimonial-card" :key="testimonialIndex" aria-live="polite">
+            <!-- Logo tile (left on desktop, above on mobile) -->
+            <div class="card-logo">
+              <img
+                v-if="currentSchool().logo"
+                :src="currentSchool().logo"
+                :alt="currentSchool().name"
+                class="logo-img"
+              />
+              <div
+                v-else
+                class="logo-tile"
+                :style="{ background: currentSchool().color }"
+              >
+                {{ currentSchool().initials }}
+              </div>
             </div>
-          </div>
 
-          <!-- Quote and attribution -->
-          <div class="card-body">
-            <p class="quote">"{{ currentSchool().testimonial!.quote }}"</p>
-            <div class="attribution">
-              <span class="person">{{ currentSchool().testimonial!.person }}</span>
-              <span class="title-text">{{ currentSchool().testimonial!.title }}</span>
+            <!-- Quote and attribution -->
+            <div class="card-body">
+              <p class="quote">"{{ currentSchool().testimonial!.quote }}"</p>
+              <div class="attribution">
+                <span class="person">{{ currentSchool().testimonial!.person }}</span>
+                <span class="title-text">{{ currentSchool().testimonial!.title }}</span>
+              </div>
             </div>
           </div>
-        </div>
-      </Transition>
+        </Transition>
+      </div>
 
       <!-- Progress bar — :key resets the CSS animation on each advance -->
       <div class="progress-track">
@@ -70,27 +73,29 @@
       @mouseenter="isHoveringLogos = true"
       @mouseleave="isHoveringLogos = false"
     >
-      <div class="logo-strip">
-        <div
-          v-for="slot in logoSlots"
-          :key="slot.id"
-          class="logo-strip-tile"
-          :class="{ 'is-visible': slot.visible }"
-        >
-          <img
-            v-if="slot.school.logo"
-            :src="slot.school.logo"
-            :alt="slot.school.name"
-            class="strip-img"
-          />
+      <!-- Fixed-width scroller centers the strip and clips entering/leaving tiles -->
+      <div class="logo-strip-scroller">
+        <TransitionGroup name="logo-slide" tag="div" class="logo-strip">
           <div
-            v-else
-            class="strip-placeholder"
-            :style="{ background: slot.school.color }"
+            v-for="slot in logoSlots"
+            :key="slot.id"
+            class="logo-strip-tile"
           >
-            {{ slot.school.initials }}
+            <img
+              v-if="slot.school.logo"
+              :src="slot.school.logo"
+              :alt="slot.school.name"
+              class="strip-img"
+            />
+            <div
+              v-else
+              class="strip-placeholder"
+              :style="{ background: slot.school.color }"
+            >
+              {{ slot.school.initials }}
+            </div>
           </div>
-        </div>
+        </TransitionGroup>
       </div>
     </div>
   </div>
@@ -116,7 +121,6 @@ interface School {
 interface LogoSlot {
   id: number
   school: School
-  visible: boolean
 }
 
 const VISIBLE_LOGOS = 5
@@ -233,36 +237,25 @@ let nextSchoolIndex = VISIBLE_LOGOS
 const isHoveringLogos = ref(false)
 
 const logoSlots = ref<LogoSlot[]>(
-  schools.slice(0, VISIBLE_LOGOS).map((school, i) => ({
-    id: i,
-    school,
-    visible: true
-  }))
+  schools.slice(0, VISIBLE_LOGOS).map((school, i) => ({ id: i, school }))
 )
 
+// Brief cooldown flag to prevent concurrent advances
+let isAdvancing = false
+
 function advanceLogo() {
-  if (logoAdvanceTimeout) return  // already advancing, skip
-  logoSlots.value[0].visible = false
-  logoAdvanceTimeout = setTimeout(() => {
-    logoAdvanceTimeout = null
-    logoSlots.value.shift()
-    const newSchool = schools[nextSchoolIndex % schools.length]
-    nextSchoolIndex++
-    logoSlots.value.push({
-      id: slotIdCounter++,
-      school: newSchool,
-      visible: false
-    })
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        logoSlots.value[VISIBLE_LOGOS - 1].visible = true
-      })
-    })
-  }, 380)
+  if (isAdvancing) return
+  isAdvancing = true
+  logoSlots.value.shift()
+  logoSlots.value.push({
+    id: slotIdCounter++,
+    school: schools[nextSchoolIndex % schools.length]
+  })
+  nextSchoolIndex++
+  setTimeout(() => { isAdvancing = false }, 500)
 }
 
 let logoTimer: ReturnType<typeof setInterval> | null = null
-let logoAdvanceTimeout: ReturnType<typeof setTimeout> | null = null
 
 function startLogoTimer() {
   if (logoTimer) clearInterval(logoTimer)
@@ -279,7 +272,6 @@ onMounted(() => {
 onUnmounted(() => {
   if (testimonialTimer) clearInterval(testimonialTimer)
   if (logoTimer) clearInterval(logoTimer)
-  if (logoAdvanceTimeout) clearTimeout(logoAdvanceTimeout)
 })
 </script>
 
@@ -306,15 +298,20 @@ onUnmounted(() => {
   margin: 0 auto 28px;
 }
 
+/* Prevents layout jumps: cards of different heights won't reflow the page */
+.testimonial-card-wrap {
+  min-height: 130px;
+}
+
 .testimonial-card {
-  background: white;
+  /* Soft frosted look — blends with the page gradient instead of floating white card */
+  background: rgba(255, 255, 255, 0.45);
   border-radius: 16px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   padding: 20px;
   display: flex;
   gap: 20px;
   align-items: flex-start;
-  min-height: 120px;
+  min-height: 130px;
 }
 
 /* Logo tile */
@@ -394,49 +391,77 @@ onUnmounted(() => {
 .dots {
   display: flex;
   justify-content: center;
-  gap: 8px;
+  gap: 0;
+  align-items: center;
 }
+/* 44px touch target with transparent bg; visual dot via ::after */
 .dot {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dot::after {
+  content: '';
+  display: block;
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background: #C8CEC6;
-  border: none;
-  cursor: pointer;
-  padding: 18px;
-  margin: -18px;
   transition: background 0.2s, transform 0.2s;
 }
-.dot.active {
+.dot.active::after {
   background: #4E6C3C;
   transform: scale(1.25);
 }
 .dot:focus-visible {
   outline: 2px solid #4E6C3C;
-  outline-offset: 3px;
+  outline-offset: -17px;
 }
 
 /* ── Logo strip ── */
 .logo-strip-wrap {
-  overflow: hidden;
-  mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+  /* hover listener container */
 }
 
+/*
+ * Fixed-width centered scroller. The overflow:hidden clips tiles that are
+ * entering from the right or exiting to the left during the slide animation.
+ * The mask-image fades the edge tiles into the page background.
+ *
+ * Width = 5 tiles × 140px + 4 gaps × 16px = 764px
+ */
+.logo-strip-scroller {
+  width: 764px;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+/*
+ * position:relative is required so that Vue's TransitionGroup can absolutely-
+ * position the leaving tile in place while the remaining tiles FLIP into their
+ * new positions — producing a true conveyor-belt slide.
+ */
 .logo-strip {
+  position: relative;
   display: flex;
   gap: 16px;
-  justify-content: center;
   padding: 8px 0;
 }
 
 .logo-strip-tile {
   flex-shrink: 0;
-  opacity: 0;
-  transition: opacity 0.35s ease;
-}
-.logo-strip-tile.is-visible {
-  opacity: 1;
+  position: relative;
+  z-index: 1; /* renders above the absolutely-positioned leaving tile */
 }
 
 .strip-placeholder {
@@ -470,12 +495,45 @@ onUnmounted(() => {
   opacity: 0;
 }
 
+/*
+ * Logo strip conveyor-belt slide via Vue TransitionGroup + FLIP:
+ *   - logo-slide-move    : remaining tiles slide left to their new positions (FLIP)
+ *   - logo-slide-leave-* : departing tile fades out to the left (position:absolute,
+ *                          taken out of flow so FLIP can calculate shifts correctly)
+ *   - logo-slide-enter-* : new tile fades in from the right
+ *
+ * translateX(156px) = one tile width (140px) + one gap (16px)
+ */
+.logo-slide-move {
+  transition: transform 0.4s ease;
+}
+.logo-slide-enter-active {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.logo-slide-enter-from {
+  opacity: 0;
+  transform: translateX(156px);
+}
+.logo-slide-leave-active {
+  position: absolute;
+  z-index: 0;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.logo-slide-leave-to {
+  opacity: 0;
+  transform: translateX(-156px);
+}
+
 /* ── Responsive ── */
 @media screen and (max-width: 767px) {
   /* Testimonial card: stack logo above quote */
   .testimonial-card {
     flex-direction: column;
     gap: 12px;
+    min-height: 160px;
+  }
+  .testimonial-card-wrap {
+    min-height: 160px;
   }
   .logo-tile,
   .logo-img {
@@ -484,13 +542,14 @@ onUnmounted(() => {
     font-size: 10px;
   }
 
-  /* Logo strip: show only 3 tiles on mobile */
-  .logo-strip-wrap {
-    mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
-  }
-  .logo-strip {
-    gap: 12px;
+  /*
+   * Mobile scroller: show 3 tiles — 3 × 100px + 2 × 16px = 332px
+   * translateX for enter/leave matches mobile tile+gap = 116px
+   */
+  .logo-strip-scroller {
+    width: 332px;
+    mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
   }
   .logo-strip-tile:nth-child(n+4) {
     display: none;
@@ -500,6 +559,12 @@ onUnmounted(() => {
     width: 100px;
     height: 40px;
     font-size: 10px;
+  }
+  .logo-slide-enter-from {
+    transform: translateX(116px);
+  }
+  .logo-slide-leave-to {
+    transform: translateX(-116px);
   }
 }
 
@@ -515,10 +580,16 @@ onUnmounted(() => {
     transition: none;
   }
 
-  /* Logo strip: show static row, disable opacity transitions */
-  .logo-strip-tile {
-    transition: none;
-    opacity: 1 !important;
+  /* Logo strip: disable all slide/move transitions */
+  .logo-slide-move,
+  .logo-slide-enter-active,
+  .logo-slide-leave-active {
+    transition: none !important;
+  }
+  .logo-slide-enter-from,
+  .logo-slide-leave-to {
+    opacity: 1;
+    transform: none;
   }
 }
 </style>

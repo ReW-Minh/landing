@@ -11,7 +11,14 @@
       "Bash(npm test:*)",
       "Bash(git push:*)",
       "Bash(/Users/minh/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.7/skills/brainstorming/scripts/start-server.sh:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(yarn build:*)",
+      "Bash(npx vue-tsc:*)",
+      "Bash(npx nuxi:*)",
+      "Bash(grep -rn \"text-2xl\" /Users/minh/Developer/REWORKFLOW/REWORKFLOW-FE/assets/ /Users/minh/Developer/REWORKFLOW/REWORKFLOW-FE/tailwind.config.*)",
+      "Bash(ls /Users/minh/Developer/REWORKFLOW/REWORKFLOW-FE/tailwind.config.*)",
+      "Bash(grep -l \"box-sizing\\\\|reset\\\\|\\\\*\" /Users/minh/Developer/REWORKFLOW/REWORKFLOW-FE/assets/scss/*.scss)",
+      "Bash(ls /Users/minh/Developer/REWORKFLOW/REWORKFLOW-FE/tailwind.config*)"
     ]
   }
 }
