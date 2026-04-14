@@ -12,7 +12,7 @@
       @mouseleave="isHoveringTestimonial = false"
     >
       <Transition name="fade" mode="out-in">
-        <div class="testimonial-card" :key="testimonialIndex">
+        <div class="testimonial-card" :key="testimonialIndex" aria-live="polite">
           <!-- Logo tile (left on desktop, above on mobile) -->
           <div class="card-logo">
             <img
@@ -241,6 +241,7 @@ const logoSlots = ref<LogoSlot[]>(
 )
 
 function advanceLogo() {
+  if (logoAdvanceTimeout) return  // already advancing, skip
   logoSlots.value[0].visible = false
   logoAdvanceTimeout = setTimeout(() => {
     logoAdvanceTimeout = null
@@ -402,13 +403,17 @@ onUnmounted(() => {
   background: #C8CEC6;
   border: none;
   cursor: pointer;
-  padding: 10px;
-  margin: -10px;
+  padding: 18px;
+  margin: -18px;
   transition: background 0.2s, transform 0.2s;
 }
 .dot.active {
   background: #4E6C3C;
   transform: scale(1.25);
+}
+.dot:focus-visible {
+  outline: 2px solid #4E6C3C;
+  outline-offset: 3px;
 }
 
 /* ── Logo strip ── */
@@ -488,8 +493,7 @@ onUnmounted(() => {
     gap: 12px;
   }
   .logo-strip-tile:nth-child(n+4) {
-    visibility: hidden;
-    pointer-events: none;
+    display: none;
   }
   .strip-placeholder,
   .strip-img {
