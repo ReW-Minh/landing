@@ -49,6 +49,7 @@
       <!-- Dot indicators -->
       <div class="dots" role="tablist" aria-label="Testimonial navigation">
         <button
+          type="button"
           v-for="(school, i) in testimonialSchools"
           :key="school.name"
           class="dot"
@@ -304,6 +305,9 @@ onUnmounted(() => {
 @keyframes progress {
   from { width: 0%; }
   to   { width: 100%; }
+}
+.testimonial-section:hover .progress-bar {
+  animation-play-state: paused;
 }
 
 /* Dots */
