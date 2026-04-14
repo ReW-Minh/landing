@@ -61,6 +61,36 @@
         />
       </div>
     </div>
+
+    <!-- Logo Strip -->
+    <div
+      class="logo-strip-wrap"
+      @mouseenter="isHoveringLogos = true"
+      @mouseleave="isHoveringLogos = false"
+    >
+      <div class="logo-strip">
+        <div
+          v-for="slot in logoSlots"
+          :key="slot.id"
+          class="logo-strip-tile"
+          :class="{ 'is-visible': slot.visible }"
+        >
+          <img
+            v-if="slot.school.logo"
+            :src="slot.school.logo"
+            :alt="slot.school.name"
+            class="strip-img"
+          />
+          <div
+            v-else
+            class="strip-placeholder"
+            :style="{ background: slot.school.color }"
+          >
+            {{ slot.school.name }}
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -168,6 +198,55 @@ const schools: School[] = [
   { name: 'DePaul University',        initials: 'DPU', color: '#23417A' },
 ]
 
+// ── Logo strip ────────────────────────────────────────────────────────────
+
+let slotIdCounter = VISIBLE_LOGOS
+let nextSchoolIndex = VISIBLE_LOGOS
+const isHoveringLogos = ref(false)
+
+const logoSlots = ref<LogoSlot[]>(
+  schools.slice(0, VISIBLE_LOGOS).map((school, i) => ({
+    id: i,
+    school,
+    visible: true
+  }))
+)
+
+function advanceLogo() {
+  // Fade out the first slot
+  logoSlots.value[0].visible = false
+
+  setTimeout(() => {
+    // Remove faded-out slot from beginning
+    logoSlots.value.shift()
+
+    // Push new slot at end (invisible initially)
+    const newSchool = schools[nextSchoolIndex % schools.length]
+    nextSchoolIndex++
+    logoSlots.value.push({
+      id: slotIdCounter++,
+      school: newSchool,
+      visible: false
+    })
+
+    // Trigger fade-in on the new slot after one frame
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        logoSlots.value[VISIBLE_LOGOS - 1].visible = true
+      })
+    })
+  }, 380)
+}
+
+let logoTimer: ReturnType<typeof setInterval> | null = null
+
+function startLogoTimer() {
+  if (logoTimer) clearInterval(logoTimer)
+  logoTimer = setInterval(() => {
+    if (!isHoveringLogos.value) advanceLogo()
+  }, 3000)
+}
+
 // ── Testimonial carousel ──────────────────────────────────────────────────
 
 const testimonialSchools = schools.filter(s => s.testimonial)
@@ -196,10 +275,12 @@ function goToTestimonial(index: number) {
 
 onMounted(() => {
   startTestimonialTimer()
+  startLogoTimer()
 })
 
 onUnmounted(() => {
   if (testimonialTimer) clearInterval(testimonialTimer)
+  if (logoTimer) clearInterval(logoTimer)
 })
 </script>
 
@@ -329,6 +410,50 @@ onUnmounted(() => {
 .dot.active {
   background: #4E6C3C;
   transform: scale(1.25);
+}
+
+/* ── Logo strip ── */
+.logo-strip-wrap {
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+}
+
+.logo-strip {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+.logo-strip-tile {
+  flex-shrink: 0;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.logo-strip-tile.is-visible {
+  opacity: 1;
+}
+
+.strip-placeholder {
+  width: 140px;
+  height: 52px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  padding: 0 8px;
+  line-height: 1.2;
+}
+.strip-img {
+  width: 140px;
+  height: 52px;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 /* Testimonial fade transition */
