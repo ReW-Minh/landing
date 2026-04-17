@@ -358,8 +358,10 @@ p {
 }
 
 footer {
-  background: var(--rew-secondary-green);
-  padding: 20px 0;
+  background: #2e2219;
+  padding: 72px 0 20px;
+  position: relative;
+  overflow: visible;
 }
 
 .logo-container {
