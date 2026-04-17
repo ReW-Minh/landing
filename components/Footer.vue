@@ -1,5 +1,8 @@
 <template>
   <footer>
+    <div class="footer-trees" aria-hidden="true">
+      <img src="/img/treeline.png" alt="" />
+    </div>
     <div class="container-fluid">
       <div class="md:mx-0 mx-12">
         <div class="flex flex-col md:flex-row items-center">
@@ -58,6 +61,29 @@
 </script>
 
 <style scoped lang="scss">
+.footer-trees {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  line-height: 0;
+}
+
+.footer-trees img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: top;
+}
+
+@media (max-width: 767px) {
+  .footer-trees img {
+    height: 110px;
+  }
+}
+
 .social-hover {
   position: relative;
 
