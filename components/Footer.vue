@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="footer-trees" aria-hidden="true">
-      <img src="/img/treeline.png" alt="" />
+      <img src="/img/treeline.png" alt="" width="1440" height="180" />
     </div>
     <div class="container-fluid">
       <div class="md:mx-0 mx-12">
@@ -68,19 +68,17 @@
   width: 100%;
   pointer-events: none;
   line-height: 0;
-}
 
-.footer-trees img {
-  display: block;
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  object-position: top;
-}
+  img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: top;
 
-@media (max-width: 767px) {
-  .footer-trees img {
-    height: 110px;
+    @media (max-width: 767px) {
+      height: 110px;
+    }
   }
 }
 
