@@ -18,7 +18,10 @@
       "Bash(grep -rn \"text-2xl\" /Users/minh/Developer/REWORKFLOW/REWORKFLOW-FE/assets/ /Users/minh/Developer/REWORKFLOW/REWORKFLOW-FE/tailwind.config.*)",
       "Bash(ls /Users/minh/Developer/REWORKFLOW/REWORKFLOW-FE/tailwind.config.*)",
       "Bash(grep -l \"box-sizing\\\\|reset\\\\|\\\\*\" /Users/minh/Developer/REWORKFLOW/REWORKFLOW-FE/assets/scss/*.scss)",
-      "Bash(ls /Users/minh/Developer/REWORKFLOW/REWORKFLOW-FE/tailwind.config*)"
+      "Bash(ls /Users/minh/Developer/REWORKFLOW/REWORKFLOW-FE/tailwind.config*)",
+      "Read(//Users/minh/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.7/**)",
+      "Bash(bash scripts/start-server.sh --project-dir /Users/minh/Developer/REWORKFLOW/REWORKFLOW-FE)",
+      "Bash(git *)"
     ]
   }
 }

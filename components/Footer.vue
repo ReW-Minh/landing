@@ -1,14 +1,18 @@
 <template>
-  <footer>
-    <div class="footer-trees" aria-hidden="true">
-      <img src="/img/treeline.png" alt="" width="1440" height="180" />
+  <footer class="relative bg-transparent pb-0 md:pb-10">
+    <div class="footer-bg absolute -z-10 -left-[100px] right-0 bottom-28" aria-hidden="true">
+      <img src="/img/footer.png" alt=""/>
     </div>
+
+    <div class="footer-base absolute -z-[20] bg-[#6f7f6f] bottom-0 -top-10 left-0 right-0"></div>
+
     <div class="container-fluid">
       <div class="md:mx-0 mx-12">
         <div class="flex flex-col md:flex-row items-center">
           <div class="flex gap-4">
-            <div class="bg-white logo-container h-[142px] aspect-square overflow-hidden flex items-center justify-center">
-                <img src="/img/logo-5th.png" alt="rew" class="max-w-none w-[180px]">
+            <div
+                class="bg-white logo-container h-[142px] aspect-square overflow-hidden flex items-center justify-center">
+              <img src="/img/logo-5th.png" alt="rew" class="max-w-none w-[180px]">
             </div>
             <div class="block md:hidden w-[120px]">
               <img
@@ -61,27 +65,6 @@
 </script>
 
 <style scoped lang="scss">
-.footer-trees {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  width: 100%;
-  pointer-events: none;
-  line-height: 0;
-
-  img {
-    display: block;
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    object-position: top;
-
-    @media (max-width: 767px) {
-      height: 110px;
-    }
-  }
-}
-
 .social-hover {
   position: relative;
 
@@ -127,11 +110,11 @@
 
   &.instagram::before {
     background: linear-gradient(45deg,
-        #f09433 0%,
-        #e6683c 25%,
-        #dc2743 50%,
-        #cc2366 75%,
-        #bc1888 100%);
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%);
     border-radius: 12px;
   }
 
@@ -149,5 +132,31 @@
     background: #7BB867;
     border-radius: 8px;
   }
+}
+
+.footer-bg {
+  img {
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        black 88%,         /* keep more image */
+        rgba(0,0,0,0.7) 94%,
+        transparent 100%
+    );
+
+    mask-image: linear-gradient(
+        to bottom,
+        black 88%,
+        rgba(0,0,0,0.7) 94%,
+        transparent 100%
+    );
+  }
+}
+
+.footer-base {
+  background: linear-gradient(
+      to bottom,
+      rgba(111, 127, 111, 0) 0%,   /* transparent at top */
+      #6f7f6f 60%                  /* fully solid */
+  );
 }
 </style>

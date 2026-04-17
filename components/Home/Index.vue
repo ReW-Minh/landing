@@ -3,14 +3,14 @@ import SlateSchoolLogos from '~/components/Home/SlateSchoolLogos.vue'
 </script>
 
 <template>
-  <section class="pt-5 md:pt-8 pb-6 md:overflow-hidden overflow-visible" id="home">
+  <section class="pt-5 md:pt-8 pb-6 overflow-x-visible overflow-y-visible" id="home">
     <div class="container-fluid">
+      <img src="/img/logo-bg.svg" alt="rew"
+           class="bg-logo !left-1/2 !-translate-x-1/2 !top-[220px] !h-[750px] !opacity-[0.07] invisible md:visible">
+
       <div class="grid grid-cols-12 gap-3">
         <div class="lg:col-span-9 md:col-span-8 col-span-12">
           <div class="flex flex-col h-full justify-center relative">
-            <img src="/img/logo-bg.svg" alt="rew"
-                 class="bg-logo -left-[24px] !top-1/2 !transform !-translate-y-1/2 !opacity-5 invisible md:visible">
-
             <div data-aos="fade-right" data-aos-duration="700"
                  class="left-home-block position-relative mt-6 md:mt-0 relative">
               <h1 class="hero-title rew-text-green leading-tight">
@@ -40,10 +40,9 @@ import SlateSchoolLogos from '~/components/Home/SlateSchoolLogos.vue'
 
         <img class="absolute h-[calc(100dvh-360px)] md:hidden left-1/2 -translate-x-1/2 -z-10 opacity-20"
              src="/img/hero-img-lg.webp" alt="rew main board">
-
-
-        <SlateSchoolLogos class="col-span-12 w-full" />
       </div>
+
+      <SlateSchoolLogos/>
     </div>
   </section>
 </template>

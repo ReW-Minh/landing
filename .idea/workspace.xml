@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="fix: remove plausible on test env">
+    <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/img/footer.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.claude/settings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/settings.local.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Home/SlateSchoolLogos.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/SlateSchoolLogos.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +20,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="407" />
+    <option name="cachedIndexableFilesCount" value="172" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -57,47 +62,47 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ChatTagsLlmMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ClientConfigCleanupMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.CodyAccountHistoryMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.CodyAccountsIdsRefresh&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.CodyAssignOrphanedChatsToActiveAccount&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.CodyConvertUrlToCodebaseName&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.CodyHistoryLlmMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.CodyMigrateChatHistory-v2&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.CodyProjectSettingsMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.DeprecatedChatLlmMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ToggleCodyToolWindowAfterMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/minh/Developer/REWORKFLOW/REWORKFLOW-FE&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;npm.generate.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ChatTagsLlmMigration": "true",
+    "RunOnceActivity.ClientConfigCleanupMigration": "true",
+    "RunOnceActivity.CodyAccountHistoryMigration": "true",
+    "RunOnceActivity.CodyAccountsIdsRefresh": "true",
+    "RunOnceActivity.CodyAssignOrphanedChatsToActiveAccount": "true",
+    "RunOnceActivity.CodyConvertUrlToCodebaseName": "true",
+    "RunOnceActivity.CodyHistoryLlmMigration": "true",
+    "RunOnceActivity.CodyMigrateChatHistory-v2": "true",
+    "RunOnceActivity.CodyProjectSettingsMigration": "true",
+    "RunOnceActivity.DeprecatedChatLlmMigration": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.ToggleCodyToolWindowAfterMigration": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/minh/Developer/REWORKFLOW/REWORKFLOW-FE/public/img",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "npm.dev.executor": "Run",
+    "npm.generate.executor": "Run",
+    "settings.editor.selected.configurable": "settings.sync",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Composition API Component&quot;
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecapSpentCounter">
     <option name="endsOfQuotaMs" value="1773885611204" />
     <option name="spentUsd" value="0.00274355" />
@@ -107,6 +112,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/pages/services" />
       <recent name="$PROJECT_DIR$/composables" />
     </key>
@@ -299,7 +305,10 @@
       <workItem from="1775313769057" duration="2908000" />
       <workItem from="1775441417676" duration="32000" />
       <workItem from="1776140310056" duration="4801000" />
-      <workItem from="1776174933348" duration="1262000" />
+      <workItem from="1776174933348" duration="1416000" />
+      <workItem from="1776316022420" duration="1459000" />
+      <workItem from="1776401671337" duration="1819000" />
+      <workItem from="1776437036785" duration="8779000" />
     </task>
     <task id="LOCAL-00001" summary="feat: update team members">
       <option name="closed" value="true" />
@@ -397,7 +406,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775318438231</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: update UI schools home page">
+      <option name="closed" value="true" />
+      <created>1776179024846</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1776179024846</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,6 +424,7 @@
     <option name="OPEN_GENERIC_TABS">
       <map>
         <entry key="251ae6ae-a70a-413f-aae7-a9fbe9a66c86" value="TOOL_WINDOW" />
+        <entry key="bb494021-a9b9-4ee9-b027-8bc472f22276" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="TAB_STATES">
@@ -433,6 +451,11 @@
             </State>
           </value>
         </entry>
+        <entry key="bb494021-a9b9-4ee9-b027-8bc472f22276">
+          <value>
+            <State />
+          </value>
+        </entry>
       </map>
     </option>
   </component>
@@ -448,6 +471,7 @@
     <MESSAGE value="feat: update about text" />
     <MESSAGE value="feat: add slate schools" />
     <MESSAGE value="fix: remove plausible on test env" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: remove plausible on test env" />
+    <MESSAGE value="feat: update UI schools home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update UI schools home page" />
   </component>
 </project>

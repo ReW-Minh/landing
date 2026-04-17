@@ -1,5 +1,5 @@
 <template>
-  <div class="slate-logos">
+  <div class="slate-logos py-20">
     <!-- Heading — aligned with .container-fluid column -->
     <div class="slate-logos-heading-wrap">
       <div class="heading text-2xl md:text-3xl">
@@ -8,76 +8,68 @@
     </div>
 
     <!-- Testimonial carousel — full width of hero section -->
-    <div
-      class="testimonial-full-bleed"
-      @mouseenter="isHoveringTestimonial = true"
-      @mouseleave="isHoveringTestimonial = false"
-    >
+    <div class="testimonial-full-bleed shadow rounded-4xl mb-10">
       <div class="testimonial-section">
-        <div class="testimonial-card-wrap">
-          <Transition name="fade" mode="out-in">
-            <div class="testimonial-card" :key="testimonialIndex" aria-live="polite">
-              <p class="quote">"{{ currentSchool().testimonial!.quote }}"</p>
-              <div class="attribution">
-                <span class="person-title">
-                  {{ currentSchool().testimonial!.person }}, {{ currentSchool().testimonial!.title }}
-                </span>
-                <span class="school-name">{{ currentSchool().name }}</span>
+        <ClientOnly>
+          <Swiper
+              class="testimonial-swiper"
+              :modules="testimonialModules"
+              :loop="true"
+              :autoplay="testimonialAutoplay"
+              :allow-touch-move="false"
+              aria-live="polite"
+              effect="fade"
+              :fadeEffect="{ crossFade: true }"
+          >
+            <SwiperSlide v-for="school in testimonialSchools" :key="school.name">
+              <div class="testimonial-card">
+                <p class="quote text-xl md:text-2xl">"{{ school.testimonial!.quote }}"</p>
+                <div class="attribution text-lg">
+                  <span class="person-title">{{ school.testimonial!.person }} | {{ school.testimonial!.title }}</span>
+                  <span class="school-name">{{ school.name }}</span>
+                </div>
               </div>
-            </div>
-          </Transition>
-        </div>
-
+            </SwiperSlide>
+          </Swiper>
+        </ClientOnly>
       </div>
     </div>
 
     <!-- Logo carousel (Swiper) -->
-    <div class="logo-strip-wrap" role="region" aria-label="Partner schools">
+    <div class="logo-strip-wrap bg-white/40 backdrop-blur rounded-2xl" role="region" aria-label="Partner schools">
       <ClientOnly>
         <Swiper
-          class="logo-swiper"
-          :modules="swiperModules"
-          :slides-per-view="'auto'"
-          :loop="true"
-          :space-between="14"
-          :speed="900"
-          :autoplay="logoAutoplay"
-          :breakpoints="logoBreakpoints"
-          :watch-overflow="false"
+            class="logo-swiper"
+            :modules="swiperModules"
+            :slides-per-view="2"
+            :loop="true"
+            :space-between="14"
+            :speed="900"
+            :autoplay="logoAutoplay"
+            :breakpoints="logoBreakpoints"
+            :watch-overflow="false"
         >
-          <SwiperSlide v-for="(school, i) in schools" :key="`logo-${i}-${school.name}`" class="logo-swiper-slide">
+          <SwiperSlide v-for="(school, i) in logoSlides" :key="`logo-${i}-${school.name}`" class="logo-swiper-slide">
             <img
-              v-if="school.logo"
-              :src="school.logo"
-              :alt="school.name"
-              class="strip-img"
+                :src="school.logo"
+                :alt="school.name"
+                class="strip-img"
             />
-            <div
-              v-else
-              class="strip-placeholder"
-              :style="{ background: school.color }"
-            >
-              {{ school.initials }}
-            </div>
           </SwiperSlide>
         </Swiper>
         <template #fallback>
-          <div class="logo-swiper-fallback" aria-hidden="true" />
+          <div class="logo-swiper-fallback" aria-hidden="true"/>
         </template>
       </ClientOnly>
-    </div>
-
-    <!-- Treeline — bridges into footer -->
-    <div class="treeline-strip" aria-hidden="true">
-      <img src="/img/treeline.png" alt="" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue'
+import 'swiper/css/effect-fade'
+import { computed, onMounted, ref } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Autoplay } from 'swiper/modules'
+import { Autoplay, EffectFade } from 'swiper/modules'
 
 interface Testimonial {
   quote: string
@@ -87,87 +79,83 @@ interface Testimonial {
 
 interface School {
   name: string
-  initials: string
-  color: string
-  logo?: string
+  logo: string
   testimonial?: Testimonial
 }
 
 const schools: School[] = [
   {
-    name: 'Ouachita Baptist University',
-    initials: 'OBU',
-    color: '#4A2572',
+    name: 'Loyola Law School',
+    logo: '/img/schools/lls.png',
     testimonial: {
-      quote: 'ReWorkflow has been an invaluable partner in optimizing our Slate environment. Their expertise and responsiveness have made a real difference in how our team operates.',
-      person: 'Jane Smith',
-      title: 'Director of Admissions'
+      quote: 'Well, the team is amazing. I trust them with anything Slate-related! ReWorkflow isn’t a transactional business model, they’re very, very customer service-oriented and very responsive. I\'m just grateful to the entire team for making our lives easier. I truly don\'t think ReWorkflow could get enough praise.',
+      person: 'Mina Mizutani',
+      title: 'Assistant Director, JD Admissions'
     }
   },
   {
-    name: 'Teachers College, Columbia University',
-    initials: 'TC',
-    color: '#003DA5',
+    name: 'City Tech, CUNY',
+    logo: '/img/schools/citytech.png',
     testimonial: {
-      quote: 'Working with ReWorkflow has transformed how we use Slate. They understand higher ed operations deeply and deliver solutions that actually work for our team.',
-      person: 'John Doe',
-      title: 'Enrollment Systems Manager'
+      quote: 'The staff we work with at ReWorkflow, there’s no other company that can match their value. They’re very can-do, very friendly, very approachable—almost instant connectivity with the team. They understand our admissions process and the application journey as well as Slate’s nuts and bolts. They really know their stuff. It’s just a pleasure working with them!',
+      person: 'John Albanese',
+      title: 'Director of Admissions and Recruitment'
     }
   },
   {
-    name: 'Brown University',
-    initials: 'BRN',
-    color: '#4E3629',
+    name: 'Marymount Manhattan College',
+    logo: '/img/schools/mmc.png',
     testimonial: {
-      quote: "The cycle prep support alone saved us weeks of work. ReWorkflow's team feels like a true extension of our staff — knowledgeable, reliable, and always a step ahead.",
-      person: 'Sarah Lee',
-      title: 'VP of Enrollment'
+      quote: "I love working with the team at ReWorkflow! They’re good at communication, I can rely on whoever I’m working with, and they’re very knowledgeable in the field. They all have good critical thinking skills and apply extra thought to projects, and suggest best practice improvements that are very helpful. It’s not just a tick-the-box relationship. Basically, ReWorkflow is my secret weapon.",
+      person: 'Sunay Tamashev',
+      title: 'Director of Enrollment Marketing'
     }
   },
   {
-    name: 'CUNY City Tech',
-    initials: 'CCT',
-    color: '#003478',
+    name: 'NYU School of Professional Studies',
+    logo: '/img/schools/nyu.jpg',
     testimonial: {
-      quote: "ReWorkflow's Slate expertise is unmatched. From complex integrations to day-to-day support, they deliver fast, high-quality results every time.",
-      person: 'Michael Chen',
-      title: 'Senior Systems Analyst'
+      quote: "ReWorkflow has the feeling of “my expert friend is helping me.” With everyone on the team, we feel really supported. And we’ve learned so much from ReWorkflow’s people because they don’t just do it for you, they explain why. We’ve come so far as an organization since we’ve partnered with them, because it really has felt like we have an extra set of hands which is crucial in higher ed when it feels like you’re always trying to do more things without enough resources. We couldn’t be happier with our ReWorkflow partnership.",
+      person: 'Sara Edmunds',
+      title: 'Assistant Dean, Administration & Strategy'
     }
   },
   {
-    name: 'Moore College of Art & Design',
-    initials: 'MCA',
-    color: '#006B6B',
+    name: 'Paul Smith’s College',
+    logo: '/img/schools/ps.jpg',
     testimonial: {
-      quote: 'We trust ReWorkflow with our most critical Slate workflows. Their team is proactive, thorough, and genuinely invested in our success.',
-      person: 'Emily Torres',
+      quote: 'So I am an organizer, an executor, a developer, an enhancer—a team of one— with limited bandwidth supporting all of the admissions departments across the school, as well as senior administration for reporting. My time for troubleshooting Slate and understanding new enhancements is limited. ReWorkflow came in with a listening ear, understood my challenges, and provided me with very supportive team members. They understand the nuances of Slate, and really helped me understand where the friction points are, and what to do about them. Everyone I’ve communicated with makes me feel like I’m not just a client, but also part of the bigger ReWorkflow organization, which is a really nice partner relationship.',
+      person: 'Director of Enrollment Operations, Interim Director of Admissions',
       title: 'Associate Director of Admissions'
     }
   },
   {
-    name: 'University of Alabama in Huntsville',
-    initials: 'UAH',
-    color: '#003087',
+    name: 'University of Alabama, Huntsville',
+    logo: '/img/schools/uah.png',
     testimonial: {
-      quote: 'Highly recommend ReWorkflow to any institution looking to get more out of Slate. They are true partners who understand our goals, not just vendors.',
-      person: 'David Park',
-      title: 'Director of Enrollment Management'
+      quote: 'Since implementing Slate with ReWorkflow’s help, we have seen a drastic difference in processing times for students submitting an application, and the time it takes us to review it and communicate a decision. We have been processing way more quickly this year, and our enrollment numbers are reflecting that. And the team is not just knowledgeable about Slate. They\'re also knowledgeable about how an admissions operation runs, and how it could run more efficiently. So they’re also helping us work through what our business process could be, and it’s extremely valuable.',
+      person: 'Haley Kennedy',
+      title: 'Director of Admissions Operations'
     }
   },
-  { name: 'Stanford University', initials: 'SU', color: '#8C1515' },
-  { name: 'Georgetown University', initials: 'GU', color: '#041E42' },
-  { name: 'University of Michigan', initials: 'UM', color: '#00274C' },
-  { name: 'New York University', initials: 'NYU', color: '#57068C' },
-  { name: 'Northeastern University', initials: 'NEU', color: '#C8102E' },
-  { name: 'Loyola University Chicago', initials: 'LUC', color: '#832E2D' },
-  { name: 'Fordham University', initials: 'FU', color: '#811B24' },
-  { name: 'DePaul University', initials: 'DPU', color: '#23417A' },
+  {
+    name: 'JM Partner Solutions',
+    logo: 'https://static.wixstatic.com/media/7cb5bc_9f00498cca45490c9a1f6697f2074d8b~mv2.png',
+    testimonial: {
+      quote: 'We have recommended a lot of clients to ReWorkflow because they do great work and exceed our clients’ expectations, every time. The team is smart. They understand the system. And they\'re able to get in and either create the reports, write the trigger, or fix the issue with the system to get it so that it\'s functioning, and the campus isn\'t having to do manual workarounds. ReWorkflow has been very good at focusing on what the client needs are, and the team does what they say they will.',
+      person: 'Jessica Mireles',
+      title: 'Founder & President'
+    }
+  }
 ]
 
 const swiperModules = [Autoplay]
+const testimonialModules = [Autoplay, EffectFade]
 
 const logoBreakpoints = {
-  768: { spaceBetween: 20 },
+  480: { slidesPerView: 3 },
+  768: { slidesPerView: 4, spaceBetween: 20 },
+  1024: { slidesPerView: 5, spaceBetween: 24 }
 }
 
 const prefersReducedMotion = ref(false)
@@ -178,50 +166,28 @@ const logoAutoplay = computed(() => {
   return {
     delay: 2800,
     disableOnInteraction: false,
-    pauseOnMouseEnter: true,
-    reverseDirection: true,
+    reverseDirection: true
   }
 })
 
-// ── Testimonial carousel ──────────────────────────────────────────────────
-
 const testimonialSchools = schools.filter(s => s.testimonial)
-const testimonialIndex = ref(0)
-const isHoveringTestimonial = ref(false)
+const logoSlides = [...schools, ...schools, ...schools]
 
-function currentSchool() {
-  return testimonialSchools[testimonialIndex.value]
-}
-
-let testimonialTimer: ReturnType<typeof setInterval> | null = null
-
-function startTestimonialTimer() {
-  if (testimonialTimer) clearInterval(testimonialTimer)
-  testimonialTimer = setInterval(() => {
-    if (!isHoveringTestimonial.value) {
-      testimonialIndex.value = (testimonialIndex.value + 1) % testimonialSchools.length
-    }
-  }, 10000)
-}
-
+const testimonialAutoplay = computed(() => {
+  if (prefersReducedMotion.value) return false
+  return { delay: 10000, disableOnInteraction: false }
+})
 
 onMounted(() => {
   prefersReducedMotion.value = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  startTestimonialTimer()
-})
-
-onUnmounted(() => {
-  if (testimonialTimer) clearInterval(testimonialTimer)
 })
 </script>
 
 <style scoped>
 .slate-logos {
   --logo-tile-w: 168px;
-  --logo-tile-h: 62px;
-  padding: 24px 0 0;
+  --logo-tile-h: 72px;
   width: 100%;
-  background: #f5f0e4;
 }
 
 .slate-logos-heading-wrap {
@@ -239,16 +205,20 @@ onUnmounted(() => {
   letter-spacing: 0.02em;
   margin-bottom: 28px;
 }
+
 .count {
   color: #4E6C3C;
 }
 
 .testimonial-full-bleed {
-  width: 100%;
   box-sizing: border-box;
-  background: #2e2219;
+  background: rgba(46, 34, 25, 0.58);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(46, 34, 25, 0.29);
   padding: 28px clamp(16px, 4vw, 64px) 22px;
-  margin-bottom: 28px;
 }
 
 .testimonial-section {
@@ -257,39 +227,43 @@ onUnmounted(() => {
   margin: 0 auto;
 }
 
-.testimonial-card-wrap {
-  min-height: 120px;
+.testimonial-swiper {
+  min-height: 140px;
+}
+
+.testimonial-swiper :deep(.swiper-slide) {
+  margin: auto;
 }
 
 .testimonial-card {
   text-align: center;
-  padding: 8px 0 4px;
-  min-height: 120px;
+  padding: 16px 4px;
+  width: 100%;
 }
 
 .quote {
   font-style: italic;
-  color: #e8d9c8;
-  font-size: clamp(1.125rem, 2.35vw, 1.5rem);
+  color: white;
   line-height: 1.65;
-  margin: 0 auto 16px;
+  margin: 0 auto 24px;
   max-width: 100%;
 }
+
 .attribution {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 6px;
 }
+
 .person-title {
-  font-weight: 700;
-  font-size: clamp(0.9375rem, 1.35vw, 1rem);
-  color: #f0e6d8;
-}
-.school-name {
-  font-size: clamp(0.875rem, 1.2vw, 0.9375rem);
   font-weight: 600;
-  color: #b89070;
+  color: white;
+}
+
+.school-name {
+  font-weight: 400;
+  color: white;
   letter-spacing: 0.02em;
 }
 
@@ -304,31 +278,11 @@ onUnmounted(() => {
   box-sizing: border-box;
 }
 
-.logo-swiper {
-  overflow: visible;
-  padding: 10px 0;
-}
-
 .logo-swiper-slide {
-  width: var(--logo-tile-w);
   height: var(--logo-tile-h);
   box-sizing: border-box;
 }
 
-.strip-placeholder {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  font-weight: 900;
-  color: white;
-  text-align: center;
-  padding: 0 10px;
-  line-height: 1.2;
-}
 .strip-img {
   width: 100%;
   height: 100%;
@@ -340,57 +294,14 @@ onUnmounted(() => {
   min-height: calc(var(--logo-tile-h) + 20px);
 }
 
-.treeline-strip {
-  width: 100%;
-  margin-top: 16px;
-  line-height: 0;
-}
-
-.treeline-strip img {
-  display: block;
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  object-position: bottom;
-}
-
-@media (max-width: 767px) {
-  .treeline-strip img {
-    height: 140px;
-  }
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.4s ease;
-}
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-
 @media screen and (max-width: 767px) {
   .slate-logos {
     --logo-tile-w: 118px;
-    --logo-tile-h: 46px;
+    --logo-tile-h: 64px;
   }
 
-  .testimonial-card {
-    min-height: 140px;
-  }
-  .testimonial-card-wrap {
-    min-height: 140px;
-  }
-
-  .strip-placeholder {
-    font-size: 12px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .fade-enter-active,
-  .fade-leave-active {
-    transition: none;
+  .testimonial-swiper {
+    min-height: 160px;
   }
 }
 </style>
