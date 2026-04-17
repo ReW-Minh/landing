@@ -66,6 +66,11 @@
         </template>
       </ClientOnly>
     </div>
+
+    <!-- Treeline — bridges into footer -->
+    <div class="treeline-strip" aria-hidden="true">
+      <img src="/img/treeline.png" alt="" />
+    </div>
   </div>
 </template>
 
@@ -333,6 +338,26 @@ onUnmounted(() => {
 
 .logo-swiper-fallback {
   min-height: calc(var(--logo-tile-h) + 20px);
+}
+
+.treeline-strip {
+  width: 100%;
+  margin-top: 16px;
+  line-height: 0;
+}
+
+.treeline-strip img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+@media (max-width: 767px) {
+  .treeline-strip img {
+    height: 140px;
+  }
 }
 
 .fade-enter-active,
