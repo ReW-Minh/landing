@@ -1,42 +1,14 @@
 <template>
   <div class="slate-logos py-20">
     <!-- Heading — aligned with .container-fluid column -->
-    <div class="slate-logos-heading-wrap">
-      <div class="heading text-2xl md:text-3xl">
-        <span class="count">60+</span> Slate Schools and Counting!
-      </div>
-    </div>
-
-    <!-- Testimonial carousel — full width of hero section -->
-    <div class="testimonial-full-bleed shadow rounded-4xl mb-10">
-      <div class="testimonial-section">
-        <ClientOnly>
-          <Swiper
-              class="testimonial-swiper"
-              :modules="testimonialModules"
-              :loop="true"
-              :autoplay="testimonialAutoplay"
-              :allow-touch-move="false"
-              aria-live="polite"
-              effect="fade"
-              :fadeEffect="{ crossFade: true }"
-          >
-            <SwiperSlide v-for="school in testimonialSchools" :key="school.name">
-              <div class="testimonial-card">
-                <p class="quote text-xl md:text-2xl">"{{ school.testimonial!.quote }}"</p>
-                <div class="attribution text-lg">
-                  <span class="person-title">{{ school.testimonial!.person }} | {{ school.testimonial!.title }}</span>
-                  <span class="school-name">{{ school.name }}</span>
-                </div>
-              </div>
-            </SwiperSlide>
-          </Swiper>
-        </ClientOnly>
-      </div>
-    </div>
+<!--    <div class="slate-logos-heading-wrap">-->
+<!--      <div class="heading text-2xl md:text-3xl">-->
+<!--        <span class="count">60+</span> Slate Schools and Counting!-->
+<!--      </div>-->
+<!--    </div>-->
 
     <!-- Logo carousel (Swiper) -->
-    <div class="logo-strip-wrap bg-white/40 backdrop-blur rounded-2xl" role="region" aria-label="Partner schools">
+    <div class="logo-strip-wrap mb-10" role="region" aria-label="Partner schools">
       <ClientOnly>
         <Swiper
             class="logo-swiper"
@@ -61,6 +33,34 @@
           <div class="logo-swiper-fallback" aria-hidden="true"/>
         </template>
       </ClientOnly>
+    </div>
+
+    <!-- Testimonial carousel — full width of hero section -->
+    <div class="testimonial-full-bleed rounded-4xl mb-10 ">
+      <div class="testimonial-section">
+        <ClientOnly>
+          <Swiper
+              class="testimonial-swiper"
+              :modules="testimonialModules"
+              :loop="true"
+              :autoplay="testimonialAutoplay"
+              :allow-touch-move="false"
+              aria-live="polite"
+              effect="fade"
+              :fadeEffect="{ crossFade: true }"
+          >
+            <SwiperSlide v-for="school in testimonialSchools" :key="school.name">
+              <div class="testimonial-card rew-text-brown">
+                <p class="quote text-xl md:text-2xl">"{{ school.testimonial!.quote }}"</p>
+                <div class="attribution text-lg">
+                  <span class="person-title">{{ school.testimonial!.person }} | {{ school.testimonial!.title }}</span>
+                  <span class="school-name">{{ school.name }}</span>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </ClientOnly>
+      </div>
     </div>
   </div>
 </template>
@@ -113,7 +113,7 @@ const schools: School[] = [
   },
   {
     name: 'NYU School of Professional Studies',
-    logo: '/img/schools/nyu.jpg',
+    logo: '/img/schools/nyu.png',
     testimonial: {
       quote: "ReWorkflow has the feeling of “my expert friend is helping me.” With everyone on the team, we feel really supported. And we’ve learned so much from ReWorkflow’s people because they don’t just do it for you, they explain why. We’ve come so far as an organization since we’ve partnered with them, because it really has felt like we have an extra set of hands which is crucial in higher ed when it feels like you’re always trying to do more things without enough resources. We couldn’t be happier with our ReWorkflow partnership.",
       person: 'Sara Edmunds',
@@ -122,7 +122,7 @@ const schools: School[] = [
   },
   {
     name: 'Paul Smith’s College',
-    logo: '/img/schools/ps.jpg',
+    logo: '/img/schools/ps.png',
     testimonial: {
       quote: 'So I am an organizer, an executor, a developer, an enhancer—a team of one— with limited bandwidth supporting all of the admissions departments across the school, as well as senior administration for reporting. My time for troubleshooting Slate and understanding new enhancements is limited. ReWorkflow came in with a listening ear, understood my challenges, and provided me with very supportive team members. They understand the nuances of Slate, and really helped me understand where the friction points are, and what to do about them. Everyone I’ve communicated with makes me feel like I’m not just a client, but also part of the bigger ReWorkflow organization, which is a really nice partner relationship.',
       person: 'Director of Enrollment Operations, Interim Director of Admissions',
@@ -212,12 +212,7 @@ onMounted(() => {
 
 .testimonial-full-bleed {
   box-sizing: border-box;
-  background: rgba(46, 34, 25, 0.58);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(46, 34, 25, 0.29);
   padding: 28px clamp(16px, 4vw, 64px) 22px;
 }
 
@@ -243,7 +238,6 @@ onMounted(() => {
 
 .quote {
   font-style: italic;
-  color: white;
   line-height: 1.65;
   margin: 0 auto 24px;
   max-width: 100%;
@@ -258,12 +252,10 @@ onMounted(() => {
 
 .person-title {
   font-weight: 600;
-  color: white;
 }
 
 .school-name {
   font-weight: 400;
-  color: white;
   letter-spacing: 0.02em;
 }
 

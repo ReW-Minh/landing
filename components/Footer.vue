@@ -1,13 +1,12 @@
 <template>
-  <footer class="relative bg-transparent pb-0 md:pb-10">
-    <div class="footer-bg absolute -z-10 -left-[100px] right-0 bottom-28" aria-hidden="true">
-      <img src="/img/footer.png" alt=""/>
+  <footer class="relative bg-transparent pb-0 md:pb-20 min-h-[340px]">
+    <div
+        class="footer-bg absolute -z-10 left-0 right-0 -top-[180px] h-[50dvh] min-h-[700px] md:min-h-[520px] overflow-hidden bg-cover bg-top"
+        style="background-image: url('/img/footer.png')">
     </div>
 
-    <div class="footer-base absolute -z-[20] bg-[#6f7f6f] bottom-0 -top-10 left-0 right-0"></div>
-
     <div class="container-fluid">
-      <div class="md:mx-0 mx-12">
+      <div class="md:mx-0 mx-12 mt-[6rem]">
         <div class="flex flex-col md:flex-row items-center">
           <div class="flex gap-4">
             <div
@@ -44,7 +43,7 @@
                 <span class="rew-font text-white ms-3 text-xl">208-546-9221</span>
               </div>-->
             </div>
-            <div class="text-white text-center">
+            <div class="rew-text-brown font-bold text-center" style="text-shadow: 0 1px 2px rgba(255,255,255,0.8);">
               © {{ new Date().getFullYear() }} ReWorkflow. All Rights Reserved
             </div>
           </div>
@@ -67,6 +66,16 @@
 <style scoped lang="scss">
 .social-hover {
   position: relative;
+  background: var(--rew-primary-brown);
+  border-radius: 8px;
+
+  &.linkedin {
+    border: 3px solid var(--rew-primary-brown);
+  }
+
+  &.linkedin:hover {
+    border-color: white !important;
+  }
 
   &::before {
     content: '';
@@ -78,7 +87,7 @@
     outline: 2px solid white;
     outline-offset: 0;
     opacity: 0;
-    transition: all linear .1s
+    transition: all linear .1s;
   }
 
   &:hover {
@@ -134,29 +143,11 @@
   }
 }
 
-.footer-bg {
-  img {
-    -webkit-mask-image: linear-gradient(
-        to bottom,
-        black 88%,         /* keep more image */
-        rgba(0,0,0,0.7) 94%,
-        transparent 100%
-    );
-
-    mask-image: linear-gradient(
-        to bottom,
-        black 88%,
-        rgba(0,0,0,0.7) 94%,
-        transparent 100%
-    );
-  }
-}
-
 .footer-base {
   background: linear-gradient(
       to bottom,
-      rgba(111, 127, 111, 0) 0%,   /* transparent at top */
-      #6f7f6f 60%                  /* fully solid */
+      rgba(111, 127, 111, 0) 0%, /* transparent at top */
+      #6f7f6f 60% /* fully solid */
   );
 }
 </style>
