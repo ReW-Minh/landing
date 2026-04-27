@@ -1,7 +1,7 @@
 <template>
   <footer class="relative bg-transparent pb-0 md:pb-20 min-h-[340px]">
     <div
-        class="footer-bg absolute -z-10 left-0 right-0 -top-[180px] h-[50dvh] min-h-[700px] md:min-h-[520px] overflow-hidden bg-cover bg-top"
+        class="footer-bg absolute -z-10 left-0 right-0 -top-[140px] h-[50dvh] min-h-[700px] md:min-h-[520px] overflow-hidden bg-cover bg-top"
         style="background-image: url('/img/footer.png')">
     </div>
 
