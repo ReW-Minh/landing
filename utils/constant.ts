@@ -156,8 +156,8 @@ export const TESTIMONIALS: School[] = [
         logo: '/img/schools/ps.png',
         testimonial: {
             quote: 'So I am an organizer, an executor, a developer, an enhancer—a team of one— with limited bandwidth supporting all of the admissions departments across the school, as well as senior administration for reporting. My time for troubleshooting Slate and understanding new enhancements is limited. ReWorkflow came in with a listening ear, understood my challenges, and provided me with very supportive team members. They understand the nuances of Slate, and really helped me understand where the friction points are, and what to do about them. Everyone I’ve communicated with makes me feel like I’m not just a client, but also part of the bigger ReWorkflow organization, which is a really nice partner relationship.',
-            person: 'Director of Enrollment Operations, Interim Director of Admissions',
-            title: 'Associate Director of Admissions'
+            person: 'Nathan Eisenberg',
+            title: 'Director of Enrollment Operations, Interim Director of Admissions'
         }
     },
     {

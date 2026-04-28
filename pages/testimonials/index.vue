@@ -13,7 +13,7 @@ useHead({
          class="bg-logo !fixed !top-1/2 !left-1/2 !transform -translate-x-1/2 !-translate-y-1/2 invisible md:visible mt-[150px]">
 
     <BasePageHeader>
-      Slate Schools
+      How We Collaborate
 
       <template #subtitle>
         Hear directly from fellow admissions and student services teams about what it’s like to build and enhance their
@@ -31,8 +31,9 @@ useHead({
             class="border rounded-2xl bg-white/30 backdrop-blur-sm shadow col-span-6 md:col-span-3">
 
           <!-- Content -->
-          <div class="card !m-0 !p-6 h-full flex flex-col items-center justify-between gap-6 md:gap-0" style="text-align: left;">
-            <p class="italic rew-text-brown leading-relaxed mb-3 text-left">
+          <div class="card !m-0 !p-6 h-full flex flex-col items-center justify-between gap-6 md:gap-0"
+               style="text-align: left;">
+            <p class="rew-text-brown leading-relaxed mb-3 text-left">
               "{{ school.testimonial?.quote }}"
             </p>
 
@@ -49,7 +50,7 @@ useHead({
 
       <!-- CTA -->
       <div class="flex flex-col items-center gap-3 pt-4">
-        <p class="italic text-lg font-bold rew-text-brown">
+        <p class=" text-lg font-bold rew-text-brown">
           Join the <span class="rew-text-green">60+ schools</span> trusting <span class="rew-font"><span
             class="rew-text-green">Re</span>Workflow</span> with their Slate operations.
         </p>

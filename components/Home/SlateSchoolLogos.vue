@@ -160,7 +160,6 @@ onMounted(() => {
 }
 
 .quote {
-  font-style: italic;
   line-height: 1.65;
   margin: 0 auto 24px;
   max-width: 100%;
