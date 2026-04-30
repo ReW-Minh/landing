@@ -33,7 +33,7 @@ const profiles = useProfiles()
 
 onMounted(() => {
   const script = document.createElement('script')
-  script.async = 1
+  script.async = true
   script.src = 'https://go.reworkflow.com/register/?id=bb62dd62-0117-4840-9cb8-28b8f99b4211&output=embed&div=form_bb62dd62-0117-4840-9cb8-28b8f99b4211'
   document.head.appendChild(script)
 })

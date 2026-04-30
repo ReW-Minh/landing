@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="feat: add testimonials">
+    <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="feat: update testimonials">
+      <change afterPath="$PROJECT_DIR$/public/img/sproute.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/About/Mission.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/About/Mission.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Services.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Services.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Home/SlateSchoolLogos.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/SlateSchoolLogos.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/testimonials/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/testimonials/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stores/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/stores/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/types.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/constant.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/constant.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +25,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="179" />
+    <option name="cachedIndexableFilesCount" value="183" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -152,7 +161,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-3bd3a6803838-JavaScript-WS-261.22158.274" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.23567.141" />
       </set>
     </attachedChunks>
   </component>
@@ -307,7 +316,10 @@
       <workItem from="1776437036785" duration="9080000" />
       <workItem from="1776650643497" duration="196000" />
       <workItem from="1777299020382" duration="6619000" />
-      <workItem from="1777395959489" duration="289000" />
+      <workItem from="1777395959489" duration="454000" />
+      <workItem from="1777428363697" duration="216000" />
+      <workItem from="1777428613996" duration="6000" />
+      <workItem from="1777562896587" duration="4597000" />
     </task>
     <task id="LOCAL-00001" summary="feat: update team members">
       <option name="closed" value="true" />
@@ -437,7 +449,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777305604973</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feat: update testimonials">
+      <option name="closed" value="true" />
+      <created>1777396399370</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1777396399370</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,7 +484,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="production" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -492,6 +512,7 @@
     <MESSAGE value="feat: slate school logos" />
     <MESSAGE value="feat: slate schools and footer update" />
     <MESSAGE value="feat: add testimonials" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add testimonials" />
+    <MESSAGE value="feat: update testimonials" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update testimonials" />
   </component>
 </project>

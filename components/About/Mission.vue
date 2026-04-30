@@ -1,7 +1,9 @@
 <template>
   <div class="mission-section -mt-6 md:-mt-12" data-aos="fade-up">
-    <div class="mission-bg-shape">
-      <img src="/img/logo-bg.svg" alt="" aria-hidden="true"/>
+    <div class="mission-bg-shape bg-white logo-container h-[142px] aspect-square overflow-hidden flex items-center justify-center">
+      <div class="relative w-full h-full">
+        <img src="/img/logo-5th.png" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-1 w-[120%] h-[120%]" alt="rew">
+      </div>
     </div>
     <div class="mission-overlay"></div>
     <div class="mission-content">
@@ -35,19 +37,19 @@
 }
 
 .mission-bg-shape {
+  z-index: 1;
   position: absolute;
-  right: -5%;
+  right: 96px;
   top: 50%;
   transform: translateY(-50%);
-  width: 55%;
+  width: 400px;
+  height: 400px;
   max-width: 700px;
-  opacity: 0.15;
   pointer-events: none;
+  opacity: 0.7;
 
   img {
-    width: 100%;
-    height: auto;
-    filter: brightness(0) invert(1);
+    max-width: unset !important;
   }
 }
 
@@ -64,7 +66,7 @@
 
 .mission-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   max-width: 700px;
   margin-left: 5%;
 }
@@ -96,9 +98,8 @@
 
 @media (max-width: 1024px) {
   .mission-bg-shape {
-    width: 65%;
-    right: -10%;
-    opacity: 0.12;
+    right: 40px;
+    opacity: 0.2;
   }
 
   .mission-headline {
@@ -113,9 +114,8 @@
   }
 
   .mission-bg-shape {
-    width: 80%;
-    right: -20%;
-    opacity: 0.1;
+    right: 0;
+    opacity: 0.2;
   }
 
   .mission-content {

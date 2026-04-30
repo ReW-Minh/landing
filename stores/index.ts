@@ -10,6 +10,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
     
                 Outside of work and my amazing family adventures, we may cross paths in the great outdoors. You can also find me binging on podcasts and audiobooks at 2x speed (I just can’t slow down! 😆) 🎧 as well as listening to an eclectic expanse of music on real-time (open to all recommendations!), and/or enjoying a local craft beer while watching all things sports. 🍻`,
         id: 1,
+        visible: false,
         name: "Jon Rowand",
         picture: 'https://live.staticflickr.com/65535/53939568495_fd701673b8.jpg',
         title: "Chief Executive Officer",
@@ -45,6 +46,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
     
                 Upon moving to the US, I worked in admissions and admissions operations at Oklahoma City University and Columbia University. The experience working with prospective students front-end from my recruitment days has helped me tremendously when I moved to a more back-end roles, working with systems and processes to help student's application process more seamless. There are still a lot of questions: How to automatically load the student's enrollment history from their resume to their application in Slate? How to better communicate the official transcript submission instruction? The list goes on. These questions are the foundation of ReWorkflow. Jon & I started this adventure to help support institutions with streamlining their admissions and operations processes so the admission team can spend more time interacting with their students. Our ReWers work everyday towards building a more sustainable and evergreen system for teammate schools.`,
         id: 2,
+        visible: false,
         name: "Binh Rowand",
         picture: 'https://live.staticflickr.com/65535/53939365953_b2618988b9.jpg',
         title: "Chief Operating Officer",
@@ -80,6 +82,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
     
                 Outside of work, I enjoy raising my daughter and our chocolate lab alongside my spouse, a meteorologist in the Navy. As a military family, we embrace the adventure of frequent moves and love exploring new places around the world together. I’m also an avid runner—many of my best solutions to complex system challenges tend to arrive somewhere between mile two and five.`,
         id: 4,
+        visible: false,
         name: "TJ Backofen",
         picture: 'https://reworkflow.com/static/tj.jpg',
         title: "Executive Director",
@@ -114,6 +117,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
     {
         content: `Alice Byrd is a two-time graduate of Gardner-Webb University with a BA in Communication Studies and an MBA. Alice has a variety of experience in Slate administration, implementation, and auditing. She enjoys working with clients to teach them about all of the great things that Slate can do and takes pride in helping teams find creative, efficient solutions. She and her family live in the beautiful mountains of Asheville, North Carolina.`,
         id: 5,
+        visible: false,
         name: "Alice Byrd",
         order: 1,
         picture: 'https://reworkflow.com/static/amanning.jpg',
@@ -146,6 +150,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
         
         I earned my Bachelor's degree from Miami University, and I later attended the University of Louisiana at Monroe (without visiting or ever stepping foot in Louisiana prior!) for grad school earning my MBA. I enjoy outdoor adventures, live music and festivals, exploring bourbon distilleries (and sharing recommendations), listening to podcasts, and indulging in movie-quote conversations. I live in Ohio with my wife, Rachel, and two children (6 and 2)`,
         id: 6,
+        visible: false,
         name: "Ryan Chapman",
         order: 1,
         picture: 'https://reworkflow.com/static/rchapman.jpg',
@@ -178,6 +183,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
 
                  My husband and I live in beautiful Northeastern Pennsylvania with our spunky German Shepherd, Nala. We enjoy the great outdoors, recreational sports, and all manner of travel and exploration. We are also open to adventure suggestions so feel free to pass them my way!`,
         id: 7,
+        visible: false,
         name: "Kelly Connor Lewis",
         picture: 'https://reworkflow.com/static/klewis.jpg',
         title: "Senior Slate Strategist",
@@ -207,6 +213,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
     {
         content: `Josh is a graduate of Indiana University of PA (BS + BA) and Shippensburg University (MBA) – but none of the degrees covered SQL, HTML, information system design, or communications plans - these were skills acquired in on-the-job training. Josh has dabbled in just about every Slate feature imaginable in his mission to help support schools and students in his time working in Slate and is always up for learning something new or finding a new innovative solution to a problem. Making Slate as user-friendly for all parties and with all integrated systems is one of his favorite challenges. He is eager to share what he knows, having presented at the national Slate Summit 3x, and serves on the PA Slate User Group Committee. Josh and his family live in wonderful south-central Pennsylvania.`,
         id: 8,
+        visible: false,
         name: "Josh Frankenfield",
         order: 1,
         picture: 'https://reworkflow.com/static/jf.jpg',
@@ -252,6 +259,7 @@ I live in College Station, Texas with my husband and youngest son. I’m a mom/b
 
 `,
         id: 9,
+        visible: false,
         name: "Destiny Whitley-Matthews",
         order: 1,
         picture: 'https://reworkflow.com/static/dwmatthews.jpg',
@@ -289,6 +297,7 @@ I live in College Station, Texas with my husband and youngest son. I’m a mom/b
 
                   Since first working in Slate in 2021, Bailey has focused on bridging the gap between technical solutions and enrollment strategy. At ReWorkflow, he is excited to apply this expertise to support partner institutions and advance innovative CRM solutions across the higher education community.`,
         id: 10,
+        visible: false,
         name: "Bailey Raffield",
         picture: 'https://reworkflow.com/static/braffield.jpg',
         title: "Slate Developer",
@@ -323,6 +332,7 @@ I live in College Station, Texas with my husband and youngest son. I’m a mom/b
     
                 In our spare time, my wife and I are building a Carpenter Gothic/Victorian cottage and running a restaurant and cabaret for our children, cats, chickens, etc.`,
         id: 11,
+        visible: false,
         name: "Wyatt Best",
         order: 1,
         picture: 'https://live.staticflickr.com/65535/53939365973_8b39036dfb.jpg',
@@ -363,6 +373,7 @@ I live in College Station, Texas with my husband and youngest son. I’m a mom/b
 
                   Outside of work, I’m a husband and proud dad to a curious and energetic daughter. My free time is usually spent behind a camera, building elaborate Lego creations, or geeking out over the latest in tech gear. I love projects that merge tech with play, and I’m always up for a deep dive into anything that sparks curiosity.`,
         id: 12,
+        visible: false,
         name: "Minh Ha",
         picture: 'https://reworkflow.com/static/mha.jpg',
         title: "Software Engineer",
@@ -387,6 +398,7 @@ I live in College Station, Texas with my husband and youngest son. I’m a mom/b
                   
                   Outside of work, I am a proud dog mom, a book lover, and an enthusiastic traveler. My other hobbies include doing aerial sports and baking up sweet goods for people around me.`,
         id: 13,
+        visible: false,
         name: "Nhu Nguyen",
         picture: 'https://reworkflow.com/static/nnguyen.jpg',
         title: "Admission Operations Specialist",

@@ -1,14 +1,15 @@
 <template>
   <div class="slate-logos py-20">
     <!-- Heading — aligned with .container-fluid column -->
-<!--    <div class="slate-logos-heading-wrap">-->
-<!--      <div class="heading text-2xl md:text-3xl">-->
-<!--        <span class="count">60+</span> Slate Schools and Counting!-->
-<!--      </div>-->
-<!--    </div>-->
+    <!--    <div class="slate-logos-heading-wrap">-->
+    <!--      <div class="heading text-2xl md:text-3xl">-->
+    <!--        <span class="count">60+</span> Slate Schools and Counting!-->
+    <!--      </div>-->
+    <!--    </div>-->
 
     <!-- Logo carousel (Swiper) -->
-    <div class="logo-strip-wrap mb-10" role="region" aria-label="Partner schools">
+    <div class="logo-strip-wrap mb-10 rounded-2xl py-2" style="background: rgb(233 226 232 / 0.5);" role="region"
+         aria-label="Partner schools">
       <ClientOnly>
         <Swiper
             class="logo-swiper"
@@ -51,8 +52,8 @@
           >
             <SwiperSlide v-for="school in testimonialSchools" :key="school.name">
               <div class="testimonial-card rew-text-brown">
-                <p class="quote text-xl md:text-2xl">"{{ school.testimonial!.quote }}"</p>
-                <div class="attribution text-lg">
+                <p class="quote text-xl rew-text-green font-semibold md:text-2xl">"{{ school.testimonial!.quote }}"</p>
+                <div class="attribution text-xl md:text-2xl">
                   <span class="person-title">{{ school.testimonial!.person }} | {{ school.testimonial!.title }}</span>
                   <span class="school-name">{{ school.name }}</span>
                 </div>
@@ -61,6 +62,19 @@
           </Swiper>
         </ClientOnly>
       </div>
+    </div>
+
+    <div class="text-center">
+      <NuxtLink
+          href="/testimonials"
+          title="Learn more"
+          class="rew-main-btn rew-box-shadow inline-flex items-center h-10 !text-base"
+      >
+        <span>Learn more</span>
+        <span class="md:ml-3 ml-1">
+          <IconDoubleArrow/>
+        </span>
+      </NuxtLink>
     </div>
   </div>
 </template>
@@ -171,16 +185,6 @@ onMounted(() => {
   align-items: center;
   gap: 6px;
 }
-
-.person-title {
-  font-weight: 600;
-}
-
-.school-name {
-  font-weight: 400;
-  letter-spacing: 0.02em;
-}
-
 
 .logo-strip-wrap {
   width: 100%;

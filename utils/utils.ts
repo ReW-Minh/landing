@@ -47,3 +47,13 @@ export const getSuccessToast = (detail: string): ToastMessageOptions => ({
     detail,
     life: 3000
 })
+
+export const decorateText = (str: string, full?: boolean) => {
+    if (!str)
+        return
+
+    if (full)
+        return str.replaceAll(/ReWorkflow/g, `<span class="rew-font"><span class="rew-text-green">Re</span>Workflow</span>`)
+
+    return str.replaceAll(/ReW/g, `<span class="rew-font"><span class="rew-text-green">Re</span>W</span>`)
+}

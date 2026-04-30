@@ -21,7 +21,7 @@ useHead({
       </template>
     </BasePageHeader>
 
-    <BasePageContent>
+    <BasePageContent max-width="1400">
 
       <!-- Testimonial cards -->
       <div class="grid grid-cols-1 md:grid-cols-6 gap-5 md:gap-10">
@@ -31,17 +31,19 @@ useHead({
             class="border rounded-2xl bg-white/30 backdrop-blur-sm shadow col-span-6 md:col-span-3">
 
           <!-- Content -->
-          <div class="card !m-0 !p-6 h-full flex flex-col items-center justify-between gap-6 md:gap-0"
+          <div class="card !m-0 !p-6 h-full flex flex-col items-center justify-between gap-4"
                style="text-align: left;">
-            <p class="rew-text-brown leading-relaxed mb-3 text-left">
-              "{{ school.testimonial?.quote }}"
+            <p
+                class="rew-text-brown leading-relaxed mb-3 text-left text-xl whitespace-pre-line"
+                v-html="decorateText(school.testimonial?.quote || '', true)"
+            >
             </p>
 
             <!-- Attribution -->
-            <div class="w-full text-left">
-              <div class="font-bold text-xs rew-text-green">{{ school.testimonial?.person }}</div>
-              <div class="text-[11px] ">{{ school.testimonial?.title }}</div>
-              <div>{{ school.name }}</div>
+            <div class="w-full text-left text-lg">
+              <div class="font-bold rew-text-green">{{ school.testimonial?.person }}</div>
+              <div>{{ school.testimonial?.title }}</div>
+              <div class="rew-text-green">{{ school.name }}</div>
             </div>
           </div>
         </div>

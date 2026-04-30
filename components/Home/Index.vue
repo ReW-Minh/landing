@@ -5,14 +5,27 @@ import SlateSchoolLogos from '~/components/Home/SlateSchoolLogos.vue'
 <template>
   <section class="pt-5 md:pt-8 pb-6 overflow-x-visible overflow-y-visible" id="home">
     <div class="container-fluid">
-      <img src="/img/logo-bg.svg" alt="rew"
-           class="bg-logo !left-1/2 !-translate-x-1/2 !top-[220px] !h-[750px] !opacity-[0.07] invisible md:visible">
+      <img
+          src="/img/logo-bg.svg"
+          alt="rew"
+          class="bg-logo !left-1/2 !-translate-x-1/2 !top-[220px] !h-[750px] !opacity-[0.07] invisible md:visible"
+      >
 
       <div class="grid grid-cols-12 gap-3">
         <div class="lg:col-span-9 md:col-span-8 col-span-12">
           <div class="flex flex-col h-full justify-center relative">
-            <div data-aos="fade-right" data-aos-duration="700"
-                 class="left-home-block position-relative mt-6 md:mt-0 relative">
+            <div
+                data-aos="fade-right"
+                data-aos-duration="700"
+                class="left-home-block position-relative mt-6 md:mt-0 relative flex items-center gap-8"
+            >
+              <div class="w-[80px] lg:w-[120px] flex-shrink-0 ">
+                <img
+                    src="https://reworkflow.com/static/slate_gold.png"
+                    alt="Slate Gold Partner"
+                    class="w-full h-auto object-contain"
+                >
+              </div>
               <h1 class="hero-title rew-text-green leading-tight">
                 Slate Support and Staffing Solutions
               </h1>

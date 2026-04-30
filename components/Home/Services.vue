@@ -14,6 +14,8 @@
 </template>
 
 <script setup lang="ts">
+import { decorateText } from '~/utils/utils'
+
 const slaterRoles = [
   {
     title: 'Captaining',
@@ -60,11 +62,4 @@ const slaterRoles = [
     `
   },
 ]
-
-const decorateText = (str: string) => {
-  if (!str)
-    return
-
-  return str.replaceAll(/ReW/g, `<span class="rew-font"><span class="rew-text-green">Re</span>W</span>`)
-}
 </script>

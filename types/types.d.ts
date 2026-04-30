@@ -19,7 +19,8 @@ export interface IProfile {
     title: string;
     contact: IProfileContact[],
     group: PROFILE_GROUP,
-    clickUp?: boolean
+    clickUp?: boolean,
+    visible: boolean
 }
 
 export interface IAdminAuth {
