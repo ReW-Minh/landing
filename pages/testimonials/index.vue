@@ -2,7 +2,7 @@
 import { TESTIMONIALS } from '~/utils/constant'
 
 useHead({
-  title: 'ReWorkflow - Slate Schools'
+  title: 'ReWorkflow - Testimonials'
 })
 
 </script>
@@ -40,10 +40,10 @@ useHead({
             </p>
 
             <!-- Attribution -->
-            <div class="w-full text-left text-lg">
-              <div class="font-bold rew-text-green">{{ school.testimonial?.person }}</div>
+            <div class="w-full text-left text-lg rew-text-brown">
+              <div class="rew-text-green">{{ school.testimonial?.person }}</div>
               <div>{{ school.testimonial?.title }}</div>
-              <div class="rew-text-green">{{ school.name }}</div>
+              <div class="font-bold ">{{ school.name }}</div>
             </div>
           </div>
         </div>
