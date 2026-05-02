@@ -57,24 +57,21 @@
                   <span class="person-title">{{ school.testimonial!.person }} | {{ school.testimonial!.title }}</span>
                   <span class="school-name">{{ school.name }}</span>
                 </div>
+                <NuxtLink
+                    href="/testimonials"
+                    title="Learn more"
+                    class="rew-main-btn rew-box-shadow inline-flex items-center h-10 !text-base mt-8"
+                >
+                  <span>Learn more</span>
+                  <span class="md:ml-3 ml-1">
+                    <IconDoubleArrow/>
+                  </span>
+                </NuxtLink>
               </div>
             </SwiperSlide>
           </Swiper>
         </ClientOnly>
       </div>
-    </div>
-
-    <div class="text-center">
-      <NuxtLink
-          href="/testimonials"
-          title="Learn more"
-          class="rew-main-btn rew-box-shadow inline-flex items-center h-10 !text-base"
-      >
-        <span>Learn more</span>
-        <span class="md:ml-3 ml-1">
-          <IconDoubleArrow/>
-        </span>
-      </NuxtLink>
     </div>
   </div>
 </template>
@@ -84,19 +81,19 @@ import 'swiper/css/effect-fade'
 import { computed, onMounted, ref } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Autoplay, EffectFade } from 'swiper/modules'
-import { TESTIMONIALS } from '~/utils/constant'
+import { type School, TESTIMONIALS } from '~/utils/constant'
 
 const swiperModules = [Autoplay]
+
 const testimonialModules = [Autoplay, EffectFade]
 
 const logoBreakpoints = {
   480: { slidesPerView: 3 },
   768: { slidesPerView: 4, spaceBetween: 20 },
-  1024: { slidesPerView: 5, spaceBetween: 24 }
+  1024: { slidesPerView: 4, spaceBetween: 24 }
 }
 
 const prefersReducedMotion = ref(false)
-
 
 const logoAutoplay = computed(() => {
   if (prefersReducedMotion.value) return false
@@ -107,44 +104,35 @@ const logoAutoplay = computed(() => {
   }
 })
 
-const testimonialSchools = TESTIMONIALS.filter(s => s.testimonial)
+const includedTestimonials = ['Tony Sylvester', 'Haley Kennedy', 'Sara Edmunds']
+
 const logoSlides = [...TESTIMONIALS, ...TESTIMONIALS, ...TESTIMONIALS]
 
 const testimonialAutoplay = computed(() => {
   if (prefersReducedMotion.value) return false
-  return { delay: 10000, disableOnInteraction: false }
+  return { delay: 20000, disableOnInteraction: false }
 })
+
+const shuffleArray = <T>(array: T[]): T[] => [...array].sort(() => Math.random() - 0.5)
+
+const testimonialSchools = ref<School[]>([])
 
 onMounted(() => {
   prefersReducedMotion.value = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+  const filtered = TESTIMONIALS.filter(
+      s => s.testimonial && includedTestimonials.includes(s.testimonial.person)
+  )
+
+  testimonialSchools.value = shuffleArray(filtered)
 })
 </script>
 
 <style scoped>
 .slate-logos {
   --logo-tile-w: 168px;
-  --logo-tile-h: 72px;
+  --logo-tile-h: 100px;
   width: 100%;
-}
-
-.slate-logos-heading-wrap {
-  max-width: 1488px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.heading {
-  text-align: center;
-  font-weight: 700;
-  color: #433129;
-  letter-spacing: 0.02em;
-  margin-bottom: 28px;
-}
-
-.count {
-  color: #4E6C3C;
 }
 
 .testimonial-full-bleed {
@@ -215,7 +203,7 @@ onMounted(() => {
 @media screen and (max-width: 767px) {
   .slate-logos {
     --logo-tile-w: 118px;
-    --logo-tile-h: 64px;
+    --logo-tile-h: 80px;
   }
 
   .testimonial-swiper {
