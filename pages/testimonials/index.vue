@@ -35,7 +35,7 @@ useHead({
                style="text-align: left;">
             <p
                 class="rew-text-brown leading-relaxed mb-3 text-left text-xl whitespace-pre-line"
-                v-html="decorateText(school.testimonial?.quote || '', true)"
+                v-html="`&quot;${decorateText(school.testimonial?.quote || '', true)}&quot;`"
             >
             </p>
 

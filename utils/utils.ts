@@ -53,7 +53,7 @@ export const decorateText = (str: string, full?: boolean) => {
         return
 
     if (full)
-        return str.replaceAll(/ReWorkflow/g, `<span class="rew-font"><span class="rew-text-green">Re</span>Workflow</span>`)
+        return str.replaceAll(/ReWorkflow/g, `<span class="rew-font rew-text-brown"><span class="rew-text-green">Re</span>Workflow</span>`)
 
-    return str.replaceAll(/ReW/g, `<span class="rew-font"><span class="rew-text-green">Re</span>W</span>`)
+    return str.replaceAll(/ReW/g, `<span class="rew-font rew-text-brown"><span class="rew-text-green">Re</span>W</span>`)
 }

@@ -52,7 +52,7 @@
           >
             <SwiperSlide v-for="school in testimonialSchools" :key="school.name">
               <div class="testimonial-card rew-text-brown">
-                <p class="quote text-xl rew-text-green font-semibold md:text-2xl">"{{ school.testimonial!.quote }}"</p>
+                <p class="quote text-xl rew-text-green font-semibold md:text-2xl whitespace-pre-line" v-html="`&quot;${decorateText(school.testimonial!.quote, true)}&quot;`"></p>
                 <div class="attribution text-xl md:text-2xl">
                   <span class="person-title">{{ school.testimonial!.person }} | {{ school.testimonial!.title }}</span>
                   <span class="school-name">{{ school.name }}</span>
