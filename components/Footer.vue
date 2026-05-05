@@ -1,7 +1,7 @@
 <template>
   <footer class="relative bg-transparent pb-0 md:pb-20 min-h-[340px]">
     <div
-        class="footer-bg absolute -z-10 -left-0 right-0 -top-[120px] h-[50dvh] min-h-[700px] md:min-h-[520px] overflow-hidden bg-cover bg-top"
+        class="footer-bg absolute -z-10 -left-0 right-0 -top-[80px] h-[50dvh] min-h-[700px] md:min-h-[520px] overflow-hidden bg-cover bg-top"
         style="background-image: url('/img/footer.png')">
     </div>
 
@@ -20,7 +20,7 @@
 <!--            </div>-->
 <!--          </div>-->
 
-          <div class=" space-y-5 mt-6 md:mt-0 rounded-2xl bg-white/30 backdrop-blur-sm shadow w-content mx-auto p-4">
+          <div class=" space-y-5 mt-6 md:mt-0 mx-auto p-4">
             <div class="flex items-center justify-center gap-3 flex-wrap">
               <!--<a href="https://www.instagram.com/reworkflow/" target="_blank"
                    class="social-hover instagram">
