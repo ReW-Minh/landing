@@ -140,38 +140,6 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
         group: PROFILE_GROUP.CLIENT_SERVICES
     },
 
-    // Ryan
-    {
-        content: `Like many in the world of Higher Ed, I fell into my first admissions job doing traditional front-facing work with students (I do not miss lunchroom visits or circular tables at college fairs). During the fall of 2013 while serving in one of these roles, I was introduced to a wonderful CRM platform called Slate by Technolutions. Over the course of my career, I've transitioned from being a "power user" within the system to most recently serving in various Director-level roles for a variety of institutions. I've had the privilege of supervising amazing teams responsible for the management of software systems (including several campuses with multi-instances of Slate), database integrations, and overall technical operations designed to streamline and optimize admission and enrollment functions across Enrollment Management. I'm very involved in the Slate community, whether it's serving as a User Group Leader or presenting as part of the Slate Summit experience. As a first-generation college student raised in a single-parent, low-income household in the foothills of Appalachia, I have a strong commitment to leveraging technology to improve the overall student experience, ensuring access to education, and enhancing student outcomes.
-        
-        I earned my Bachelor's degree from Miami University, and I later attended the University of Louisiana at Monroe (without visiting or ever stepping foot in Louisiana prior!) for grad school earning my MBA. I enjoy outdoor adventures, live music and festivals, exploring bourbon distilleries (and sharing recommendations), listening to podcasts, and indulging in movie-quote conversations. I live in Ohio with my wife, Rachel, and two children (6 and 2)`,
-        id: 6,
-        name: "Ryan Chapman",
-        order: 1,
-        picture: 'https://reworkflow.com/static/rchapman.jpg',
-        title: "Senior Slate Strategist",
-        contact: [
-            {
-                type: CONTACT_TYPE.LINKEDIN,
-                link: 'https://www.linkedin.com/in/ryrichapman/'
-            },
-            {
-                type: CONTACT_TYPE.RESOURCE,
-                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3Aryan-chapman%7D+%7Btype%3Apage%7D'
-            },
-            {
-                type: CONTACT_TYPE.SLATE_COMMUNITY,
-                link: 'https://community.technolutions.net/member/iC6d1W1t0J'
-            },
-            {
-                type: CONTACT_TYPE.EMAIL,
-                link: 'rchapman@reworkflow.com'
-            }
-        ],
-        group: PROFILE_GROUP.CLIENT_SERVICES,
-        cert: 'https://reworkflow.com/static/slate_certified.png',
-    },
-
     // Kelly
     {
         content: `Is there anything more fulfilling than improving the lives of those around you? A passion of mine is helping others, whether it be volunteering in the community through programs like Big Brothers Big Sisters, chaperoning service trips around the globe, or using my professional Slate expertise to make better the work experiences of my colleagues and fellow Slate users. I have been in the world of Slate since 2013 when I was among the implementation team at The University of Scranton. From there I became Slate Captain in 2016 where I touched upon all aspects of Slate, working diligently to create an easy user experience for both prospective students as well as internal staff.  True to my passion, I have kept an active presence in the Slate Community forums and was selected by Technolutions as an inaugural Slate Community Ambassador in 2021.  I also co-moderate both the PA Slate Users Group (since 2014) and the national Slate Slack Users Group (since 2021).  I currently work full-time as a Slate Captain for Lynn University.
@@ -198,7 +166,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
             {
                 type: CONTACT_TYPE.EMAIL,
                 link: 'klewis@reworkflow.com'
-            },
+            }
         ],
         group: PROFILE_GROUP.CLIENT_SERVICES
     },
@@ -272,6 +240,72 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
         clickUp: true,
         cert: 'https://reworkflow.com/static/slate_certified.png',
         group: PROFILE_GROUP.CUSTOM_SOLUTIONS
+    },
+
+    // Joyce
+    {
+        content: `Joyce brings valuable experience from her previous roles in higher education and secondary school admissions. Her work passion is helping people better understand the Slate system through training as well as helping them feel independent in their skills to succeed. She enjoys the puzzles Slate brings sometimes and finding a solution for them. Joyce holds both a BS and MS in Recreation, Park, and Tourism Sciences, with a focus on Youth Development, from Texas A&M University. She currently lives in College Station, Texas, with her husband, two daughters, and a mini goldendoodle named Ruby. In her spare time, she loves spending time with her family, supporting all Texas A&M sports (Gig ‘Em!) and reading a good series.`,
+        id: 6,
+        name: "Joyce Carter",
+        order: 1,
+        picture: 'https://reworkflow.com/static/jcarter.jpg',
+        title: "Slate Developer",
+        contact: [
+            {
+                type: CONTACT_TYPE.LINKEDIN,
+                link: 'https://www.linkedin.com/in/joycencarter/'
+            },
+            {
+                type: CONTACT_TYPE.SLATE_COMMUNITY,
+                link: 'https://community.technolutions.net/member/yB3ugLY9q9'
+            },
+            {
+                type: CONTACT_TYPE.EMAIL,
+                link: 'jcarter@reworkflow.com'
+            }
+        ],
+        group: PROFILE_GROUP.CLIENT_SERVICES
+    },
+
+    // Destiny
+    {
+        content: `I didn’t set out to become a Slate expert. I fell into a “program coordinator” role and quickly realized there’s a niche group of people who end up loving Slate enough to make a career out of it. I’m one of them.
+
+I’m a classically trained soprano who originally planned to teach elementary music, but after one semester wrangling 4th graders, I pivoted to higher ed. I spent several years in student housing, both on and off campus, before making my way to Slate at Texas A&M University.
+
+I currently serve as Sr. Director of Enrollment Services and Student Success at a small private college in Tennessee, where I focus on Slate governance, system design, and building processes that support enrollment strategy and student success. I approach my work with a teacher’s mindset and enjoy helping others connect the dots and truly understand how Slate works.
+
+I live in College Station, Texas with my husband and youngest son. I’m a mom/bonus mom to five, meemaw to two (with one more on the way), and dog mom to many. When I’m not working, I’m running a household that rivals any system I’ve ever managed.
+
+`,
+        id: 9,
+        name: "Destiny Whitley-Matthews",
+        order: 1,
+        picture: 'https://reworkflow.com/static/dwmatthews.jpg',
+        title: "Slate Strategist",
+        contact: [
+            {
+                type: CONTACT_TYPE.LINKEDIN,
+                link: 'https://www.linkedin.com/in/destinywhitley/'
+            },
+            {
+                type: CONTACT_TYPE.SLATE_COMMUNITY,
+                link: 'https://community.technolutions.net/member/0A9hhKOdFG'
+            },
+            {
+                type: CONTACT_TYPE.PRESENTATIONS_PUBLICATIONS,
+                link: ''
+            },
+            {
+                type: CONTACT_TYPE.GITHUB,
+                link: ''
+            },
+            {
+                type: CONTACT_TYPE.EMAIL,
+                link: 'dwhitley@reworkflow.com'
+            }
+        ],
+        group: PROFILE_GROUP.CLIENT_SERVICES
     },
 
     // Wyatt
@@ -360,7 +394,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
             }
         ],
         group: PROFILE_GROUP.CUSTOM_SOLUTIONS
-    },
+    }
 ])
 
 export const useAdminAuth = () => useState<IAdminAuth>('AdminAuth', () => ({
