@@ -27,21 +27,22 @@ import SlateSchoolLogos from '~/components/Home/SlateSchoolLogos.vue'
                 >
               </div>
               <h1 class="hero-title rew-text-green leading-tight">
-                Slate Support and Staffing Solutions
+                <div>Slate Support</div>
+                You Can Grow With
               </h1>
             </div>
 
             <div data-aos="fade-right" data-aos-duration="700"
                  class="left-home-block flex items-center lg:mt-10 md:mt-6 mt-2">
               <div class="rew-text-brown text-[18px] md:text-[20px] lg:text-[28px]">
-                We offer flexibly structured services that fit seamlessly with your institution’s needs. Whether it’s
-                ongoing help desk services or major implementations, our team of Slate experts delivers fast,
-                high-quality, and cost-effective results.
+                Slate covers far more ground across your campus than most teams have the capacity to cultivate. We work
+                alongside you to develop the people, processes, institutional knowledge, and ongoing innovations that
+                keep your Slate operations flourishing year over year.
               </div>
             </div>
 
             <div class=" mt-4 md:mt-6 lg:mt-10">
-              <CallToAction label="Slate Services" link="/services" size="lg" :internal="true"/>
+              <CallToAction label="How We Work" link="/services" size="lg" :internal="true"/>
             </div>
           </div>
         </div>

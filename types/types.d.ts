@@ -20,7 +20,7 @@ export interface IProfile {
     contact: IProfileContact[],
     group: PROFILE_GROUP,
     clickUp?: boolean,
-    visible: boolean
+    visible?: boolean
 }
 
 export interface IAdminAuth {

@@ -106,7 +106,9 @@ const logoAutoplay = computed(() => {
 
 const includedTestimonials = ['Tony Sylvester', 'Haley Kennedy', 'Sara Edmunds']
 
-const logoSlides = [...TESTIMONIALS, ...TESTIMONIALS, ...TESTIMONIALS]
+const includedLogos = TESTIMONIALS.filter(s => s.name !== 'JM Partner Solutions')
+
+const logoSlides = [...includedLogos, ...includedLogos, ...includedLogos]
 
 const testimonialAutoplay = computed(() => {
   if (prefersReducedMotion.value) return false

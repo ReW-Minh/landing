@@ -219,5 +219,23 @@ export const TESTIMONIALS: School[] = [
             person: 'Amanda Olmos',
             title: 'Director of Systems Solutions'
         }
+    },
+
+    {
+        name: 'TC Columbia',
+        logo: '/img/schools/tc.png',
+        testimonial: undefined
+    },
+
+    {
+        name: 'Ouachita Baptist',
+        logo: '/img/schools/ob.png',
+        testimonial: undefined
+    },
+
+    {
+        name: 'Tacoma Community College',
+        logo: '/img/schools/tcc.png',
+        testimonial: undefined
     }
 ]

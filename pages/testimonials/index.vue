@@ -25,7 +25,7 @@ useHead({
       <!-- Testimonial cards -->
       <div class="grid grid-cols-1 md:grid-cols-6 gap-5 md:gap-10">
         <div
-            v-for="school in TESTIMONIALS"
+            v-for="school in TESTIMONIALS.filter(school => school.testimonial)"
             :key="`${school.name}-${school.testimonial?.person}`"
             class="border rounded-2xl bg-white/30 backdrop-blur-sm shadow col-span-6 md:col-span-3">
 
