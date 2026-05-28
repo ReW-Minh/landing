@@ -264,6 +264,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                 link: 'jcarter@reworkflow.com'
             }
         ],
+        cert: 'https://reworkflow.com/static/slate_certified.png',
         group: PROFILE_GROUP.CLIENT_SERVICES
     },
 
