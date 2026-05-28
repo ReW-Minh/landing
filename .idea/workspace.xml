@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="feat: update footer image" />
+    <list default="true" id="8fcfba1e-558f-49e2-9ebb-a793ff3273eb" name="Changes" comment="feat: update footer logo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stores/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/stores/index.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="184" />
+    <option name="cachedIndexableFilesCount" value="386" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -33,11 +36,70 @@
     <commands />
     <urls />
   </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.000000000236081" />
+      <entry key="MS500" value="1.0118744129406367" />
+      <entry key="S2" value="1.3301057102537501" />
+      <entry key="S5" value="1.641890894057236" />
+      <entry key="S10" value="1.801180937152923" />
+      <entry key="S30" value="1.9287743275340365" />
+      <entry key="S60" value="1.963729385011185" />
+      <entry key="M2" value="1.9816971961919747" />
+      <entry key="M5" value="1.9926382822272943" />
+      <entry key="M10" value="1.9963123417017847" />
+      <entry key="M15" value="1.9975400476723337" />
+      <entry key="M30" value="1.998769266483673" />
+      <entry key="H1" value="1.9993844437871109" />
+      <entry key="H2" value="1.999692174515291" />
+      <entry key="H4" value="1.9998460754112561" />
+      <entry key="D1" value="1.9999743442563893" />
+      <entry key="W1" value="1.9999963348534702" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.6783021637990609" />
+      <entry key="MS500" value="0.9347509567553002" />
+      <entry key="S2" value="1.2925373310390404" />
+      <entry key="S5" value="1.6196418312028424" />
+      <entry key="S10" value="1.7881959870087085" />
+      <entry key="S30" value="1.9239472550030559" />
+      <entry key="S60" value="1.9612473892276512" />
+      <entry key="M2" value="1.9804385921568652" />
+      <entry key="M5" value="1.9921305508135225" />
+      <entry key="M10" value="1.9960577556065955" />
+      <entry key="M15" value="1.997370163118775" />
+      <entry key="M30" value="1.9986842438606787" />
+      <entry key="H1" value="1.9993419123700717" />
+      <entry key="H2" value="1.9996709037780105" />
+      <entry key="H4" value="1.9998354387851285" />
+      <entry key="D1" value="1.9999725713106917" />
+      <entry key="W1" value="1.9999960815712352" />
+    </decayedShown>
+  </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -53,47 +115,46 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ChatTagsLlmMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ClientConfigCleanupMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.CodyAccountHistoryMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.CodyAccountsIdsRefresh&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.CodyAssignOrphanedChatsToActiveAccount&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.CodyConvertUrlToCodebaseName&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.CodyHistoryLlmMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.CodyMigrateChatHistory-v2&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.CodyProjectSettingsMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.DeprecatedChatLlmMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ToggleCodyToolWindowAfterMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/minh/Developer/REWORKFLOW/REWORKFLOW-FE/public/img&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;npm.generate.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ChatTagsLlmMigration": "true",
+    "RunOnceActivity.ClientConfigCleanupMigration": "true",
+    "RunOnceActivity.CodyAccountHistoryMigration": "true",
+    "RunOnceActivity.CodyAccountsIdsRefresh": "true",
+    "RunOnceActivity.CodyAssignOrphanedChatsToActiveAccount": "true",
+    "RunOnceActivity.CodyConvertUrlToCodebaseName": "true",
+    "RunOnceActivity.CodyHistoryLlmMigration": "true",
+    "RunOnceActivity.CodyMigrateChatHistory-v2": "true",
+    "RunOnceActivity.CodyProjectSettingsMigration": "true",
+    "RunOnceActivity.DeprecatedChatLlmMigration": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.ToggleCodyToolWindowAfterMigration": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "production",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/minh/Developer/REWORKFLOW/REWORKFLOW-FE",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "npm.dev.executor": "Run",
+    "npm.generate.executor": "Run",
+    "settings.editor.selected.configurable": "settings.sync",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Composition API Component&quot;
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecapSpentCounter">
     <option name="endsOfQuotaMs" value="1773885611204" />
     <option name="spentUsd" value="0.00274355" />
@@ -103,7 +164,6 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/pages/services" />
       <recent name="$PROJECT_DIR$/composables" />
     </key>
@@ -147,7 +207,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.23567.141" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.31033.133" />
       </set>
     </attachedChunks>
   </component>
@@ -286,31 +346,7 @@
       <workItem from="1771347745878" duration="5094000" />
       <workItem from="1771814280656" duration="23000" />
       <workItem from="1772325582066" duration="1248000" />
-      <workItem from="1772427957734" duration="377000" />
-      <workItem from="1774329577645" duration="408000" />
-      <workItem from="1774333468157" duration="30000" />
-      <workItem from="1774934398333" duration="373000" />
-      <workItem from="1775008872821" duration="203000" />
-      <workItem from="1775210223259" duration="2478000" />
-      <workItem from="1775212884147" duration="6000" />
-      <workItem from="1775313769057" duration="2908000" />
-      <workItem from="1775441417676" duration="32000" />
-      <workItem from="1776140310056" duration="4801000" />
-      <workItem from="1776174933348" duration="1416000" />
-      <workItem from="1776316022420" duration="1459000" />
-      <workItem from="1776401671337" duration="1819000" />
-      <workItem from="1776437036785" duration="9080000" />
-      <workItem from="1776650643497" duration="196000" />
-      <workItem from="1777299020382" duration="6619000" />
-      <workItem from="1777395959489" duration="454000" />
-      <workItem from="1777428363697" duration="216000" />
-      <workItem from="1777428613996" duration="6000" />
-      <workItem from="1777562896587" duration="4683000" />
-      <workItem from="1777626551925" duration="940000" />
-      <workItem from="1777732877060" duration="829000" />
-      <workItem from="1777733720252" duration="604000" />
-      <workItem from="1777792341514" duration="283000" />
-      <workItem from="1777998115040" duration="720000" />
+      <workItem from="1772427957734" duration="279000" />
     </task>
     <task id="LOCAL-00001" summary="feat: update team members">
       <option name="closed" value="true" />
@@ -384,111 +420,7 @@
       <option name="project" value="LOCAL" />
       <updated>1772326792128</updated>
     </task>
-    <task id="LOCAL-00010" summary="feat: update about text">
-      <option name="closed" value="true" />
-      <created>1772428256410</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1772428256410</updated>
-    </task>
-    <task id="LOCAL-00011" summary="feat: add slate schools">
-      <option name="closed" value="true" />
-      <created>1775318385739</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1775318385739</updated>
-    </task>
-    <task id="LOCAL-00012" summary="fix: remove plausible on test env">
-      <option name="closed" value="true" />
-      <created>1775318438231</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1775318438231</updated>
-    </task>
-    <task id="LOCAL-00013" summary="feat: update UI schools home page">
-      <option name="closed" value="true" />
-      <created>1776179024846</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1776179024846</updated>
-    </task>
-    <task id="LOCAL-00014" summary="feat: slate school logos">
-      <option name="closed" value="true" />
-      <created>1776446126826</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1776446126826</updated>
-    </task>
-    <task id="LOCAL-00015" summary="feat: slate schools and footer update">
-      <option name="closed" value="true" />
-      <created>1777302688777</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1777302688777</updated>
-    </task>
-    <task id="LOCAL-00016" summary="feat: add testimonials">
-      <option name="closed" value="true" />
-      <created>1777305604973</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1777305604973</updated>
-    </task>
-    <task id="LOCAL-00017" summary="feat: update testimonials">
-      <option name="closed" value="true" />
-      <created>1777396399370</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1777396399370</updated>
-    </task>
-    <task id="LOCAL-00018" summary="feat: update testimonials">
-      <option name="closed" value="true" />
-      <created>1777567518617</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1777567518617</updated>
-    </task>
-    <task id="LOCAL-00019" summary="feat: update testimonials">
-      <option name="closed" value="true" />
-      <created>1777627084419</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1777627084419</updated>
-    </task>
-    <task id="LOCAL-00020" summary="feat: update testimonials">
-      <option name="closed" value="true" />
-      <created>1777733697997</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1777733697997</updated>
-    </task>
-    <task id="LOCAL-00021" summary="feat: update testimonials">
-      <option name="closed" value="true" />
-      <created>1777792618054</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1777792618054</updated>
-    </task>
-    <task id="LOCAL-00022" summary="feat: update footer image">
-      <option name="closed" value="true" />
-      <created>1777998905792</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1777998905792</updated>
-    </task>
-    <option name="localTasksCounter" value="23" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,7 +447,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="production" />
                       </list>
                     </value>
                   </entry>
@@ -536,15 +468,6 @@
     <MESSAGE value="feat: new about page" />
     <MESSAGE value="feat: update about page" />
     <MESSAGE value="feat: update footer logo" />
-    <MESSAGE value="feat: update about text" />
-    <MESSAGE value="feat: add slate schools" />
-    <MESSAGE value="fix: remove plausible on test env" />
-    <MESSAGE value="feat: update UI schools home page" />
-    <MESSAGE value="feat: slate school logos" />
-    <MESSAGE value="feat: slate schools and footer update" />
-    <MESSAGE value="feat: add testimonials" />
-    <MESSAGE value="feat: update testimonials" />
-    <MESSAGE value="feat: update footer image" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update footer image" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update footer logo" />
   </component>
 </project>
