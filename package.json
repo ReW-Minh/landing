@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@ckeditor/ckeditor5-vue": "^7.3.0",
+    "@cloudinary/url-gen": "^1.22.0",
     "@nuxt/image": "^1.11.0",
     "@primevue/forms": "^4.3.2",
     "@primevue/themes": "^4.3.1",

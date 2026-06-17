@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import SlateSchoolLogos from '~/components/Home/SlateSchoolLogos.vue'
+import { getCloudImageUrl } from '~/stores'
 </script>
 
 <template>
@@ -21,7 +22,7 @@ import SlateSchoolLogos from '~/components/Home/SlateSchoolLogos.vue'
             >
               <div class="w-[80px] lg:w-[120px] flex-shrink-0 ">
                 <img
-                    src="https://reworkflow.com/static/slate_gold.png"
+                    :src="getCloudImageUrl('slate_gold_ut0sou')"
                     alt="Slate Gold Partner"
                     class="w-full h-auto object-contain"
                 >
@@ -49,11 +50,11 @@ import SlateSchoolLogos from '~/components/Home/SlateSchoolLogos.vue'
 
         <div class="lg:col-span-3 md:col-span-4 invisible md:visible items-center justify-end" data-aos="zoom-in"
              data-aos-duration="700">
-          <img class="img-fluid" src="/img/hero-img-lg.webp" alt="rew main board">
+          <img class="img-fluid" :src="getCloudImageUrl('hero-img-lg_ri8ksr')" alt="rew main board">
         </div>
 
         <img class="absolute h-[calc(100dvh-360px)] md:hidden left-1/2 -translate-x-1/2 -z-10 opacity-20"
-             src="/img/hero-img-lg.webp" alt="rew main board">
+             :src="getCloudImageUrl('hero-img-lg_ri8ksr')" alt="rew main board">
       </div>
 
       <SlateSchoolLogos/>

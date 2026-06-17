@@ -9,7 +9,7 @@
     <div style="background: var(--rew-primary-green)" class="py-4 text-white">
       <BasePageContent>
         <div class="relative z-10">
-          <img src="/img/logo-bg-white.png"
+          <img :src="getCloudImageUrl('logo-bg-white_o4tgef')"
                class="absolute opacity-5 z-0 h-[175px] -right-[52px] top-1/2 -translate-y-1/2 -rotate-45"
                alt="background"/>
           <NuxtLink to="/reviews"
@@ -45,6 +45,7 @@
 
 <script setup lang="ts">
 import type { IBlogDetail } from '~/types/types';
+import { getCloudImageUrl } from '~/stores'
 
 const loading = ref(false)
 const getData = async () => {

@@ -1,5 +1,8 @@
 import type { IAdminAuth, IProfile } from '~/types/types';
-import { CONTACT_TYPE, PROFILE_GROUP } from '~/utils/constant'
+import { CONTACT_TYPE, PROFILE_GROUP } from '~/utils/constant';
+import { getCloudImageUrl } from '~/utils/cloudinary'
+
+export { getCloudImageUrl }
 
 export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
     // Jon
@@ -81,9 +84,9 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                 Outside of work, I enjoy raising my daughter and our chocolate lab alongside my spouse, a meteorologist in the Navy. As a military family, we embrace the adventure of frequent moves and love exploring new places around the world together. I’m also an avid runner—many of my best solutions to complex system challenges tend to arrive somewhere between mile two and five.`,
         id: 4,
         name: "TJ Backofen",
-        picture: 'https://reworkflow.com/static/tj.jpg',
+        picture: getCloudImageUrl('tj_v3iiva'),
         title: "Executive Director",
-        cert: 'https://reworkflow.com/static/slate_certified.png',
+        cert: getCloudImageUrl('slate_certified_jjh5ms'),
         contact: [
             {
                 type: CONTACT_TYPE.LINKEDIN,
@@ -116,7 +119,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
         id: 5,
         name: "Alice Byrd",
         order: 1,
-        picture: 'https://reworkflow.com/static/amanning.jpg',
+        picture: getCloudImageUrl('amanning_ktvihw'),
         title: "Senior Slate Strategist",
         contact: [
             {
@@ -147,9 +150,9 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                  My husband and I live in beautiful Northeastern Pennsylvania with our spunky German Shepherd, Nala. We enjoy the great outdoors, recreational sports, and all manner of travel and exploration. We are also open to adventure suggestions so feel free to pass them my way!`,
         id: 7,
         name: "Kelly Connor Lewis",
-        picture: 'https://reworkflow.com/static/klewis.jpg',
+        picture: getCloudImageUrl('klewis_bty0o8'),
         title: "Senior Slate Strategist",
-        cert: 'https://reworkflow.com/static/slate_certified.png',
+        cert: getCloudImageUrl('slate_certified_jjh5ms'),
         contact: [
             {
                 type: CONTACT_TYPE.LINKEDIN,
@@ -177,7 +180,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
         id: 8,
         name: "Josh Frankenfield",
         order: 1,
-        picture: 'https://reworkflow.com/static/jf.jpg',
+        picture: getCloudImageUrl('jf_fk9zmk'),
         title: "Senior Slate Strategist",
         contact: [
             {
@@ -217,7 +220,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                   Since first working in Slate in 2021, Bailey has focused on bridging the gap between technical solutions and enrollment strategy. At ReWorkflow, he is excited to apply this expertise to support partner institutions and advance innovative CRM solutions across the higher education community.`,
         id: 9,
         name: "Bailey Raffield",
-        picture: 'https://reworkflow.com/static/braffield.jpg',
+        picture: getCloudImageUrl('braffield_cmdusk'),
         title: "Slate Developer",
         contact: [
             {
@@ -238,7 +241,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
             }
         ],
         clickUp: true,
-        cert: 'https://reworkflow.com/static/slate_certified.png',
+        cert: getCloudImageUrl('slate_certified_jjh5ms'),
         group: PROFILE_GROUP.CUSTOM_SOLUTIONS
     },
 
@@ -248,7 +251,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
         id: 6,
         name: "Joyce Carter",
         order: 1,
-        picture: 'https://reworkflow.com/static/jcarter.jpg',
+        picture: getCloudImageUrl('jcarter_dgru7z'),
         title: "Slate Developer",
         contact: [
             {
@@ -264,7 +267,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
                 link: 'jcarter@reworkflow.com'
             }
         ],
-        cert: 'https://reworkflow.com/static/slate_certified.png',
+        cert: getCloudImageUrl('slate_certified_jjh5ms'),
         group: PROFILE_GROUP.CLIENT_SERVICES
     },
 
@@ -282,7 +285,7 @@ I live in College Station, Texas with my husband and youngest son. I’m a mom/b
         id: 9,
         name: "Destiny Whitley-Matthews",
         order: 1,
-        picture: 'https://reworkflow.com/static/dwmatthews.jpg',
+        picture: getCloudImageUrl('dwmatthews_uvnv9q'),
         title: "Slate Strategist",
         contact: [
             {
@@ -358,7 +361,7 @@ I live in College Station, Texas with my husband and youngest son. I’m a mom/b
                   Outside of work, I’m a husband and proud dad to a curious and energetic daughter. My free time is usually spent behind a camera, building elaborate Lego creations, or geeking out over the latest in tech gear. I love projects that merge tech with play, and I’m always up for a deep dive into anything that sparks curiosity.`,
         id: 11,
         name: "Minh Ha",
-        picture: 'https://reworkflow.com/static/mha.jpg',
+        picture: getCloudImageUrl('mha_bxjl6z'),
         title: "Software Engineer",
         contact: [
             {
@@ -382,7 +385,7 @@ I live in College Station, Texas with my husband and youngest son. I’m a mom/b
                   Outside of work, I am a proud dog mom, a book lover, and an enthusiastic traveler. My other hobbies include doing aerial sports and baking up sweet goods for people around me.`,
         id: 12,
         name: "Nhu Nguyen",
-        picture: 'https://reworkflow.com/static/nnguyen.jpg',
+        picture: getCloudImageUrl('nnguyen_juyfwp'),
         title: "Admission Operations Specialist",
         contact: [
             {
