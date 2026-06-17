@@ -6,3 +6,5 @@ dist
 .vscode
 .env
 /.superpowers/
+/.idea/
+/.idea/*

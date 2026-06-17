@@ -1146,6 +1146,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@cloudinary/transformation-builder-sdk@npm:^1.15.1":
+  version: 1.21.2
+  resolution: "@cloudinary/transformation-builder-sdk@npm:1.21.2"
+  dependencies:
+    "@cloudinary/url-gen": "npm:^1.7.0"
+  checksum: 10c0/7032741822df2f1a64c421834f6a0785485a27afc92dfd47d4b04936cfa0f965eb4fc64851175daea225b8fc21983124a5fdee449133b7ab7e0e0dee3972148b
+  languageName: node
+  linkType: hard
+
+"@cloudinary/url-gen@npm:^1.22.0, @cloudinary/url-gen@npm:^1.7.0":
+  version: 1.22.0
+  resolution: "@cloudinary/url-gen@npm:1.22.0"
+  dependencies:
+    "@cloudinary/transformation-builder-sdk": "npm:^1.15.1"
+  checksum: 10c0/409c087224b847bdedb8ef1be142e67509e1caf339d43cb616640e143ba9746755269c8e53dec5b5e982710909a57a60c3fe11904dcb3d810c3c13407b948848
+  languageName: node
+  linkType: hard
+
 "@csstools/selector-resolve-nested@npm:^3.0.0":
   version: 3.0.0
   resolution: "@csstools/selector-resolve-nested@npm:3.0.0"
@@ -8157,6 +8175,7 @@ __metadata:
   resolution: "reworkflow@workspace:."
   dependencies:
     "@ckeditor/ckeditor5-vue": "npm:^7.3.0"
+    "@cloudinary/url-gen": "npm:^1.22.0"
     "@nuxt/image": "npm:^1.11.0"
     "@nuxtjs/tailwindcss": "npm:^6.13.1"
     "@primevue/forms": "npm:^4.3.2"

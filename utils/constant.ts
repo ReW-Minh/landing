@@ -1,3 +1,5 @@
+import { getCloudImageUrl } from '~/utils/cloudinary'
+
 export const PODCAST_LINK = 'https://podcast.reworkflow.com/'
 
 export const RESOURCE_LINK = 'https://resource.reworkflow.com/shelves/public-knowledgebase'
@@ -116,6 +118,28 @@ export interface School {
 
 export const TESTIMONIALS: School[] = [
     {
+        name: 'Ouachita Baptist',
+        logo: getCloudImageUrl('ob_voilwj'),
+        testimonial: {
+            quote: `I’ve learned that with Slate you actually do have to have expertise to be able to build it out to its full potential, and ReWorkflow has that knowledge. Their team is professional and creative, and they have allowed us to do things in Slate we never would have been able to do on our own. They have helped us solve issues with truly innovative solutions that moved our recruiting efforts forward and allowed us to be more responsive to families.`,
+            person: 'Lori Motl',
+            title: 'Senior Director, Admissions Counseling'
+        }
+    },
+
+    {
+        name: 'TC Columbia',
+        logo: getCloudImageUrl('tc_nqzm1a'),
+        testimonial: {
+            quote: `ReWorkflow has really expanded our ability to build and develop in Slate because of the technical skill that they bring to the table. Their team is extremely creative, collaborative, and highly competent. Truly, we would not be as successful as we are operationally without them.
+
+My role focuses a great deal on efficiencies and enhancements, and I couldn't do that without ReWorkflow's help. We have a fairly advanced and well-developed instance and I have to give ReWorkflow great credit in getting us to where we are today. I could not have learned as much personally as I’ve learned over the years without them there for the journey.`,
+            person: 'Nicole Siniscalchi',
+            title: 'Director of Operations & Strategic Planning, Office of Admission'
+        }
+    },
+
+    {
         name: 'Brown University',
         logo: 'https://caddellprep.com/wp-content/uploads/2020/01/Brown-U-logo.png',
         testimonial: {
@@ -129,7 +153,7 @@ export const TESTIMONIALS: School[] = [
 
     {
         name: 'Paul Smith’s College',
-        logo: '/img/schools/ps.png',
+        logo: getCloudImageUrl('ps_emua7v'),
         testimonial: {
             quote: `So I am an organizer, an executor, a developer, an enhancer—a team of one— with limited bandwidth supporting all of the admissions departments across the school, as well as senior administration for reporting. My time for troubleshooting Slate and understanding new enhancements is limited. ReWorkflow came in with a listening ear, understood my challenges, and provided me with very supportive team members. 
             
@@ -141,7 +165,7 @@ export const TESTIMONIALS: School[] = [
 
     {
         name: 'NYU School of Professional Studies',
-        logo: '/img/schools/nyu.png',
+        logo: getCloudImageUrl('nyu_tmdaxx'),
         testimonial: {
             quote: `ReWorkflow has the feeling of “my expert friend is helping me.” With everyone on the team, we feel really supported. And we’ve learned so much from ReWorkflow’s people because they don’t just do it for you, they explain why. We’ve come so far as an organization since we’ve partnered with them, because it really has felt like we have an extra set of hands which is crucial in higher ed when it feels like you’re always trying to do more things without enough resources. We couldn’t be happier with our ReWorkflow partnership.`,
             person: 'Sara Edmunds',
@@ -151,7 +175,7 @@ export const TESTIMONIALS: School[] = [
 
     {
         name: 'University of Alabama, Huntsville',
-        logo: '/img/schools/uah.png',
+        logo: getCloudImageUrl('uah_aqpjme'),
         testimonial: {
             quote: `Since implementing Slate with ReWorkflow’s help, we have seen a drastic difference in processing times for students submitting an application, and the time it takes us to review it and communicate a decision. We have been processing way more quickly this year, and our enrollment numbers are reflecting that. 
             
@@ -163,7 +187,7 @@ export const TESTIMONIALS: School[] = [
 
     {
         name: 'City Tech, CUNY',
-        logo: '/img/schools/citytech.png',
+        logo: getCloudImageUrl('citytech_s03r6t'),
         testimonial: {
             quote: `The staff we work with at ReWorkflow, there’s no other company that can match their value. They’re very can-do, very friendly, very approachable—almost instant connectivity with the team. They understand our admissions process and the application journey as well as Slate’s nuts and bolts. They really know their stuff. It’s just a pleasure working with them!`,
             person: 'John Albanese',
@@ -173,7 +197,7 @@ export const TESTIMONIALS: School[] = [
 
     {
         name: 'Marymount Manhattan College',
-        logo: '/img/schools/mmc.png',
+        logo: getCloudImageUrl('mmc_olcj3w'),
         testimonial: {
             quote: `I love working with the team at ReWorkflow! They’re good at communication, I can rely on whoever I’m working with, and they’re very knowledgeable in the field. They all have good critical thinking skills and apply extra thought to projects, and suggest best practice improvements that are very helpful. It’s not just a tick-the-box relationship. Basically, ReWorkflow is my secret weapon.`,
             person: 'Sunay Tamashev',
@@ -193,7 +217,7 @@ export const TESTIMONIALS: School[] = [
 
     {
         name: 'Moore College of Art and Design',
-        logo: '/img/schools/moore.png',
+        logo: getCloudImageUrl('moore_sqtfzz'),
         testimonial: {
             quote: `ReWorkflow really suits our needs because we're a small independent school, and they've developed a plan to suit our needs, whatever that may be at the time. And they also provide us with a security blanket if we do run into a situation where something may go wrong with our instance. And the questions become more complex as you go down the Slate rabbit hole, so it's great to have the broad wisdom that ReWorkflow has whenever we need it. It is definitely a good thing for us, having ReWorkflow as a partner, because they care about our goals.`,
             person: 'Jonathan Squire',
@@ -203,7 +227,7 @@ export const TESTIMONIALS: School[] = [
 
     {
         name: 'Loyola Law School',
-        logo: '/img/schools/lls.png',
+        logo: getCloudImageUrl('lls_xxdvi1'),
         testimonial: {
             quote: `Well, the team is amazing. I trust them with anything Slate-related! ReWorkflow isn’t a transactional business model, they’re very, very customer service-oriented and very responsive. I\'m just grateful to the entire team for making our lives easier. I truly don\'t think ReWorkflow could get enough praise.`,
             person: 'Mina Mizutani',
@@ -213,11 +237,17 @@ export const TESTIMONIALS: School[] = [
 
     {
         name: 'Westcliff University',
-        logo: '/img/schools/wu.png',
+        logo: getCloudImageUrl('wu_vq2ps9'),
         testimonial: {
             quote: `I wouldn’t change ReWorkflow for any other solution. It’s honestly the first time we’ve worked with a vendor who’s delivered such results, and with such camaraderie.`,
             person: 'Amanda Olmos',
             title: 'Director of Systems Solutions'
         }
+    },
+
+    {
+        name: 'Tacoma Community College',
+        logo: getCloudImageUrl('tcc_uouupx'),
+        testimonial: undefined
     }
 ]

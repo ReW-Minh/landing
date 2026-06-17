@@ -50,13 +50,15 @@
 </template>
 
 <script setup lang="ts">
+import { getCloudImageUrl } from '~/stores'
+
 useHead({
   title: 'ReWorkflow - Trusted Partners'
 })
 
 const partners = [
   {
-    logo: '/img/David Dysart The Innovation Forge Leatherbound Workmark Logo.png',
+    logo: getCloudImageUrl('David_Dysart_The_Innovation_Forge_Leatherbound_Workmark_Logo_rzml6c'),
     content: 'Engagement Scoring, Predictive Modeling, Adaptive Enrollment Management',
     url: 'https://dysartisaninnovations.carrd.co/'
   },
