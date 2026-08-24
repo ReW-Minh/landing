@@ -1,0 +1,41 @@
+name: Deploy ReWorkflow Production
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Use Yarn 4.12.0
+        run: corepack prepare yarn@4.12.0 --activate
+
+      - name: Configure Yarn node_modules linker
+        run: yarn config set nodeLinker node-modules
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Generate static site
+        run: yarn generate
+
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.NFS_SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H ssh.nyc1.nearlyfreespeech.net >> ~/.ssh/known_hosts
+
+      - name: Deploy to NearlyFreeSpeech
+        run: |
+          rsync -az --delete \
+            -e "ssh -i ~/.ssh/id_ed25519 -o IdentitiesOnly=yes" \
+            .output/public/ \
+            jrowand_reworkflow@ssh.nyc1.nearlyfreespeech.net:/home/public/
