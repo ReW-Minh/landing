@@ -1,6 +1,9 @@
 name: Deploy ReWorkflow Production
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
