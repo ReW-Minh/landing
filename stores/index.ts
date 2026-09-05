@@ -196,6 +196,10 @@ When I'm not working, you'll most likely find me at the gym (either working out 
                 link: 'https://www.linkedin.com/in/joycencarter/'
             },
             {
+                type: CONTACT_TYPE.RESOURCE,
+                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3Ajoyce-carter%7D+%7Btype%3Apage%7D'
+            },
+            {
                 type: CONTACT_TYPE.SLATE_COMMUNITY,
                 link: 'https://community.technolutions.net/member/yB3ugLY9q9'
             },
