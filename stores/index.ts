@@ -158,7 +158,7 @@ When I'm not working, you'll most likely find me at the gym (either working out 
         id: 9,
         name: "Bailey Raffield",
         picture: getCloudImageUrl('braffield_cmdusk'),
-        title: "Slate Developer",
+        title: "Slate Developer II",
         contact: [
             {
                 type: CONTACT_TYPE.LINKEDIN,
@@ -189,7 +189,7 @@ When I'm not working, you'll most likely find me at the gym (either working out 
         name: "Joyce Carter",
         order: 1,
         picture: getCloudImageUrl('jcarter_dgru7z'),
-        title: "Slate Developer",
+        title: "Slate Developer II",
         contact: [
             {
                 type: CONTACT_TYPE.LINKEDIN,
@@ -219,7 +219,7 @@ When I'm not working, you'll most likely find me at the gym (either working out 
         name: "Alice Byrd",
         order: 1,
         picture: getCloudImageUrl('amanning_ktvihw'),
-        title: "Senior Slate Strategist",
+        title: "Slate Developer II",
         contact: [
             {
                 type: CONTACT_TYPE.LINKEDIN,
@@ -250,7 +250,7 @@ When I'm not working, you'll most likely find me at the gym (either working out 
         id: 7,
         name: "Kelly Connor Lewis",
         picture: getCloudImageUrl('klewis_bty0o8'),
-        title: "Senior Slate Strategist",
+        title: "Slate Developer II",
         cert: getCloudImageUrl('slate_certified_jjh5ms'),
         contact: [
             {
@@ -280,7 +280,7 @@ When I'm not working, you'll most likely find me at the gym (either working out 
         name: "Josh Frankenfield",
         order: 1,
         picture: getCloudImageUrl('jf_fk9zmk'),
-        title: "Senior Slate Strategist",
+        title: "Slate Developer II",
         contact: [
             {
                 type: CONTACT_TYPE.LINKEDIN,
