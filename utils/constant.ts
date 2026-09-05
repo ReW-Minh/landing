@@ -118,7 +118,7 @@ export interface School {
 
 export const TESTIMONIALS: School[] = [
     {
-        name: 'Ouachita Baptist',
+        name: 'Ouachita Baptist University',
         logo: getCloudImageUrl('ob_voilwj'),
         testimonial: {
             quote: `I’ve learned that with Slate you actually do have to have expertise to be able to build it out to its full potential, and ReWorkflow has that knowledge. Their team is professional and creative, and they have allowed us to do things in Slate we never would have been able to do on our own. They have helped us solve issues with truly innovative solutions that moved our recruiting efforts forward and allowed us to be more responsive to families.`,
@@ -128,7 +128,7 @@ export const TESTIMONIALS: School[] = [
     },
 
     {
-        name: 'TC Columbia',
+        name: 'Teachers College, Columbia University',
         logo: getCloudImageUrl('tc_nqzm1a'),
         testimonial: {
             quote: `ReWorkflow has really expanded our ability to build and develop in Slate because of the technical skill that they bring to the table. Their team is extremely creative, collaborative, and highly competent. Truly, we would not be as successful as we are operationally without them.

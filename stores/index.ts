@@ -15,6 +15,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
         id: 1,
         name: "Jon Rowand",
         picture: 'https://live.staticflickr.com/65535/53939568495_fd701673b8.jpg',
+        cert: getCloudImageUrl('slate_certified_jjh5ms'),
         title: "Chief Executive Officer",
         contact: [
             {
@@ -113,6 +114,104 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
         group: PROFILE_GROUP.CUSTOM_SOLUTIONS
     },
 
+    // Max
+    {
+        content: `I've been lucky to experience a wide range of roles and identities — from tech sales in San Francisco, to enrollment management at the University of Oregon, to technical engineering at Technolutions. My Slate journey began on the implementation team at UO in 2020, where we launched in just two months. In the following two years, I had the chance to create processes for marketing, visits, orientation, and financial aid.
+
+In 2022, I joined Technolutions as a Client Support Engineer on the data team, and within a year and a half became a Technical Engineer working directly in the Slate codebase. I served on both the Configurable Joins and Payment Integrations teams and worked on several portals projects, including building the Database Stewardship tool and the Summit Spirit Shop.
+
+When I'm not working, you'll most likely find me at the gym (either working out or as a personal trainer), the ballet studio, trying a new restaurant around Portland, or listening to my favorite pop queen (it's a tie between Beyoncé and Lady Gaga).`,
+        id: 13,
+        name: "Max Zeryck",
+        order: 1,
+        picture: getCloudImageUrl('mzeryck_wdan5k'),
+        title: "Senior Slate Developer",
+        contact: [
+            {
+                type: CONTACT_TYPE.LINKEDIN,
+                link: 'https://www.linkedin.com/in/mzeryck/'
+            },
+            {
+                type: CONTACT_TYPE.RESOURCE,
+                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3Amax-zeryck%7D+%7Btype%3Apage%7D'
+            },
+            {
+                type: CONTACT_TYPE.SLATE_COMMUNITY,
+                link: 'https://community.technolutions.net/member/7yvDPlOzRg'
+            },
+            {
+                type: CONTACT_TYPE.EMAIL,
+                link: 'mzeryck@reworkflow.com'
+            }
+        ],
+        clickUp: false,
+        group: PROFILE_GROUP.CLIENT_SERVICES
+    },
+
+    // Bailey
+    {
+        content: `Bailey brings nearly a decade of experience in higher education IT and CRM management to his role as Custom Solutions Analyst at ReWorkflow. Since 2016, he has worked at the intersection of technology and enrollment management, helping institutions optimize systems and processes that support student success.
+
+                  Before joining ReWorkflow, Bailey served as CRM Manager for the Graduate School at Texas A&M University, where he led initiatives to streamline data, communications, and application workflows. He began his career at Valdosta State University, supporting admissions and student success as the IT liaison for enrollment management.
+
+                  Since first working in Slate in 2021, Bailey has focused on bridging the gap between technical solutions and enrollment strategy. At ReWorkflow, he is excited to apply this expertise to support partner institutions and advance innovative CRM solutions across the higher education community.`,
+        id: 9,
+        name: "Bailey Raffield",
+        picture: getCloudImageUrl('braffield_cmdusk'),
+        title: "Slate Developer",
+        contact: [
+            {
+                type: CONTACT_TYPE.LINKEDIN,
+                link: 'https://www.linkedin.com/in/bailey-raffield-73a3b3256/'
+            },
+            {
+                type: CONTACT_TYPE.RESOURCE,
+                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3Abailey-raffield%7D+%7Btype%3Apage%7D'
+            },
+            {
+                type: CONTACT_TYPE.SLATE_COMMUNITY,
+                link: 'https://community.technolutions.net/member/jejNLPQLB8'
+            },
+            {
+                type: CONTACT_TYPE.EMAIL,
+                link: 'braffield@reworkflow.com'
+            }
+        ],
+        clickUp: true,
+        cert: getCloudImageUrl('slate_certified_jjh5ms'),
+        group: PROFILE_GROUP.CUSTOM_SOLUTIONS
+    },
+
+    // Joyce
+    {
+        content: `Joyce brings valuable experience from her previous roles in higher education and secondary school admissions. Her work passion is helping people better understand the Slate system through training as well as helping them feel independent in their skills to succeed. She enjoys the puzzles Slate brings sometimes and finding a solution for them. Joyce holds both a BS and MS in Recreation, Park, and Tourism Sciences, with a focus on Youth Development, from Texas A&M University. She currently lives in College Station, Texas, with her husband, two daughters, and a mini goldendoodle named Ruby. In her spare time, she loves spending time with her family, supporting all Texas A&M sports (Gig ‘Em!) and reading a good series.`,
+        id: 6,
+        name: "Joyce Carter",
+        order: 1,
+        picture: getCloudImageUrl('jcarter_dgru7z'),
+        title: "Slate Developer",
+        contact: [
+            {
+                type: CONTACT_TYPE.LINKEDIN,
+                link: 'https://www.linkedin.com/in/joycencarter/'
+            },
+            {
+                type: CONTACT_TYPE.RESOURCE,
+                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3Ajoyce-carter%7D+%7Btype%3Apage%7D'
+            },
+            {
+                type: CONTACT_TYPE.SLATE_COMMUNITY,
+                link: 'https://community.technolutions.net/member/yB3ugLY9q9'
+            },
+            {
+                type: CONTACT_TYPE.EMAIL,
+                link: 'jcarter@reworkflow.com'
+            }
+        ],
+        cert: getCloudImageUrl('slate_certified_jjh5ms'),
+        group: PROFILE_GROUP.CLIENT_SERVICES
+    },
+
     // Alice
     {
         content: `Alice Byrd is a two-time graduate of Gardner-Webb University with a BA in Communication Studies and an MBA. Alice has a variety of experience in Slate administration, implementation, and auditing. She enjoys working with clients to teach them about all of the great things that Slate can do and takes pride in helping teams find creative, efficient solutions. She and her family live in the beautiful mountains of Asheville, North Carolina.`,
@@ -206,107 +305,6 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
             {
                 type: CONTACT_TYPE.EMAIL,
                 link: 'jfrankenfield@reworkflow.com'
-            }
-        ],
-        group: PROFILE_GROUP.CLIENT_SERVICES
-    },
-
-    // Bailey
-    {
-        content: `Bailey brings nearly a decade of experience in higher education IT and CRM management to his role as Custom Solutions Analyst at ReWorkflow. Since 2016, he has worked at the intersection of technology and enrollment management, helping institutions optimize systems and processes that support student success.
-
-                  Before joining ReWorkflow, Bailey served as CRM Manager for the Graduate School at Texas A&M University, where he led initiatives to streamline data, communications, and application workflows. He began his career at Valdosta State University, supporting admissions and student success as the IT liaison for enrollment management.
-
-                  Since first working in Slate in 2021, Bailey has focused on bridging the gap between technical solutions and enrollment strategy. At ReWorkflow, he is excited to apply this expertise to support partner institutions and advance innovative CRM solutions across the higher education community.`,
-        id: 9,
-        name: "Bailey Raffield",
-        picture: getCloudImageUrl('braffield_cmdusk'),
-        title: "Slate Developer",
-        contact: [
-            {
-                type: CONTACT_TYPE.LINKEDIN,
-                link: 'https://www.linkedin.com/in/bailey-raffield-73a3b3256/'
-            },
-            {
-                type: CONTACT_TYPE.RESOURCE,
-                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3Abailey-raffield%7D+%7Btype%3Apage%7D'
-            },
-            {
-                type: CONTACT_TYPE.SLATE_COMMUNITY,
-                link: 'https://community.technolutions.net/member/jejNLPQLB8'
-            },
-            {
-                type: CONTACT_TYPE.EMAIL,
-                link: 'braffield@reworkflow.com'
-            }
-        ],
-        clickUp: true,
-        cert: getCloudImageUrl('slate_certified_jjh5ms'),
-        group: PROFILE_GROUP.CUSTOM_SOLUTIONS
-    },
-
-    // Joyce
-    {
-        content: `Joyce brings valuable experience from her previous roles in higher education and secondary school admissions. Her work passion is helping people better understand the Slate system through training as well as helping them feel independent in their skills to succeed. She enjoys the puzzles Slate brings sometimes and finding a solution for them. Joyce holds both a BS and MS in Recreation, Park, and Tourism Sciences, with a focus on Youth Development, from Texas A&M University. She currently lives in College Station, Texas, with her husband, two daughters, and a mini goldendoodle named Ruby. In her spare time, she loves spending time with her family, supporting all Texas A&M sports (Gig ‘Em!) and reading a good series.`,
-        id: 6,
-        name: "Joyce Carter",
-        order: 1,
-        picture: getCloudImageUrl('jcarter_dgru7z'),
-        title: "Slate Developer",
-        contact: [
-            {
-                type: CONTACT_TYPE.LINKEDIN,
-                link: 'https://www.linkedin.com/in/joycencarter/'
-            },
-            {
-                type: CONTACT_TYPE.SLATE_COMMUNITY,
-                link: 'https://community.technolutions.net/member/yB3ugLY9q9'
-            },
-            {
-                type: CONTACT_TYPE.EMAIL,
-                link: 'jcarter@reworkflow.com'
-            }
-        ],
-        cert: getCloudImageUrl('slate_certified_jjh5ms'),
-        group: PROFILE_GROUP.CLIENT_SERVICES
-    },
-
-    // Destiny
-    {
-        content: `I didn’t set out to become a Slate expert. I fell into a “program coordinator” role and quickly realized there’s a niche group of people who end up loving Slate enough to make a career out of it. I’m one of them.
-
-I’m a classically trained soprano who originally planned to teach elementary music, but after one semester wrangling 4th graders, I pivoted to higher ed. I spent several years in student housing, both on and off campus, before making my way to Slate at Texas A&M University.
-
-I currently serve as Sr. Director of Enrollment Services and Student Success at a small private college in Tennessee, where I focus on Slate governance, system design, and building processes that support enrollment strategy and student success. I approach my work with a teacher’s mindset and enjoy helping others connect the dots and truly understand how Slate works.
-
-I live in College Station, Texas with my husband and youngest son. I’m a mom/bonus mom to five, meemaw to two (with one more on the way), and dog mom to many. When I’m not working, I’m running a household that rivals any system I’ve ever managed.
-
-`,
-        id: 9,
-        name: "Destiny Whitley-Matthews",
-        order: 1,
-        picture: getCloudImageUrl('dwmatthews_uvnv9q'),
-        title: "Slate Strategist",
-        contact: [
-            {
-                type: CONTACT_TYPE.LINKEDIN,
-                link: 'https://www.linkedin.com/in/destinywhitley/'
-            },
-            {
-                type: CONTACT_TYPE.SLATE_COMMUNITY,
-                link: 'https://community.technolutions.net/member/0A9hhKOdFG'
-            },
-            {
-                type: CONTACT_TYPE.PRESENTATIONS_PUBLICATIONS,
-                link: ''
-            },
-            {
-                type: CONTACT_TYPE.GITHUB,
-                link: ''
-            },
-            {
-                type: CONTACT_TYPE.EMAIL,
-                link: 'dwhitley@reworkflow.com'
             }
         ],
         group: PROFILE_GROUP.CLIENT_SERVICES
