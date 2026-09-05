@@ -280,7 +280,7 @@ When I'm not working, you'll most likely find me at the gym (either working out 
         name: "Josh Frankenfield",
         order: 1,
         picture: getCloudImageUrl('jf_fk9zmk'),
-        title: "SSlate Developer II",
+        title: "Slate Developer II",
         contact: [
             {
                 type: CONTACT_TYPE.LINKEDIN,
