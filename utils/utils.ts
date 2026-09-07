@@ -1,4 +1,5 @@
 import { useAdminAuth, useProfiles } from '~/stores'
+import type { IProfile } from '~/types/types';
 import type { ToastMessageOptions } from 'primevue';
 
 export const openProfile = (name: string) => {
@@ -8,6 +9,41 @@ export const openProfile = (name: string) => {
 
     if (!profile)
         return
+
+    showProfile(profile)
+}
+
+// "Jon Rowand" -> "jon-rowand", used to deep link a team member (/about#team?m=jon-rowand)
+export const getProfileSlug = (name: string) => name
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '')
+
+export const openProfileBySlug = (slug: string) => {
+    if (!slug)
+        return false
+
+    const profiles = useProfiles()
+
+    const profile = profiles.value.find(p => getProfileSlug(p.name) === getProfileSlug(slug))
+
+    if (!profile)
+        return false
+
+    showProfile(profile)
+
+    return true
+}
+
+const showProfile = (profile: IProfile) => {
+    const profiles = useProfiles()
+
+    // only one popup at a time
+    profiles.value.forEach(p => {
+        if (p.id !== profile.id && p.visible)
+            p.visible = false
+    })
 
     profile.visible = true
 }
