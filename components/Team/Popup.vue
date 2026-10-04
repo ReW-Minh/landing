@@ -10,7 +10,7 @@
         <div class="text-3xl rew-text-green font-bold tracking-wide text-center md:text-start">
           {{ bio.name }}
         </div>
-        <div class="rew-text-brown tracking-wider">
+        <div class="rew-text-brown tracking-wider text-center md:text-start">
           {{ bio.title }}
         </div>
       </div>
