@@ -310,6 +310,34 @@ When I'm not working, you'll most likely find me at the gym (either working out 
         group: PROFILE_GROUP.CLIENT_SERVICES
     },
 
+    // Valerie
+    {
+        content: `I hold a BS and a MS in Management Information Systems. I've worked with Slate for the past five years through my role at Texas A&M University, supporting applications, workflows, rules, reporting, data imports, and application processing. As a Slate power user, I enjoy troubleshooting complex processes and finding ways to make systems more sustainable and user-friendly.
+
+Outside of work, I'm a pet mom to three fur babies, two cats and a dog. I enjoy catching up on Crime Junkie, finding a new craft to try, and planning future home renovation projects.
+
+I'm excited to bring my higher education and Slate experience to ReWorkflow while continuing to grow my technical development skills and help partner institutions make the most of their Slate environments.`,
+        id: 14,
+        name: "Valerie Banks",
+        picture: '/img/team/valerie-banks.jpg',
+        title: "Slate Developer I",
+        contact: [
+            {
+                type: CONTACT_TYPE.LINKEDIN,
+                link: 'https://www.linkedin.com/in/valerie-banks-49a853170'
+            },
+            {
+                type: CONTACT_TYPE.SLATE_COMMUNITY,
+                link: 'https://community.technolutions.net/member/tXIvb0txgp'
+            },
+            {
+                type: CONTACT_TYPE.EMAIL,
+                link: 'vbanks@reworkflow.com'
+            }
+        ],
+        group: PROFILE_GROUP.CLIENT_SERVICES
+    },
+
     // Wyatt
     {
         content: `I started working for a computer repair shop in high school, then joined the Helpdesk in undergrad. Finding myself at home in higher ed IT, I authored many PowerCampus resources over 10+ years at three schools, received community contributor awards from Ellucian, and served on the board of the PowerCampus Users Group, Inc.
