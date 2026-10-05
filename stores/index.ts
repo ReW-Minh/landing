@@ -312,7 +312,7 @@ When I'm not working, you'll most likely find me at the gym (either working out 
 
     // Valerie
     {
-        content: `I hold a BS and a MS in Management Information Systems. Prior to joining ReWorkflow, I've worked with Slate for over five years through my roles at Texas A&M University, supporting applications, workflows, rules, reporting, data imports, and application processing. As a Slate power user, I enjoy troubleshooting complex processes and finding ways to make systems more sustainable and user-friendly.
+        content: `I hold a BS and a MS in Management Information Systems. Prior to joining ReWorkflow, I've worked with Slate for three years through my role at Texas A&M University, supporting applications, workflows, rules, reporting, data imports, and application processing. As a Slate power user, I enjoy troubleshooting complex processes and finding ways to make systems more sustainable and user-friendly.
 
 Outside of work, I'm a pet mom to three fur babies, two cats and a dog. I enjoy catching up on Crime Junkie, finding a new craft to try, and planning future home renovation projects.
 
