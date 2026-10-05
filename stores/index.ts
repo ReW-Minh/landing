@@ -212,36 +212,6 @@ When I'm not working, you'll most likely find me at the gym (either working out 
         group: PROFILE_GROUP.CLIENT_SERVICES
     },
 
-    // Alice
-    {
-        content: `Alice Byrd is a two-time graduate of Gardner-Webb University with a BA in Communication Studies and an MBA. Alice has a variety of experience in Slate administration, implementation, and auditing. She enjoys working with clients to teach them about all of the great things that Slate can do and takes pride in helping teams find creative, efficient solutions. She and her family live in the beautiful mountains of Asheville, North Carolina.`,
-        id: 5,
-        name: "Alice Byrd",
-        order: 1,
-        picture: getCloudImageUrl('amanning_ktvihw'),
-        title: "Slate Developer II",
-        contact: [
-            {
-                type: CONTACT_TYPE.LINKEDIN,
-                link: 'https://www.linkedin.com/in/alice-manning-mba-2b366b135/'
-            },
-            {
-                type: CONTACT_TYPE.RESOURCE,
-                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3AAlice-Bryd%7D+%7Btype%3Apage%7D'
-            },
-            {
-                type: CONTACT_TYPE.SLATE_COMMUNITY,
-                link: 'https://community.technolutions.net/member/SW8YKG8StE'
-            },
-            {
-                type: CONTACT_TYPE.EMAIL,
-                link: 'abyrd@reworkflow.com'
-            }
-        ],
-        clickUp: true,
-        group: PROFILE_GROUP.CLIENT_SERVICES
-    },
-
     // Kelly
     {
         content: `Is there anything more fulfilling than improving the lives of those around you? A passion of mine is helping others, whether it be volunteering in the community through programs like Big Brothers Big Sisters, chaperoning service trips around the globe, or using my professional Slate expertise to make better the work experiences of my colleagues and fellow Slate users. I have been in the world of Slate since 2013 when I was among the implementation team at The University of Scranton. From there I became Slate Captain in 2016 where I touched upon all aspects of Slate, working diligently to create an easy user experience for both prospective students as well as internal staff.  True to my passion, I have kept an active presence in the Slate Community forums and was selected by Technolutions as an inaugural Slate Community Ambassador in 2021.  I also co-moderate both the PA Slate Users Group (since 2014) and the national Slate Slack Users Group (since 2021).  I currently work full-time as a Slate Captain for Lynn University.
@@ -305,6 +275,64 @@ When I'm not working, you'll most likely find me at the gym (either working out 
             {
                 type: CONTACT_TYPE.EMAIL,
                 link: 'jfrankenfield@reworkflow.com'
+            }
+        ],
+        group: PROFILE_GROUP.CLIENT_SERVICES
+    },
+
+    // Alice
+    {
+        content: `Alice Byrd is a two-time graduate of Gardner-Webb University with a BA in Communication Studies and an MBA. Alice has a variety of experience in Slate administration, implementation, and auditing. She enjoys working with clients to teach them about all of the great things that Slate can do and takes pride in helping teams find creative, efficient solutions. She and her family live in the beautiful mountains of Asheville, North Carolina.`,
+        id: 5,
+        name: "Alice Byrd",
+        order: 1,
+        picture: getCloudImageUrl('amanning_ktvihw'),
+        title: "Slate Developer II",
+        contact: [
+            {
+                type: CONTACT_TYPE.LINKEDIN,
+                link: 'https://www.linkedin.com/in/alice-manning-mba-2b366b135/'
+            },
+            {
+                type: CONTACT_TYPE.RESOURCE,
+                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3AAlice-Bryd%7D+%7Btype%3Apage%7D'
+            },
+            {
+                type: CONTACT_TYPE.SLATE_COMMUNITY,
+                link: 'https://community.technolutions.net/member/SW8YKG8StE'
+            },
+            {
+                type: CONTACT_TYPE.EMAIL,
+                link: 'abyrd@reworkflow.com'
+            }
+        ],
+        clickUp: true,
+        group: PROFILE_GROUP.CLIENT_SERVICES
+    },
+
+    // Valerie
+    {
+        content: `I hold a BS and a MS in Management Information Systems. Prior to joining ReWorkflow, I've worked with Slate for over five years through my roles at Texas A&M University, supporting applications, workflows, rules, reporting, data imports, and application processing. As a Slate power user, I enjoy troubleshooting complex processes and finding ways to make systems more sustainable and user-friendly.
+
+Outside of work, I'm a pet mom to three fur babies, two cats and a dog. I enjoy catching up on Crime Junkie, finding a new craft to try, and planning future home renovation projects.
+
+I'm excited to bring my higher education and Slate experience to ReWorkflow while continuing to grow my technical development skills and help partner institutions make the most of their Slate environments.`,
+        id: 14,
+        name: "Valerie Banks",
+        picture: '/img/team/valerie-banks.jpg',
+        title: "Slate Developer I",
+        contact: [
+            {
+                type: CONTACT_TYPE.LINKEDIN,
+                link: 'https://www.linkedin.com/in/valerie-banks-49a853170'
+            },
+            {
+                type: CONTACT_TYPE.SLATE_COMMUNITY,
+                link: 'https://community.technolutions.net/member/tXIvb0txgp'
+            },
+            {
+                type: CONTACT_TYPE.EMAIL,
+                link: 'vbanks@reworkflow.com'
             }
         ],
         group: PROFILE_GROUP.CLIENT_SERVICES
