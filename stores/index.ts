@@ -24,7 +24,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
             },
             {
                 type: CONTACT_TYPE.RESOURCE,
-                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3Ajon-rowand%7D+%7Btype%3Apage%7D'
+                link: 'https://resource.reworkflow.com/search?term=%7Bowned_by%3Ajon-rowand%7D+%7Btype%3Apage%7D'
             },
             {
                 type: CONTACT_TYPE.SLATE_COMMUNITY,
@@ -95,7 +95,7 @@ export const useProfiles = () => useState<IProfile[]>('Profiles', () => [
             },
             {
                 type: CONTACT_TYPE.RESOURCE,
-                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3Atj-backofen%7D+%7Btype%3Apage%7D'
+                link: 'https://resource.reworkflow.com/search?term=%7Bowned_by%3Atj-backofen%7D+%7Btype%3Apage%7D'
             },
             {
                 type: CONTACT_TYPE.SLATE_COMMUNITY,
@@ -133,7 +133,7 @@ When I'm not working, you'll most likely find me at the gym (either working out 
             },
             {
                 type: CONTACT_TYPE.RESOURCE,
-                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3Amax-zeryck%7D+%7Btype%3Apage%7D'
+                link: 'https://resource.reworkflow.com/search?term=%7Bowned_by%3Amax-zeryck%7D+%7Btype%3Apage%7D'
             },
             {
                 type: CONTACT_TYPE.SLATE_COMMUNITY,
@@ -166,7 +166,7 @@ When I'm not working, you'll most likely find me at the gym (either working out 
             },
             {
                 type: CONTACT_TYPE.RESOURCE,
-                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3Abailey-raffield%7D+%7Btype%3Apage%7D'
+                link: 'https://resource.reworkflow.com/search?term=%7Bowned_by%3Abailey-raffield%7D+%7Btype%3Apage%7D'
             },
             {
                 type: CONTACT_TYPE.SLATE_COMMUNITY,
@@ -197,7 +197,7 @@ When I'm not working, you'll most likely find me at the gym (either working out 
             },
             {
                 type: CONTACT_TYPE.RESOURCE,
-                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3Ajoyce-carter%7D+%7Btype%3Apage%7D'
+                link: 'https://resource.reworkflow.com/search?term=%7Bowned_by%3Ajoyce-carter%7D+%7Btype%3Apage%7D'
             },
             {
                 type: CONTACT_TYPE.SLATE_COMMUNITY,
@@ -229,7 +229,7 @@ When I'm not working, you'll most likely find me at the gym (either working out 
             },
             {
                 type: CONTACT_TYPE.RESOURCE,
-                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3Akelly-connor-lewis%7D+%7Btype%3Apage%7D'
+                link: 'https://resource.reworkflow.com/search?term=%7Bowned_by%3Akelly-connor-lewis%7D+%7Btype%3Apage%7D'
             },
             {
                 type: CONTACT_TYPE.SLATE_COMMUNITY,
@@ -258,7 +258,7 @@ When I'm not working, you'll most likely find me at the gym (either working out 
             },
             {
                 type: CONTACT_TYPE.RESOURCE,
-                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3AJosh-frankenfield%7D+%7Btype%3Apage%7D'
+                link: 'https://resource.reworkflow.com/search?term=%7Bowned_by%3AJosh-frankenfield%7D+%7Btype%3Apage%7D'
             },
             {
                 type: CONTACT_TYPE.SLATE_COMMUNITY,
@@ -295,7 +295,7 @@ When I'm not working, you'll most likely find me at the gym (either working out 
             },
             {
                 type: CONTACT_TYPE.RESOURCE,
-                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3AAlice-Bryd%7D+%7Btype%3Apage%7D'
+                link: 'https://resource.reworkflow.com/search?term=%7Bowned_by%3AAlice-Bryd%7D+%7Btype%3Apage%7D'
             },
             {
                 type: CONTACT_TYPE.SLATE_COMMUNITY,
@@ -357,7 +357,7 @@ I'm excited to bring my higher education and Slate experience to ReWorkflow whil
             },
             {
                 type: CONTACT_TYPE.RESOURCE,
-                link: 'https://resource.reworkflow.com/search?term=%7Bcreated_by%3Awyatt-best%7D+%7Btype%3Apage%7D'
+                link: 'https://resource.reworkflow.com/search?term=%7Bowned_by%3Awyatt-best%7D+%7Btype%3Apage%7D'
             },
             {
                 type: CONTACT_TYPE.SLATE_COMMUNITY,
